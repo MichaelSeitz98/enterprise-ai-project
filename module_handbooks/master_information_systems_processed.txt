@@ -24,7 +24,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -126,7 +125,6 @@ Workload
 150 h
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -164,7 +162,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -265,7 +262,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -277,7 +273,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -380,7 +375,6 @@ Master's degree (1 major) Computer Science (2017)
 Master's degree (1 major) Computer Science (2018)
 Master's degree (1 major) Computational Mathematics (2019)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -393,7 +387,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -496,7 +489,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -515,7 +507,6 @@ Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -620,7 +611,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -638,7 +628,6 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -741,7 +730,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -758,7 +746,6 @@ Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -861,7 +848,6 @@ Master's degree (1 major) Computer Science (2018)
 Master's degree (1 major) Computational Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -880,7 +866,6 @@ Master's degree (1 major) Quantum Engineering (2020)
 Master's degree (1 major) Quantum Technology (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -983,7 +968,6 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Computer Science (2017)
 Master's degree (1 major) Computer Science (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -999,7 +983,6 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1096,7 +1079,6 @@ Master's degree (1 major) Satellite Technology (2018)
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1194,7 +1176,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1297,7 +1278,6 @@ Master's degree (1 major) Mathematics (2019)
 Master's degree (1 major) Information Systems (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -1312,7 +1292,6 @@ Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1410,7 +1389,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1511,7 +1489,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -1607,7 +1584,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1701,7 +1677,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1801,7 +1776,6 @@ Additional information
 Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -1829,7 +1803,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -1923,7 +1896,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -2018,7 +1990,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -2119,7 +2090,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2132,7 +2102,6 @@ Compulsory Electives II: Tracks
 Out of the five tracks, students may select two.
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Track 1: Enterprise Systems
@@ -2143,7 +2112,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2242,7 +2210,6 @@ Additional information
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2269,7 +2236,6 @@ Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2370,7 +2336,6 @@ Should the number of applications exceed the number of available places, places 
 of available places, places will be allocated by lot among applicants from this group.
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -2398,7 +2363,6 @@ Module appears in
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2502,7 +2466,6 @@ Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -2523,7 +2486,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Track 2: Business Analytics
@@ -2534,7 +2496,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -2641,7 +2602,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2654,7 +2614,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -2759,7 +2718,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2776,7 +2734,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -2881,7 +2838,6 @@ Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -2902,7 +2858,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Track 3: Electronic Business
@@ -2913,7 +2868,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -3017,7 +2971,6 @@ Module appears in
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3032,7 +2985,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -3136,7 +3088,6 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) China Business and Economics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3151,7 +3102,6 @@ Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -3255,7 +3205,6 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3271,7 +3220,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Track 4: Global Operations and Information Management
@@ -3282,7 +3230,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -3380,7 +3327,6 @@ On successful completion of this module students will be able to:
 • Systematically choose between different routes of action
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3436,7 +3382,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -3540,7 +3485,6 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3561,7 +3505,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3666,7 +3609,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 Master's degree (1 major) Management (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3685,7 +3627,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Track 5: Operations Management
@@ -3696,7 +3637,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3799,7 +3739,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3812,7 +3751,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3915,7 +3853,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -3928,7 +3865,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -4026,7 +3962,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Compulsory Electives III: Electives
@@ -4037,7 +3972,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -4137,7 +4071,6 @@ Additional information
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -4168,7 +4101,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -4271,7 +4203,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module appears in
@@ -4282,7 +4213,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -4386,7 +4316,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Information Systems (2019)
@@ -4396,7 +4325,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -4500,7 +4428,6 @@ Master's degree (1 major) Economathematics (2016)
 Master's degree (1 major) Business Information Systems (2016)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -4515,7 +4442,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -4615,7 +4541,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -4715,7 +4640,6 @@ Master's degree (1 major) China Language and Economy (2016)
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -4818,7 +4742,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Information Systems (2022)
@@ -4830,7 +4753,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -4933,7 +4855,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Information Systems (2022)
@@ -4945,7 +4866,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5047,7 +4967,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5147,7 +5066,6 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5250,7 +5168,6 @@ Master's degree (1 major) Mathematics (2019)
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -5264,7 +5181,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Mathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5367,7 +5283,6 @@ Master's degree (1 major) Computer Science (2017)
 Master's degree (1 major) Computer Science (2018)
 Master's degree (1 major) Computational Mathematics (2019)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -5380,7 +5295,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5483,7 +5397,6 @@ Master's degree (1 major) Computer Science (2018)
 Master's degree (1 major) Computational Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -5502,7 +5415,6 @@ Master's degree (1 major) Quantum Engineering (2020)
 Master's degree (1 major) Quantum Technology (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5605,7 +5517,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -5618,7 +5529,6 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Aerospace Computer Science (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5721,7 +5631,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -5734,7 +5643,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5837,7 +5745,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -5856,7 +5763,6 @@ Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -5960,7 +5866,6 @@ Master's degree (1 major) Mathematics (2019)
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -5972,7 +5877,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6075,7 +5979,6 @@ Master's degree (1 major) Computer Science (2018)
 Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6088,7 +5991,6 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Aerospace Computer Science (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -6187,7 +6089,6 @@ Focuses available for students of the Master's programme Informatik (Computer Sc
 Cf. Section 3 Subsection 3 Sentence 8 FSB (subject-specific provisions).
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6216,7 +6117,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -6317,7 +6217,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6421,7 +6320,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -6431,7 +6329,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -6534,7 +6431,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Information Systems (2019)
@@ -6546,7 +6442,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6649,7 +6544,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6662,7 +6556,6 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Aerospace Computer Science (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -6760,7 +6653,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -6862,7 +6754,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -6967,7 +6858,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -6985,7 +6875,6 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -7088,7 +6977,6 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Computer Science (2017)
 Master's degree (1 major) Computer Science (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -7104,7 +6992,6 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -7207,7 +7094,6 @@ Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -7224,7 +7110,6 @@ Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -7327,7 +7212,6 @@ Master's degree (1 major) Mathematics (2019)
 Master's degree (1 major) Information Systems (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -7342,7 +7226,6 @@ Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -7442,7 +7325,6 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -7545,7 +7427,6 @@ Allocation of places
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -7591,7 +7472,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -7695,7 +7575,6 @@ Master's degree (1 major) Economathematics (2016)
 Master's degree (1 major) Business Information Systems (2016)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -7716,7 +7595,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -7822,7 +7700,6 @@ Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -7839,7 +7716,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -7932,7 +7808,6 @@ Porter, M. (2014): Wettbewerbsvorteile -- Spitzenleistungen erreichen und behaup
 furt / New York. (Original: Porter, M.: Competitive Advantage, New York, 1985)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -8004,7 +7879,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -8104,7 +7978,6 @@ Workload
 150 h
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8129,7 +8002,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -8233,7 +8105,6 @@ Module appears in
 Master's degree (1 major) Management (2018)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8254,7 +8125,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -8358,7 +8228,6 @@ Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8377,7 +8246,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -8481,7 +8349,6 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8501,7 +8368,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8606,7 +8472,6 @@ Teaching cycle
 
 --
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -8630,7 +8495,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8733,7 +8597,6 @@ Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8751,7 +8614,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8851,7 +8713,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8955,7 +8816,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -8978,7 +8838,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -9085,7 +8944,6 @@ Module appears in
 Master's degree (1 major) Management (2018)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9104,7 +8962,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -9213,7 +9070,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9235,7 +9091,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9339,7 +9194,6 @@ Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) Information Systems (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) China Business and Economics (2021)
@@ -9351,7 +9205,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9455,7 +9308,6 @@ Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) International Economic Policy (2022)
@@ -9466,7 +9318,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -9569,7 +9420,6 @@ Master's degree (1 major) China Language and Economy (2016)
 Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9589,7 +9439,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -9692,7 +9541,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9706,7 +9554,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -9807,7 +9654,6 @@ Workload
 150 h
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9834,7 +9680,6 @@ Master's degree (1 major) Economathematics (2021)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9932,7 +9777,6 @@ ted to students of other subjects; should the number of applications exceed the 
 se places will be allocated by lot.
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -9964,7 +9808,6 @@ Master's degree (1 major) Social Science Sustainability Studies (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10069,7 +9912,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 Master's degree (1 major) Management (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10088,7 +9930,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -10186,7 +10027,6 @@ On successful completion of this module students will be able to:
 • Make judgements about the organizational and managerial implications of corporate strategy
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10244,7 +10084,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -10348,7 +10187,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) China Business and Economics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) China Language and Economy (2021)
@@ -10359,7 +10197,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10463,7 +10300,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -10566,7 +10402,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10580,7 +10415,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10683,7 +10517,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) International Economic Policy (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Management (2022)
@@ -10695,7 +10528,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -10798,7 +10630,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Management (2022)
@@ -10810,7 +10641,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -10914,7 +10744,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) China Business and Economics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -10930,7 +10759,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -11033,7 +10861,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11046,7 +10873,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11149,7 +10975,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11162,7 +10987,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -11257,7 +11081,6 @@ model. Based on an analysis of this model, they will be able to devise optimal s
 sponding managerial implications.
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11314,7 +11137,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -11419,7 +11241,6 @@ Additional information
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11454,7 +11275,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -11560,7 +11380,6 @@ ted to students of other subjects; should the number of applications exceed the 
 se places will be allocated by lot.
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 Module Catalogue for the Subject
 Information Systems
@@ -11595,7 +11414,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -11692,7 +11510,6 @@ Allocation of places
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
  
@@ -11732,7 +11549,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -11836,7 +11652,6 @@ Teaching cycle
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11863,7 +11678,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11968,7 +11782,6 @@ Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -11983,7 +11796,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12088,7 +11900,6 @@ Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12103,7 +11914,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12208,7 +12018,6 @@ Master's degree (1 major) China Language and Economy (2016)
 Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12226,7 +12035,6 @@ Master's degree (1 major) Management (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12331,7 +12139,6 @@ Master's degree (1 major) China Language and Economy (2016)
 Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12348,7 +12155,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -12452,7 +12258,6 @@ Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) International Economic Policy (2015)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12474,7 +12279,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -12578,7 +12382,6 @@ Master's degree (1 major) Business Information Systems (2016)
 Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) International Economic Policy (2015)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12600,7 +12403,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -12703,7 +12505,6 @@ Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) Information Systems (2019)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -12720,7 +12521,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -12823,7 +12623,6 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -12926,7 +12725,6 @@ Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13031,7 +12829,6 @@ Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -13045,7 +12842,6 @@ Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13149,7 +12945,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) International Economic Policy (2022)
@@ -13161,7 +12956,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13265,7 +13059,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Information Systems (2022)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) International Economic Policy (2022)
@@ -13277,7 +13070,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13380,7 +13172,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13479,7 +13270,6 @@ Workload
 150 h
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -13501,7 +13291,6 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -13604,7 +13393,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Master's degree (1 major) Economathematics (2021)
@@ -13615,7 +13403,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -13719,7 +13506,6 @@ Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) Media Communication (2019)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -13739,7 +13525,6 @@ Master's degree (1 major) Psychology of digital media (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13844,7 +13629,6 @@ Module appears in
 Master's degree (1 major) Business Information Systems (2016)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -13864,7 +13648,6 @@ Master's degree (1 major) Management (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -13970,7 +13753,6 @@ Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14073,7 +13855,6 @@ Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14177,7 +13958,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 --
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -14195,7 +13975,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14287,7 +14066,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -14385,7 +14163,6 @@ Master's degree (1 major) Management (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -14482,7 +14259,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14576,7 +14352,6 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -14670,7 +14445,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14775,7 +14549,6 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 Module appears in
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -14798,7 +14571,6 @@ Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14896,7 +14668,6 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -14994,7 +14765,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15095,7 +14865,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -15191,7 +14960,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15285,7 +15053,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15385,7 +15152,6 @@ Additional information
 Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module Catalogue for the Subject
@@ -15413,7 +15179,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15507,7 +15272,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15602,7 +15366,6 @@ Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15703,7 +15466,6 @@ Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Thesis
@@ -15714,7 +15476,6 @@ Information Systems
 Master’s with 1 major, 120 ECTS credits
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 Module title
@@ -15814,7 +15575,6 @@ Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) Information Systems (2022)
 
 
-ta record Master (120 ECTS) Information Systems - 2019
 
 
 
