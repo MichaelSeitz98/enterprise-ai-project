@@ -1,13 +1,14 @@
 Module title
 IT-Management
 Module coordinator
+Holder of the Chair of Information Systems Engineering
 ECTS Method of grading
 numerical grade
 5
 Module level
 Duration
-1 semester
 graduate
+1 semester
 Contents
 Content:
 This course provides students with an in-depth overview of aims, tasks and appropriate methods of IT manage-
@@ -46,10 +47,20 @@ Additional information
 --
 Workload
 150 h
+Master’s with 1 major Information Systems (2019)
 
+page 12 / 250
 
+JMU Würzburg • generated 11-Mai-2023 • exam. reg. da-
+
+ta record Master (120 ECTS) Information Systems - 2019
 
  
+Module Catalogue for the Subject
+
+Information Systems
+
+Master’s with 1 major, 120 ECTS credits
 
 Teaching cycle
 --
@@ -57,6 +68,7 @@ Referred to in LPO I  (examination regulations for teaching-degree programmes)
 --
 Module appears in
 Master's degree (1 major) Economathematics (2016)
+Master's degree (1 major) Business Information Systems (2016)
 Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
@@ -65,16 +77,29 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
+Master's degree (1 major) Information Systems (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
+Master's degree (1 major) Information Systems (2022)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
 
+page 13 / 250
 
+JMU Würzburg • generated 11-Mai-2023 • exam. reg. da-
 
+ta record Master (120 ECTS) Information Systems - 2019
+
+Master’s with 1 major Information Systems (2019)
+
+Module Catalogue for the Subject
+
+Information Systems
+
+Master’s with 1 major, 120 ECTS credits
 
 Abbreviation
 12-PS-192-m01
