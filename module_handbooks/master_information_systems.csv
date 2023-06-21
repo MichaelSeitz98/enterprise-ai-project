@@ -1,5 +1,5 @@
-module title,abbreviation,module coordinator,module offered by,ects,method of grading,completion of modules,duration,module level,other prerequisites,contents,intended learning outcomes,courses,method of assessment,allocation of places,additional information,workload,teaching cycle,referred to in lpo i,module appears in,addititional information
-Information Processing within Organizations,12-M-ITM-161-m01,holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"Content:
+module title,abbreviation,module coordinator,module offered by,ects,method of grading,duration,module level,other prerequisites,contents,intended learning outcomes,courses,method of assessment,allocation of places,additional information,workload,teaching cycle,referred to in lpo i,module appears in,addititional information
+Information Processing within Organizations,12-M-ITM-161-m01,holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"Content:
 This course provides students with an in-depth overview of the structure and the application areas of business 
 management information systems in enterprises and public institutions.
 Outline of syllabus:
@@ -32,26 +32,26 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-IT-Management,12-PS-192-m01,,Faculty of Business Management and Economics,5,numerical grade,,,,,"Content:
+IT-Management,12-PS-192-m01,,Faculty of Business Management and Economics,5,numerical grade,,,,"Content:
 This course provides students with an in-depth overview of aims, tasks and appropriate methods of IT manage-
 ment.
 Outline of syllabus:
-1. Organisation and distinction
-2. IT strategy
-3. IT organisation
-4. Management of IT systems
-5. Enterprise Architecture Management
-6. IT project management
-7. IT security
-8. IT law
-9. IT controlling
+1.Organisation and distinction
+2.IT strategy
+3.IT organisation
+4.Management of IT systems
+5.Enterprise Architecture Management
+6.IT project management
+7.IT security
+8.IT law
+9.IT controlling
 Reading:
 • Hofmann/Schmidt: Masterkurs IT-Management, Wiesbaden.
 • Tiemeyer: Handbuch IT-Management, Munich.
 • Hanschke: Strategisches Management der IT-Landschaft, Munich.","After completing the course ""IT Management"", students will be able to
-1. overview the different aspects to be considered regarding a purposeful IT management;
-2. understand and apply appropriate methods and tools;
-3. independently perform system search and selection in a team project (only after participation in the practice 
+1.overview the different aspects to be considered regarding a purposeful IT management;
+2.understand and apply appropriate methods and tools;
+3.independently perform system search and selection in a team project (only after participation in the practice 
 lessons).",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Economathematics (2016)
 Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
@@ -68,18 +68,18 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Project Seminar,10-I=IR-161-m01,Holder of the Chair of Business Management and Business,Institute of Computer Science,15,numerical grade,,,,,"Content:
+Project Seminar,10-I=IR-161-m01,Holder of the Chair of Business Management and Business,Institute of Computer Science,15,numerical grade,,,,"Content:
 In small project teams of 4 to 10 members, students will spend several months actively working on a specific and 
 realistic problem with practical relevance. They will progress through several project stages including as-is analy-
 sis, to-be conception and implementation of an IS solution. The project teams will be required to work indepen-
 dently and will only receive advice and minor support from research assistants.
 Reading:
 will vary according to topic","After completing the course ""Projektseminar"", students will be able to
-1. analyze business tasks and requirements and generate fitting IS solutions;
-2. apply project management methods;
-3. internalize stress, time and conflict management by means of practical teamwork.",S (2),,--,,450 h,--,--,"Compulsory Electives I: Fundamentals Computer Science
+1.analyze business tasks and requirements and generate fitting IS solutions;
+2.apply project management methods;
+3.internalize stress, time and conflict management by means of practical teamwork.",S (2),,--,,450 h,--,--,"Compulsory Electives I: Fundamentals Computer Science
 (10 ECTS credits)",--
-Information Retrieval,10-I=PA-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,,"IR models (e. g. Boolean and vector space model, evaluation), processing of text (tokenising, text properties), 
+Information Retrieval,10-I=PA-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,"IR models (e. g. Boolean and vector space model, evaluation), processing of text (tokenising, text properties), 
 data structures (e. g. inverted index), query elements (e. g. query operations, relevance feedback, query langua-
 ges and paradigms, structured queries), search engine (e. g. architecture, crawling, interfaces, link analysis), me-
 thods to support IR (e. g. recommendation systems, text clustering and classification, information extraction).","The students possess theoretical and practical knowledge in the area of information retrieval and have acquired 
@@ -95,11 +95,12 @@ Master's degree (1 major) Computational Mathematics (2019)
 
 
 
-Master's degree (1 major) Mathematics (2019)
+
+Master's degree (1 major) Mathematics (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 IT,IS,HCI,GE"
-Analysis and Design of Programs,10-I=SSS-172-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"Program analysis, model creation in software engineering, program quality, test of programs, process models.","The students are able to analyse programs, to use testing frameworks and metrics as well as to judge program 
+Analysis and Design of Programs,10-I=SSS-172-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"Program analysis, model creation in software engineering, program quality, test of programs, process models.","The students are able to analyse programs, to use testing frameworks and metrics as well as to judge program 
 quality.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
 Master's degree (1 major) Physics (2016)
@@ -114,6 +115,7 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's degree (1 major) Nanostructure Technology (2020)
 Master's degree (1 major) Physics (2020)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -124,7 +126,7 @@ Master's degree (1 major) Quantum Technology (2021)
 Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IS,ES,GE"
-Security of Software Systems,10-I=SAR-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"The lecture provides an overview of common software vulnerabilities, state-of-the-art attack techniques on mo-
+Security of Software Systems,10-I=SAR-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"The lecture provides an overview of common software vulnerabilities, state-of-the-art attack techniques on mo-
 dern computer systems, as well as the measures implemented to protect against these attacks. In the course, 
 the following topics are discussed:
 • x86-64 instruction set architecture and assembly language
@@ -146,7 +148,7 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): SE, 
 IS, LR, HCI, ES.
 Basic programming knowledge in C is required."
-Software Architecture,10-I=KI1-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,Current topics in the area of aerospace.,"The students possess a fundamental and applicable knowledge about advanced topics in software engineering 
+Software Architecture,10-I=KI1-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,Current topics in the area of aerospace.,"The students possess a fundamental and applicable knowledge about advanced topics in software engineering 
 with a focus on modern software architectures and fundamental approaches to model-driven software enginee-
 ring.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
@@ -161,6 +163,7 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Computer Science (2021)
@@ -168,7 +171,7 @@ Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,ES"
-Artificial Intelligence 1,10-I=ST-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Intelligent agents, uninformed and heuristic search, constraint problem solving, search with partial information, 
+Artificial Intelligence 1,10-I=ST-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Intelligent agents, uninformed and heuristic search, constraint problem solving, search with partial information, 
 propositional and predicate logic and inference, knowledge representation.","The students possess theoretical and practical knowledge about artificial intelligence in the area of agents, 
 search and logic and are able to assess possible applications.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
@@ -183,7 +186,8 @@ Master's degree (1 major) Computational Mathematics (2019)
 
 
 
-Master's degree (1 major) Mathematics (2019)
+
+Master's degree (1 major) Mathematics (2019)
 Master's degree (1 major) Nanostructure Technology (2020)
 Master's degree (1 major) Physics (2020)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -193,7 +197,7 @@ Master's degree (1 major) Physics International (2020)
 Master's degree (1 major) Quantum Engineering (2020)
 Master's degree (1 major) Quantum Technology (2021)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 AT,SE,IS,HCI"
-Discrete Event Simulation,10-I=APR-182-m01,holder of the Chair of Computer Science III,Institute of Computer Science,8,numerical grade,,,,,"Introduction to simulation techniques, statistical groundwork, creation of random numbers and random varia-
+Discrete Event Simulation,10-I=APR-182-m01,holder of the Chair of Computer Science III,Institute of Computer Science,8,numerical grade,,,,"Introduction to simulation techniques, statistical groundwork, creation of random numbers and random varia-
 bles, random sample theory and estimation techniques, statistical analysis of simulation values, inspection of 
 measured data, planning and evaluation of simulation experiments, special random processes, possibilities and 
 limits of model creation and simulation, advanced concepts and techniques, practical execution of simulation 
@@ -209,14 +213,15 @@ Master's degree (1 major) Computer Science (2018)
 
 
 
-Master's degree (1 major) Computational Mathematics (2019)
+
+Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 IT,IS,ES,GE"
-Advanced Programming,10-I=PNN-212-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"With the knowledge of basic programming, taught in introductory lectures, it is possible to realize simpler pro-
+Advanced Programming,10-I=PNN-212-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"With the knowledge of basic programming, taught in introductory lectures, it is possible to realize simpler pro-
 grams. If more complex problems are to be tackled, suboptimal results like long, incomprehensible functions 
 and code duplicates occur. In this lecture, further knowledge is to be conveyed on how to give programs and co-
 de a sensible structure. Also, further topics in the areas of software security and parallel programming are dis-
@@ -225,13 +230,13 @@ then implemented in multiple languages and their efficiency measured using stand
 allel processing concepts are introduced culminating in the use of GPU architectures for extremely quick proces-
 sing.","V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,Master's degree (1 major) Satellite Technology (2018),--
-Programming with neural nets,10-I=STM-162-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,,"Overview over NN, implementation of important NN-architectures like FCN, CNN and LSTMs, practical example for 
+Programming with neural nets,10-I=STM-162-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,"Overview over NN, implementation of important NN-architectures like FCN, CNN and LSTMs, practical example for 
 NN-architectures, among others in the area of image and language processing.","Knowledge about possible applications and limitations of NN, for important architectures (eg. FCN, CNN, LSTM) 
 and how they are implemented in NN-tools like Tensorflow/Keras, ability to program network structures from lite-
 rature, to prepare data and solve concrete tasks for NN.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): 
 IT,KI,HCI,GE"
-NLP and Text Mining,10-I=SB-212-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Foundations in the following areas: definition of NLP and text mining, properties of text, sentence boundary de-
+NLP and Text Mining,10-I=SB-212-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Foundations in the following areas: definition of NLP and text mining, properties of text, sentence boundary de-
 tection, tokenisation, collocation, N-gram models, morphology, hidden Markov models for tagging, probabili-
 stic parsing, word sense disambiguation, term extraction methods, information extraction, sentiment analysis. 
 The students possess theoretical and practical knowledge about typical methods and algorithms in the area of 
@@ -247,19 +252,20 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 
 
 
-Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
+
+Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): AT, 
 IT, HCI."
-Systems Benchmarking,10-xtAI=CV-202-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
+Systems Benchmarking,10-xtAI=CV-202-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Aerospace Computer Science (2021)
 Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,ES,HCI,GE"
-Computer Vision,10-I=IP-222-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,,"The lecture provides knowledge about current methods and algorithms in the field of computer vision. Important 
+Computer Vision,10-I=IP-222-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,"The lecture provides knowledge about current methods and algorithms in the field of computer vision. Important 
 basics as well as the most recent approaches to image representation, image processing and image analysis are 
 taught. Actual models and methods of machine learning as well as their technical backgrounds are presented 
 and their respective applications in image processing are shown.","Students have fundamental knowledge of problems and techniques in the field of computer vision and are able 
@@ -268,13 +274,13 @@ Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) eXtended 
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)",--
-Image Processing and Computational Photography,10-I=MNLP-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Image Processing and Computational Photography,10-I=MNLP-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)",--
-Multilingual NLP,10-I=SNA-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Multilingual NLP,10-I=SNA-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: German and/or English",,--,,150 h,--,--,Master's degree (1 major) Computer Science (2023),--
-Statistical Network Analysis,10-I=OR-232-m01,holder of the Chair of Computer Science XV,Institute of Computer Science,5,numerical grade,,,,,"Networks matter! This holds for technical infrastructures like communication or transportation networks, for in-
+Statistical Network Analysis,10-I=OR-232-m01,holder of the Chair of Computer Science XV,Institute of Computer Science,5,numerical grade,,,,"Networks matter! This holds for technical infrastructures like communication or transportation networks, for in-
 formation systems and social media in the World Wide Web, but also for various social, economic and biologi-
 cal systems. What can we learn from data that capture the interaction topology of such complex systems? What 
 is the role of individual nodes and how can we discover significant patterns in the structure of networks? How do 
@@ -302,13 +308,14 @@ Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) Computer 
 Master's degree (1 major) Aerospace Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 
 
-IN"
-Operations Research,10-I=MLN1-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+
+IN"
+Operations Research,10-I=MLN1-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: German and/or English",,--,,150 h,--,--,Master's degree (1 major) Computer Science (2023),"Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): IN"
-Machine Learning for Networks 1,10-I=DM-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Machine Learning for Networks 1,10-I=DM-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,Master's degree (1 major) Computer Science (2023),"Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): 
 AT,IT,SE,KI,HCI,IN"
-Data Science,12-GPU-192-m01,holder of the Chair of Computer Science IX,Faculty of Business Management and Economics,5,numerical grade,,,,,"Foundations in the following areas: definition of data mining and knowledge discovery in databases, process 
+Data Science,12-GPU-192-m01,holder of the Chair of Computer Science IX,Faculty of Business Management and Economics,5,numerical grade,,,,"Foundations in the following areas: definition of data mining and knowledge discovery in databases, process 
 model, relationship to data warehouse and OLAP data preprocessing, data visualisation, unsupervised learning 
 methods (cluster- and association methods), supervised learning (e. g. Bayes classification, KNN, decision trees, 
 SVM), learning methods for special data types, further learning paradigms.","The students possess a theoretical and practical knowledge of typical methods and algorithms in the area of da-
@@ -320,7 +327,8 @@ Master's degree (1 major) Aerospace Computer Science (2023)
 
 
 
-Compulsory Electives II: Tracks
+
+Compulsory Electives II: Tracks
 (40 ECTS credits)
 Out of the five tracks, students may select two.
 
@@ -328,10 +336,10 @@ Out of the five tracks, students may select two.
 
 
 
-Track 1: Enterprise Systems
+Track 1: Enterprise Systems
 (20 ECTS credits)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): 
 IT,KI,HCI,GE,SEC"
-Business Software 1: IS-based Enterprise Management,12-M-ERP-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"Content:
+Business Software 1: IS-based Enterprise Management,12-M-ERP-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"Content:
 This module provides students with an overview of the structure of a business information system (SAP Business 
 ByDesign) in depth.
 Outline of syllabus:
@@ -355,35 +363,35 @@ of available places, places will be allocated by lot among applicants from this 
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)",--
-Business Software 2: Enterprise Resource Planning Systems,12-M-ES-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"Content:
+Business Software 2: Enterprise Resource Planning Systems,12-M-ES-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"Content:
 This module provides students with an overview of the structure of business information systems in width as 
 well as the selection and implementation of business information systems in organisations.
 Outline of syllabus:
-1. Integrated information systems: integration, standard software, system architectures, operating models
-2. Selection of integrated information systems: methods, cost-benefit analysis
-3. Implementation of integrated information systems: project management, project organisation, project marke-
+1.Integrated information systems: integration, standard software, system architectures, operating models
+2.Selection of integrated information systems: methods, cost-benefit analysis
+3.Implementation of integrated information systems: project management, project organisation, project marke-
 ting
 The lecture will be accompanied by an exercise that will present students with an opportunity to access, in small 
 groups, the enterprise resource planning system operated by the Chair in its ERP laboratory and to work with the 
 software, dealing with a wide variety of business processes.","After completing the course ""Business Software 2"", students will be able to
-1. differentiate between system architectures and -philosophies;
-2. understand the interaction of business processes;
-3. come to a selection decision for an ERP system using a structured approach and compare different ERP sy-
+1.differentiate between system architectures and -philosophies;
+2.understand the interaction of business processes;
+3.come to a selection decision for an ERP system using a structured approach and compare different ERP sy-
 stems;
-4. execute business tasks and processes in an ERP system independently (after participation in the practice les-
+4.execute business tasks and processes in an ERP system independently (after participation in the practice les-
 sons).",V (2) + Ü (2),,"20 places.
 Should the number of applications exceed the number of available places, places will be allocated as follows:
 (2) The remaining places will be allocated to students of other subjects.
 (3) When places are allocated in accordance with (1) and (2) and the number of applications exceeds the number 
 of available places, places will be allocated by lot among applicants from this group.",,150 h,--,--,,--
-Advanced Seminar: Enterprise Systems,12-M-DSS-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,10,numerical grade,,,,,"In this course, students will acquire important knowledge and skills that will enable them to prepare a well-struc-
+Advanced Seminar: Enterprise Systems,12-M-DSS-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,10,numerical grade,,,,"In this course, students will acquire important knowledge and skills that will enable them to prepare a well-struc-
 tured term paper and to present the results of their work with the help of relevant topics in the fields of informati-
 on systems and enterprise systems.
 Reading:
 will vary according to topic","After completing the course ""Enterprise Systems"", students will be able to
-1. understand the fundamentals of scientific literature reviews;
-2. integrate elaborated content in a scientific thesis;
-3. create presentations independently.",S (2),,"20 places. (1) Should the number of applications exceed the number of available places, places will be allocated 
+1.understand the fundamentals of scientific literature reviews;
+2.integrate elaborated content in a scientific thesis;
+3.create presentations independently.",S (2),,"20 places. (1) Should the number of applications exceed the number of available places, places will be allocated 
 by lot among all applicants irrespective of their subjects. (2) Places on all courses of the module with a restricted 
 number of places will be allocated in the same procedure. (3) A waiting list will be maintained and places re-allo-
 cated by lot as they become available.",,300 h,--,--,"Master's degree (1 major) Economathematics (2016)
@@ -395,7 +403,8 @@ Master's degree (1 major) China Language and Economy (2016)
 
 
  
-Master's degree (1 major) Management (2018)
+
+Master's degree (1 major) Management (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
@@ -409,14 +418,14 @@ exchange program Business Management and Economics (2022)
 
 
 
-Track 2: Business Analytics
+Track 2: Business Analytics
 (20 ECTS credits)",--
-Decision Support Systems,12-BI-192-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,,"The course discusses advanced approaches for modelling and solving decision problems in business settings. 
+Decision Support Systems,12-BI-192-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,"The course discusses advanced approaches for modelling and solving decision problems in business settings. 
 The acquired insights are used to design and implement decision support systems using standard software tools 
 (Python).","After successfully completing the course, students should be able to
 • Understand the structure of classic business decision problems
 • Isolate key elements from general problem descriptions and convert them to quantitative decision models
-• Solve  different  classes  of  optimization  problems  (linear,  network,  integer,  multi-objective,  non-linear, 
+• Solve different classes of optimization problems (linear, network, integer, multi-objective, non-linear, 
 stochastic)
 • Implement decision support systems",V (2) + Ü (2),,"40 places.
 Should the number of applications exceed the number of available places, places will be allocated as follows:
@@ -427,10 +436,11 @@ Master's degree (1 major) China Language and Economy (2021)
 
 
 
-Master's degree (1 major) Economathematics (2021)
+
+Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
-,12-M-BUA-161-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,,"The course provides an overview of the structure and applications of analytical information systems. A special fo-
+,12-M-BUA-161-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,"The course provides an overview of the structure and applications of analytical information systems. A special fo-
 cus is on individual quantitative methods of data analysis. On the one hand, methods from the areas of data pre-
 paration and data manipulation as well as their practical application are introduced. On the other hand, an intro-
 duction to methods and the application of machine learning methods for predictive analytics, in particular neural 
@@ -453,7 +463,7 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
-Business Analytics,12-M-IBS-192-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,10,numerical grade,,,,,"In this course, students will acquire important knowledge and skills that will enable them to prepare a well-struc-
+Business Analytics,12-M-IBS-192-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,10,numerical grade,,,,"In this course, students will acquire important knowledge and skills that will enable them to prepare a well-struc-
 tured term paper and to present the results of their work with the help of relevant topics in the field of business 
 management decision models and methods and their application in the development of decision-support sy-
 stems as well as analytical information systems and quantitative methods of data analysis.
@@ -471,7 +481,8 @@ Master's degree (1 major) China Business and Economics (2016)
 
 
 
-Master's degree (1 major) International Economic Policy (2015)
+
+Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)
 Master's degree (1 major) Management (2018)
 Master's degree (1 major) China Business and Economics (2019)
@@ -486,9 +497,9 @@ Master's degree (1 major) Economathematics (2022)
 
 
 
-Track 3: Electronic Business
+Track 3: Electronic Business
 (20 ECTS credits)",--
-E-Business Strategies,12-M-MUS-161-m01,,Faculty of Business Management and Economics,5,numerical grade,,,,,"The module provides an overview of strategic implications of digital technologies at the level of organisations, 
+E-Business Strategies,12-M-MUS-161-m01,,Faculty of Business Management and Economics,5,numerical grade,,,,"The module provides an overview of strategic implications of digital technologies at the level of organisations, 
 industries and value networks. To this end, concepts and frameworks from strategic technology management are 
 applied to digital innovations and illustrated with numerous examples. In the accompanying exercise, case stu-
 dies of well-known digital companies and their business models are analysed and discussed.","- Understand theoretical concepts of strategy development and implementation in the context of digital techno-
@@ -504,7 +515,7 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
-Mobile and Ubiquitous Systems,12-M-SEBS-161-m01,,Faculty of Business Management and Economics,5,numerical grade,,,,,"The module provides an overview of technologies and business applications of mobile & ubiquitous computing. 
+Mobile and Ubiquitous Systems,12-M-SEBS-161-m01,,Faculty of Business Management and Economics,5,numerical grade,,,,"The module provides an overview of technologies and business applications of mobile & ubiquitous computing. 
 Concepts and applications are illustrated using numerous examples from mobile telecommunications to the In-
 ternet of Things. In the accompanying exercise, corresponding case study texts are analysed and discussed.","- Understand the technological basics of mobile & ubiquitous computing.
 - Analysing business applications in processes, products/services and business models
@@ -520,12 +531,13 @@ Master's degree (1 major) China Business and Economics (2019)
 
 
 
-Master's degree (1 major) China Language and Economy (2019)
+
+Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) Media Communication (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)",--
-Seminar: E-Business Strategies,12-M-UGF1-182-m01,,Faculty of Business Management and Economics,10,numerical grade,,,,,"In this course, students will acquire important knowledge and skills that will enable them to prepare a well-struc-
+Seminar: E-Business Strategies,12-M-UGF1-182-m01,,Faculty of Business Management and Economics,10,numerical grade,,,,"In this course, students will acquire important knowledge and skills that will enable them to prepare a well-struc-
 tured term paper and to present the results of their work with the help of relevant topics in the fields of web-ba-
 sed platforms (electronic markets, Web 2.0 etc.) and strategic management of a company.","- Academic literature review
 - Integration of developed results in scientific papers
@@ -541,7 +553,8 @@ Master's degree (1 major) Management (2018)
 
 
 
-Master's degree (1 major) China Business and Economics (2021)
+
+Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
@@ -552,9 +565,9 @@ exchange program Business Management and Economics (2022)
 
 
 
-Track 4: Global Operations and Information Management
+Track 4: Global Operations and Information Management
 (20 ECTS credits)",--
-Corporate Entrepreneurship,12-M-UGF3-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,5,numerical grade,,,,,"This module is a theory-led and practice-oriented primer on corporate entrepreneurship. It provides you with 
+Corporate Entrepreneurship,12-M-UGF3-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,5,numerical grade,,,,"This module is a theory-led and practice-oriented primer on corporate entrepreneurship. It provides you with 
 knowledge useful for anyone aiming at working (or researching) in the field of corporate innovation and entrepre-
 neurship or at pursuing an ‘intrapreneurial’ or entrepreneurial career.
 (1) Introduction to corporate entrepreneurship
@@ -592,7 +605,7 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Digital Entrepreneurship,12-M-SAS-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,5,numerical grade,,,,,"This module provides an introduction into digital entrepreneurship and digital transformation. (1) Introduction 
+Digital Entrepreneurship,12-M-SAS-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,5,numerical grade,,,,"This module provides an introduction into digital entrepreneurship and digital transformation. (1) Introduction 
 (2) Digital business models (3) Identifying and exploiting opportunities for digital entrepreneurship (4) Strategies 
 for creating competitive advantage in digital entrepreneurship (5) Digital marketing for entrepreneurs (6) Crowd-
 funding for entrepreneurs (7) Design thinking (8) Lean startup (9) Platform ecosystems and online communities 
@@ -612,7 +625,8 @@ Master's degree (1 major) International Economic Policy (2018)
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
@@ -622,7 +636,7 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Advanced Seminar: Entrepreneurship and Management,12-M-GLSC-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,10,numerical grade,,,,,"Students develop seminar papers on varying topics in the domain of entrepreneurship, strategy, and innovation 
+Advanced Seminar: Entrepreneurship and Management,12-M-GLSC-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,10,numerical grade,,,,"Students develop seminar papers on varying topics in the domain of entrepreneurship, strategy, and innovation 
 and present the key insights from their work.","Educational aims
 • Enable students to position their research
 • Enable students to critically review a substantial body of literature in short time
@@ -640,7 +654,8 @@ cated by lot as they become available.",,300 h,--,--,"Master's degree (1 major) 
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
@@ -653,10 +668,10 @@ exchange program Business Management and Economics (2022)
 
 
 
-Track 5: Operations Management
+Track 5: Operations Management
 (20 ECTS credits)",--
 Global Logistics & Supply Chain Management,12-M-AOLM-182-m01,"Holder of the Chair of Logistics and Quantitative Methods 
-in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,,"The course ""Global Logistics & Supply Chain Management"" acquaints students with advanced methods for the 
+in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,"The course ""Global Logistics & Supply Chain Management"" acquaints students with advanced methods for the 
 planning of global production networks and demonstrates the application of these with the help of multiple case 
 studies.","After completing this course students can
 (i) analyze and evaluate global production networks;
@@ -673,12 +688,13 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Advanced Operations & Logistics Management,12-M-SN-161-m01,"Holder of the Chair of Logistics and Quantitative Methods 
-in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,,"The course ""Advanced Operations & Logistics Management"" acquaints students with advanced methods for the 
+in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,"The course ""Advanced Operations & Logistics Management"" acquaints students with advanced methods for the 
 planning of integrated production and logistics systems and demonstrates the application of these with the help 
 of multiple case studies","After completing this course students can
 (i) analyze and evaluate integrated production and logistics systems;
@@ -695,11 +711,12 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Seminar: Operations Management,12-ACSE-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,10,numerical grade,,,,,"With the help of topics from the area of ""Operations Management"", this course will provide students with know-
+Seminar: Operations Management,12-ACSE-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,10,numerical grade,,,,"With the help of topics from the area of ""Operations Management"", this course will provide students with know-
 ledge and skills that will enable them to prepare a well-structured term paper and to present the key results of 
 their work.","Students will learn how to convince a critical audience by giving a presenation regarding a topic from the area 
 of Operations Management. By developing and giving a presentation as well as by answering questions the stu-
@@ -710,9 +727,10 @@ Master's degree (1 major) China Language and Economy (2016)
 
 
 
-Compulsory Electives III: Electives
+
+Compulsory Electives III: Electives
 (15 ECTS credits)",--
-Adaption and Continuous System Engineering,12-AGP2-192-m01,holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"Business Suite: The constantly changing environment with its organisational and IT-oriented developments 
+Adaption and Continuous System Engineering,12-AGP2-192-m01,holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"Business Suite: The constantly changing environment with its organisational and IT-oriented developments 
 forces companies to adapt their standard business software solutions. With the help of dynamic adaptation 
 (Continuous System Engineering), this process of change can be supported effectively and efficiently. This mo-
 dule discusses both the systematic implementation of adaptation steps (so-called customising) using the exam-
@@ -740,7 +758,7 @@ Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)",--
-Business Service Platforms 2,12-BSA-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"The next generation of business service platforms leads to a transformation of traditional industrial enterprises 
+Business Service Platforms 2,12-BSA-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"The next generation of business service platforms leads to a transformation of traditional industrial enterprises 
 into service businesses that generate a large proportion of value in developed economies. New ICT technologies 
 such as cloud computing, the Internet of Things and semantic technologies will contribute to the success of the-
 se businesses in a similar way as ERP contributed to the success of industrial enterprises. But we are still at the 
@@ -757,7 +775,7 @@ Should the number of applications exceed the number of available places, places 
 (2) The remaining places will be allocated to students of other subjects.
 (3) When places are allocated in accordance with (1) and (2) and the number of applications exceeds the number 
 of available places, places will be allocated by lot among applicants from this group.",,150 h,--,--,,--
-Business Service Platforms 1,,Holder of the Chair of Business Management and Business,,5,numerical grade,,,,,"A next generation of enterprise systems called business service platforms is emerging using new disruptive tech-
+Business Service Platforms 1,,Holder of the Chair of Business Management and Business,,5,numerical grade,,,,"A next generation of enterprise systems called business service platforms is emerging using new disruptive tech-
 nologies such as cloud computing, big data and mobility. These business service platforms apply the concept of 
 product platforms to software. They will
 1. be services based
@@ -825,11 +843,11 @@ Master's degree (1 major) Economathematics (2016)
 
 
 
-Master's degree (1 major) Business Management (2015)
+
+Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)
-
 
 
 
@@ -838,7 +856,7 @@ Abbreviation
 12-ITA-161-m01
 
 Module offered by
-Faculty of Business Management and Economics",5,numerical grade,,,,,"ERP systems have become key elements of successful companies. Business processes in companies can no lon-
+Faculty of Business Management and Economics",5,numerical grade,,,,"ERP systems have become key elements of successful companies. Business processes in companies can no lon-
 ger be managed without using such ERP systems. In financial departments of companies, such systems have be-
 en used for a long time, but business processes e. g. for logistical tasks have so far not been supported by ERP 
 solutions. This module explains how this issue could be resolved as well as what constraints and what depen-
@@ -856,11 +874,12 @@ cated by lot as they become available.",,150 h,--,--,"Master's degree (1 major) 
 
 
 
-Master's degree (1 major) Business Management (2015)
+
+Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)",--
-Work and Information,12-M-AGAF-161-m01,holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"This module discusses relevant principles, concepts and applications of business information processing and its 
+Work and Information,12-M-AGAF-161-m01,holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"This module discusses relevant principles, concepts and applications of business information processing and its 
 impact on organisational and process structures in today's business world.","The expertise gained from other modules related to business management issues can be interpreted and clas-
 sified in a certain way by participating in this module. For decisions in regards to human resources planning, in-
 vestment, and a company's strategy, the students will get to know all the relevant concepts and interdependen-
@@ -869,7 +888,7 @@ Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)",--
-Work Order Planning for Automated Manufacturing,12-M-ATW1-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"The idea of integration of business information systems is primarily practiced and developed as an ERP system 
+Work Order Planning for Automated Manufacturing,12-M-ATW1-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"The idea of integration of business information systems is primarily practiced and developed as an ERP system 
 in terms of business application areas, their temporal overlap (data warehouse), their spatial relationship (sup-
 ply network) and connection of legal tasks (eGovernment). However, linking the commercial view of incoming cu-
 stomer orders with the logistic or more technical view of the scheduling of production orders and the resulting 
@@ -880,7 +899,7 @@ Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)",--
-,12-M-ATW2-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"This course is a dummy module, e. g. for courses in the area of business informatics taken abroad.","The competences depend on the individual module, which has been taken to transfer these credits to the Univer-
+,12-M-ATW2-161-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"This course is a dummy module, e. g. for courses in the area of business informatics taken abroad.","The competences depend on the individual module, which has been taken to transfer these credits to the Univer-
 sity of Wuerzburg.","V (2) + Ü (2)
 Course type: alternatively S instead of V + Ü",,--,,150 h,--,--,"Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
@@ -894,9 +913,10 @@ Master's degree (1 major) China Language and Economy (2021)
 
 
 
+
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-,12-M-ISR-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,"This course is a dummy module, e. g. for courses in the area of business informatics taken abroad.","The competences depend on the individual module, which has been taken to transfer these credits to the Univer-
+,12-M-ISR-192-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,"This course is a dummy module, e. g. for courses in the area of business informatics taken abroad.","The competences depend on the individual module, which has been taken to transfer these credits to the Univer-
 sity of Wuerzburg.","V (2) + Ü (2)
 Course type: alternatively S instead of V + Ü",,--,,150 h,--,--,"Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
@@ -910,9 +930,10 @@ Master's degree (1 major) China Language and Economy (2021)
 
 
 
+
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Information systems research,10-I=DB2-161-m01,Holder of the Chair of Business Management and Business,Institute of Computer Science,5,numerical grade,,,,,"The course provides an overview of theoretical scientific foundations, theories, research topics and methods of 
+Information systems research,10-I=DB2-161-m01,Holder of the Chair of Business Management and Business,Institute of Computer Science,5,numerical grade,,,,"The course provides an overview of theoretical scientific foundations, theories, research topics and methods of 
 international research in business informatics.","The module provides students with knowledge of:
 (i) Exploration of classical themes of WI / IS research;
 (ii) Getting to know the relevant paradigms, theories and methods;
@@ -922,7 +943,7 @@ Should the number of applications exceed the number of available places, places 
 (2) The remaining places will be allocated to students of other subjects.
 (3) When places are allocated in accordance with (1) and (2) and the number of applications exceeds the number 
 of available places, places will be allocated by lot among applicants from this group.",,150 h,--,--,,--
-Databases 2,10-I=CB-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,,Data warehouses and data mining; web databases; introduction to Datalog.,"The students have advanced knowledge about relational databases, XML and data mining.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
+Databases 2,10-I=CB-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,Data warehouses and data mining; web databases; introduction to Datalog.,"The students have advanced knowledge about relational databases, XML and data mining.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Computer Science (2017)
 Master's degree (1 major) Computer Science (2018)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -930,7 +951,7 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): SE, 
 IS, HCI."
-Compiler Construction,10-I=IR-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"Lexical analysis, syntactic analysis, semantics, compiler generators, code generators, code optimisation.","The students possess knowledge in the formal description of programming languages and their compilation. 
+Compiler Construction,10-I=IR-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"Lexical analysis, syntactic analysis, semantics, compiler generators, code generators, code optimisation.","The students possess knowledge in the formal description of programming languages and their compilation. 
 They are able to perform transformations between them with the help of finite automata, push-down automata 
 and compiler generators.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
@@ -944,12 +965,13 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
-Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
+
+Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,IS,GE"
-Information Retrieval,10-I=KI1-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,,"IR models (e. g. Boolean and vector space model, evaluation), processing of text (tokenising, text properties), 
+Information Retrieval,10-I=KI1-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,"IR models (e. g. Boolean and vector space model, evaluation), processing of text (tokenising, text properties), 
 data structures (e. g. inverted index), query elements (e. g. query operations, relevance feedback, query langua-
 ges and paradigms, structured queries), search engine (e. g. architecture, crawling, interfaces, link analysis), me-
 thods to support IR (e. g. recommendation systems, text clustering and classification, information extraction).","The students possess theoretical and practical knowledge in the area of information retrieval and have acquired 
@@ -965,11 +987,12 @@ Master's degree (1 major) Computational Mathematics (2019)
 
 
 
-Master's degree (1 major) Mathematics (2019)
+
+Master's degree (1 major) Mathematics (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 IT,IS,HCI,GE"
-Artificial Intelligence 1,10-I=KI2-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Intelligent agents, uninformed and heuristic search, constraint problem solving, search with partial information, 
+Artificial Intelligence 1,10-I=KI2-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Intelligent agents, uninformed and heuristic search, constraint problem solving, search with partial information, 
 propositional and predicate logic and inference, knowledge representation.","The students possess theoretical and practical knowledge about artificial intelligence in the area of agents, 
 search and logic and are able to assess possible applications.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
@@ -984,7 +1007,8 @@ Master's degree (1 major) Computational Mathematics (2019)
 
 
 
-Master's degree (1 major) Mathematics (2019)
+
+Master's degree (1 major) Mathematics (2019)
 Master's degree (1 major) Nanostructure Technology (2020)
 Master's degree (1 major) Physics (2020)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -994,7 +1018,7 @@ Master's degree (1 major) Physics International (2020)
 Master's degree (1 major) Quantum Engineering (2020)
 Master's degree (1 major) Quantum Technology (2021)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 AT,SE,IS,HCI"
-Artificial Intelligence 2,10-I=EL-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Planning, probabilistic closure and Bayesian networks, utility theory and decidability problems, learning from 
+Artificial Intelligence 2,10-I=EL-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Planning, probabilistic closure and Bayesian networks, utility theory and decidability problems, learning from 
 observations, knowledge while learning, neural networks and statistical learning methods, reinforcement lear-
 ning, processing of natural language.","The students possess theoretical and practical knowledge about artificial intelligence in the area of probabilistic 
 closure, learning and language processing and are able to assess possible applications.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
@@ -1009,11 +1033,12 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Aerospace Computer Science (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 AT,SE,IS,HCI,GE"
-E-Learning,10-I=PA-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Learning paradigms, learning system types, author systems, learning platforms, standards for learning systems, 
+E-Learning,10-I=PA-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Learning paradigms, learning system types, author systems, learning platforms, standards for learning systems, 
 intelligent tutoring systems, student models, didactics, problem-oriented learning and case-based training sy-
 stems, adaptive tutoring systems, computer-supported cooperative learning, evaluation of learning systems.","The students possess a theoretical and practical knowledge about eLearning and are able to assess possible ap-
 plications.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
@@ -1028,11 +1053,12 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
-Master's degree (1 major) Media Communication (2019)
+
+Master's degree (1 major) Media Communication (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,IS,HCI,GE"
-Analysis and Design of Programs,10-I=PM-182-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"Program analysis, model creation in software engineering, program quality, test of programs, process models.","The students are able to analyse programs, to use testing frameworks and metrics as well as to judge program 
+Analysis and Design of Programs,10-I=PM-182-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"Program analysis, model creation in software engineering, program quality, test of programs, process models.","The students are able to analyse programs, to use testing frameworks and metrics as well as to judge program 
 quality.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
 Master's degree (1 major) Physics (2016)
@@ -1047,6 +1073,7 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's degree (1 major) Nanostructure Technology (2020)
 Master's degree (1 major) Physics (2020)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
@@ -1057,7 +1084,7 @@ Master's degree (1 major) Quantum Technology (2021)
 Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IS,ES,GE"
-Professional Project Management,10-I=AGIS-161-m01,holder of the Chair of Computer Science III,Institute of Computer Science,5,numerical grade,,,,,"Project goals, project assignment, project success criteria, business plan, environment analysis and stakeholder 
+Professional Project Management,10-I=AGIS-161-m01,holder of the Chair of Computer Science III,Institute of Computer Science,5,numerical grade,,,,"Project goals, project assignment, project success criteria, business plan, environment analysis and stakeholder 
 management, initialisation, definition, planning, execution/control, finishing of projects, reporting, project com-
 munication and marketing, project organisation, team building and development, opportunity and risk manage-
 ment; conflict and crisis management, change and claim management; contract and procurement management, 
@@ -1072,11 +1099,12 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
-Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
+
+Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 exchange program Business Management and Economics (2022)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): SE, 
 IT, IS, ES, LR, HCI, GE."
-,10-HCI=RIS-182-m01,holder of the Chair of Computer Science I,Institute of Computer Science,5,numerical grade,,,,,"Algorithmic foundations of geographic information systems and their application in selected problems of acqui-
+,10-HCI=RIS-182-m01,holder of the Chair of Computer Science I,Institute of Computer Science,5,numerical grade,,,,"Algorithmic foundations of geographic information systems and their application in selected problems of acqui-
 sition, processing, analysis and presentation of spatial information. Processes of discrete and continuous opti-
 misation. Applications such as the creation of digital height models, working with GPS trajectories, tasks of spa-
 tial planning as well as cartographic generalisation.","The students are able to formalise algorithmic problems in the field of geographic information systems as well as 
@@ -1092,11 +1120,12 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Aerospace Computer Science (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 AT,IS,HCI"
-Real-Time Interactive Systems,10-I=LP-172-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,,"This course provides an introduction into the requirements, concepts, and engineering art of highly interactive 
+Real-Time Interactive Systems,10-I=LP-172-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,"This course provides an introduction into the requirements, concepts, and engineering art of highly interactive 
 human-computer systems. Such systems are typically found in perceptual computing, Virtual, Augmented, Mixed 
 Reality, computer games, and cyber-physical systems. Lately, these systems are often termed Real-Time Interac-
 tive Systems (RIS) due to their common aspects.
@@ -1124,7 +1153,7 @@ Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): HCI.
 Cf. Section 3 Subsection 3 Sentence 8 FSB (subject-specific provisions)."
-Logic Programming,10-I=NLP-182-m01,holder of the Chair of Computer Science I,Institute of Computer Science,5,numerical grade,,,,,"Logic-relational programming paradigm, top-down evaluation with SLD(NF) resolution. Introduction to the logic 
+Logic Programming,10-I=NLP-182-m01,holder of the Chair of Computer Science I,Institute of Computer Science,5,numerical grade,,,,"Logic-relational programming paradigm, top-down evaluation with SLD(NF) resolution. Introduction to the logic 
 programming language Prolog: recursion, predicate-oriented programming, backtracking, cut, side effects, ag-
 gregations. Connection to (deductive) databases. Comparison with Datalog, short introduction of advanced con-
 cepts like constraint logic programming.","The students have fundamental and practicable knowledge of logic programming. They are able to implement 
@@ -1134,7 +1163,7 @@ Master's degree (1 major) Computer Science (2018)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): AT, 
 SE, IT, IS."
-Machine Learning for Natural Language Processing,10-I=MI-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,,"The lecture conveys advanced knowledge about methods in computational text processing. To this end, it pres-
+Machine Learning for Natural Language Processing,10-I=MI-161-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,"The lecture conveys advanced knowledge about methods in computational text processing. To this end, it pres-
 ents state of the art models and techniques in the area of machine learning, as well as their technical back-
 ground, and their respective applications in Natural Language Processing. As one important building block of 
 almost all modern NLP-models, different techniques for learning representations of words, so called Word Em-
@@ -1149,9 +1178,10 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 
 
 
-Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): AT, 
+
+Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): AT, 
 IS, HCI."
-Medical Informatics,10-I=PEB-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Electronic patient folder, coding of medical data, hospital information systems, operation of computers in infir-
+Medical Informatics,10-I=PEB-161-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Electronic patient folder, coding of medical data, hospital information systems, operation of computers in infir-
 mary and functional units, medical decision making and assistance systems, statistics and data mining in medi-
 cal research, case-based training systems in medical training.","The students possess theoretical and practical knowledge about the application of computer science methods in 
 medicine.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
@@ -1166,10 +1196,11 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,IS,HCI,GE"
-Performance Engineering & Benchmarking of Computer Systems,10-I=PNN-182-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"Introduction to performance engineering of commercial software systems, performance measurement techni-
+Performance Engineering & Benchmarking of Computer Systems,10-I=PNN-182-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"Introduction to performance engineering of commercial software systems, performance measurement techni-
 ques, benchmarking of commercial software systems, modelling for performance prediction, case studies.","The students possess a fundamental and applicable knowledge in the areas of performance metrics, measure-
 ment techniques, multi-factorial variance analysis, data analysis with R, benchmark approaches, modelling with 
 queue networks, modelling methods, resource demand approximation, petri nets.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
@@ -1184,18 +1215,19 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Aerospace Computer Science (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,ES,HCI,GE"
-Programming with neural nets,10-I=RO1-182-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Overview over NN, implementation of important NN-architectures like FCN, CNN and LSTMs, practical example for 
+Programming with neural nets,10-I=RO1-182-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Overview over NN, implementation of important NN-architectures like FCN, CNN and LSTMs, practical example for 
 NN-architectures, among others in the area of image and language processing.","Knowledge about possible applications and limitations of NN, for important architectures (eg. FCN, CNN, LSTM) 
 and how they are implemented in NN-tools like Tensorflow/Keras, ability to program network structures from lite-
 rature, to prepare data and solve concrete tasks for NN.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2018)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): SE, 
 IT, IS, HCI, GE."
-Robotics 1,10-I=SSS-172-m01,holder of the Chair of Computer Science VII,Institute of Computer Science,8,numerical grade,,,,,"History, applications and properties of robots, direct kinematics of manipulators: coordinate systems, rotations, 
+Robotics 1,10-I=SSS-172-m01,holder of the Chair of Computer Science VII,Institute of Computer Science,8,numerical grade,,,,"History, applications and properties of robots, direct kinematics of manipulators: coordinate systems, rotations, 
 homogenous coordinates, axis coordinates, arm equation. Inverse kinematics: solution properties, end effec-
 tor configuration, numerical and analytical approaches, examples of different robots for analytical approaches. 
 Workspace analysis and trajectory planning, dynamics of manipulators: Lagrange-Euler model, direct and inver-
@@ -1208,7 +1240,7 @@ Module taught in: English",,--,,240 h,--,--,"Master's degree (1 major) Computer 
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): IS, 
 ES, LR, HCI, GE."
-Security of Software Systems,10-I=ST-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,"The lecture provides an overview of common software vulnerabilities, state-of-the-art attack techniques on mo-
+Security of Software Systems,10-I=ST-161-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,"The lecture provides an overview of common software vulnerabilities, state-of-the-art attack techniques on mo-
 dern computer systems, as well as the measures implemented to protect against these attacks. In the course, 
 the following topics are discussed:
 • x86-64 instruction set architecture and assembly language
@@ -1230,7 +1262,7 @@ Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): SE, 
 IS, LR, HCI, ES.
 Basic programming knowledge in C is required."
-Discrete Event Simulation,10-I=SAR-161-m01,holder of the Chair of Computer Science III,Institute of Computer Science,8,numerical grade,,,,,"Introduction to simulation techniques, statistical groundwork, creation of random numbers and random varia-
+Discrete Event Simulation,10-I=SAR-161-m01,holder of the Chair of Computer Science III,Institute of Computer Science,8,numerical grade,,,,"Introduction to simulation techniques, statistical groundwork, creation of random numbers and random varia-
 bles, random sample theory and estimation techniques, statistical analysis of simulation values, inspection of 
 measured data, planning and evaluation of simulation experiments, special random processes, possibilities and 
 limits of model creation and simulation, advanced concepts and techniques, practical execution of simulation 
@@ -1246,14 +1278,15 @@ Master's degree (1 major) Computer Science (2018)
 
 
 
-Master's degree (1 major) Computational Mathematics (2019)
+
+Master's degree (1 major) Computational Mathematics (2019)
 Master's degree (1 major) Mathematics (2019)
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Aerospace Computer Science (2020)
 Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 IT,IS,ES,GE"
-Software Architecture,10-I=STM-162-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,,Current topics in the area of aerospace.,"The students possess a fundamental and applicable knowledge about advanced topics in software engineering 
+Software Architecture,10-I=STM-162-m01,holder of the Chair of Computer Science II,Institute of Computer Science,5,numerical grade,,,,Current topics in the area of aerospace.,"The students possess a fundamental and applicable knowledge about advanced topics in software engineering 
 with a focus on modern software architectures and fundamental approaches to model-driven software enginee-
 ring.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Mathematics (2016)
@@ -1268,6 +1301,7 @@ Master's degree (1 major) Mathematics (2019)
 
 
 
+
 Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Computer Science (2021)
@@ -1275,7 +1309,7 @@ Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,ES"
-NLP and Text Mining,10-I=PRJAK-162-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,,"Foundations in the following areas: definition of NLP and text mining, properties of text, sentence boundary de-
+NLP and Text Mining,10-I=PRJAK-162-m01,holder of the Chair of Computer Science VI,Institute of Computer Science,5,numerical grade,,,,"Foundations in the following areas: definition of NLP and text mining, properties of text, sentence boundary de-
 tection, tokenisation, collocation, N-gram models, morphology, hidden Markov models for tagging, probabili-
 stic parsing, word sense disambiguation, term extraction methods, information extraction, sentiment analysis. 
 The students possess theoretical and practical knowledge about typical methods and algorithms in the area of 
@@ -1291,13 +1325,14 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 
 
 
-Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
+
+Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Computational Mathematics (2022)
 Master's degree (1 major) Mathematics (2022)
 Master's degree (1 major) Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): AT, 
 IT, HCI."
-Project - Current Topics in Computer Science,12-M-IMM-161-m01,Dean of Studies Informatik (Computer Science),Faculty of Business Management and Economics,5,numerical grade,,,,,Completion of a project task (in Teams).,The project allows participants to work on a problem in computer science in teams.,P (4),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
+Project - Current Topics in Computer Science,12-M-IMM-161-m01,Dean of Studies Informatik (Computer Science),Faculty of Business Management and Economics,5,numerical grade,,,,Completion of a project task (in Teams).,The project allows participants to work on a problem in computer science in teams.,P (4),,--,,150 h,--,--,"Master's degree (1 major) Computer Science (2016)
 Master's degree (1 major) Computer Science (2017)
 Master's degree (1 major) Computer Science (2018)
 Master's degree (1 major) Management (2018)
@@ -1308,7 +1343,7 @@ Master's teaching degree Gymnasium MINT Teacher Education PLUS, Elite Network Ba
 Supplementary course MINT Teacher Education PLUS, Elite Network Bavaria (ENB) (2020)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): AT, 
 SE, IT, IS, ES, LR, HCI, GE."
 International Marketing,12-M-MM-161-m01,"Holder of the Chair of Business Management and Marke-
-ting",Faculty of Business Management and Economics,5,numerical grade,,,,,"Description:
+ting",Faculty of Business Management and Economics,5,numerical grade,,,,"Description:
 The module builds on the knowledge acquired during the Bachelor's degree programme or the Grundstudium
 (stage I studies). It provides a systematic introduction to strategic marketing decisions in global and internatio-
 nal contexts. These are explained mainly by Porter's diamond and cluster models. Another focus is on internatio-
@@ -1316,15 +1351,15 @@ nalisation strategies, which require country analyses and decisions on the selec
 as a timing of the countries market development. In addition, the module discusses different strategies for mar-
 ket entry and market development.
 Outline of syllabus:
-1. Internationalisation of the economy and regional integration processes
+1.Internationalisation of the economy and regional integration processes
 • Globalisation
 • Competitiveness of countries, industries and companies in an international context
-2. International strategic marketing decisions
+2.International strategic marketing decisions
 • Market entry forms
 • Market development strategies
 • Timing strategies
 • International organisation structures
-3. Theories and strategies of internationalisation
+3.Theories and strategies of internationalisation
 • Foreign trade theory
 • Multinational enterprise
 • Internationalisation strategies
@@ -1352,7 +1387,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Brand Management & Market Research,12-M-MS-161-m01,"Holder of the Chair of Business Management and Marke-
-ting",Faculty of Business Management and Economics,5,numerical grade,,,,,"Description:
+ting",Faculty of Business Management and Economics,5,numerical grade,,,,"Description:
 At the beginning of the 21st century, marketing - until then interpreted as a market-oriented corporate manage-
 ment approach - was further developed to be seen as the entrepreneurial task of creating ""shared value"" for the 
 organisation on the one hand and - broadly speaking - for society on the other hand. This idea leads to high re-
@@ -1371,7 +1406,8 @@ stainable brand management.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1
 
 
  
-Master's degree (1 major) Business Management (2015)
+
+Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
 Master's degree (1 major) International Economic Policy (2015)
 Master's degree (1 major) China Language and Economy (2016)
@@ -1382,18 +1418,18 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
 Strategic Networks in Industry,12-M-SM-161-m01,"Holder of the Chair of Business Management and Marke-
-ting",Faculty of Business Management and Economics,5,numerical grade,,,,,"The primary object of this course is to gain a detailed understanding of strategic networks and of the phenome-
+ting",Faculty of Business Management and Economics,5,numerical grade,,,,"The primary object of this course is to gain a detailed understanding of strategic networks and of the phenome-
 non of clustering in the industrial industry. The example of the international automotive industry is used for clari-
 fication of the theoretical contents.
 The focus is on marketing in industrial companies and also on CSR - CSR is considered the ""driver"" of sustaina-
 ble innovations - as well as the different strategy types of sustainable innovations.
 Outline of syllabus:
-1. Strategic networks and clusters in industrial industries such as the automotive industry
-2. Transaction types of Williamson as well as strategic cooperation between automobile manufacturers and sup-
+1.Strategic networks and clusters in industrial industries such as the automotive industry
+2.Transaction types of Williamson as well as strategic cooperation between automobile manufacturers and sup-
 pliers
-3. Management of business types, in particular the business of suppliers in the automotive industry
-4. Cluster and entrepreneurship activities
-5. Sustainable innovation strategies","By the end of the course, students gain a profound understanding above the basics of network research. Further-
+3.Management of business types, in particular the business of suppliers in the automotive industry
+4.Cluster and entrepreneurship activities
+5.Sustainable innovation strategies","By the end of the course, students gain a profound understanding above the basics of network research. Further-
 more students will aquire sectoral knowledge of the automotive industry as well as detailed cluster skills.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Economathematics (2016)
 Master's degree (1 major) Business Management (2015)
 Master's degree (1 major) China Business and Economics (2016)
@@ -1401,7 +1437,8 @@ Master's degree (1 major) International Economic Policy (2015)
 
 
 
-Master's degree (1 major) China Language and Economy (2016)
+
+Master's degree (1 major) China Language and Economy (2016)
 Master's degree (1 major) Management (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
@@ -1409,7 +1446,7 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
 Strategic Marketing,12-M-BE-192-m01,"Holder of the Chair of Business Management and Marke-
-ting",Faculty of Business Management and Economics,5,numerical grade,,,,,"Description:
+ting",Faculty of Business Management and Economics,5,numerical grade,,,,"Description:
 The module raises awareness in students of the relevance and necessity of strategic management in a competiti-
 ve and dynamical competitive process.
 Content:
@@ -1476,7 +1513,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Industrial Management 4,12-M-LA-182-m01,"Holder of the Chair of Business Management and Industrial 
-Management",Faculty of Business Management and Economics,5,numerical grade,,,,,"This course will develop the objectives, principles and structure of electronically supported procurement proces-
+Management",Faculty of Business Management and Economics,5,numerical grade,,,,"This course will develop the objectives, principles and structure of electronically supported procurement proces-
 ses with a special focus on catalogue-based procurement systems, electronic tendering systems, electronic (re-
 verse) auctions, e-marketplaces, supplier relationship management systems and eSupply chain management sy-
 stems.","The students will be able to describe and evaluate both the potentials and goals of electronic supported pro-
@@ -1499,7 +1536,7 @@ Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)","Module can be taught in form of E Learning course, seminar, workshop etc."
 Industrial Management 2,12-M-SBM-182-m01,"Holder of the Chair of Business Management and Industrial 
-Management",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module analyses and classifies approaches of production planning and control. In addition, it develops 
+Management",Faculty of Business Management and Economics,5,numerical grade,,,,"This module analyses and classifies approaches of production planning and control. In addition, it develops 
 methods and models of lot sizing and scheduling. The focus is on the determination of optimal production and 
 transport volumes as well as the planning of orders and manufacturing orders.","Students learn essential concepts, principles and methods of production planning and control with emphasis on 
 the determination of optimal production and transport volumes as well as the planning of production and order 
@@ -1516,7 +1553,8 @@ cated by lot as they become available.",,150 h,--,--,"Master's degree (1 major) 
 
 
 
-Master's degree (1 major) International Economic Policy (2018)
+
+Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
@@ -1527,7 +1565,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Industrial Management 1,12-M-SPM-182-m01,"Holder of the Chair of Business Management and Industrial 
-Management",Faculty of Business Management and Economics,5,numerical grade,,,,,"The course addresses central issues of strategic supply management. The supply function of the company 
+Management",Faculty of Business Management and Economics,5,numerical grade,,,,"The course addresses central issues of strategic supply management. The supply function of the company 
 (purchasing, materials management, procurement logistics) and its strategic importance is analysed and basic 
 methods are developed that are relevant in this area.","Students learn the principles of performance-oriented optimization of all procurement activities to develop long-
 term, competitively sensitive potential for success. After completion of the module students are able to prepa-
@@ -1544,7 +1582,8 @@ Master's degree (1 major) China Business and Economics (2019)
 
 
 
-Master's degree (1 major) China Language and Economy (2019)
+
+Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
@@ -1553,7 +1592,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Industrial Management 3,12-M-RM1-161-m01,"Holder of the Chair of Business Management and Industrial 
-Management",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module will discuss contents and procedures of strategic production management and, in particular, plan-
+Management",Faculty of Business Management and Economics,5,numerical grade,,,,"This module will discuss contents and procedures of strategic production management and, in particular, plan-
 ning and control concepts.
 Students will become familiar with the essentials of strategic production management. Theoretical and analyti-
 cal models will be used for analysing both economic and ecological issues. In addition, the module will discuss 
@@ -1570,7 +1609,8 @@ Master's degree (1 major) International Economic Policy (2018)
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
@@ -1579,23 +1619,23 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Legal Foundations of Risk Management and Compliance,12-M-UA-161-m01,Holder of the Chair of Financial Accounting,Faculty of Business Management and Economics,2,numerical grade,,,,,"Content: This module analyses the presentation of opportunities and risks in financial reports, i. e. annual or in-
+Legal Foundations of Risk Management and Compliance,12-M-UA-161-m01,Holder of the Chair of Financial Accounting,Faculty of Business Management and Economics,2,numerical grade,,,,"Content: This module analyses the presentation of opportunities and risks in financial reports, i. e. annual or in-
 terim reports, in conjunction with selected value-based management and profitability analysis approaches.
 Outline of syllabus:
-1. Basics of financial reporting and risk management;
-2. Practice of risk reporting;
-3. Profitability analysis according to Penman;
-4. Value-based management and risk management;
-5. Residual income and business valuation;
-6. Analysis of equity risk;
-7. Analysis of credit risk;
-8. Risk management monitoring by audit committees and auditors.
+1.Basics of financial reporting and risk management;
+2.Practice of risk reporting;
+3.Profitability analysis according to Penman;
+4.Value-based management and risk management;
+5.Residual income and business valuation;
+6.Analysis of equity risk;
+7.Analysis of credit risk;
+8.Risk management monitoring by audit committees and auditors.
 Reading list to be provided in class.","After completing the course, the students will be able
-1. to present the relation between risk management and financial reporting;
-2. to analyze and solve independently complex problems with respect to the presentation of opportunities and 
+1.to present the relation between risk management and financial reporting;
+2.to analyze and solve independently complex problems with respect to the presentation of opportunities and 
 risk in financial reports based on national and international standards;
-3. to identify the relation between risks and value-based management;
-4. to evaluate independently selected research results concerning risk reporting and desing own research- or 
+3.to identify the relation between risks and value-based management;
+4.to evaluate independently selected research results concerning risk reporting and desing own research- or 
 practice-oriented projects.",V (2),,"30 places. (1) Should the number of applications exceed the number of available places, places will be allocated 
 by lot among all applicants irrespective of their subjects. (2) Places on all courses of the module with a restricted 
 number of places will be allocated in the same procedure. (3) A waiting list will be maintained and places re-allo-
@@ -1606,7 +1646,7 @@ Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
-Financial Statement Analysis and Business Valuation,,Holder of the Chair of Financial Accounting,,5,numerical grade,,,,,"Fundamental investing involves valuation, and much of the information for valuation is contained in financial 
+Financial Statement Analysis and Business Valuation,,Holder of the Chair of Financial Accounting,,5,numerical grade,,,,"Fundamental investing involves valuation, and much of the information for valuation is contained in financial 
 statements. This module provides a basic understanding of financial statement analysis, particularly on how to 
 extract value-relevant information from financial statements, carry out financial statement analysis, and use fi-
 nancial data to value corporations. The module also provides the necessary tools to gain insights into what ge-
@@ -1621,6 +1661,7 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
+
 
 
 
@@ -1685,7 +1726,7 @@ Abbreviation
 12-RM-KS-161-m01
 
 Module offered by
-Faculty of Business Management and Economics",10,numerical grade,,,,,"This module will take the form of a seminar. Participants will independently work on a problem in economic poli-
+Faculty of Business Management and Economics",10,numerical grade,,,,"This module will take the form of a seminar. Participants will independently work on a problem in economic poli-
 cy or will review an important publication on a topic in economics.",Students are able to present the status of a current project in a talk as well as to discuss and defend it.,S (2),,"20 places. (1) Should the number of applications exceed the number of available places, places will be allocated 
 by lot among all applicants irrespective of their subjects. (2) Places on all courses of the module with a restricted 
 number of places will be allocated in the same procedure. (3) A waiting list will be maintained and places re-allo-
@@ -1697,7 +1738,7 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
 Risk Management - Concepts and Systems,12-M-CF1-182-m01,"holder of the Chair of Business Management and Accoun-
-ting",Faculty of Business Management and Economics,5,numerical grade,,,,,"Concepts: The course will provide students with an overview of the main goals, contents, methods and instru-
+ting",Faculty of Business Management and Economics,5,numerical grade,,,,"Concepts: The course will provide students with an overview of the main goals, contents, methods and instru-
 ments of opportunity and risk management in industrial and commercial enterprises. Systems: The course will 
 provide students with an overview of the design and functionality of essential information systems for risk mana-
 gement.","Concepts: After completion of the module students have a sound understanding of basic concepts, processes, 
@@ -1724,25 +1765,26 @@ Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Discounted Cashflow,12-M-CF2-182-m01,Holder of the Chair of Corporate Finance,Faculty of Business Management and Economics,5,numerical grade,,,,,"The module covers discounted cash flow (DCF) methods under certainty as well as uncertainty in the context of 
+Discounted Cashflow,12-M-CF2-182-m01,Holder of the Chair of Corporate Finance,Faculty of Business Management and Economics,5,numerical grade,,,,"The module covers discounted cash flow (DCF) methods under certainty as well as uncertainty in the context of 
 the valuation of unlevered and levered companies. Furthermore, tax aspects as well as their influence on the 
 company value are considered.
 Syllabus:
-1. Introduction
-2. DCF Theory under certainty
-1. NPV without taxes
-2. NPV with personal taxes
-3. NPV with corporate taxes
-3. DCF Theory under uncertainty
-1. DCF basics
-2. Valuation of unlevered companies
-3. Valuation of levered companies
-4. Practice of DCF methods","After completion of this module, the students will know a variety of discounted cashflow techniques and are able 
+1.Introduction
+2.DCF Theory under certainty
+1.NPV without taxes
+2.NPV with personal taxes
+3.NPV with corporate taxes
+3.DCF Theory under uncertainty
+1.DCF basics
+2.Valuation of unlevered companies
+3.Valuation of levered companies
+4.Practice of DCF methods","After completion of this module, the students will know a variety of discounted cashflow techniques and are able 
 to apply properly them in order to evaluate projects or firms.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 
 
 
-Master's degree (1 major) International Economic Policy (2018)
+
+Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
@@ -1750,18 +1792,18 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Portfolio and Capital Market Theory,12-M-CF3-182-m01,Holder of the Chair of Corporate Finance,Faculty of Business Management and Economics,5,numerical grade,,,,,"This module conveys profound knowledge of individual portfolio choices and on this basis the most important 
+Portfolio and Capital Market Theory,12-M-CF3-182-m01,Holder of the Chair of Corporate Finance,Faculty of Business Management and Economics,5,numerical grade,,,,"This module conveys profound knowledge of individual portfolio choices and on this basis the most important 
 capital market theory (namely capital asset pricing model) is introduced, including its assumptions, implications 
 and extensions.
 Syllabus:
-1. Modern Portfolio Selection
-1. 2 Asset-Case
-2. Multiple-Asset-Case
-3. Critique of Portfolio Theory
-2. Capital Asset Pricing Model
-1. Assumptions and Derivation
-2. Implications
-3. Empirical Aspects, Extensions and Alternatives","This module enables the students
+1.Modern Portfolio Selection
+1.2 Asset-Case
+2.Multiple-Asset-Case
+3.Critique of Portfolio Theory
+2.Capital Asset Pricing Model
+1.Assumptions and Derivation
+2.Implications
+3.Empirical Aspects, Extensions and Alternatives","This module enables the students
 (i) to explain and to determine the optimal capital market position of an investor given the different investment 
 opportunities and individual utility function;
 (ii) to understand and use the central CAPM propositions for valuating risky assets.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
@@ -1775,15 +1817,15 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Risk Management and Corporate Finance,,Holder of the Chair of Corporate Finance,,5,numerical grade,,,,,"This module deals with the valuation and use of classical derivatives in financial markets. In particular, futures, 
+Risk Management and Corporate Finance,,Holder of the Chair of Corporate Finance,,5,numerical grade,,,,"This module deals with the valuation and use of classical derivatives in financial markets. In particular, futures, 
 swaps and options are considered as well as their possible applications in the context of financial risk manage-
 ment. In particular, students will be introduced to the theory involved in pricing options, as well as important va-
 luation parameters. In addition, some established risk measures such as value-at-risk are discussed.
-1. Introduction
-2. Futures & Forwards
-3. Swaps
-4. Options
-5. Measures of risk","Upon completion of this module students will be able to,
+1.Introduction
+2.Futures & Forwards
+3.Swaps
+4.Options
+5.Measures of risk","Upon completion of this module students will be able to,
 (i) independently determine the fair value of the derivatives discussed, as well as
 (ii) to understand and evaluate common capital market hedging strategies.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
@@ -1792,7 +1834,8 @@ Master's degree (1 major) China Language and Economy (2019)
 
 
 
-Master's degree (1 major) China Business and Economics (2021)
+
+Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
 "Risk measurement and risk valuation: Concepts and applications for banks
@@ -1814,9 +1857,9 @@ with regard of supervisory regulations.
 Intended learning outcomes
 After completing the course “Risk measurement and risk valuation: Concepts and applications for banks” the 
 students are able
-1. to judge the appropriateness and problems of asymmetric risk measures,
-2. to address essential risks in banks and to understand their handling by supervisory regulations as well as
-3. to realize the concept of risk as a capital requirement being the systematic base for these aspects in the ban-
+1.to judge the appropriateness and problems of asymmetric risk measures,
+2.to address essential risks in banks and to understand their handling by supervisory regulations as well as
+3.to realize the concept of risk as a capital requirement being the systematic base for these aspects in the ban-
 king sector.
 Courses (type, number of weekly contact hours, language — if other than German)
 V (2) + Ü (2)
@@ -1846,9 +1889,9 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
-Master's degree (1 major) Management (2022)
 
+Master's degree (1 major) International Economic Policy (2022)
+Master's degree (1 major) Management (2022)
 
 
 
@@ -1857,13 +1900,13 @@ Abbreviation
 12-M-SP-161-m01
 
 Module offered by
-Faculty of Business Management and Economics",5,numerical grade,,,,,"The course augments the usual consideration of symmetric risk metrics by introducing metrics for downside risks 
+Faculty of Business Management and Economics",5,numerical grade,,,,"The course augments the usual consideration of symmetric risk metrics by introducing metrics for downside risks 
 and the concept of risk as a capital requirement. The focus for applications in banks lies in the treatment of risks 
 with regard of supervisory regulations.","After completing the course “Risk measurement and risk valuation: Concepts and applications for banks” the 
 students are able
-1. to judge the appropriateness and problems of asymmetric risk measures,
-2. to address essential risks in banks and to understand their handling by supervisory regulations as well as
-3. to realize the concept of risk as a capital requirement being the systematic base for these aspects in the ban-
+1.to judge the appropriateness and problems of asymmetric risk measures,
+2.to address essential risks in banks and to understand their handling by supervisory regulations as well as
+3.to realize the concept of risk as a capital requirement being the systematic base for these aspects in the ban-
 king sector.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
@@ -1874,9 +1917,10 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Economics of Tax Planning,12-M-STB-161-m01,Holder of the Chair of Business Taxation,Faculty of Business Management and Economics,5,numerical grade,,,,,"This course deals with tax effects on fundamental economic decisions. Taxes are integrated into standard mo-
+Economics of Tax Planning,12-M-STB-161-m01,Holder of the Chair of Business Taxation,Faculty of Business Management and Economics,5,numerical grade,,,,"This course deals with tax effects on fundamental economic decisions. Taxes are integrated into standard mo-
 dels for investment decisions, financing decisions, firm valuation, dividend policy and remuneration of employ-
 ees. Therefore, the interaction of corporate and personal income taxes is analysed.
 A reading list in English is available on request.","This course enables students to
@@ -1894,7 +1938,8 @@ Master's degree (1 major) International Economic Policy (2018)
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
@@ -1903,7 +1948,7 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Tax Accounting,12-M-AO-182-m01,Holder of the Chair of Business Taxation,Faculty of Business Management and Economics,5,numerical grade,,,,,"This module introduces the various methods of income recognition in the German Income Tax Code (Einkommen-
+Tax Accounting,12-M-AO-182-m01,Holder of the Chair of Business Taxation,Faculty of Business Management and Economics,5,numerical grade,,,,"This module introduces the various methods of income recognition in the German Income Tax Code (Einkommen-
 steuergesetz, EStG). It discusses the main reporting and valuation provisions as well as the specific problems 
 and techniques of income calculation for partnerships.","Students have in-depth knowledge of tax accounting of companies and are able to solve moderate to complex 
 problems of tax accounting in particular of sole proprietorships and partnerships using legal source.",V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Economathematics (2016)
@@ -1919,12 +1964,13 @@ Master's degree (1 major) China Language and Economy (2021)
 
 
 
-Master's degree (1 major) Economathematics (2021)
+
+Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Incentives in Organizations,12-M-HRM-192-m01,"Holder of the Chair of Human Resource Management and 
-Organisation",Faculty of Business Management and Economics,5,numerical grade,,,,,"Based on the classical principal-agent theory, this course discusses methodological and empirical aspects of in-
+Organisation",Faculty of Business Management and Economics,5,numerical grade,,,,"Based on the classical principal-agent theory, this course discusses methodological and empirical aspects of in-
 centives in organisations. It uses contents from advanced text books and original (mainly empirical) research ar-
 ticles.
 Outline of syllabus
@@ -1948,7 +1994,7 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 exchange program Business Management and Economics (2022)",--
 Human Resource Management and Industrial Relations,12-M-SAS-182-m01,"Holder of the Chair of Human Resource Management and 
-Organisation",Faculty of Business Management and Economics,5,numerical grade,,,,,"The lecture ""Human Resource Management and Industrial Relations"" introduces advanced theories, estimation 
+Organisation",Faculty of Business Management and Economics,5,numerical grade,,,,"The lecture ""Human Resource Management and Industrial Relations"" introduces advanced theories, estimation 
 techniques and empirical results from the areas of human resources management and institutional frameworks 
 such as ithe different actors in ndustrial relations.
 Syllabus
@@ -1970,7 +2016,7 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Social Science Sustainability Studies (2021)
 Master's degree (1 major) Economathematics (2021)",--
-Advanced Seminar: Entrepreneurship and Management,12-M-UGF2-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,10,numerical grade,,,,,"Students develop seminar papers on varying topics in the domain of entrepreneurship, strategy, and innovation 
+Advanced Seminar: Entrepreneurship and Management,12-M-UGF2-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,10,numerical grade,,,,"Students develop seminar papers on varying topics in the domain of entrepreneurship, strategy, and innovation 
 and present the key insights from their work.","Educational aims
 • Enable students to position their research
 • Enable students to critically review a substantial body of literature in short time
@@ -1988,7 +2034,8 @@ cated by lot as they become available.",,300 h,--,--,"Master's degree (1 major) 
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
@@ -1996,7 +2043,7 @@ Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Corporate Strategy,12-M-CHA-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,5,numerical grade,,,,,"This theory-led and application-oriented module provides you with critical knowledge and skills related to cor-
+Corporate Strategy,12-M-CHA-182-m01,Holder of the Chair of Entrepreneurship and Strategy,Faculty of Business Management and Economics,5,numerical grade,,,,"This theory-led and application-oriented module provides you with critical knowledge and skills related to cor-
 porate strategy—essential for anyone aspiring to take on leadership roles in their future career, may it be in the 
 private or public sector. The module goes beyond basic knowledge about strategic management provided by ba-
 chelor-level modules.
@@ -2040,7 +2087,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Change Management,12-M-CIU-182-m01,"Holder of the Chair of Business Management, Management 
-Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,,"Within the module, theoretical basics of change management are covered. In addition, we present and jointly 
+Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,"Within the module, theoretical basics of change management are covered. In addition, we present and jointly 
 analyze existing change projects in detail. We try to answer related questions, too. For example, the module dis-
 cusses how to involve stakeholders in change, what motivates them to embrace change, and whether participa-
 tion is a universal principle. The module covers projects like merging two departments, restarting a department 
@@ -2057,10 +2104,11 @@ Master's degree (1 major) China Business and Economics (2021)
 
 
 
-Master's degree (1 major) China Language and Economy (2021)
+
+Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
 Managerial Accounting in the Company Management,12-M-INST-182-m01,"Holder of the Chair of Business Management, Management 
-Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,,"Within the module, theoretical basics of change management are covered. In addition, we present and jointly 
+Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,"Within the module, theoretical basics of change management are covered. In addition, we present and jointly 
 analyze existing change projects in detail. We try to answer related questions, too. For example, the module dis-
 cusses how to involve stakeholders in change, what motivates them to embrace change, and whether participa-
 tion is a universal principle. The module covers projects like merging two departments, restarting a department 
@@ -2075,7 +2123,7 @@ Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)",--
 Strategic Managerial Accounting,12-M-KOBO-182-m01,"Holder of the Chair of Business Management, Management 
-Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,,"The module focuses on accounting instruments, which are applied in the context of strategic management of 
+Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,"The module focuses on accounting instruments, which are applied in the context of strategic management of 
 enterprises. First, it addresses important drivers of strategic decisions from a microeconomic perspective, such 
 as the emergence of cost and quality advantages in competition as well as scale and experience curve effects. 
 Second, the module covers analytical and heuristic techniques of planning and control. In the context of these 
@@ -2093,12 +2141,13 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
+
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 "Coordination, Budgeting and Incentives in Organizations",12-M-PROM-182-m01,"Holder of the Chair of Business Management, Management 
-Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module focuses on accounting-based instruments to control behavior in decentralized enterprises. The 
+Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,"This module focuses on accounting-based instruments to control behavior in decentralized enterprises. The 
 course first discusses the role of accounting in the context of decision-making and behavioral controlling as well 
 as informational analyses. Afterwards, the most common instruments of behavioral controlling (budgeting, va-
 lue-oriented management, transfer prices) are discussed with regard to theory and practice.","This module aims to provide knowledge in the context of behavioral control in enterprises. Knowledge about re-
@@ -2114,11 +2163,12 @@ Master's degree (1 major) International Economic Policy (2022)
 
 
 
-Master's degree (1 major) Management (2022)
+
+Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Project Management and Control,12-M-REKA-182-m01,"Holder of the Chair of Business Management, Management 
-Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,,"The module focuses on the discussion and critical examination of instruments and methods used in the context 
+Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,"The module focuses on the discussion and critical examination of instruments and methods used in the context 
 of project management and control within enterprises. Both classic and agile approaches to project manage-
 ment are considered. It covers characteristic features and structures of projects, their possible success factors, 
 methods and instruments of control and management of projects in various project phases. The theoretical basis 
@@ -2135,11 +2185,12 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) Management (2022)
+
+Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Accounting and Capital Markets,12-M-MADM-182-m01,"Holder of the Chair of Business Management, Management 
-Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,,"The module focuses on financial and management accounting, their functions, possible configurations as well 
+Accounting and Control",Faculty of Business Management and Economics,5,numerical grade,,,,"The module focuses on financial and management accounting, their functions, possible configurations as well 
 as their impact on internal and external recipients under consideration of the institutional setting. In this con-
 text, an economic perspective has priority over detailed legal arrangements and regulations by the standard set-
 ters. Based on the theoretical foundations of information economics as well as decision-making and balance 
@@ -2157,14 +2208,15 @@ Master's degree (1 major) China Business and Economics (2021)
 
 
 
-Master's degree (1 major) China Language and Economy (2021)
+
+Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Managerial Analytics & Decision Making,12-M-SMGS-182-m01,"Holder of the Chair of Logistics and Quantitative Methods 
-in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,,"The course ""Managerial Analytics & Decision Making"" discusses quantitative methods to structure and solve 
+in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,"The course ""Managerial Analytics & Decision Making"" discusses quantitative methods to structure and solve 
 a diverse set of management problems and demonstrates the application of modern methods with the help of 
 multiple case studies.","After completing this course students can
 (i) better understand and structure problems;
@@ -2181,12 +2233,13 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Strategic Management of Global Supply Chains,12-M-SDC-182-m01,"Holder of the Chair of Logistics and Quantitative Methods 
-in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,,"Description:
+in Business Administration",Faculty of Business Management and Economics,5,numerical grade,,,,"Description:
 In the course ""Strategic Management of Global Supply Chains"", students will become familiar with the basic 
 principles of building an efficient global supply chain and will apply what they have learned working on multiple 
 case studies.","After completing this course students
@@ -2203,33 +2256,34 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Strategic Decisions and Competition,12-M-TI1-182-m01,Holder of the Chair of Industrial Economics,Faculty of Business Management and Economics,5,numerical grade,,,,,"1. Strategic situations and decision making
+Strategic Decisions and Competition,12-M-TI1-182-m01,Holder of the Chair of Industrial Economics,Faculty of Business Management and Economics,5,numerical grade,,,,"1. Strategic situations and decision making
 2. Analyzing strategic situations with game theory
-1. Noncooperative simultaneous move games
-2. Nash equilibrium
-3. Models of oligopoly markets
+1.Noncooperative simultaneous move games
+2.Nash equilibrium
+3.Models of oligopoly markets
 3. Dynamic Games
-1. Two(-multi) stage games and subgame perfect equilibrium
-2. Role of commitment in dynamic situations
-3. Models of advertising
-4. Wage bargaining and unions
+1.Two(-multi) stage games and subgame perfect equilibrium
+2.Role of commitment in dynamic situations
+3.Models of advertising
+4.Wage bargaining and unions
 4. Repeated Games
-1. Emergence of coordination in long interactions
-2. Collusion between competing firms
-3. Time consistent monetary policy
+1.Emergence of coordination in long interactions
+2.Collusion between competing firms
+3.Time consistent monetary policy
 5. Static games of incomplete Information
-1. Bayesian Nash equilibrium
-2. Auctions
+1.Bayesian Nash equilibrium
+2.Auctions
 6. Dynamic games of incomplete information
-1. Moral hazard and nonlinear pricing
-2. Perfect Bayesian equilibrium
-3. Signalling games
-4. Job-market signalling
-5. Corporate investment and capital structure","After successful completion of this class, the students should be familiar with economic models that can be 
+1.Moral hazard and nonlinear pricing
+2.Perfect Bayesian equilibrium
+3.Signalling games
+4.Job-market signalling
+5.Corporate investment and capital structure","After successful completion of this class, the students should be familiar with economic models that can be 
 used to shape managerial strategy and aid in making decisions in strategic situations. Especially, by making use 
 of simple two stage games, they should be able to formulate dynamic policies in a wide variety of strategic situa-
 tions. The students will acquire an intuitive understanding of the underlying economic mechanisms which emer-
@@ -2256,21 +2310,21 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-Theory of Industrial Organization,12-M-WPE-192-m01,Holder of the Chair of Industrial Economics,Faculty of Business Management and Economics,5,numerical grade,,,,,"Theory of industrial organisation:
-1. Monopoly pricing
+Theory of Industrial Organization,12-M-WPE-192-m01,Holder of the Chair of Industrial Economics,Faculty of Business Management and Economics,5,numerical grade,,,,"Theory of industrial organisation:
+1.Monopoly pricing
 • Nonlinear pricing and mechanism design
 • Dynamic pricing: experience goods, durable goods
-2. Oligopoly pricing
+2.Oligopoly pricing
 • Static price and quantity competition in homogeneous and differentiated goods markets
 • Comparative statics
 • Equilibrium market structure
-3. Dynamic competition in oligopoly markets
+3.Dynamic competition in oligopoly markets
 • Subgame perfect equilibrium and models of dynamic competition
 • Repeated games and collusion
-4. Strategic behaviour by incumbent firms
+4.Strategic behaviour by incumbent firms
 • Entry deterrence and predation
 • Signalling and reputation
-5. Behavioral Industrial Organization
+5.Behavioral Industrial Organization
 • Reference Dependent Preferences and Framing Effects
 • Time inconsistent behavior
 The course will be taught in English.","Students which complete this class will acquire a working knowledge of advanced theoretical models of compe-
@@ -2291,21 +2345,21 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
-European Competition Policy,12-M-OE1-182-m01,Holder of the Chair of Industrial Economics,Faculty of Business Management and Economics,5,numerical grade,,,,,"Outline of syllabus:
-1. Legal environment, competition laws
-2. Market definition
+European Competition Policy,12-M-OE1-182-m01,Holder of the Chair of Industrial Economics,Faculty of Business Management and Economics,5,numerical grade,,,,"Outline of syllabus:
+1.Legal environment, competition laws
+2.Market definition
 • Qualitative methods
 • Simple quantitative methods
 • Hypothetical monopoly test
-3. Horizontal agreements and collusion: repeated games and factors affecting likelihood of collusion
-4. Horizontal mergers and collusion
+3.Horizontal agreements and collusion: repeated games and factors affecting likelihood of collusion
+4.Horizontal mergers and collusion
 • Economic theory
 • Efficiency effects
 • Coordinated effects
-5. Vertical relations and contracts
+5.Vertical relations and contracts
 • Economic analysis of contracts
 • ""More economic approach""
-6. Abuse of dominant position
+6.Abuse of dominant position
 • Classification of abusive conduct
 • Economic analysis of abusive conduct and theory of harm
 The course will be taught in English.","After completion of the module students can use the advanced concepts introduced in the lecture of competiti-
@@ -2326,7 +2380,7 @@ Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
-Econometrics 1,12-M-AM-182-m01,Holder of the Chair of Econometrics,Faculty of Business Management and Economics,5,numerical grade,,,,,"Description:
+Econometrics 1,12-M-AM-182-m01,Holder of the Chair of Econometrics,Faculty of Business Management and Economics,5,numerical grade,,,,"Description:
 This module deals with the basic concept and methodology of the ordinary least squares (OLS) regression mo-
 del. In particular, model assumptions and properties are discussed and formally motivated. In addition, the mo-
 dule examines linear restrictions on the model's explanatory variables as well as dummy variables and introdu-
@@ -2363,7 +2417,7 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
 Advanced Microeconomics,12-M-APW1-161-m01,"Holder of the Chair of Contract Theory and Information Eco-
-nomics",Faculty of Business Management and Economics,5,numerical grade,,,,,"In a nutshell, microeconomic theory considers the behavior of individual economic agents and builds from this 
+nomics",Faculty of Business Management and Economics,5,numerical grade,,,,"In a nutshell, microeconomic theory considers the behavior of individual economic agents and builds from this 
 foundation to a theory of aggregate economic outcomes, which then can be applied for conducting welfare ana-
 lysis and giving policy advice. This lecture addresses the core building block of this thought complex: individu-
 al decision making and behavior. Specifically, students will come to understand in detail the standard models of 
@@ -2393,7 +2447,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Selected Topics in Business Management and Economics 1,12-M-APW2-161-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module serves the purpose of transferring credits from
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"This module serves the purpose of transferring credits from
 • courses taken at other German or non-German universities
 • additional courses offered on a short-term basis
 • courses offered by new Chairs that are yet to be included in the FSB (subject-specific provisions)
@@ -2405,6 +2459,7 @@ Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
+
 
 
 
@@ -2413,7 +2468,7 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
 Selected Topics in Business Management and Economics 2,12-M-AWI1-161-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module serves the purpose of transferring credits from
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"This module serves the purpose of transferring credits from
 • courses taken at other German or non-German universities
 • additional courses offered on a short-term basis
 • courses offered by new Chairs that are yet to be included in the FSB (subject-specific provisions)
@@ -2428,12 +2483,13 @@ Master's degree (1 major) China Language and Economy (2019)
 
 
 
+
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
 ,12-M-AWI2-161-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module serves the purpose of transferring credits from
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"This module serves the purpose of transferring credits from
 • courses taken at other German or non-German universities
 • additional courses offered on a short-term basis
 • courses offered by new Chairs that are yet to be included in the FSB (subject-specific provisions)
@@ -2447,7 +2503,8 @@ Master's degree (1 major) International Economic Policy (2018)
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
@@ -2455,7 +2512,7 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 exchange program Business Management and Economics (2022)",--
 ,12-M-DM1-182-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module serves the purpose of transferring credits from
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"This module serves the purpose of transferring credits from
 • courses taken at other German or non-German universities
 • additional courses offered on a short-term basis
 • courses offered by new Chairs that are yet to be included in the FSB (subject-specific provisions)
@@ -2469,14 +2526,15 @@ Master's degree (1 major) International Economic Policy (2018)
 
 
 
-Master's degree (1 major) China Business and Economics (2019)
+
+Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
 Digital Marketing I,12-M-DM2-182-m01,"Holder of the Junior Professorship of Digital Marketing and 
-E-Commerce",Faculty of Business Management and Economics,5,numerical grade,,,,,"Digitalization is rapidly changing our lives, including all types of business relationships. Therefore, new opportu-
+E-Commerce",Faculty of Business Management and Economics,5,numerical grade,,,,"Digitalization is rapidly changing our lives, including all types of business relationships. Therefore, new opportu-
 nities and approaches have emerged in all areas of the marketing mix: Managers can choose from a wide variety 
 of new communication channels, such as social media networks, blogs, or messengers, and can engage in influ-
 encer marketing and search engine optimization. They increasingly rely on online customer co-creation or crowd-
@@ -2494,7 +2552,8 @@ Master's degree (1 major) International Economic Policy (2015)
 
 
 
-Master's degree (1 major) Management (2018)
+
+Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
@@ -2506,7 +2565,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 Digital Marketing II,12-M-EC1-182-m01,"Holder of the Junior Professorship of Digital Marketing and 
-E-Commerce",Faculty of Business Management and Economics,5,numerical grade,,,,,"Students are required to put themselves in the following business situation:
+E-Commerce",Faculty of Business Management and Economics,5,numerical grade,,,,"Students are required to put themselves in the following business situation:
 A large corporation has just recruited you and your team members as the new heads of the marketing depart-
 ment in one of the firm’s divisions in order to manage its general and digital marketing activities. Specifically, 
 it is your task to manage the corporation’s digital product portfolio, segmentation and positioning as well as its 
@@ -2521,7 +2580,8 @@ Master's degree (1 major) International Economic Policy (2015)
 
 
 
-Master's degree (1 major) Management (2018)
+
+Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2019)
 Master's degree (1 major) China Language and Economy (2019)
@@ -2533,7 +2593,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 E-Commerce I,12-M-EC2-182-m01,"Holder of the Junior Professorship of Digital Marketing and 
-E-Commerce",Faculty of Business Management and Economics,5,numerical grade,,,,,"E-commerce is a highly relevant field for almost all types of companies. However, the ecommerce approaches 
+E-Commerce",Faculty of Business Management and Economics,5,numerical grade,,,,"E-commerce is a highly relevant field for almost all types of companies. However, the ecommerce approaches 
 and strategies applied by companies differ strongly depending on the respective firm context (e.g., in terms of in-
 dustry, types of customers, types of products). In this seminar, students analyze the specific e-commerce strat-
 egy of a selected firm. In doing so, they evaluate the strategies’ current and future potential and make suggesti-
@@ -2550,7 +2610,8 @@ Master's degree (1 major) China Language and Economy (2019)
 
 
 
-Master's degree (1 major) China Business and Economics (2021)
+
+Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) International Economic Policy (2022)
@@ -2558,7 +2619,7 @@ Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",--
 E-Commerce II,12-M-RTP-182-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"E-commerce is a highly relevant field for almost all types of companies. However, the ecommerce approaches 
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"E-commerce is a highly relevant field for almost all types of companies. However, the ecommerce approaches 
 and strategies applied by companies differ strongly depending on the respective firm context (e.g., in terms of in-
 dustry, types of customers, types of products). In this seminar, students analyze the specific e-commerce strat-
 egy of a selected firm. In doing so, they evaluate the strategies’ current and future potential and make suggesti-
@@ -2573,7 +2634,7 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)",--
 Real-Time Process Analytics,12-M-TDS-182-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"The course teaches advanced approaches to process analytics. Students will learn to model and measure pro-
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"The course teaches advanced approaches to process analytics. Students will learn to model and measure pro-
 cesses and process execution based on past and present data.","After successfully completing the course, students should be able to
 • Understand process modeling and process execution in an SOA
 • OLAP analysis in a process warehouse
@@ -2586,7 +2647,7 @@ Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)",--
-Topics in Data Science,12-M-TIF1-182-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,,"Data science is concerned with extracting knowledge and valuable insights from data assets. It is an emerging 
+Topics in Data Science,12-M-TIF1-182-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,"Data science is concerned with extracting knowledge and valuable insights from data assets. It is an emerging 
 field that is currently in high demand in both academia and industry. This course provides a practical introducti-
 on to the full spectrum of data science techniques spanning data acquisition and processing, data visualization 
 and presentation, creation and evaluation of machine learning models.
@@ -2604,12 +2665,13 @@ Master's degree (1 major) China Business and Economics (2019)
 
 
 
-Master's degree (1 major) China Language and Economy (2019)
+
+Master's degree (1 major) China Language and Economy (2019)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)",--
 ,12-M-TIF2-182-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module serves the purpose of transferring credits from
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"This module serves the purpose of transferring credits from
 • courses taken at other German or non-German universities
 • additional courses offered on a short-term basis
 • courses offered by new Chairs that are yet to be included in the FSB (subject-specific provisions)
@@ -2623,11 +2685,12 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
 ,12-RM-RA-192-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"This module serves the purpose of transferring credits from
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"This module serves the purpose of transferring credits from
 • courses taken at other German or non-German universities
 • additional courses offered on a short-term basis
 • courses offered by new Chairs that are yet to be included in the FSB (subject-specific provisions)
@@ -2641,10 +2704,11 @@ Master's degree (1 major) Economathematics (2021)
 
 
 
-Master's degree (1 major) International Economic Policy (2022)
+
+Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
-Stochastic Models for Risk Analysis,12-RM-RW-192-m01,Dean of Studies Mathematik (Mathematics),Faculty of Business Management and Economics,5,numerical grade,,,,,"Point and interval estimation for the value at risk Point and interval estimation for the conditional value at risk 
+Stochastic Models for Risk Analysis,12-RM-RW-192-m01,Dean of Studies Mathematik (Mathematics),Faculty of Business Management and Economics,5,numerical grade,,,,"Point and interval estimation for the value at risk Point and interval estimation for the conditional value at risk 
 Prediction of value at risk in time series Risk of forecasts in time series, in particular exponential smoothing un-
 der covariates Conditional heteroscedasticity: ARCH, GARCH, EGARCH, DVEC, BEKK, DCC Aggregated losses and 
 their empirical analysis Empirical analysis of statistical distributions Nonparametric bounds for the value at risk 
@@ -2660,7 +2724,7 @@ Should the number of applications exceed the number of available places, places 
 of available places, places will be allocated by lot among applicants from this group.",,150 h,--,--,"Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
-Stochastic Models for Risk Assessment,12-M-BUC-182-m01,Dean of Studies Mathematik (Mathematics),Faculty of Business Management and Economics,5,numerical grade,,,,,"Etymological background of the risk concept Definitions of risk Basic concepts and terminology of stochastic risk 
+Stochastic Models for Risk Assessment,12-M-BUC-182-m01,Dean of Studies Mathematik (Mathematics),Faculty of Business Management and Economics,5,numerical grade,,,,"Etymological background of the risk concept Definitions of risk Basic concepts and terminology of stochastic risk 
 modelling: risk phenomenon, risk object, risk variable, risk source, risk factor, risk cause, direct peril, indirect 
 peril, loss under risk, profit under risk, loss variable, profit variable, risk distribution, risk indicator, risk parame-
 ter Classification of business risks Risk policy, risk management Risk analysis: risk identification, risk descrip-
@@ -2686,7 +2750,7 @@ Should the number of applications exceed the number of available places, places 
 of available places, places will be allocated by lot among applicants from this group.",,150 h,--,--,"Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)",--
-Communication in Business and Economics,12-M-ECC-182-m01,Holder of the Professorship of Economic Journalism,Faculty of Business Management and Economics,5,numerical grade,,,,,"The lecture names introductory relevant communication models. Furthermore, the theoretical models of PR are 
+Communication in Business and Economics,12-M-ECC-182-m01,Holder of the Professorship of Economic Journalism,Faculty of Business Management and Economics,5,numerical grade,,,,"The lecture names introductory relevant communication models. Furthermore, the theoretical models of PR are 
 discussed. The added value of communication for companies, business, politics, and science is explained. The 
 discrepancy between journalism and PR is discussed, as well as the basic elements, instruments, goals, and 
 forms of PR. The preparation and implementation of press meetings, conferences, campaigns, and events will 
@@ -2705,9 +2769,10 @@ Master's degree (1 major) China Language and Economy (2021)
 
 
 
-Master's degree (1 major) Economathematics (2021)
+
+Master's degree (1 major) Economathematics (2021)
 exchange program Business Management and Economics (2022)",--
-"Business Communication in Print, Online and Social Media",12-M-VGP-202-m01,Holder of the Professorship of Economic Journalism,Faculty of Business Management and Economics,5,numerical grade,,,,,"This module focuses on the relationship of offer characteristics with benefit aspects for the end consumer and 
+"Business Communication in Print, Online and Social Media",12-M-VGP-202-m01,Holder of the Professorship of Economic Journalism,Faculty of Business Management and Economics,5,numerical grade,,,,"This module focuses on the relationship of offer characteristics with benefit aspects for the end consumer and 
 the business models on the part of the providers. Starting from the basics of editorial work and professional text 
 management, the new forms of communication management in social networks are presented. The focus of the 
 lecture is on the use of social media in campaigns (Facebook, Twitter, Instagram, Tiktok). There will also be exer-
@@ -2727,6 +2792,7 @@ Master's degree (1 major) Media Communication (2019)
 
 
 
+
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) Economathematics (2021)
@@ -2736,7 +2802,7 @@ Master's degree (1 major) Economathematics (2022)
 Master's degree (1 major) Media Entertainment (2022)
 Master's degree (1 major) Psychology of digital media (2022)
 exchange program Business Management and Economics (2022)",--
-Managerial Practice Lectures,12-M-ATDS-211-m01,Holder of the Professorship of Economic Journalism,Faculty of Business Management and Economics,5,numerical grade,,,,,"In this lecture, we invite board members of publicly listed companies, SMEs and Startups to discuss contempo-
+Managerial Practice Lectures,12-M-ATDS-211-m01,Holder of the Professorship of Economic Journalism,Faculty of Business Management and Economics,5,numerical grade,,,,"In this lecture, we invite board members of publicly listed companies, SMEs and Startups to discuss contempo-
 rary challenges of corporate management.
 Students gain sustainable insights into current management practices, challenges of corporate management in 
 various industries, and discuss pressing managerial issues with C-level executives. In individual and group as-
@@ -2758,22 +2824,22 @@ Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 exchange program Business Management and Economics (2022)",--
-Advanced Topics in Data Science,12-M-IMS-211-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,,"In this course, students work on advanced data science projects. The course covers the entire data science work-
+Advanced Topics in Data Science,12-M-IMS-211-m01,Holder of the Chair of Business Analytics,Faculty of Business Management and Economics,5,numerical grade,,,,"In this course, students work on advanced data science projects. The course covers the entire data science work-
 flow from data collection to data preparation to modeling, evaluation and deployment. By following a top-down 
 teaching approach, students are enabled to apply complex machine learning models from the beginning.","As part of the course work, students will acquire knowledge and skills in the following areas:
-1. Becoming familiar with the principles and frameworks in the research area of Data Science.
-2. Apply machine learning and deep learning frameworks to structured and unstructured data
-3. Design, implementation and evaluation of key algorithms within an end-to-end workflow in the field of Data 
+1.Becoming familiar with the principles and frameworks in the research area of Data Science.
+2.Apply machine learning and deep learning frameworks to structured and unstructured data
+3.Design, implementation and evaluation of key algorithms within an end-to-end workflow in the field of Data 
 Science
-4. Application of Jupyter notebooks and their infrastructure (collection, storage, retrieval, and analysis of data)
-5. Understanding of a data-driven & analytical approach to decision problems","V (2) + Ü (2)
+4.Application of Jupyter notebooks and their infrastructure (collection, storage, retrieval, and analysis of data)
+5.Understanding of a data-driven & analytical approach to decision problems","V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)",--
 International Marketing Strategy,12-M-VWP-211-m01,"Dean of the Faculty of Business Management and Econo-
-mics",Faculty of Business Management and Economics,5,numerical grade,,,,,"The objective of this simulation course is to develop hands-on skills of how to make international marketing de-
+mics",Faculty of Business Management and Economics,5,numerical grade,,,,"The objective of this simulation course is to develop hands-on skills of how to make international marketing de-
 cisions. Emphasis is put on the computer simulation game Country Manager which focuses on the managerial is-
 sues arising when companies plan and execute market entry into new countries. This exercise allows students to 
 experience the challenges pertaining to corresponding decisions by playing the role of a responsible manager for 
@@ -2786,7 +2852,7 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 exchange program Business Management and Economics (2022)",--
 Economist Practice Lectures,12-M-EAI-221-m01,"Holder of the Senior Professorship for Economics, Money 
-and International Economic Relations",Faculty of Business Management and Economics,5,numerical grade,,,,,"The content of the seminar is the active participation in as well as the follow-up of the lectures of economists 
+and International Economic Relations",Faculty of Business Management and Economics,5,numerical grade,,,,"The content of the seminar is the active participation in as well as the follow-up of the lectures of economists 
 from different national and international fields of activity, which are organized for the event.
 The invitation of speakers from practice strengthens the practical orientation of the scientifically founded and at 
 the same time internationally oriented education at the faculty of economics of the University of Würzburg.
@@ -2805,28 +2871,28 @@ Master's degree (1 major) China Business and Economics (2021)
 Master's degree (1 major) China Language and Economy (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Enterprise AI,12-M-KI1-221-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,,--
-,12-M-KI2-221-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
+Enterprise AI,12-M-KI1-221-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,,--
+,12-M-KI2-221-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 exchange program Business Management and Economics (2022)",--
-,12-M-VS-221-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
+,12-M-VS-221-m01,Holder of the Chair of Business Management and Business,Faculty of Business Management and Economics,5,numerical grade,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Vertical Storytelling,12-M-OEDT-231-m01,--,Faculty of Business Management and Economics,10,numerical grade,,,,,--,--,S (2),,--,,300 h,--,--,"Master's degree (1 major) Management (2018)
+Vertical Storytelling,12-M-OEDT-231-m01,--,Faculty of Business Management and Economics,10,numerical grade,,,,--,--,S (2),,--,,300 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) Economathematics (2021)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)",--
-Organizational Economics and Digital Transformation,12-M-PEM-182-m01,--,Faculty of Business Management and Economics,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Organizational Economics and Digital Transformation,12-M-PEM-182-m01,--,Faculty of Business Management and Economics,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) Management (2018)
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Policy Evaluation Methods,12-M-TE-231-m01,Holder of the Chair of Labor Economics,Faculty of Business Management and Economics,5,numerical grade,,,,,"This course offers an introduction to the fundamentals of causal inference and to widely used research desi-
+Policy Evaluation Methods,12-M-TE-231-m01,Holder of the Chair of Labor Economics,Faculty of Business Management and Economics,5,numerical grade,,,,"This course offers an introduction to the fundamentals of causal inference and to widely used research desi-
 gns in the social sciences. In the first part a framework for understanding causality is introduced. Specifically, 
 the epistemological differences between association, intervention and counterfactuals are explained. Then it is 
 shown why experiments are paramount in generating causal knowledge and which assumptions are needed for 
@@ -2854,7 +2920,7 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)",Research track module in Master's programme IEP
-Topics in Empirical Economics,10-I=SB-212-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Topics in Empirical Economics,10-I=SB-212-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: English",,"12 *WA1(1) Should the number of applications exceed the number of available places, places will be allocated by 
 lot among all applicants irrespective of their subjects.
 (2) Places on all courses of the module with a restricted number of places will be allocated in the same procedu-
@@ -2863,13 +2929,13 @@ re.
 Master's degree (1 major) International Economic Policy (2018)
 Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)",--
-Systems Benchmarking,10-xtAI=CV-202-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
+Systems Benchmarking,10-xtAI=CV-202-m01,holder of the Chair of Computer Science IX,Institute of Computer Science,5,numerical grade,,,,--,--,V (2) + Ü (2),,--,,150 h,--,--,"Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Aerospace Computer Science (2021)
 Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 SE,IT,ES,HCI,GE"
-Computer Vision,10-I=IP-222-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,,"The lecture provides knowledge about current methods and algorithms in the field of computer vision. Important 
+Computer Vision,10-I=IP-222-m01,Dean of Studies Informatik (Computer Science),Institute of Computer Science,5,numerical grade,,,,"The lecture provides knowledge about current methods and algorithms in the field of computer vision. Important 
 basics as well as the most recent approaches to image representation, image processing and image analysis are 
 taught. Actual models and methods of machine learning as well as their technical backgrounds are presented 
 and their respective applications in image processing are shown.","Students have fundamental knowledge of problems and techniques in the field of computer vision and are able 
@@ -2878,13 +2944,13 @@ Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) eXtended 
 Master's degree (1 major) Computer Science (2021)
 Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)",--
-Image Processing and Computational Photography,10-I=MNLP-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Image Processing and Computational Photography,10-I=MNLP-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) eXtended Artificial Intelligence (xtAI) (2020)
 Master's degree (1 major) Computer Science (2023)
 Master's degree (1 major) Aerospace Computer Science (2023)",--
-Multilingual NLP,10-I=SNA-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Multilingual NLP,10-I=SNA-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: German and/or English",,--,,150 h,--,--,Master's degree (1 major) Computer Science (2023),--
-Statistical Network Analysis,10-I=OR-232-m01,holder of the Chair of Computer Science XV,Institute of Computer Science,5,numerical grade,,,,,"Networks matter! This holds for technical infrastructures like communication or transportation networks, for in-
+Statistical Network Analysis,10-I=OR-232-m01,holder of the Chair of Computer Science XV,Institute of Computer Science,5,numerical grade,,,,"Networks matter! This holds for technical infrastructures like communication or transportation networks, for in-
 formation systems and social media in the World Wide Web, but also for various social, economic and biologi-
 cal systems. What can we learn from data that capture the interaction topology of such complex systems? What 
 is the role of individual nodes and how can we discover significant patterns in the structure of networks? How do 
@@ -2912,13 +2978,14 @@ Module taught in: English",,--,,150 h,--,--,"Master's degree (1 major) Computer 
 Master's degree (1 major) Aerospace Computer Science (2023)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits):
 
 
-IN"
-Operations Research,10-I=MLN1-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+
+IN"
+Operations Research,10-I=MLN1-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: German and/or English",,--,,150 h,--,--,Master's degree (1 major) Computer Science (2023),"Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): IN"
-Machine Learning for Networks 1,10-I=DM-232-m01,--,Institute of Computer Science,5,numerical grade,,,,,--,--,"V (2) + Ü (2)
+Machine Learning for Networks 1,10-I=DM-232-m01,--,Institute of Computer Science,5,numerical grade,,,,--,--,"V (2) + Ü (2)
 Module taught in: English",,--,,150 h,--,--,Master's degree (1 major) Computer Science (2023),"Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): 
 AT,IT,SE,KI,HCI,IN"
-Data Science,12-WI-MA-192-m01,holder of the Chair of Computer Science IX,Faculty of Business Management and Economics,5,numerical grade,,,,,"Foundations in the following areas: definition of data mining and knowledge discovery in databases, process 
+Data Science,12-WI-MA-192-m01,holder of the Chair of Computer Science IX,Faculty of Business Management and Economics,5,numerical grade,,,,"Foundations in the following areas: definition of data mining and knowledge discovery in databases, process 
 model, relationship to data warehouse and OLAP data preprocessing, data visualisation, unsupervised learning 
 methods (cluster- and association methods), supervised learning (e. g. Bayes classification, KNN, decision trees, 
 SVM), learning methods for special data types, further learning paradigms.","The students possess a theoretical and practical knowledge of typical methods and algorithms in the area of da-
@@ -2930,11 +2997,12 @@ Master's degree (1 major) Aerospace Computer Science (2023)
 
 
 
-Thesis
+
+Thesis
 (30 ECTS credits)","Focuses available for students of the Master's programme Informatik (Computer Science, 120 ECTS credits): 
 IT,KI,HCI,GE,SEC"
 ,,"Dean of the Faculty of Business Management and Econo-
-mics",,30,numerical grade,,,,,"Students will complete their degree with a Master's thesis in which they will be required to independently rese-
+mics",,30,numerical grade,,,,"Students will complete their degree with a Master's thesis in which they will be required to independently rese-
 arch and write on a topic in the area of business management and economics, drawing on the subject-specific 
 knowledge they have acquired and adhering to the principles of good scientific practice. This thesis may either 
 take the form of an analysis and structured presentation of the existing literature on a certain topic or may, as is 
