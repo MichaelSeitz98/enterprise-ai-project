@@ -1,16 +1,18 @@
-Module title Abbreviation
-Information Processing within Organizations 12-IV-161-m01
-Module coordinator Module offered by
+Module title
+Information Processing within Organizations
+Module coordinator
 holder of the Chair of Business Management and Business 
-ECTS Method of grading Only after succ. compl. of module(s)
-5 numerical grade --
-Duration Module level Other prerequisites
-1 semester graduate --
+ECTS Method of grading
+numerical grade
+5
+Module level
+Duration
+graduate
+1 semester
 Contents
 Content:
 This course provides students with an in-depth overview of the structure and the application areas of business 
 management information systems in enterprises and public institutions.
- 
 Outline of syllabus:
 1. What is software: concepts, categories, application
 2. Software life cycle: duration, phases, steps
@@ -28,9 +30,9 @@ ments, which brings a software implementation with;
 (with participation in the exercise);
 (iv) understand the importance of change management and project management and know the appropriate me-
 thods for specific applications.
-Courses  (type, number of weekly contact hours, language — if other than German)
+Courses (type, number of weekly contact hours, language — if other than German)
 V (2) + Ü (2)
-Method of assessment  (type, scope, language — if other than German, examination offered — if not every semester, information on whether 
+Method of assessment (type, scope, language — if other than German, examination offered — if not every semester, information on whether 
 module is creditable for bonus)
 written examination (approx. 60 minutes)
 Language of assessment: German and/or English
@@ -45,6 +47,11 @@ Teaching cycle
 --
 Referred to in LPO I  (examination regulations for teaching-degree programmes)
 --
+
+
+
+ 
+
 Module appears in
 Master's degree (1 major) Economathematics (2016)
 Master's degree (1 major) Business Management (2015)
@@ -62,3 +69,18 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
+
+
+
+
+Abbreviation
+12-M-ITM-161-m01
+
+Module offered by
+Faculty of Business Management and Economics
+
+Only after succ. compl. of module(s)
+--
+Other prerequisites
+--
+

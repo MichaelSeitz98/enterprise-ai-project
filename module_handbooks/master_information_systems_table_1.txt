@@ -1,38 +1,40 @@
-Module title Abbreviation
-IT-Management 12-M-ITM-161-m01
-Module coordinator Module offered by
-ECTS Method of grading Only after succ. compl. of module(s)
-5 numerical grade --
-Duration Module level Other prerequisites
-1 semester graduate --
+Module title
+IT-Management
+Module coordinator
+ECTS Method of grading
+numerical grade
+5
+Module level
+Duration
+1 semester
+graduate
 Contents
 Content:
 This course provides students with an in-depth overview of aims, tasks and appropriate methods of IT manage-
 ment.
- 
 Outline of syllabus:
-1.Organisation and distinction
-2.IT strategy
-3.IT organisation
-4.Management of IT systems
-5.Enterprise Architecture Management
-6.IT project management
-7.IT security
-8.IT law
-9.IT controlling
+1. Organisation and distinction
+2. IT strategy
+3. IT organisation
+4. Management of IT systems
+5. Enterprise Architecture Management
+6. IT project management
+7. IT security
+8. IT law
+9. IT controlling
 Reading:
-•Hofmann/Schmidt: Masterkurs IT-Management, Wiesbaden.
-•Tiemeyer: Handbuch IT-Management, Munich.
-•Hanschke: Strategisches Management der IT-Landschaft, Munich.
+• Hofmann/Schmidt: Masterkurs IT-Management, Wiesbaden.
+• Tiemeyer: Handbuch IT-Management, Munich.
+• Hanschke: Strategisches Management der IT-Landschaft, Munich.
 Intended learning outcomes
 After completing the course "IT Management", students will be able to
-1.overview the different aspects to be considered regarding a purposeful IT management;
-2.understand and apply appropriate methods and tools;
-3.independently perform system search and selection in a team project (only after participation in the practice 
+1. overview the different aspects to be considered regarding a purposeful IT management;
+2. understand and apply appropriate methods and tools;
+3. independently perform system search and selection in a team project (only after participation in the practice 
 lessons).
-Courses  (type, number of weekly contact hours, language — if other than German)
+Courses (type, number of weekly contact hours, language — if other than German)
 V (2) + Ü (2)
-Method of assessment  (type, scope, language — if other than German, examination offered — if not every semester, information on whether 
+Method of assessment (type, scope, language — if other than German, examination offered — if not every semester, information on whether 
 module is creditable for bonus)
 a) written examination (approx. 60 minutes) or b) oral examination (one candidate each: approx. 15 to 20 minu-
 tes; groups of 2: approx. 20 minutes; groups of 3: approx. 30 minutes)
@@ -44,6 +46,11 @@ Additional information
 --
 Workload
 150 h
+
+
+
+ 
+
 Teaching cycle
 --
 Referred to in LPO I  (examination regulations for teaching-degree programmes)
@@ -65,3 +72,18 @@ Master's degree (1 major) International Economic Policy (2022)
 Master's degree (1 major) Management (2022)
 Master's degree (1 major) Economathematics (2022)
 exchange program Business Management and Economics (2022)
+
+
+
+
+Abbreviation
+12-PS-192-m01
+
+Module offered by
+Faculty of Business Management and Economics
+
+Only after succ. compl. of module(s)
+--
+Other prerequisites
+--
+
