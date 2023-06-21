@@ -1,38 +1,41 @@
 Module title Abbreviation
-Information Processing within Organizations 12-IV-161-m01
+IT-Management 12-M-ITM-161-m01
 Module coordinator Module offered by
-holder of the Chair of Business Management and Business 
 ECTS Method of grading Only after succ. compl. of module(s)
 5 numerical grade --
 Duration Module level Other prerequisites
 1 semester graduate --
 Contents
 Content:
-This course provides students with an in-depth overview of the structure and the application areas of business 
-management information systems in enterprises and public institutions.
+This course provides students with an in-depth overview of aims, tasks and appropriate methods of IT manage-
+ment.
  
 Outline of syllabus:
-1. What is software: concepts, categories, application
-2. Software life cycle: duration, phases, steps
-3. As-is analysis: tasks, problems
-4. To-be concept: system design, data design, dialog design, function design
-5. Object orientation: paradigm shift
-6. Change management: meaning, methodologies, project management
-7. Office automation: tasks, areas of application
+1.Organisation and distinction
+2.IT strategy
+3.IT organisation
+4.Management of IT systems
+5.Enterprise Architecture Management
+6.IT project management
+7.IT security
+8.IT law
+9.IT controlling
+Reading:
+•Hofmann/Schmidt: Masterkurs IT-Management, Wiesbaden.
+•Tiemeyer: Handbuch IT-Management, Munich.
+•Hanschke: Strategisches Management der IT-Landschaft, Munich.
 Intended learning outcomes
-After completing the course "Integrated Information Processing", students will be able to
-(i) understand the importance of integration in enterprises, especially in information systems;
-(ii) assess the progress of development of a software project, estimate cycle costs, know and consider require-
-ments, which brings a software implementation with;
-(iii) select the correct procedures or practices in an as-is analysis and target conception and practically apply 
-(with participation in the exercise);
-(iv) understand the importance of change management and project management and know the appropriate me-
-thods for specific applications.
+After completing the course "IT Management", students will be able to
+1.overview the different aspects to be considered regarding a purposeful IT management;
+2.understand and apply appropriate methods and tools;
+3.independently perform system search and selection in a team project (only after participation in the practice 
+lessons).
 Courses  (type, number of weekly contact hours, language — if other than German)
 V (2) + Ü (2)
 Method of assessment  (type, scope, language — if other than German, examination offered — if not every semester, information on whether 
 module is creditable for bonus)
-written examination (approx. 60 minutes)
+a) written examination (approx. 60 minutes) or b) oral examination (one candidate each: approx. 15 to 20 minu-
+tes; groups of 2: approx. 20 minutes; groups of 3: approx. 30 minutes)
 Language of assessment: German and/or English
 creditable for bonus
 Allocation of places
