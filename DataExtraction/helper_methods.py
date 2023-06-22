@@ -1,8 +1,7 @@
 # Generic methods  to apply regex and clean text
 import re
 import csv
-import tempfile
-import shutil
+import os
 
 def extract_first_match(text, regex_pattern):
     pattern = re.compile(regex_pattern)
@@ -29,18 +28,4 @@ def clean_entries(matches, patternsToRemove):
         cleaned_entries.append(cleaned_text)
 
     return cleaned_entries
-
-def row_exists_in_csv(filename, row_data):
-    with open(filename, 'r') as file:
-        reader = csv.reader(file)
-        for existing_row in reader:
-            if existing_row == row_data:
-                return True
-    return False
-
-def add_row_to_csv(filename, row_data):
-    if not row_exists_in_csv(filename, row_data):
-        with open(filename, 'a', newline='') as file:
-            writer = csv.writer(file)
-            writer.writerow(row_data)
 
