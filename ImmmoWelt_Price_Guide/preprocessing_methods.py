@@ -1,4 +1,7 @@
 import json
+import re
+from sklearn.preprocessing import MultiLabelBinarizer
+import pandas as pd
 
 def extract_TranactionType_columns(df):
     # Create empty lists for each extracted column
@@ -29,5 +32,22 @@ def extract_TranactionType_columns(df):
 
     # Drop the original column
     df.drop('TranactionType', axis=1, inplace=True)
+
+    return df
+
+
+def binarize_columns(df, column_name):
+
+    # replace whitespaces with underscores within entries and put everything in lowercase
+    df[column_name] = df[column_name].apply(lambda x: [re.sub(r'\s', '_', feature.lower()) for feature in re.findall(r'"([^"]*)"', x)])
+
+    # use MultiLabelBinarizer to binarize the column
+    mlb = MultiLabelBinarizer()
+    binary_matrix = mlb.fit_transform(df[column_name])
+    df_binary = pd.DataFrame(binary_matrix, columns=mlb.classes_)
+
+    # Drop the original column and concatenate the binary columns to the existing DataFrame
+    df.drop(column_name, axis=1, inplace=True)
+    df = pd.concat([df, df_binary], axis=1)
 
     return df
