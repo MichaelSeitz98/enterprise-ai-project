@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8dfa1947f16f41e4abe17907e3dfd611/artifacts
+end_time: 1688568898171
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8dfa1947f16f41e4abe17907e3dfd611
+run_name: skittish-lamb-288
+run_uuid: 8dfa1947f16f41e4abe17907e3dfd611
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688568892863
+status: 4
+tags: []
+user_id: michi
