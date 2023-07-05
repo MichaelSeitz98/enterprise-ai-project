@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1688572021247
+current_stage: Production
+description: ''
+last_updated_timestamp: 1688572041363
+name: Michels_Super_XGBoost
+run_id: b1907af129764cd886e96a2721fed46e
+run_link: ''
+source: mlflow-artifacts:/0/b1907af129764cd886e96a2721fed46e/artifacts/xgboost-model
+status: READY
+status_message: null
+user_id: null
+version: 1
