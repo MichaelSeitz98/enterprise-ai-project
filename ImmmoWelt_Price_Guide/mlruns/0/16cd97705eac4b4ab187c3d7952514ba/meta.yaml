@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/16cd97705eac4b4ab187c3d7952514ba/artifacts
+deleted_time: 1688573202217
 end_time: 1688571759462
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 16cd97705eac4b4ab187c3d7952514ba
 run_name: victorious-worm-879
 run_uuid: 16cd97705eac4b4ab187c3d7952514ba

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b2ea8904bd0941e6865ebaabbcf205b4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b2ea8904bd0941e6865ebaabbcf205b4
+run_name: welcoming-koi-162
+run_uuid: b2ea8904bd0941e6865ebaabbcf205b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688573111102
+status: 1
+tags: []
+user_id: michi

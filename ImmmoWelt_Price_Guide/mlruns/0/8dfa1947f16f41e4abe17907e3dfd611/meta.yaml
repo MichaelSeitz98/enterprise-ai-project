@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/8dfa1947f16f41e4abe17907e3dfd611/artifacts
+deleted_time: 1688573202247
 end_time: 1688568898171
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 8dfa1947f16f41e4abe17907e3dfd611
 run_name: skittish-lamb-288
 run_uuid: 8dfa1947f16f41e4abe17907e3dfd611

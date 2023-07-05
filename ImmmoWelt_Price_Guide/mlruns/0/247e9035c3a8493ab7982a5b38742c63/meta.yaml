@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/247e9035c3a8493ab7982a5b38742c63/artifacts
+deleted_time: 1688573202224
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 247e9035c3a8493ab7982a5b38742c63
 run_name: powerful-bug-259
 run_uuid: 247e9035c3a8493ab7982a5b38742c63
