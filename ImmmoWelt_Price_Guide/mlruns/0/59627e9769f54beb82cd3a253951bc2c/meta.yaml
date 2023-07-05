@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/59627e9769f54beb82cd3a253951bc2c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 59627e9769f54beb82cd3a253951bc2c
+run_name: zealous-shark-146
+run_uuid: 59627e9769f54beb82cd3a253951bc2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688573783304
+status: 1
+tags: []
+user_id: michi
