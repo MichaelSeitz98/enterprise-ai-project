@@ -9,12 +9,6 @@ import pandas as pd
 from transformers import TapasTokenizer, TapasForQuestionAnswering
 from transformers import AutoTokenizer, AutoModelForTableQuestionAnswering
 from transformers import pipeline
-import PIL
-
-# read the module_guide_tableQA\0915NC_Studienplaetze.jpg as pil image
-pil_image = PIL.Image.open("0915NC_Studienplaetze.jpg")
-# make that image a bit less high
-pil_image = pil_image.resize((int(pil_image.width * 0.5), int(pil_image.height * 0.5)))
 
 
 # In[ ]:
@@ -31,10 +25,10 @@ def get_answer(
     df = pd.DataFrame()
     if dropdown == "Master Information Systems":
         df = pd.read_excel(
-            r"03_extracted_final_modules\MS_IS_all_modules_orginal_15_rows_cleaned.xlsx"
+            r"03_extracted_final_modules/MS_IS_all_modules_orginal_15_rows_cleaned.xlsx"
         )
     elif dropdown == "Bachelor Information Systems":
-        df = pd.read_excel(r"03_extracted_final_modules\BA_IS_all_modules_15.xlsx")
+        df = pd.read_excel(r"03_extracted_final_modules/BA_IS_all_modules_15.xlsx")
     elif dropdown == "Bachelor Management":
         df = pd.read_excel(r"03_extracted_final_modules\BA_MM_all_modules_15.xlsx")
     df = df.astype(str)
@@ -222,5 +216,5 @@ with gr.Blocks() as demo:
     outputs = [output_question, outout_full_module]
     ask_btn.click(fn=get_answer, inputs=inputs, outputs=outputs, api_name="greet")
 
-demo.launch(debug=True, share=True)
+demo.launch(debug=True)
 
