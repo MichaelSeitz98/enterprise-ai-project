@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/b2ea8904bd0941e6865ebaabbcf205b4/artifacts
+deleted_time: 1688574286186
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b2ea8904bd0941e6865ebaabbcf205b4
 run_name: welcoming-koi-162
 run_uuid: b2ea8904bd0941e6865ebaabbcf205b4
