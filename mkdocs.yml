@@ -1,7 +1,6 @@
 # BEGIN: 1d2f3g4h5j6k
 site_name: Enterprise AI Group 2
-nav:
-  - Home: README.md
+
 # END: 1d2f3g4h5j6k
 theme:
   name: readthedocs
