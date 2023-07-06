@@ -5,6 +5,32 @@ import pandas as pd
 import ast
 import numpy as np
 
+def preprocess_data(df):
+
+    df = extract_zipcode(df)
+    df = extract_EstateDistribution_columns(df)
+    df = compute_rooms_if_missing(df)
+    df = binarize_columns(df, 'Object_features')
+    df = drop_columns(df)
+    return df
+
+def compute_rooms_if_missing(df):
+
+    df["LivingSpace"] = pd.to_numeric(df["LivingSpace"], errors="coerce")
+    df["Rooms"] = pd.to_numeric(df["Rooms"], errors="coerce")
+
+    df.dropna(subset=["LivingSpace"], inplace=True)
+
+    df["Rooms"].fillna((df["LivingSpace"] / 15).round().astype(int), inplace=True)
+    
+    df.reset_index(drop=True, inplace=True)
+
+    return df
+
+def drop_columns(df):
+    df.drop(['Url', 'Object_currency', 'Title', 'Price', 'MediaItems', 'BasicInfo'], axis=1, inplace=True)
+    return df
+
 def extract_EstateDistribution_columns(df):
     # Create empty lists for each extracted column
     estate_type = []
