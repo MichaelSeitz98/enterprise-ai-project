@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/4506f834e77f4ae0adce4713fe4364ae/artifacts
+deleted_time: 1688573503195
+end_time: 1688573344427
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 4506f834e77f4ae0adce4713fe4364ae
+run_name: welcoming-loon-120
+run_uuid: 4506f834e77f4ae0adce4713fe4364ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688573292134
+status: 3
+tags: []
+user_id: michi

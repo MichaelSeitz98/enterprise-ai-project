@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1b2ad05e8a594115a35420b0d3f66dbb/artifacts
+end_time: 1688572198526
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1b2ad05e8a594115a35420b0d3f66dbb
+run_name: loud-seal-858
+run_uuid: 1b2ad05e8a594115a35420b0d3f66dbb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688572175674
+status: 3
+tags: []
+user_id: michi

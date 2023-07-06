@@ -2,11 +2,11 @@ import json
 import re
 from sklearn.preprocessing import MultiLabelBinarizer
 import pandas as pd
+import ast
+import numpy as np
 
-def extract_TranactionType_columns(df):
+def extract_EstateDistribution_columns(df):
     # Create empty lists for each extracted column
-    estate_type_german = []
-    distribution_type_german = []
     estate_type = []
     distribution_type = []
 
@@ -18,15 +18,15 @@ def extract_TranactionType_columns(df):
         # Convert the JSON string to a Python dictionary
         transaction_dict = json.loads(json_string)
         
-        # Extract the values from the dictionary
-        estate_type_german.append(transaction_dict['EstateTypeGerman'])
-        distribution_type_german.append(transaction_dict['DistributionTypeGerman'])
-        estate_type.append(transaction_dict['EstateType'])
-        distribution_type.append(transaction_dict['DistributionType'])
+        # Extract the values from the dictionary, if present
+        estate_type_val = transaction_dict.get('EstateType')
+        distribution_type_val = transaction_dict.get('DistributionType')
+
+        # Append the values to the respective lists, or add NaN if not found
+        estate_type.append(estate_type_val if estate_type_val is not None else np.nan)
+        distribution_type.append(distribution_type_val if distribution_type_val is not None else np.nan)
 
     # Add the extracted columns to the DataFrame
-    df['EstateTypeGerman'] = estate_type_german
-    df['DistributionTypeGerman'] = distribution_type_german
     df['EstateType'] = estate_type
     df['DistributionType'] = distribution_type
 
@@ -69,16 +69,17 @@ def check_concat_xlsx(file1, file2, output_file):
     concatenated.to_excel(output_file, index=False)
     print(f"Concatenated data saved to {output_file}")
 
+
 def extract_zipcode(df):
-    # Convert the "Address" column from string to dictionary
-    df['Address'] = df['Address'].apply(json.loads)
-
-    # Extract "ZipCode" from "Address" column and convert it to string
-    df['ZipCode'] = df['Address'].apply(lambda x: str(x['ZipCode']))
-
-    # Drop the old "Address" column
+    # Convert string values in 'Address' column to dictionaries
+    df['Address'] = df['Address'].apply(lambda x: {} if pd.isnull(x) else json.loads(x))
+    
+    # Extract 'ZipCode' from 'Address' column and convert it to string
+    df['ZipCode'] = df['Address'].apply(lambda x: str(x.get('ZipCode', None)))
+    
+    # Drop the old 'Address' column
     df.drop('Address', axis=1, inplace=True)
-
+    
     return df
 
 def rename_columns_with_umlauts(df):
