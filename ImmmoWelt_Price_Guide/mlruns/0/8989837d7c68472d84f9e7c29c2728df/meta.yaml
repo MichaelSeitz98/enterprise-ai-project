@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8989837d7c68472d84f9e7c29c2728df/artifacts
+end_time: 1689015162987
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8989837d7c68472d84f9e7c29c2728df
+run_name: unleashed-stag-674
+run_uuid: 8989837d7c68472d84f9e7c29c2728df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689015090163
+status: 3
+tags: []
+user_id: michi

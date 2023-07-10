@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/322644383579614420
+creation_time: 1689015096414
+experiment_id: '322644383579614420'
+last_update_time: 1689016125989
+lifecycle_stage: deleted
+name: xgboost_flats_buy
+tags: {}

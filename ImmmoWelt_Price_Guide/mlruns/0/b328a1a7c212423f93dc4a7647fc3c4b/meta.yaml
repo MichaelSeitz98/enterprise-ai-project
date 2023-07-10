@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b328a1a7c212423f93dc4a7647fc3c4b/artifacts
+end_time: 1689017423300
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b328a1a7c212423f93dc4a7647fc3c4b
+run_name: baseline_with_avg_price_per_sqm_rent
+run_uuid: b328a1a7c212423f93dc4a7647fc3c4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689017414948
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1125e3733b0f4cc980fa61d46b16a396/artifacts
+end_time: 1689013897346
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1125e3733b0f4cc980fa61d46b16a396
+run_name: gregarious-calf-544
+run_uuid: 1125e3733b0f4cc980fa61d46b16a396
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689013844610
+status: 3
+tags: []
+user_id: michi
