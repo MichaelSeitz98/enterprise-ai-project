@@ -28,7 +28,7 @@ def compute_rooms_if_missing(df):
     return df
 
 def drop_columns(df):
-    df.drop(['Url', 'Object_currency', 'Title', 'Price', 'MediaItems', 'BasicInfo'], axis=1, inplace=True)
+    df.drop(['Url', 'Object_currency', 'Title', 'Price', 'MediaItems', 'BasicInfo', "ContactData"], axis=1, inplace=True)
     return df
 
 def extract_EstateDistribution_columns(df):
