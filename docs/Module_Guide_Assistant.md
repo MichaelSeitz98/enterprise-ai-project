@@ -5,9 +5,6 @@ This technical documentation outlines our approach to building a "University Mod
 ## Approach Overview
 
 1. PDF Extraction: We used the `pdfminer.six` library to extract text from the module catalogues in PDF format. This allowed us to obtain the raw module information for further processing.
-
-2. Data Preprocessing: Several preprocessing and regex methods were applied to clean and transform the extracted text data into a more structured format. The goal was to create a generic dataframe with one module per row. The code and relevant files for the data extraction can be found in the [module_guide_tableQA/02_data_extraction](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/module_guide_tableQA/02_data_extraction) folder.
-
 3. Chatbot Development: Our objective was to create a chatbot capable of answering questions about the modules. We planned to utilize the Google TAPAS algorithm for this purpose, which required a large training set of questions and answers. 
 
 4. Training Set Preparation: We aimed to create a comprehensive training set by generating a set of prepared questions and corresponding answers. This set would serve as the training data for the Google TAPAS model. Data, some code and approaches can be found within [module_guide_tableQA/04_finetuning_approaches](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/module_guide_tableQA/04_finetuning_approaches).
