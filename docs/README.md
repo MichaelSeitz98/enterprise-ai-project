@@ -15,3 +15,4 @@ Michael Seitz | Michel Bauer | Felix Neubauer
 ![Follow our presentation](res/qr_code_docs.png)
 
 
+
