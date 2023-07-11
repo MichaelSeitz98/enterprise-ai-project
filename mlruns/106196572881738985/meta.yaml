@@ -1,6 +1,7 @@
 artifact_location: mlflow-artifacts:/106196572881738985
 creation_time: 1689095879768
 experiment_id: '106196572881738985'
-last_update_time: 1689095879768
+last_update_time: 1689098031392
 lifecycle_stage: active
-name: model_comparison
+name: rent_wue_full_model_comparison
+tags: {}
