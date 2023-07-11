@@ -6,12 +6,12 @@
 # Data extraction 
 
 
-# Explorative Data Analysis 
+## Exploratory Data Analysis
 
-To generate insights about the distribution of the extracted dataset, an exploratory data analysis was conducted using `ydata profiling`. 
-The results of the flat rent data set can be found [here](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-rent-all.html).
+An exploratory data analysis was conducted using `ydata profiling` to generate insights about the distribution of the extracted dataset. The analysis focused on the flat rent data set, and the results can be accessed [here](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-rent-all.html).
 
-The exploratory data analysis involved utilizing statistical measures and visualizations to examine the dataset, aiding in understanding its structure, identifying patterns, and detecting potential issues. The analysis serves as a foundation for making informed decisions regarding feature engineering and modeling.
+The purpose of the exploratory data analysis was to gain an overview of the variables, identify missing values, assess class imbalance, and explore correlations among different variables. Statistical measures and visualizations were employed to understand the dataset's structure, uncover patterns, and identify potential issues. The analysis serves as a crucial step in the data exploration process, providing a foundation for informed decisions related to feature engineering and modeling.
+
 
 # Model Evaluation 
 
