@@ -9,9 +9,9 @@ Final project documentation about the housing price predictions: [find here](Pri
 Michael Seitz | Michel Bauer | Felix Neubauer
 
 
--------------------------------------------------------------------
+----------------------------------------------------------------------
 
-**Follow our presentation:**
+**Follow our presentation**
 
 ![Follow our presentation](res/qr_code_docs.png)
 
