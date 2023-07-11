@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/319344342933181605
+creation_time: 1689095671117
+experiment_id: '319344342933181605'
+last_update_time: 1689096729171
+lifecycle_stage: deleted
+name: rent_wue_model_comparison
+tags: {}
