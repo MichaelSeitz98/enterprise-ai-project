@@ -1,16 +1,16 @@
-# Price Recommendation Tool :house_with_garden::moneybag:
+# Price Recommendation Tool
+
+
 
 Accurate price predictions for flat rents and house buys in Würzburg are crucial. They enable informed decision making, aid budget planning, support market analysis, ensure fair transactions, and reduce information asymmetry. Price predictions play a crucial role in facilitating well-informed choices and efficient transactions in Würzburg's real estate market.
 
-To develop an ML system to enable this, we followed a structured process. 
-
-First, we scraped our own dataset by utilizing web scraping techniques. The details of the data extraction process can be found under the [data extraction](#data-extraction) section. Next, we conducted [exploratory data analysis](#Data Extraction :open_file_folder:) and performed [feature engineering](#feature-engineering) to prepare the dataset for modeling. We then proceeded to train and compare different models using the dataset. The [training](#training) process and model comparisons were documented and tracked using MLFlow. Once we selected the best model, we deployed it to the cloud for scalability and accessibility. The deployment process is described under [deployment to cloud](#deployment-to-cloud). Finally, we developed a [frontend](#frontend) application to provide an intuitive user interface for interacting with the ML system.
+To develop an ML system to enable this, we followed a structured process.  First, we scraped our own dataset by utilizing web scraping techniques. The details of the data extraction process can be found under the [data extraction](#data-extraction) section. Next, we conducted [exploratory data analysis](#Data Extraction :open_file_folder:) and performed [feature engineering](#feature-engineering) to prepare the dataset for modeling. We then proceeded to train and compare different models using the dataset. The [training](#training) process and model comparisons were documented and tracked using MLFlow. Once we selected the best model, we deployed it to the cloud for scalability and accessibility. The deployment process is described under [deployment to cloud](#deployment-to-cloud). Finally, we developed a [frontend](#frontend) application to provide an intuitive user interface for interacting with the ML system.
 
 
 
-# Data Extraction :open_file_folder:
+# Data Extraction 
 
-
+:open_file_folder:
 # Exploratory Data Analysis :bar_chart:  
 
 An exploratory data analysis was conducted using `ydata-profiling` to generate insights about the distribution of the extracted dataset. The analysis focused on the flat rent data set, and the results can be accessed [here](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-rent-all.html).
