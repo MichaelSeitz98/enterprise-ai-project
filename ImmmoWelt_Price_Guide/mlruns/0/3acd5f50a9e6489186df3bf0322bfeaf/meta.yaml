@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3acd5f50a9e6489186df3bf0322bfeaf/artifacts
+end_time: 1689069990050
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3acd5f50a9e6489186df3bf0322bfeaf
+run_name: efficient-bird-491
+run_uuid: 3acd5f50a9e6489186df3bf0322bfeaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689069944041
+status: 3
+tags: []
+user_id: michi
