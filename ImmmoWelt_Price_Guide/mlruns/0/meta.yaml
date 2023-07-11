@@ -1,7 +1,0 @@
-artifact_location: mlflow-artifacts:/0
-creation_time: 1688568114394
-experiment_id: '0'
-last_update_time: 1689016102158
-lifecycle_stage: active
-name: flats_to_rent
-tags: {}

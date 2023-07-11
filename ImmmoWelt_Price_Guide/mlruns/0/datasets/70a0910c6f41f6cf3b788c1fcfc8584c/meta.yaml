@@ -1,8 +1,0 @@
-digest: b02e1082
-name: dataset
-profile: '{"features_shape": [28, 86], "features_size": 2408, "features_nbytes": 19264}'
-schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
-  {\"dtype\": \"float64\", \"shape\": [-1, 86]}}]", "targets": null}}'
-source: '{"tags": {"mlflow.user": "michi", "mlflow.source.name": "C:\\Users\\michi\\AppData\\Roaming\\Python\\Python38\\site-packages\\ipykernel_launcher.py",
-  "mlflow.source.type": "LOCAL"}}'
-source_type: code

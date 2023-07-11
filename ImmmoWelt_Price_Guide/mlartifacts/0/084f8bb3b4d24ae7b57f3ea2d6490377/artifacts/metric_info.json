@@ -1,3 +1,0 @@
-{
-  "mean_absolute_error_X_test_processed": "mean_absolute_error(y_true=test_y, y_pred=preds)"
-}

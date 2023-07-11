@@ -1,6 +1,0 @@
-{
-  "mean_absolute_error_X_valid_processed": "mean_absolute_error(y_true=val_y, y_pred=preds)",
-  "mean_squared_error_X_valid_processed": "mean_squared_error(y_true=val_y, y_pred=preds)",
-  "r2_score-2_X_valid_processed": "r2_score(y_true=val_y, y_pred=preds)",
-  "r2_score_X_valid_processed": "r2_score(y_true=val_y, y_pred=preds)"
-}

@@ -1,8 +1,0 @@
-digest: 12df7019
-name: validation_0
-profile: '{"features_shape": [22, 86], "features_size": 1892, "features_nbytes": 7568}'
-schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
-  {\"dtype\": \"float32\", \"shape\": [-1, 86]}}]", "targets": null}}'
-source: '{"tags": {"mlflow.user": "michi", "mlflow.source.name": "C:\\Users\\michi\\AppData\\Roaming\\Python\\Python38\\site-packages\\ipykernel_launcher.py",
-  "mlflow.source.type": "LOCAL"}}'
-source_type: code
