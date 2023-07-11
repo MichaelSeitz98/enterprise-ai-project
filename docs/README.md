@@ -6,5 +6,12 @@ Documentation about the first approach building a module guide assistant: [find 
 
 Final project documentation about the housing price predictions: [find here](Price_Recommendation_Tool.md).
 
-
 Michael Seitz | Michel Bauer | Felix Neubauer
+
+
+-------------------------------------------------------------------
+
+**Follow our presentation:**
+![Follow our presentation](res/qr_code_docs.png)
+
+

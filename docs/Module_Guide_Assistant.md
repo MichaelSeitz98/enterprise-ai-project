@@ -2,6 +2,7 @@
 
 This technical documentation outlines our approach to building a "University Module Guide" using Python 3. Although the approach did not yield the desired results, it is important to document the process for future reference. The main steps involved extracting module catalogues in PDF format, preprocessing the data, and attempting to utilize the Google TAPAS algorithm for question-answering capabilities.
 
+
 ## Approach Overview
 
 1. PDF Extraction: We used the `pdfminer.six` library to extract text from the module catalogues in PDF format. This allowed us to obtain the raw module information for further processing.
@@ -13,7 +14,7 @@ This technical documentation outlines our approach to building a "University Mod
 
 # Idea 
 
-![Bild](res/Bild1.png)
+![Bild](res/architecture_module_guide.png)
 
 ## Challenges Encountered
 
