@@ -6,10 +6,10 @@
 # Data extraction 
 
 
-# Feature Engineering 
+# Explartive Data Analysis & Feature Engineering 
 
 
-# Trained Models 
+# Model Training 
 
 
 # Model Evaluation 
