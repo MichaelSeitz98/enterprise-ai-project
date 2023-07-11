@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e88885c5f9804d72822736f20705fb3b/artifacts
+end_time: 1689082107727
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e88885c5f9804d72822736f20705fb3b
+run_name: efficient-kite-625
+run_uuid: e88885c5f9804d72822736f20705fb3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689082086723
+status: 3
+tags: []
+user_id: michi
