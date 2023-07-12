@@ -1,6 +1,7 @@
 artifact_location: file:///c:/Users/michi/enterpriseAI_michi/enterprise-ai-project/ImmmoWelt_Price_Guide/mlruns/459207193269009423
 creation_time: 1689095548212
 experiment_id: '459207193269009423'
-last_update_time: 1689095548212
-lifecycle_stage: active
+last_update_time: 1689175074567
+lifecycle_stage: deleted
 name: model_comparison
+tags: {}

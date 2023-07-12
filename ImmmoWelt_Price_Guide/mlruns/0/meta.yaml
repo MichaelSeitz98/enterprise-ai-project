@@ -1,7 +1,7 @@
 artifact_location: mlflow-artifacts:/0
 creation_time: 1688568114394
 experiment_id: '0'
-last_update_time: 1689162878595
+last_update_time: 1689175987912
 lifecycle_stage: active
-name: flats_to_rent_high_corr_features
+name: default_flats_to_rent_high_corr_features
 tags: {}

@@ -1,0 +1,48 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.16
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.4.1
+model_uuid: 65234ccab3204d109f85b28160aec6e7
+run_id: b77aaf743090456099590b5dd9f0ea16
+signature:
+  inputs: '[{"type": "double", "name": "LivingSpace"}, {"type": "double", "name":
+    "Rooms"}, {"type": "long", "name": "abstellraum"}, {"type": "long", "name": "bad/wc_getrennt"},
+    {"type": "long", "name": "barriefrei"}, {"type": "long", "name": "dusche"}, {"type":
+    "long", "name": "elektro"}, {"type": "long", "name": "erdwaerme"}, {"type": "long",
+    "name": "fenster"}, {"type": "long", "name": "ferne"}, {"type": "long", "name":
+    "fliesen"}, {"type": "long", "name": "frei"}, {"type": "long", "name": "fussbodenheizung"},
+    {"type": "long", "name": "gaestewc"}, {"type": "long", "name": "garage"}, {"type":
+    "long", "name": "kable_sat_tv"}, {"type": "long", "name": "kontrollierte_be-_und_entlueftungsanlage"},
+    {"type": "long", "name": "kunststofffenster"}, {"type": "long", "name": "luftwp"},
+    {"type": "long", "name": "parkett"}, {"type": "long", "name": "personenaufzug"},
+    {"type": "long", "name": "reinigung"}, {"type": "long", "name": "rollstuhlgerecht"},
+    {"type": "long", "name": "speisekammer"}, {"type": "long", "name": "terrasse"},
+    {"type": "long", "name": "wanne"}, {"type": "long", "name": "zentralheizung"},
+    {"type": "double", "name": "ConstructionYear"}, {"type": "integer", "name": "EstateType_APARTMENT"},
+    {"type": "integer", "name": "DistributionType_RENT"}, {"type": "integer", "name":
+    "ZipCode_97070"}, {"type": "integer", "name": "ZipCode_97072"}, {"type": "integer",
+    "name": "ZipCode_97074"}, {"type": "integer", "name": "ZipCode_97076"}, {"type":
+    "integer", "name": "ZipCode_97078"}, {"type": "integer", "name": "ZipCode_97080"},
+    {"type": "integer", "name": "ZipCode_97082"}, {"type": "integer", "name": "ZipCode_97084"},
+    {"type": "integer", "name": "ZipCode_97204"}, {"type": "integer", "name": "ZipCode_97209"},
+    {"type": "integer", "name": "ZipCode_97218"}, {"type": "integer", "name": "ZipCode_97222"},
+    {"type": "integer", "name": "ZipCode_97228"}, {"type": "integer", "name": "ZipCode_97234"},
+    {"type": "integer", "name": "ZipCode_97236"}, {"type": "integer", "name": "ZipCode_97246"},
+    {"type": "integer", "name": "ZipCode_97249"}, {"type": "integer", "name": "ZipCode_97250"},
+    {"type": "integer", "name": "ZipCode_97261"}, {"type": "integer", "name": "ZipCode_97270"},
+    {"type": "integer", "name": "ZipCode_97288"}, {"type": "integer", "name": "ZipCode_97297"},
+    {"type": "integer", "name": "ZipCode_97299"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-07-12 15:36:26.210520'
