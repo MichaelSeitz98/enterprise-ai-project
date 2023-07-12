@@ -1,1 +1,0 @@
-The initial comprehensive comparison of models includes a baseline benchmark. All models underwent training using identical data and were completed on July 11, 2023. Evaluation was performed on a separate Validation Dataset to prevent any data leakage from the test dataset. The test dataset remains completely untouched and has not been utilized so far.

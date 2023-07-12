@@ -1,8 +1,0 @@
-digest: caf7f0f8
-name: validation_0
-profile: '{"features_shape": [22, 49], "features_size": 1078, "features_nbytes": 4312}'
-schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
-  {\"dtype\": \"float32\", \"shape\": [-1, 49]}}]", "targets": null}}'
-source: '{"tags": {"mlflow.user": "michi", "mlflow.source.name": "C:\\Users\\michi\\AppData\\Roaming\\Python\\Python38\\site-packages\\ipykernel_launcher.py",
-  "mlflow.source.type": "LOCAL"}}'
-source_type: code
