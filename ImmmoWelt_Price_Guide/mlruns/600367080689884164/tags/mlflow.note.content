@@ -1,0 +1,38 @@
+**Dataset**: wue-flat-rent-combined
+**Used Features:**
+
+- Object_price
+- LivingSpace
+- Rooms
+- abstellraum
+- bad/wc_getrennt
+- barriefrei
+- dusche
+- elektro
+- erdwaerme
+- fenster
+- ferne
+- fliesen'
+-frei 
+- fussbodenheizung
+- gaestewc
+- garage
+- kable_sat_tv
+- kontrollierte_be-_und_entlueftungsanlage'
+- kunststofffenster'
+- luftwp
+- parkett
+- personenaufzug
+- reinigung
+- rollstuhlgerecht
+- speisekammer
+- terrasse
+- wanne
+- zentralheizung
+- EstateType
+- DistributionType
+- ConstructionYear
+- ZipCode
+- ConstructionYear
+- ZipCode
+

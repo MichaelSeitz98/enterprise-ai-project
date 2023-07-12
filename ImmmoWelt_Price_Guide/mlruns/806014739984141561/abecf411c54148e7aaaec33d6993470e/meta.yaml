@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/806014739984141561/abecf411c54148e7aaaec33d6993470e/artifacts
+end_time: 1689196346458
+entry_point_name: ''
+experiment_id: '806014739984141561'
+lifecycle_stage: active
+run_id: abecf411c54148e7aaaec33d6993470e
+run_name: ridge-regression
+run_uuid: abecf411c54148e7aaaec33d6993470e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689196304373
+status: 3
+tags: []
+user_id: michi
