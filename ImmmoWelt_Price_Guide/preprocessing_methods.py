@@ -28,8 +28,11 @@ def compute_rooms_if_missing(df):
     return df
 
 def drop_columns(df):
-    df.drop(['Url', 'Object_currency', 'Title', 'Price', 'MediaItems', 'BasicInfo', "ContactData"], axis=1, inplace=True)
+    columns_to_drop = ['Url', 'Object_currency', 'Title', 'Price', 'MediaItems', 'BasicInfo', 'ContactData']
+    existing_columns = [col for col in columns_to_drop if col in df.columns]
+    df.drop(existing_columns, axis=1, inplace=True)
     return df
+
 
 def extract_EstateDistribution_columns(df):
     # Create empty lists for each extracted column
