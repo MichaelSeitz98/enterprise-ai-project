@@ -18,19 +18,19 @@ The purpose of the exploratory data analysis was to gain an overview of the vari
 
 ## Model Training and Evaluation
 
-### Model Selection 
+### Model Comparison 
 
-For this regression task, different models where trained, tuned and compared to each other. All training and model related code can be find in notebook `train_and_eval_models.ipynb`. To ensure reproducability and compariblity between the models, model training was executed as pipeline. For experiemnt, like finding suitable featres, date set, data augmentation methods, model archiekture, all runs are logged with MLFlow. 
+For this regression task, different models were trained, tuned and compared. All training and model related code can be found in the notebook `train_and_eval_models.ipynb`. To ensure reproducibility and comparability between models, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
 
-- Linear Regression 
-- Lasso Regression 
-- Ridge Regression 
-- Elasticnet Regression 
+- Linear regression 
+- Lasso regression 
+- Ridge regression 
+- Elasticnet regression 
 - Random Forest Regression 
 - XGBoost Regressor
+- Our own Benchmark 
 
-All of these models are benchmarked agaisnst our own simple benchmark model. This baseline model predicts the prices just on the living room information and the current average rent / buy price per square meter in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month. So the benchmark is always up to date. In the same way, for our 2nd use case of buying houses, we have also a dynamicall benchmark, but with average buying price per square meter. Also scaped automatically from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772). 
-
+All of these models are benchmarked against our own simple **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month. So the benchmark is always up to date. In the same way, for our 2nd use case, buying a house, we also have a dynamic benchmark, but with the average purchase price per square metre. This is also automatically taken from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
 
 ## Deployment to Cloud
@@ -40,3 +40,8 @@ All of these models are benchmarked agaisnst our own simple benchmark model. Thi
 
 
 ## Outlook & Discussion
+
+
+
+* extend data set data, regualary scraped. every week new scarping 
+* 
