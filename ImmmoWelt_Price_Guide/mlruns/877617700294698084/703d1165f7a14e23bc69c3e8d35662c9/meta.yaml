@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/877617700294698084/703d1165f7a14e23bc69c3e8d35662c9/artifacts
+end_time: 1689280141659
+entry_point_name: ''
+experiment_id: '877617700294698084'
+lifecycle_stage: active
+run_id: 703d1165f7a14e23bc69c3e8d35662c9
+run_name: random-forest
+run_uuid: 703d1165f7a14e23bc69c3e8d35662c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689280075408
+status: 3
+tags: []
+user_id: michi
