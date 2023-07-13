@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1689280375329
+current_stage: Archived
+description: ''
+last_updated_timestamp: 1689283660651
+name: rent_wue_selected_features_xgb-aug-0
+run_id: fb73c615ce3e441294abf21df52d5479
+run_link: ''
+source: mlflow-artifacts:/506330484095137253/fb73c615ce3e441294abf21df52d5479/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 1

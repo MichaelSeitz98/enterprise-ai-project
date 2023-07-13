@@ -1,0 +1,29 @@
+digest: ca7c10da
+name: dataset
+profile: '{"num_rows": 1966, "num_elements": 90436}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "LivingSpace"}, {"type": "double",
+  "name": "Rooms"}, {"type": "double", "name": "altbau_(bis_1945)"}, {"type": "double",
+  "name": "balkon"}, {"type": "double", "name": "barriefrei"}, {"type": "double",
+  "name": "dachgeschoss"}, {"type": "double", "name": "einbaukueche"}, {"type": "double",
+  "name": "neubau"}, {"type": "double", "name": "parkett"}, {"type": "double", "name":
+  "stellplatz"}, {"type": "double", "name": "bad/wc_getrennt"}, {"type": "double",
+  "name": "personenaufzug"}, {"type": "double", "name": "garten"}, {"type": "double",
+  "name": "garage"}, {"type": "double", "name": "renoviert"}, {"type": "double", "name":
+  "terrasse"}, {"type": "double", "name": "wanne"}, {"type": "double", "name": "zentralheizung"},
+  {"type": "double", "name": "abstellraum"}, {"type": "double", "name": "ferne"},
+  {"type": "double", "name": "fussbodenheizung"}, {"type": "double", "name": "gartennutzung"},
+  {"type": "double", "name": "kelleranteil"}, {"type": "double", "name": "ZipCode_97070"},
+  {"type": "double", "name": "ZipCode_97072"}, {"type": "double", "name": "ZipCode_97074"},
+  {"type": "double", "name": "ZipCode_97076"}, {"type": "double", "name": "ZipCode_97078"},
+  {"type": "double", "name": "ZipCode_97080"}, {"type": "double", "name": "ZipCode_97082"},
+  {"type": "double", "name": "ZipCode_97084"}, {"type": "double", "name": "ZipCode_97204"},
+  {"type": "double", "name": "ZipCode_97209"}, {"type": "double", "name": "ZipCode_97218"},
+  {"type": "double", "name": "ZipCode_97222"}, {"type": "double", "name": "ZipCode_97228"},
+  {"type": "double", "name": "ZipCode_97234"}, {"type": "double", "name": "ZipCode_97236"},
+  {"type": "double", "name": "ZipCode_97246"}, {"type": "double", "name": "ZipCode_97249"},
+  {"type": "double", "name": "ZipCode_97250"}, {"type": "double", "name": "ZipCode_97261"},
+  {"type": "double", "name": "ZipCode_97270"}, {"type": "double", "name": "ZipCode_97288"},
+  {"type": "double", "name": "ZipCode_97297"}, {"type": "double", "name": "ZipCode_97299"}]}'
+source: '{"tags": {"mlflow.user": "michi", "mlflow.source.name": "C:\\Users\\michi\\AppData\\Roaming\\Python\\Python38\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

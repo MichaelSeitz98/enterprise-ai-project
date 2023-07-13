@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/877617700294698084/ce9fbda986364b5bb50fc4d3b392172d/artifacts
+deleted_time: 1689290357956
 end_time: 1689277091431
 entry_point_name: ''
 experiment_id: '877617700294698084'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: ce9fbda986364b5bb50fc4d3b392172d
 run_name: xgb
 run_uuid: ce9fbda986364b5bb50fc4d3b392172d

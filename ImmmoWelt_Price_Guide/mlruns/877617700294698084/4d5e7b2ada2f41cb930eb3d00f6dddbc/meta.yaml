@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/877617700294698084/4d5e7b2ada2f41cb930eb3d00f6dddbc/artifacts
+deleted_time: 1689290357994
 end_time: 1689279272227
 entry_point_name: ''
 experiment_id: '877617700294698084'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4d5e7b2ada2f41cb930eb3d00f6dddbc
 run_name: lasso-regression
 run_uuid: 4d5e7b2ada2f41cb930eb3d00f6dddbc

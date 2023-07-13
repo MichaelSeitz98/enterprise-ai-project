@@ -1,9 +1,9 @@
 artifact_location: mlflow-artifacts:/736199444151774623
 creation_time: 1689193407635
 experiment_id: '736199444151774623'
-last_update_time: 1689253893147
+last_update_time: 1689290388351
 lifecycle_stage: active
-name: OD-wue-rent-selected-features-comparison
+name: eary_dataset_wue-rent-selected-features-comparison
 tags:
   mlflow.note.content: "**Dataset:** wue-flat-rent-combined\n**Used Features:** \n-
     Object_price\"\n- LivingSpace\n- ZipCode\n- Rooms\n- altbau_(bis_1945)\n- balkon\n-
