@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/806014739984141561/c2196dee4ac4480f8536bc37f62fcad2/artifacts
+deleted_time: 1689238990923
+end_time: 1689238916121
+entry_point_name: ''
+experiment_id: '806014739984141561'
+lifecycle_stage: deleted
+run_id: c2196dee4ac4480f8536bc37f62fcad2
+run_name: rogue-robin-890
+run_uuid: c2196dee4ac4480f8536bc37f62fcad2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689238903088
+status: 4
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/806014739984141561/b7f01ba422974f309abb02c52ba2952f/artifacts
+deleted_time: 1689238990929
+end_time: 1689238977407
+entry_point_name: ''
+experiment_id: '806014739984141561'
+lifecycle_stage: deleted
+run_id: b7f01ba422974f309abb02c52ba2952f
+run_name: suave-grouse-175
+run_uuid: b7f01ba422974f309abb02c52ba2952f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689238954314
+status: 3
+tags: []
+user_id: michi

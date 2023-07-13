@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/806014739984141561/93bc1700fea84be19d86b0cf789d8a78/artifacts
+deleted_time: 1689238983419
+end_time: 1689238876163
+entry_point_name: ''
+experiment_id: '806014739984141561'
+lifecycle_stage: deleted
+run_id: 93bc1700fea84be19d86b0cf789d8a78
+run_name: delicate-wolf-825
+run_uuid: 93bc1700fea84be19d86b0cf789d8a78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689238853446
+status: 3
+tags: []
+user_id: michi

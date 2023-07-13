@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/806014739984141561/fe933b2fa7a94b619151bad512faaa0d/artifacts
+deleted_time: 1689238990924
+end_time: 1689238952207
+entry_point_name: ''
+experiment_id: '806014739984141561'
+lifecycle_stage: deleted
+run_id: fe933b2fa7a94b619151bad512faaa0d
+run_name: useful-horse-203
+run_uuid: fe933b2fa7a94b619151bad512faaa0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689238929641
+status: 3
+tags: []
+user_id: michi

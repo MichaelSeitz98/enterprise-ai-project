@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/806014739984141561/035220efb46141f3b96e222c8aad85aa/artifacts
+deleted_time: 1689238983422
+end_time: 1689238652078
+entry_point_name: ''
+experiment_id: '806014739984141561'
+lifecycle_stage: deleted
+run_id: 035220efb46141f3b96e222c8aad85aa
+run_name: lasso-regression
+run_uuid: 035220efb46141f3b96e222c8aad85aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689238647883
+status: 4
+tags: []
+user_id: michi
