@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/a6c5885408af4136856e2378a35b577c/artifacts
+deleted_time: 1689265781741
+end_time: 1689262834347
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: a6c5885408af4136856e2378a35b577c
+run_name: delightful-croc-884
+run_uuid: a6c5885408af4136856e2378a35b577c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689262811731
+status: 3
+tags: []
+user_id: michi

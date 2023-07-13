@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/140254949933377481/7e022bfc232348078395fc249b97f2bb/artifacts
+deleted_time: 1689260057354
 end_time: 1689257147796
 entry_point_name: ''
 experiment_id: '140254949933377481'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 7e022bfc232348078395fc249b97f2bb
 run_name: bittersweet-crow-415
 run_uuid: 7e022bfc232348078395fc249b97f2bb

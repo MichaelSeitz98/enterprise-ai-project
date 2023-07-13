@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/ef6f1c60dece4b94b8c70b36aed00528/artifacts
+deleted_time: 1689260959747
+end_time: 1689260881188
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: ef6f1c60dece4b94b8c70b36aed00528
+run_name: awesome-newt-836
+run_uuid: ef6f1c60dece4b94b8c70b36aed00528
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689260857054
+status: 3
+tags: []
+user_id: michi

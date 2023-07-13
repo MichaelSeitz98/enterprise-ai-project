@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/140254949933377481/e34ca9ed07c245f3b3a8a104e9302c74/artifacts
+deleted_time: 1689260057274
 end_time: 1689258038243
 entry_point_name: ''
 experiment_id: '140254949933377481'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: e34ca9ed07c245f3b3a8a104e9302c74
 run_name: luminous-foal-282
 run_uuid: e34ca9ed07c245f3b3a8a104e9302c74

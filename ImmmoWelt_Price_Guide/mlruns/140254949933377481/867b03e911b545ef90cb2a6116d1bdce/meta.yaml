@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/867b03e911b545ef90cb2a6116d1bdce/artifacts
+deleted_time: 1689261782393
+end_time: 1689261616760
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 867b03e911b545ef90cb2a6116d1bdce
+run_name: rebellious-loon-130
+run_uuid: 867b03e911b545ef90cb2a6116d1bdce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689261593824
+status: 3
+tags: []
+user_id: michi

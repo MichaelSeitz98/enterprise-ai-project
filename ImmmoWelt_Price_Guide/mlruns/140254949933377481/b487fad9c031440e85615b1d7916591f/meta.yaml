@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/140254949933377481/b487fad9c031440e85615b1d7916591f/artifacts
+deleted_time: 1689260057350
 end_time: 1689257371379
 entry_point_name: ''
 experiment_id: '140254949933377481'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b487fad9c031440e85615b1d7916591f
 run_name: colorful-sponge-1000
 run_uuid: b487fad9c031440e85615b1d7916591f

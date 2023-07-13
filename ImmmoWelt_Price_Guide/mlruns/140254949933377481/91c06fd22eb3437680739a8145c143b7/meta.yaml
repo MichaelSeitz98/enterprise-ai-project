@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/140254949933377481/91c06fd22eb3437680739a8145c143b7/artifacts
+deleted_time: 1689260057297
 end_time: 1689257763085
 entry_point_name: ''
 experiment_id: '140254949933377481'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 91c06fd22eb3437680739a8145c143b7
 run_name: charming-wren-634
 run_uuid: 91c06fd22eb3437680739a8145c143b7

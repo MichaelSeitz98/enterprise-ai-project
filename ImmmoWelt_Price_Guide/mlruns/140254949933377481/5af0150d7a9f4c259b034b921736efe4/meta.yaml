@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/5af0150d7a9f4c259b034b921736efe4/artifacts
+deleted_time: 1689265781738
+end_time: 1689262636643
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 5af0150d7a9f4c259b034b921736efe4
+run_name: rogue-ape-619
+run_uuid: 5af0150d7a9f4c259b034b921736efe4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689262614053
+status: 3
+tags: []
+user_id: michi
