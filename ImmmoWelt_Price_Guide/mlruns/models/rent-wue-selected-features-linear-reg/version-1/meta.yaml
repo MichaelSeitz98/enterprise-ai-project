@@ -1,8 +1,8 @@
 aliases: []
 creation_timestamp: 1689256701236
-current_stage: None
+current_stage: Production
 description: ''
-last_updated_timestamp: 1689256701236
+last_updated_timestamp: 1689258084918
 name: rent-wue-selected-features-linear-reg
 run_id: fe6a7fd085f04fc88093bdb1c0208f94
 run_link: ''

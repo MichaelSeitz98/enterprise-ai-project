@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/e34ca9ed07c245f3b3a8a104e9302c74/artifacts
+end_time: 1689258038243
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: e34ca9ed07c245f3b3a8a104e9302c74
+run_name: luminous-foal-282
+run_uuid: e34ca9ed07c245f3b3a8a104e9302c74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689258015481
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/049fbbc9b5c74394a53ddbe84913bf8d/artifacts
+end_time: 1689257932438
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 049fbbc9b5c74394a53ddbe84913bf8d
+run_name: angry-boar-573
+run_uuid: 049fbbc9b5c74394a53ddbe84913bf8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257909228
+status: 3
+tags: []
+user_id: michi
