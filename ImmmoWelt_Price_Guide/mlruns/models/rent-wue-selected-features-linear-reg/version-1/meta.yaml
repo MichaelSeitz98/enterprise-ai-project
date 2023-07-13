@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1689256701236
+current_stage: None
+description: ''
+last_updated_timestamp: 1689256701236
+name: rent-wue-selected-features-linear-reg
+run_id: fe6a7fd085f04fc88093bdb1c0208f94
+run_link: ''
+source: mlflow-artifacts:/280652509826804884/fe6a7fd085f04fc88093bdb1c0208f94/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 1
