@@ -31,15 +31,14 @@ For this regression task, different models were trained, tuned and compared. All
 
 All of these models are benchmarked against our own simple **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month. So the benchmark is always up to date. In the same way, for our 2nd use case, buying a house, we also have a dynamic benchmark, but with the average purchase price per square metre. This is also automatically taken from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
+### Data Augmentation
 
-### Data Augmentation 
+To expand our limited dataset, we employed data augmentation techniques. We utilized a Generative Adversarial Network (GAN) specifically designed for tabular data called `CTGAN`. This GAN can be trained on an existing dataset and generate new data instances that possess similar characteristics, effectively increasing the size of the dataset. 
+To facilitate this process, we developed a comprehensive pipeline that integrates the training and evaluation procedures with augmented data. The implementation is available in the following Jupyter Notebook: [train_and_eval_modules.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/Immowelt/04_finetuning_approaches).
 
-As we did not have many data, we did use data augementation techniques to extend our data set. 
-For this reason we used a Generative Adversial Generator (GAN) for tabular Data  `CTGAN`. It can be trained on a dataset and generate new data with similar characteristics and can extend the data amount in that way.  We build a complete pipeline, where the whole training and evaluation process can be extended with augemented data in method. The implementation was done also as pipeline, which runs the complete training and eval process, but adds augemented data. It can be seen here: [train_and_eval_modules.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/Immowelt/04_finetuning_approaches).
+Please note that the tabular GAN was exclusively trained using the training data. No information from the validation or test dataset was utilized for generating the augmented samples.
 
-[Title](C:%255CUsers%255Cmichi%255CenterpriseAI_michi%255Centerprise-ai-project%255CImmmoWelt_Price_Guide%255Ctrain_and_eval_models.ipynb)
-
-Important: the tabular GAN is always ONLY fed / trained with the training data. No information form validation and test dataset was used for generating the augemented extra sample. 
+Although there is potential for data augmentation using CTGAN, our experiments clearly demonstrated that the mean absolute error (MAE) did not improve across any of the models. We generated additional rows ranging from 0 to 1000 for training purposes and evaluated their performance on "untouched" data. The benchmark from 286 remained consistent in all experimental setups. For this reason, data augementation with CTGAN was not applied in the final system ![plot](res/regression_results.png).
 
 
 ## Frontend Application
