@@ -1,6 +1,6 @@
 **Dataset:** wue-flat-rent-combined
 **Used Features:** 
-- Object_price",
+- Object_price"
 - LivingSpace
 - ZipCode
 - Rooms
