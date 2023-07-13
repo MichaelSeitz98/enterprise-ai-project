@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/352297f5183f43fa80bf86b0dfd5c366/artifacts
+end_time: 1689257682438
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 352297f5183f43fa80bf86b0dfd5c366
+run_name: painted-chimp-743
+run_uuid: 352297f5183f43fa80bf86b0dfd5c366
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257659302
+status: 3
+tags: []
+user_id: michi

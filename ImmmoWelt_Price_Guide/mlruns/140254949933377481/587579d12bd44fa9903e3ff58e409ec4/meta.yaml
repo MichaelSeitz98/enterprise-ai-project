@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/587579d12bd44fa9903e3ff58e409ec4/artifacts
+end_time: 1689257813601
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 587579d12bd44fa9903e3ff58e409ec4
+run_name: silent-shrike-693
+run_uuid: 587579d12bd44fa9903e3ff58e409ec4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257790654
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/f95113a86cf24521bffa1a0eddc9d50c/artifacts
+end_time: 1689257957585
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: f95113a86cf24521bffa1a0eddc9d50c
+run_name: stately-ape-422
+run_uuid: f95113a86cf24521bffa1a0eddc9d50c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257934567
+status: 3
+tags: []
+user_id: michi

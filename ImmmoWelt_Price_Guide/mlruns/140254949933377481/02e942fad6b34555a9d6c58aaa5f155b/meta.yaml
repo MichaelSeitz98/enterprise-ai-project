@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/02e942fad6b34555a9d6c58aaa5f155b/artifacts
+end_time: 1689257788564
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 02e942fad6b34555a9d6c58aaa5f155b
+run_name: vaunted-moose-143
+run_uuid: 02e942fad6b34555a9d6c58aaa5f155b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257765215
+status: 3
+tags: []
+user_id: michi
