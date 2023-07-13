@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/49bc2a193acc419f9c95981673a9760f/artifacts
+end_time: 1689248882428
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 49bc2a193acc419f9c95981673a9760f
+run_name: invincible-sow-962
+run_uuid: 49bc2a193acc419f9c95981673a9760f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689248859851
+status: 3
+tags: []
+user_id: michi

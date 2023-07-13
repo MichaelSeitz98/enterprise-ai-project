@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ba6f830153e640e082905bec5ef8686a/artifacts
+end_time: 1689248907286
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ba6f830153e640e082905bec5ef8686a
+run_name: vaunted-shark-489
+run_uuid: ba6f830153e640e082905bec5ef8686a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689248884530
+status: 3
+tags: []
+user_id: michi

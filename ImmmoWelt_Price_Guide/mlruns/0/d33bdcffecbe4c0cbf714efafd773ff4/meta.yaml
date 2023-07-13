@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d33bdcffecbe4c0cbf714efafd773ff4/artifacts
+end_time: 1689248857750
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d33bdcffecbe4c0cbf714efafd773ff4
+run_name: sneaky-skink-82
+run_uuid: d33bdcffecbe4c0cbf714efafd773ff4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689248834916
+status: 3
+tags: []
+user_id: michi
