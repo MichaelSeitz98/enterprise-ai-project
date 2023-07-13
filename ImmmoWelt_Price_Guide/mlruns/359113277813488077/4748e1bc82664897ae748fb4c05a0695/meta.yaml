@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/4748e1bc82664897ae748fb4c05a0695/artifacts
+deleted_time: 1689268865328
+end_time: 1689268686000
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: 4748e1bc82664897ae748fb4c05a0695
+run_name: defiant-fly-223
+run_uuid: 4748e1bc82664897ae748fb4c05a0695
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268662791
+status: 3
+tags: []
+user_id: michi

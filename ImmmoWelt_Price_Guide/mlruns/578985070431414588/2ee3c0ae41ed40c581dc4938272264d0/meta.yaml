@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/2ee3c0ae41ed40c581dc4938272264d0/artifacts
+deleted_time: 1689271526470
+end_time: 1689271363303
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 2ee3c0ae41ed40c581dc4938272264d0
+run_name: funny-ray-473
+run_uuid: 2ee3c0ae41ed40c581dc4938272264d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271340696
+status: 3
+tags: []
+user_id: michi

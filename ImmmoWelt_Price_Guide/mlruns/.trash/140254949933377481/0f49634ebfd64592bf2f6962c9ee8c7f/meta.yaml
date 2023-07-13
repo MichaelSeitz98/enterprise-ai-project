@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/0f49634ebfd64592bf2f6962c9ee8c7f/artifacts
+deleted_time: 1689267807334
+end_time: 1689267261676
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 0f49634ebfd64592bf2f6962c9ee8c7f
+run_name: intrigued-mule-235
+run_uuid: 0f49634ebfd64592bf2f6962c9ee8c7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689267237809
+status: 3
+tags: []
+user_id: michi

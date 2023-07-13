@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/258084a3242943748382f8cbe488f17f/artifacts
+deleted_time: 1689270847412
+end_time: 1689269474402
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 258084a3242943748382f8cbe488f17f
+run_name: classy-swan-762
+run_uuid: 258084a3242943748382f8cbe488f17f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269451430
+status: 3
+tags: []
+user_id: michi

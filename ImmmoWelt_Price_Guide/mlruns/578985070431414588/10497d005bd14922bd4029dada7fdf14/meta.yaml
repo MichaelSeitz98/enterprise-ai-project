@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/10497d005bd14922bd4029dada7fdf14/artifacts
+deleted_time: 1689271771420
+end_time: 1689271531894
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 10497d005bd14922bd4029dada7fdf14
+run_name: nebulous-hawk-886
+run_uuid: 10497d005bd14922bd4029dada7fdf14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271508835
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/36fb026f15bf40ff993ab2b64f706164/artifacts
+deleted_time: 1689268582178
+end_time: 1689268541466
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: 36fb026f15bf40ff993ab2b64f706164
+run_name: serious-bear-690
+run_uuid: 36fb026f15bf40ff993ab2b64f706164
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268518530
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/f15edbdf056a4131bba638848268bbf4/artifacts
+deleted_time: 1689272823250
+end_time: 1689272569235
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: f15edbdf056a4131bba638848268bbf4
+run_name: skillful-doe-952
+run_uuid: f15edbdf056a4131bba638848268bbf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272545674
+status: 3
+tags: []
+user_id: michi

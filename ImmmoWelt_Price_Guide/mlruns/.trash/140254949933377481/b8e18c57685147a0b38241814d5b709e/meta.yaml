@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/b8e18c57685147a0b38241814d5b709e/artifacts
+deleted_time: 1689267231363
+end_time: 1689267008808
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: b8e18c57685147a0b38241814d5b709e
+run_name: casual-flea-734
+run_uuid: b8e18c57685147a0b38241814d5b709e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689266985080
+status: 3
+tags: []
+user_id: michi

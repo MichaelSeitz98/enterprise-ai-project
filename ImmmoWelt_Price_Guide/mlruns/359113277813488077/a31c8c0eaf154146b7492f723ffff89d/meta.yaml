@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/a31c8c0eaf154146b7492f723ffff89d/artifacts
+deleted_time: 1689268871915
+end_time: 1689268764618
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: a31c8c0eaf154146b7492f723ffff89d
+run_name: luminous-pug-474
+run_uuid: a31c8c0eaf154146b7492f723ffff89d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268742076
+status: 3
+tags: []
+user_id: michi

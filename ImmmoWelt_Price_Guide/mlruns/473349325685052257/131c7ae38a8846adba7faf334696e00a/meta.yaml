@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/131c7ae38a8846adba7faf334696e00a/artifacts
+deleted_time: 1689270847389
+end_time: 1689269695446
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 131c7ae38a8846adba7faf334696e00a
+run_name: bemused-gull-174
+run_uuid: 131c7ae38a8846adba7faf334696e00a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269672419
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/88eb0040c2314fedb8037c04dd37f3ae/artifacts
+deleted_time: 1689267807330
+end_time: 1689267235648
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 88eb0040c2314fedb8037c04dd37f3ae
+run_name: thundering-sloth-765
+run_uuid: 88eb0040c2314fedb8037c04dd37f3ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689267212275
+status: 3
+tags: []
+user_id: michi

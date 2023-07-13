@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/6079d50797b24190a1d856c37ef5a072/artifacts
+deleted_time: 1689268871920
+end_time: 1689268813999
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: 6079d50797b24190a1d856c37ef5a072
+run_name: judicious-fish-982
+run_uuid: 6079d50797b24190a1d856c37ef5a072
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268791301
+status: 3
+tags: []
+user_id: michi

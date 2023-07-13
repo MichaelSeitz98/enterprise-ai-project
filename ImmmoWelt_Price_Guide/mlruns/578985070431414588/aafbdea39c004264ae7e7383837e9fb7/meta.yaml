@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/aafbdea39c004264ae7e7383837e9fb7/artifacts
+deleted_time: 1689271771403
+end_time: 1689271662090
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: aafbdea39c004264ae7e7383837e9fb7
+run_name: suave-sponge-739
+run_uuid: aafbdea39c004264ae7e7383837e9fb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271638305
+status: 3
+tags: []
+user_id: michi

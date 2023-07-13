@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/b4dd93ffa8d84382ba1ded1f74b623e9/artifacts
+deleted_time: 1689272823287
+end_time: 1689272424137
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: b4dd93ffa8d84382ba1ded1f74b623e9
+run_name: bouncy-fawn-796
+run_uuid: b4dd93ffa8d84382ba1ded1f74b623e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272400720
+status: 3
+tags: []
+user_id: michi

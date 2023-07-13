@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/17ac78c0cf8d45b795dc98edf7b31cd0/artifacts
+deleted_time: 1689272823229
+end_time: 1689272620205
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: 17ac78c0cf8d45b795dc98edf7b31cd0
+run_name: gregarious-horse-178
+run_uuid: 17ac78c0cf8d45b795dc98edf7b31cd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272596739
+status: 3
+tags: []
+user_id: michi

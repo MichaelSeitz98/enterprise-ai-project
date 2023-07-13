@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/84b0cb68fe8444daa713a144f8ad8b30/artifacts
+deleted_time: 1689271771420
+end_time: 1689271557239
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 84b0cb68fe8444daa713a144f8ad8b30
+run_name: rebellious-hawk-426
+run_uuid: 84b0cb68fe8444daa713a144f8ad8b30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271534075
+status: 3
+tags: []
+user_id: michi

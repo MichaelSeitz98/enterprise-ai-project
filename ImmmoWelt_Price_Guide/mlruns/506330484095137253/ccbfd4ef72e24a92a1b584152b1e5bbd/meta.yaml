@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/ccbfd4ef72e24a92a1b584152b1e5bbd/artifacts
+deleted_time: 1689272823259
+end_time: 1689272475136
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: ccbfd4ef72e24a92a1b584152b1e5bbd
+run_name: vaunted-croc-835
+run_uuid: ccbfd4ef72e24a92a1b584152b1e5bbd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272451729
+status: 3
+tags: []
+user_id: michi

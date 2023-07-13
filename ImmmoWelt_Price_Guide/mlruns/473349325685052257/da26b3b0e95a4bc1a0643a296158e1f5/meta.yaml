@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/da26b3b0e95a4bc1a0643a296158e1f5/artifacts
+deleted_time: 1689270847338
+end_time: 1689270003324
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: da26b3b0e95a4bc1a0643a296158e1f5
+run_name: sassy-quail-38
+run_uuid: da26b3b0e95a4bc1a0643a296158e1f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269980419
+status: 3
+tags: []
+user_id: michi

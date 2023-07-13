@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/0d1691a12f534c36a2051083f0129f02/artifacts
+deleted_time: 1689268015241
+end_time: 1689267969761
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 0d1691a12f534c36a2051083f0129f02
+run_name: adorable-whale-781
+run_uuid: 0d1691a12f534c36a2051083f0129f02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689267947046
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/e5547d325a52432b8099bf404b8de648/artifacts
+deleted_time: 1689267901679
+end_time: 1689267853335
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: e5547d325a52432b8099bf404b8de648
+run_name: capricious-hound-597
+run_uuid: e5547d325a52432b8099bf404b8de648
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689267830773
+status: 3
+tags: []
+user_id: michi

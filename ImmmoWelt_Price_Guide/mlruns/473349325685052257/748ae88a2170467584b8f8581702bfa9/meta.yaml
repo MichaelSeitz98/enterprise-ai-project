@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/748ae88a2170467584b8f8581702bfa9/artifacts
+deleted_time: 1689270847396
+end_time: 1689269578462
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 748ae88a2170467584b8f8581702bfa9
+run_name: polite-wolf-387
+run_uuid: 748ae88a2170467584b8f8581702bfa9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269555659
+status: 3
+tags: []
+user_id: michi

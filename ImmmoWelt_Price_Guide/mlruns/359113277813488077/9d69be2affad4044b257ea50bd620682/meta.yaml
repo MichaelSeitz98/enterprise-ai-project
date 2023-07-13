@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/9d69be2affad4044b257ea50bd620682/artifacts
+deleted_time: 1689268582205
+end_time: 1689268242873
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: 9d69be2affad4044b257ea50bd620682
+run_name: thoughtful-croc-110
+run_uuid: 9d69be2affad4044b257ea50bd620682
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268220065
+status: 3
+tags: []
+user_id: michi

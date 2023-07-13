@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/927a18642a9d4612993fca5e3afd9072/artifacts
+deleted_time: 1689271771409
+end_time: 1689271636231
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 927a18642a9d4612993fca5e3afd9072
+run_name: monumental-bat-44
+run_uuid: 927a18642a9d4612993fca5e3afd9072
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271613400
+status: 3
+tags: []
+user_id: michi

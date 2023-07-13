@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/7e191eed554542ecb357df650b6ef329/artifacts
+deleted_time: 1689272823313
+end_time: 1689272292146
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: 7e191eed554542ecb357df650b6ef329
+run_name: secretive-cow-815
+run_uuid: 7e191eed554542ecb357df650b6ef329
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272268639
+status: 3
+tags: []
+user_id: michi
