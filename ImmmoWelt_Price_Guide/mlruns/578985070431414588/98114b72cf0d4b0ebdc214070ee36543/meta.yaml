@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/98114b72cf0d4b0ebdc214070ee36543/artifacts
+deleted_time: 1689271526464
+end_time: 1689271412834
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 98114b72cf0d4b0ebdc214070ee36543
+run_name: bittersweet-shad-728
+run_uuid: 98114b72cf0d4b0ebdc214070ee36543
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271390120
+status: 3
+tags: []
+user_id: michi

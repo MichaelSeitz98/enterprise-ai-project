@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/0b43b136022d4c49af1023bbfd3c4ad4/artifacts
+deleted_time: 1689270847341
+end_time: 1689269952955
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 0b43b136022d4c49af1023bbfd3c4ad4
+run_name: inquisitive-worm-893
+run_uuid: 0b43b136022d4c49af1023bbfd3c4ad4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269929943
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/d9c32947ae174fa1874e16b3183786fc/artifacts
+deleted_time: 1689268582172
+end_time: 1689268516375
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: d9c32947ae174fa1874e16b3183786fc
+run_name: angry-pug-229
+run_uuid: d9c32947ae174fa1874e16b3183786fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268493621
+status: 3
+tags: []
+user_id: michi

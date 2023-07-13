@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/b0414f551d424ffba8dbcb5a17a1ae85/artifacts
+deleted_time: 1689272823300
+end_time: 1689272210516
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: b0414f551d424ffba8dbcb5a17a1ae85
+run_name: delightful-shrew-169
+run_uuid: b0414f551d424ffba8dbcb5a17a1ae85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272184011
+status: 3
+tags: []
+user_id: michi

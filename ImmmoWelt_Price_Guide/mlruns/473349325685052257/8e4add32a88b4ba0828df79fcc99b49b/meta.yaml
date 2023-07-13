@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/8e4add32a88b4ba0828df79fcc99b49b/artifacts
+deleted_time: 1689270847340
+end_time: 1689269978287
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 8e4add32a88b4ba0828df79fcc99b49b
+run_name: skillful-smelt-246
+run_uuid: 8e4add32a88b4ba0828df79fcc99b49b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269955042
+status: 3
+tags: []
+user_id: michi

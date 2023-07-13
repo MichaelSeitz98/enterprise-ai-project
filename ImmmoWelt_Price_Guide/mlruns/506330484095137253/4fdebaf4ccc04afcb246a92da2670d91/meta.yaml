@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/4fdebaf4ccc04afcb246a92da2670d91/artifacts
+deleted_time: 1689272823318
+end_time: 1689272155558
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: 4fdebaf4ccc04afcb246a92da2670d91
+run_name: colorful-snipe-263
+run_uuid: 4fdebaf4ccc04afcb246a92da2670d91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272131742
+status: 3
+tags: []
+user_id: michi

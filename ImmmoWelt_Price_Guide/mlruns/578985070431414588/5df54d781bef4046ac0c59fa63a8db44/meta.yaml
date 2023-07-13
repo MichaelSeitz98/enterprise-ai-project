@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/5df54d781bef4046ac0c59fa63a8db44/artifacts
+deleted_time: 1689271526474
+end_time: 1689271387931
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 5df54d781bef4046ac0c59fa63a8db44
+run_name: abrasive-duck-342
+run_uuid: 5df54d781bef4046ac0c59fa63a8db44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271365406
+status: 3
+tags: []
+user_id: michi

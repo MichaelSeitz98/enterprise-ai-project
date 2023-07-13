@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/8f4e93d1df98432781fddbd9e2e7cd37/artifacts
+deleted_time: 1689269019426
+end_time: 1689268916836
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: 8f4e93d1df98432781fddbd9e2e7cd37
+run_name: enthused-whale-285
+run_uuid: 8f4e93d1df98432781fddbd9e2e7cd37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268894204
+status: 3
+tags: []
+user_id: michi

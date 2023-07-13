@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/80b485b860b04f09bfcd85ef989a927a/artifacts
+deleted_time: 1689272823323
+end_time: 1689272074765
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: 80b485b860b04f09bfcd85ef989a927a
+run_name: placid-wolf-894
+run_uuid: 80b485b860b04f09bfcd85ef989a927a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272051181
+status: 3
+tags: []
+user_id: michi

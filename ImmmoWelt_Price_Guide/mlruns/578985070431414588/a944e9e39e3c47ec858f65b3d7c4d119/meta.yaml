@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/a944e9e39e3c47ec858f65b3d7c4d119/artifacts
+deleted_time: 1689271526494
+end_time: 1689271283691
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: a944e9e39e3c47ec858f65b3d7c4d119
+run_name: resilient-jay-193
+run_uuid: a944e9e39e3c47ec858f65b3d7c4d119
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271260845
+status: 3
+tags: []
+user_id: michi

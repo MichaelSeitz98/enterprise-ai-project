@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/7eefc13b81114d0fa9fc5a5bd65e7faa/artifacts
+deleted_time: 1689271526523
+end_time: 1689271128622
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 7eefc13b81114d0fa9fc5a5bd65e7faa
+run_name: suave-chimp-256
+run_uuid: 7eefc13b81114d0fa9fc5a5bd65e7faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271104773
+status: 3
+tags: []
+user_id: michi

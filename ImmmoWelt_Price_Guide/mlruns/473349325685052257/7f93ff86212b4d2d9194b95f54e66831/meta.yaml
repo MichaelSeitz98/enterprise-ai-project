@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/7f93ff86212b4d2d9194b95f54e66831/artifacts
+deleted_time: 1689270847454
+end_time: 1689269151644
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 7f93ff86212b4d2d9194b95f54e66831
+run_name: powerful-bird-586
+run_uuid: 7f93ff86212b4d2d9194b95f54e66831
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269128585
+status: 3
+tags: []
+user_id: michi

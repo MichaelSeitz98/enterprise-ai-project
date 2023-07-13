@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/8ed9eab368644f2a9944c9bb73ccaa1b/artifacts
+deleted_time: 1689270847446
+end_time: 1689269281742
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 8ed9eab368644f2a9944c9bb73ccaa1b
+run_name: honorable-zebra-414
+run_uuid: 8ed9eab368644f2a9944c9bb73ccaa1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269258723
+status: 3
+tags: []
+user_id: michi

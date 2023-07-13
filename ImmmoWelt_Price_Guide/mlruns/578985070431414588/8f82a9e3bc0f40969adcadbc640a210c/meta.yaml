@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/8f82a9e3bc0f40969adcadbc640a210c/artifacts
+deleted_time: 1689271526540
+end_time: 1689270971083
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 8f82a9e3bc0f40969adcadbc640a210c
+run_name: grandiose-trout-162
+run_uuid: 8f82a9e3bc0f40969adcadbc640a210c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689270946405
+status: 3
+tags: []
+user_id: michi

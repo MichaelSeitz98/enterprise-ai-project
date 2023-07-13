@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/b80bbc2c2350445f9819be06a81eecd2/artifacts
+deleted_time: 1689271526527
+end_time: 1689270996364
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: b80bbc2c2350445f9819be06a81eecd2
+run_name: indecisive-perch-446
+run_uuid: b80bbc2c2350445f9819be06a81eecd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689270973135
+status: 3
+tags: []
+user_id: michi

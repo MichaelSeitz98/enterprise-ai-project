@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/1a21ba7e0a1a4d1185eb55634f7a4226/artifacts
+deleted_time: 1689269019426
+end_time: 1689268892116
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: 1a21ba7e0a1a4d1185eb55634f7a4226
+run_name: marvelous-stag-577
+run_uuid: 1a21ba7e0a1a4d1185eb55634f7a4226
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268869556
+status: 3
+tags: []
+user_id: michi

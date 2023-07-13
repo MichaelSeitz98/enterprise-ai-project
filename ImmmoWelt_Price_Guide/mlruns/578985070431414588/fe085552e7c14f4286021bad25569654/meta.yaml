@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/fe085552e7c14f4286021bad25569654/artifacts
+deleted_time: 1689271526494
+end_time: 1689271258679
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: fe085552e7c14f4286021bad25569654
+run_name: serious-squirrel-286
+run_uuid: fe085552e7c14f4286021bad25569654
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271235836
+status: 3
+tags: []
+user_id: michi

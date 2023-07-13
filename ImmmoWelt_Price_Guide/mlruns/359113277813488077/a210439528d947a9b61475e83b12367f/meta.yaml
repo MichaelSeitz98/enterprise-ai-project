@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/a210439528d947a9b61475e83b12367f/artifacts
+deleted_time: 1689268582193
+end_time: 1689268385102
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: a210439528d947a9b61475e83b12367f
+run_name: rumbling-vole-158
+run_uuid: a210439528d947a9b61475e83b12367f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268351772
+status: 3
+tags: []
+user_id: michi

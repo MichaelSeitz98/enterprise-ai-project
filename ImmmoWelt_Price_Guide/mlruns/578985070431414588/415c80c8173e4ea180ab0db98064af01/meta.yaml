@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/415c80c8173e4ea180ab0db98064af01/artifacts
+deleted_time: 1689271771407
+end_time: 1689271767282
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: 415c80c8173e4ea180ab0db98064af01
+run_name: delightful-fly-814
+run_uuid: 415c80c8173e4ea180ab0db98064af01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271744599
+status: 3
+tags: []
+user_id: michi

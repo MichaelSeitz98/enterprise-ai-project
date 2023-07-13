@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/7ddec5ee38344559a28acf3e135d8e37/artifacts
+deleted_time: 1689270847339
+end_time: 1689269849285
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 7ddec5ee38344559a28acf3e135d8e37
+run_name: luminous-turtle-371
+run_uuid: 7ddec5ee38344559a28acf3e135d8e37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269826116
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/8845440185e540c88b64e0491e23a420/artifacts
+deleted_time: 1689270847429
+end_time: 1689269331798
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 8845440185e540c88b64e0491e23a420
+run_name: abrasive-wren-996
+run_uuid: 8845440185e540c88b64e0491e23a420
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269308929
+status: 3
+tags: []
+user_id: michi

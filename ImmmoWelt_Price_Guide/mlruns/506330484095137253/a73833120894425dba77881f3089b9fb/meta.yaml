@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/a73833120894425dba77881f3089b9fb/artifacts
+deleted_time: 1689272823288
+end_time: 1689272317630
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: a73833120894425dba77881f3089b9fb
+run_name: victorious-pug-583
+run_uuid: a73833120894425dba77881f3089b9fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272294230
+status: 3
+tags: []
+user_id: michi

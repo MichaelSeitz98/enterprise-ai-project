@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/51a88c26446a4ab5ac3718deb993f194/artifacts
+deleted_time: 1689272823251
+end_time: 1689272594588
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: 51a88c26446a4ab5ac3718deb993f194
+run_name: skillful-hound-830
+run_uuid: 51a88c26446a4ab5ac3718deb993f194
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272571318
+status: 3
+tags: []
+user_id: michi

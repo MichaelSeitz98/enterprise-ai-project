@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/578985070431414588/b2f4b3501e9e44119c813fdda6864c7b/artifacts
+deleted_time: 1689271526524
+end_time: 1689271102648
+entry_point_name: ''
+experiment_id: '578985070431414588'
+lifecycle_stage: deleted
+run_id: b2f4b3501e9e44119c813fdda6864c7b
+run_name: aged-steed-434
+run_uuid: b2f4b3501e9e44119c813fdda6864c7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689271079480
+status: 3
+tags: []
+user_id: michi

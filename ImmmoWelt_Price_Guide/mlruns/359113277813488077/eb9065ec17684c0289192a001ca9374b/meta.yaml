@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/359113277813488077/eb9065ec17684c0289192a001ca9374b/artifacts
+deleted_time: 1689268582165
+end_time: 1689268410306
+entry_point_name: ''
+experiment_id: '359113277813488077'
+lifecycle_stage: deleted
+run_id: eb9065ec17684c0289192a001ca9374b
+run_name: adorable-stag-568
+run_uuid: eb9065ec17684c0289192a001ca9374b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689268387249
+status: 3
+tags: []
+user_id: michi

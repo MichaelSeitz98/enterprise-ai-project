@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/473349325685052257/1002812440a24e14a1c7975897fac422/artifacts
+deleted_time: 1689270847451
+end_time: 1689269176968
+entry_point_name: ''
+experiment_id: '473349325685052257'
+lifecycle_stage: deleted
+run_id: 1002812440a24e14a1c7975897fac422
+run_name: bittersweet-yak-803
+run_uuid: 1002812440a24e14a1c7975897fac422
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689269153783
+status: 3
+tags: []
+user_id: michi

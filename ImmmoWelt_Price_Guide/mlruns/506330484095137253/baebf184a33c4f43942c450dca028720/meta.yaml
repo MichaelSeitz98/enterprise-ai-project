@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/baebf184a33c4f43942c450dca028720/artifacts
+deleted_time: 1689272956169
+end_time: 1689272832312
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: baebf184a33c4f43942c450dca028720
+run_name: valuable-moth-933
+run_uuid: baebf184a33c4f43942c450dca028720
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272809186
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/506330484095137253/e3fbc224650f421bae942743f87f488a/artifacts
+deleted_time: 1689272956177
+end_time: 1689272856908
+entry_point_name: ''
+experiment_id: '506330484095137253'
+lifecycle_stage: deleted
+run_id: e3fbc224650f421bae942743f87f488a
+run_name: debonair-stoat-381
+run_uuid: e3fbc224650f421bae942743f87f488a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689272834421
+status: 3
+tags: []
+user_id: michi

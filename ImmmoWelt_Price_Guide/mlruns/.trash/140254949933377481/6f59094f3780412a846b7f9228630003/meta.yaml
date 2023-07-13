@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/6f59094f3780412a846b7f9228630003/artifacts
+deleted_time: 1689267901677
+end_time: null
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 6f59094f3780412a846b7f9228630003
+run_name: popular-skink-362
+run_uuid: 6f59094f3780412a846b7f9228630003
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689267894656
+status: 1
+tags: []
+user_id: michi
