@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/642d6ddb37a24b40a13b581f19df7124/artifacts
+end_time: 1689249677515
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 642d6ddb37a24b40a13b581f19df7124
+run_name: grandiose-grub-734
+run_uuid: 642d6ddb37a24b40a13b581f19df7124
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689249654859
+status: 3
+tags: []
+user_id: michi
