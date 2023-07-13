@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/72d0ee62b6b3496497a1195d1e3f3c57/artifacts
+end_time: 1689257631973
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 72d0ee62b6b3496497a1195d1e3f3c57
+run_name: fortunate-cat-350
+run_uuid: 72d0ee62b6b3496497a1195d1e3f3c57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257608909
+status: 3
+tags: []
+user_id: michi

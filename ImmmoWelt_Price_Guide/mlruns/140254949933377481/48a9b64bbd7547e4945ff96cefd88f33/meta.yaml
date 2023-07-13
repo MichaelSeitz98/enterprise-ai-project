@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/48a9b64bbd7547e4945ff96cefd88f33/artifacts
+end_time: 1689257526754
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 48a9b64bbd7547e4945ff96cefd88f33
+run_name: skittish-goat-391
+run_uuid: 48a9b64bbd7547e4945ff96cefd88f33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257503950
+status: 3
+tags: []
+user_id: michi

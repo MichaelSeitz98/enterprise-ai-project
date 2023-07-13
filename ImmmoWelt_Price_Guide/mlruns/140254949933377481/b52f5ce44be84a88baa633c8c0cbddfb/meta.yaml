@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/b52f5ce44be84a88baa633c8c0cbddfb/artifacts
+end_time: 1689257197340
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: b52f5ce44be84a88baa633c8c0cbddfb
+run_name: valuable-crane-380
+run_uuid: b52f5ce44be84a88baa633c8c0cbddfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257174810
+status: 3
+tags: []
+user_id: michi

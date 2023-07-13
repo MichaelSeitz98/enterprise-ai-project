@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/2756ddfcd12e47f2b92758d850ab0021/artifacts
+end_time: 1689257551703
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 2756ddfcd12e47f2b92758d850ab0021
+run_name: magnificent-koi-373
+run_uuid: 2756ddfcd12e47f2b92758d850ab0021
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257528856
+status: 3
+tags: []
+user_id: michi

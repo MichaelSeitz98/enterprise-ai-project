@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/b487fad9c031440e85615b1d7916591f/artifacts
+end_time: 1689257371379
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: b487fad9c031440e85615b1d7916591f
+run_name: colorful-sponge-1000
+run_uuid: b487fad9c031440e85615b1d7916591f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257347784
+status: 3
+tags: []
+user_id: michi

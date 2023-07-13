@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/512c5e87739a431e838e3f6854abcce0/artifacts
+end_time: 1689257172717
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: active
+run_id: 512c5e87739a431e838e3f6854abcce0
+run_name: industrious-wren-637
+run_uuid: 512c5e87739a431e838e3f6854abcce0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689257149861
+status: 3
+tags: []
+user_id: michi
