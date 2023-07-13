@@ -1,8 +1,2 @@
 **Dataset:** wue-flat-rent-combined
-**Used features:**
-    "Object_price",
-    "ConstructionYear",
-    "LivingSpace",
-    "ZipCode",
-    Rooms,
-    altbau_(bis_1945)
+**Used features:**  Object_price, ConstructionYear, LivingSpace, ZipCode, Rooms, altbau_(bis_1945)
