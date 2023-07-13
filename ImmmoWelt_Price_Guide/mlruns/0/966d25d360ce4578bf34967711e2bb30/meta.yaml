@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/966d25d360ce4578bf34967711e2bb30/artifacts
+end_time: 1689248931956
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 966d25d360ce4578bf34967711e2bb30
+run_name: sedate-finch-704
+run_uuid: 966d25d360ce4578bf34967711e2bb30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689248909385
+status: 3
+tags: []
+user_id: michi

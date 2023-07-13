@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/327d821f75784626915c5921c1ca8042/artifacts
+end_time: 1689249627588
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 327d821f75784626915c5921c1ca8042
+run_name: smiling-mole-963
+run_uuid: 327d821f75784626915c5921c1ca8042
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689249604707
+status: 3
+tags: []
+user_id: michi

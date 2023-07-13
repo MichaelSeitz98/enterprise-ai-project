@@ -18,7 +18,6 @@ The purpose of the exploratory data analysis was to gain an overview of the vari
 
 ## Model Training and Evaluation
 
-### Model Comparison 
 
 For this regression task, different models were trained, tuned and compared. All training and model related code can be found in the notebook `train_and_eval_models.ipynb`. To ensure reproducibility and comparability between models, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
 
@@ -33,10 +32,11 @@ For this regression task, different models were trained, tuned and compared. All
 All of these models are benchmarked against our own simple **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month. So the benchmark is always up to date. In the same way, for our 2nd use case, buying a house, we also have a dynamic benchmark, but with the average purchase price per square metre. This is also automatically taken from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
 
-## Deployment to Cloud
 
 
 ## Frontend Application
+
+## Deployment to Cloud
 
 
 ## Outlook & Discussion
@@ -44,4 +44,3 @@ All of these models are benchmarked against our own simple **benchmark model**. 
 
 
 * extend data set data, regualary scraped. every week new scarping 
-* 
