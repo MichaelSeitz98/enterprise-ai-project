@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/e4b9fd23981049eb8fea0dd540439b5c/artifacts
+deleted_time: 1689261586508
+end_time: 1689261142795
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: e4b9fd23981049eb8fea0dd540439b5c
+run_name: gaudy-rat-414
+run_uuid: e4b9fd23981049eb8fea0dd540439b5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689261120202
+status: 3
+tags: []
+user_id: michi

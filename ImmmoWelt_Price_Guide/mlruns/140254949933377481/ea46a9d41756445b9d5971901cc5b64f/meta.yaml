@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/ea46a9d41756445b9d5971901cc5b64f/artifacts
+deleted_time: 1689262588167
+end_time: 1689262063356
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: ea46a9d41756445b9d5971901cc5b64f
+run_name: blushing-stag-36
+run_uuid: ea46a9d41756445b9d5971901cc5b64f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689262040534
+status: 3
+tags: []
+user_id: michi

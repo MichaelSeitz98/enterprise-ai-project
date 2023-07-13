@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/b88506da9ed74cd49c57d1ba9232acda/artifacts
+deleted_time: 1689260959748
+end_time: 1689260931255
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: b88506da9ed74cd49c57d1ba9232acda
+run_name: powerful-grouse-955
+run_uuid: b88506da9ed74cd49c57d1ba9232acda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689260908128
+status: 3
+tags: []
+user_id: michi

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/140254949933377481/075eebe0aa0f4b6f97050e7fc9bd743b/artifacts
+deleted_time: 1689260057336
 end_time: 1689257421603
 entry_point_name: ''
 experiment_id: '140254949933377481'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 075eebe0aa0f4b6f97050e7fc9bd743b
 run_name: calm-wasp-707
 run_uuid: 075eebe0aa0f4b6f97050e7fc9bd743b

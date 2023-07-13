@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/40408376d221425f96f4ea6f2cdb44a1/artifacts
+deleted_time: 1689261782392
+end_time: 1689261641340
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 40408376d221425f96f4ea6f2cdb44a1
+run_name: shivering-grub-993
+run_uuid: 40408376d221425f96f4ea6f2cdb44a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689261618835
+status: 3
+tags: []
+user_id: michi

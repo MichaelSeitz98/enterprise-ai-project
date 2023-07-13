@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/e1430cecfbd946149967ec8ed2dc7bfb/artifacts
+deleted_time: 1689260057259
+end_time: 1689258192316
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: e1430cecfbd946149967ec8ed2dc7bfb
+run_name: stylish-lynx-712
+run_uuid: e1430cecfbd946149967ec8ed2dc7bfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689258169585
+status: 3
+tags: []
+user_id: michi

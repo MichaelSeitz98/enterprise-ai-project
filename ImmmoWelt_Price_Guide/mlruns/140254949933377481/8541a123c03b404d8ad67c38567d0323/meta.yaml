@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/8541a123c03b404d8ad67c38567d0323/artifacts
+deleted_time: 1689261586523
+end_time: 1689261093085
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 8541a123c03b404d8ad67c38567d0323
+run_name: honorable-loon-909
+run_uuid: 8541a123c03b404d8ad67c38567d0323
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689261069607
+status: 3
+tags: []
+user_id: michi

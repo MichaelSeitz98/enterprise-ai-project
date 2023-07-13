@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/140254949933377481/5a2a18d8132e4a6c819dfc483386d3ef/artifacts
+deleted_time: 1689260057335
 end_time: 1689257501859
 entry_point_name: ''
 experiment_id: '140254949933377481'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 5a2a18d8132e4a6c819dfc483386d3ef
 run_name: nimble-donkey-11
 run_uuid: 5a2a18d8132e4a6c819dfc483386d3ef

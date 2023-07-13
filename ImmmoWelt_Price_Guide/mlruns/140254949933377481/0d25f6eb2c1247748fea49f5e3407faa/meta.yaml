@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/0d25f6eb2c1247748fea49f5e3407faa/artifacts
+deleted_time: 1689262588175
+end_time: null
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 0d25f6eb2c1247748fea49f5e3407faa
+run_name: vaunted-calf-344
+run_uuid: 0d25f6eb2c1247748fea49f5e3407faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689262563193
+status: 1
+tags: []
+user_id: michi

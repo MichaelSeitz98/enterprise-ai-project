@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/140254949933377481/8141cccd068842caa42fda2cadd09066/artifacts
+deleted_time: 1689261586521
+end_time: 1689261118111
+entry_point_name: ''
+experiment_id: '140254949933377481'
+lifecycle_stage: deleted
+run_id: 8141cccd068842caa42fda2cadd09066
+run_name: gregarious-smelt-457
+run_uuid: 8141cccd068842caa42fda2cadd09066
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689261095168
+status: 3
+tags: []
+user_id: michi
