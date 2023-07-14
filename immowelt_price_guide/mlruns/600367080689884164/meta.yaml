@@ -1,6 +1,14 @@
 artifact_location: mlflow-artifacts:/600367080689884164
 creation_time: 1689175062962
 experiment_id: '600367080689884164'
-last_update_time: 1689175062962
+last_update_time: 1689360749070
 lifecycle_stage: active
-name: wue-rent-high-corr-features-comparison
+name: wue-rent-high-corr-features
+tags:
+  mlflow.note.content: "**Dataset**: wue-flat-rent-combined\n**Used Features:**\n\n-
+    Object_price\n- LivingSpace\n- Rooms\n- abstellraum\n- bad/wc_getrennt\n- barriefrei\n-
+    dusche\n- elektro\n- erdwaerme\n- fenster\n- ferne\n- fliesen\n- frei \n- fussbodenheizung\n-
+    gaestewc\n- garage\n- kable_sat_tv\n- kontrollierte_be-_und_entlueftungsanlage\n-
+    kunststofffenster'\n- luftwp\n- parkett\n- personenaufzug\n- reinigung\n- rollstuhlgerecht\n-
+    speisekammer\n- terrasse\n- wanne\n- zentralheizung\n- EstateType\n- DistributionType\n-
+    ConstructionYear\n- ZipCode\n- ConstructionYear\n- ZipCode\n\n"
