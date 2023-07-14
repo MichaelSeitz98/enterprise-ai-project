@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/413503153497943467/7f6e465664cd49bab796c0487c6a6db0/artifacts
+deleted_time: 1689338741967
+end_time: 1689338592750
+entry_point_name: ''
+experiment_id: '413503153497943467'
+lifecycle_stage: deleted
+run_id: 7f6e465664cd49bab796c0487c6a6db0
+run_name: baseline-rent
+run_uuid: 7f6e465664cd49bab796c0487c6a6db0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689338589619
+status: 4
+tags: []
+user_id: michi
