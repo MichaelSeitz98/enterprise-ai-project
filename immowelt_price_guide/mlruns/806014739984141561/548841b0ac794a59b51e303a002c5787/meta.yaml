@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/806014739984141561/548841b0ac794a59b51e303a002c5787/artifacts
+deleted_time: 1689343566375
 end_time: 1689239002436
 entry_point_name: ''
 experiment_id: '806014739984141561'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 548841b0ac794a59b51e303a002c5787
 run_name: defiant-deer-258
 run_uuid: 548841b0ac794a59b51e303a002c5787
