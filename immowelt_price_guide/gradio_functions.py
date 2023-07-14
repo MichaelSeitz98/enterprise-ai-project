@@ -5,6 +5,11 @@ import gradio as gr
 import xgboost as xgb
 import mlflow
 
+def get_model(model_name):
+    # load model from pickle file
+    model = pickle.load(open(r'C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\{model_name}', 'rb'))
+    return model
+
 def load_model(model_name):
     model_version = 1
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/production")
