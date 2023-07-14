@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/557767713661214118/3dcbc7ccf7e14fd1905781ddab1efbf7/artifacts
+end_time: 1689360469761
+entry_point_name: ''
+experiment_id: '557767713661214118'
+lifecycle_stage: active
+run_id: 3dcbc7ccf7e14fd1905781ddab1efbf7
+run_name: linear
+run_uuid: 3dcbc7ccf7e14fd1905781ddab1efbf7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689360419614
+status: 3
+tags: []
+user_id: michi

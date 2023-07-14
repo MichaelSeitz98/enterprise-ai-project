@@ -1,6 +1,11 @@
 artifact_location: mlflow-artifacts:/806014739984141561
 creation_time: 1689196256513
 experiment_id: '806014739984141561'
-last_update_time: 1689196256513
+last_update_time: 1689360759364
 lifecycle_stage: active
-name: wue-rent-low-features-comparison
+name: wue-rent-only-5-features-used
+tags:
+  mlflow.note.content: '**Dataset:** wue-flat-rent-combined
+
+    **Used features:**  Object_price, ConstructionYear, LivingSpace, ZipCode, Rooms,
+    altbau_(bis_1945)'
