@@ -6,7 +6,24 @@ import mlflow.pyfunc
 import xgboost as xgb
 import mlflow.xgboost
 import pickle
+import matplotlib.pyplot as plt
 
+def get_predictions(file):
+    df = pd.read_excel(file)
+    return df
+
+def bar_chart(file):
+    df = get_predictions(file)
+    models = df['tags.mlflow.runName']
+    mae_values = df['metrics.mae']
+    plt.bar(models, mae_values)
+    plt.xlabel('Modelle')
+    plt.ylabel('MAE')
+    plt.title('Vergleich der Modelle anhand von MAE')
+    plt.xticks(rotation=45)
+    plt.show()
+
+    return df
 
 def get_model(model_name):
     with open(r'C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\model.pkl', 'rb') as file:
