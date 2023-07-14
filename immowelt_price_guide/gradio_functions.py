@@ -6,7 +6,17 @@ import mlflow.pyfunc
 import xgboost as xgb
 import mlflow.xgboost
 import pickle
+import matplotlib.pyplot as plt
+import plotly.express as px
 
+def get_predictions(file):
+    df = pd.read_excel(file)
+    return df
+
+def bar_chart(file = r"C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\results-selected-features-aug.xlsx"):
+    df = get_predictions(file)
+    plot = px.bar(df, x="tags.mlflow.runName", y="metrics.mae", title="Modellperformance", color="tags.mlflow.runName", color_continuous_scale=px.colors.sequential.Viridis)
+    return gr.update(value=plot, visible=True)
 
 def get_model(model_name):
     with open(r'C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\model.pkl', 'rb') as file:
