@@ -1,8 +1,9 @@
 aliases: []
 creation_timestamp: 1689283455965
 current_stage: Production
-description: ''
-last_updated_timestamp: 1689283660651
+description: Updated Version, out of augmentation pipeline, yet no syntetic data used
+  for training (as n_addidation_data=0)
+last_updated_timestamp: 1689293289433
 name: rent_wue_selected_features_xgb-aug-0
 run_id: b18c353fa84a41d99e6f4599218c383b
 run_link: ''

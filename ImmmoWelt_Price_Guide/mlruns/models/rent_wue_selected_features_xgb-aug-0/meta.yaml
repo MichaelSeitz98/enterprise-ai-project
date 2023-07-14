@@ -1,5 +1,7 @@
 aliases: {}
 creation_timestamp: 1689280375289
-description: ''
-last_updated_timestamp: 1689283660651
+description: The model is an XGBoost Regressor trained solely on selected features,
+  without any additional synthetic data. It accurately predicts regression outcomes
+  by effectively capturing complex relationships between variables.
+last_updated_timestamp: 1689293187896
 name: rent_wue_selected_features_xgb-aug-0
