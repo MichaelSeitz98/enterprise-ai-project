@@ -1,6 +1,12 @@
 artifact_location: mlflow-artifacts:/413503153497943467
 creation_time: 1689335765979
 experiment_id: '413503153497943467'
-last_update_time: 1689335765979
+last_update_time: 1689340903039
 lifecycle_stage: active
-name: wue-rent-selected-features-14-07
+name: wue-rent-fs-app-more-val-data
+tags:
+  mlflow.note.content: "Same experiment set up, but on slightly differen Train/Val/Test
+    split to wue-rent-fs-app because na-data are dropped after the feature-set column
+    selection. \nCompletly comparable inside the experiments, but not comparable to
+    fs-app run, where always the same validation data is use --> more validation data
+    used."

@@ -1,0 +1,1 @@
+**wue-rent-selected-features aug-1000** is an experiment set-up that utilizes "feature-set-0" without the use of any additional syntactic data generation for the train data (originally generated with CTGAN). This set-up also includes the addition of 1000 synthetic rows in the train data.

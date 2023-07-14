@@ -1,0 +1,2 @@
+Same experiment setup, but with slightly different Train/Val/Test split to wue-rent-fs-app because na data are dropped after feature set column selection. 
+Fully comparable within experiments, but not comparable with fs-app run as more validation data is used.

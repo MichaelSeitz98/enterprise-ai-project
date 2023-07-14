@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/207414985746472876/800fd285ef33435ba1f8c599f36582b5/artifacts
+deleted_time: 1689339568505
 end_time: 1689339423620
 entry_point_name: ''
 experiment_id: '207414985746472876'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 800fd285ef33435ba1f8c599f36582b5
 run_name: baseline-rent
 run_uuid: 800fd285ef33435ba1f8c599f36582b5

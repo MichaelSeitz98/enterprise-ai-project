@@ -1,6 +1,7 @@
 artifact_location: mlflow-artifacts:/207414985746472876
 creation_time: 1689339405731
 experiment_id: '207414985746472876'
-last_update_time: 1689339405731
+last_update_time: 1689340653673
 lifecycle_stage: active
-name: wue-rent-selected-features-14-07-org
+name: wue-rent-fs-app
+tags: {}

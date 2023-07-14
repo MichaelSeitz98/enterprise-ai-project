@@ -1,0 +1,1 @@
+**wue-rent-selected-features aug-120** is an experiment set-up that utilizes "feature-set-0" without the use of any additional syntactic data generation for the train data (originally generated with CTGAN). This set-up also includes the addition of 120 synthetic rows in the train data.
