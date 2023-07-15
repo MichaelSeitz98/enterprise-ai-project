@@ -9,25 +9,41 @@ import pickle
 import matplotlib.pyplot as plt
 import plotly.express as px
 
+
 # nimmt die daten der abgespeicherten Prediction und wandelt es als datafrme um
 def get_predictions(file):
     df = pd.read_excel(file)
     return df
+
+
 # macht aus den Daten ein bar Plot welche models am besten sind
-def bar_chart(file = "results-selected-features-aug.xlsx"):
+def bar_chart(file="results-selected-features-aug.xlsx"):
     df = get_predictions(file)
-    plot = px.bar(df, x="tags.mlflow.runName", y="metrics.mae", title="Modellperformance", color="tags.mlflow.runName", color_continuous_scale=px.colors.sequential.Viridis)
+    plot = px.bar(
+        df,
+        x="tags.mlflow.runName",
+        y="metrics.mae",
+        title="Modellperformance",
+        color="tags.mlflow.runName",
+        color_continuous_scale=px.colors.sequential.Viridis,
+    )
     return gr.update(value=plot, visible=True)
+
+
 # lädt das beste model, das als pickle file abgespeichert ist
 def get_model():
-    with open('model.pkl', 'rb') as file:
+    with open("model.pkl", "rb") as file:
         model_pickle = pickle.load(file)
     return model_pickle
+
+
 # lädt das model aus mlflow
-def load_model(model_name, stage = "production"):
+def load_model(model_name, stage="production"):
     model_version = 1
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{stage}")
     return model
+
+
 # speichert das model als pickle file ab
 # def save_model(model_name):
 #     model_pickle = load_model(model_name)
@@ -60,7 +76,7 @@ def trigger_actions(
     feature_fussbodenheitzung,
     feature_gartenmitbenutzung,
     feature_kellerabteil,
-    erklärung
+    erklärung,
 ):
     model = get_model()
     data_list = (
@@ -173,7 +189,7 @@ def trigger_actions(
 
     html_response = ""
     fig_waterfall = None
-    if (not erklärung): 
+    if not erklärung:
         data_model = data
         """
         Prints the required input of model_xgb.
@@ -210,7 +226,7 @@ def trigger_actions(
             </body>
             </html>
         """
-    elif(erklärung):
+    elif erklärung:
         preds = model.predict(data)
         preds = int(preds)
         html_response = f"""
