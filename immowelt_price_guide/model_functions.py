@@ -138,8 +138,7 @@ def scrape_avg_rental_prices():
 def scrape_avg_buy_prices():
     url = "https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772"
     response = requests.get(url)
-    response.raise_for_status(
-    )
+    response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
     p_element = soup.find("p", class_="mb-8")
     buy_price = 0
@@ -183,20 +182,24 @@ def baseline_buy(X_val, y_val, runname="baseline_buy"):
 
     return avg_price_per_sqm_buy, baseline_mae, baseline_mse, baseline_r2
 
+
 def train_and_eval_linear(X_train, y_train, X_val, y_val, runname="linear-regression"):
     model = LinearRegression()
     model.fit(X_train, y_train)
     return model
+
 
 def train_and_eval_lasso(X_train, y_train, X_val, y_val, runname="lasso-regression"):
     model = Lasso()
     model.fit(X_train, y_train)
     return model
 
+
 def train_and_eval_ridge(X_train, y_train, X_val, y_val, runname="ridge-regression"):
     model = Ridge()
     model.fit(X_train, y_train)
     return model
+
 
 def train_and_eval_rf(
     X_train,
@@ -249,7 +252,6 @@ def train_and_eval_elasticnet(X_train, y_train, X_val, y_val, runname="elasticNe
     model = ElasticNet()
     model.fit(X_train, y_train)
     return model
-
 
 
 def pipeline_from_extracted(df, feature_set, model_name="lasso"):
@@ -329,9 +331,6 @@ def pipeline_from_extracted(df, feature_set, model_name="lasso"):
     return model, mae, mse, r2, mae_train, mse_train, r2_train
 
 
-
-
-
 class ImmoWeltUrls(Enum):
     BUY_FLATS_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/wohnungen/kaufen?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
     # add price range to avoid "consulting"-offers without named price
@@ -368,8 +367,6 @@ def getFeatureSetApp():
         "gartennutzung",
         "kelleranteil",
     ]
-
-
 
 
 def evaluate_model(model, X_train_recent, y_train_recent, X_val, y_val, X_test, y_test):
@@ -423,22 +420,53 @@ def decode_col_names(df):
     return df
 
 
+def getFeatureSetApp():
+    return [
+        "Object_price",
+        "LivingSpace",
+        "ZipCode",
+        "Rooms",
+        "altbau_(bis_1945)",
+        "balkon",
+        "barriefrei",
+        "dachgeschoss",
+        "einbaukueche",
+        "neubau",
+        "parkett",
+        "stellplatz",
+        "bad/wc_getrennt",
+        "personenaufzug",
+        "garten",
+        "garage",
+        "renoviert",
+        "terrasse",
+        "wanne",
+        "zentralheizung",
+        "abstellraum",
+        "ferne",
+        "fussbodenheizung",
+        "gartennutzung",
+        "kelleranteil",
+    ]
+
+
 def trigger_retraining_with_added_data(
     url,
     feature_set,
     limit=3,
-    model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"]
+    model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"],
 ):
-    # print(url)
-    # #retrain_data = get_dataset_items(url, limit)
-    # print("Retraining data successfully scraped.")
-    # # write_data_to_excel(retrain_data, "data/retrain_train_data.xlsx")
-    # print("Retraining data successfully written to excel.")
+    print(url)
+    print("started")
+    retrain_data = get_dataset_items(url, limit)
+    print("Retraining data successfully scraped.")
+    write_data_to_excel(retrain_data, "data/retrain_train_data.xlsx")
+    print("Retraining data successfully written to excel under data/retrain_train_data.xslx")
 
-    # new_df = pd.read_excel(r"data/retrain_train_data.xlsx")
-    # # new_df = preprocess_data(new_df)
-    # print("Done with raw preprocessing.")
-    # new_df.to_excel("data/retrain_train_data_preprocessed.xlsx", index=False)
+    new_df = pd.read_excel(r"data/retrain_train_data.xlsx")
+    new_df = preprocess_data(new_df)
+    print("Done with raw preprocessing.")
+    new_df.to_excel("data/retrain_train_data_preprocessed.xlsx", index=False)
 
     ############################# FELIX FRAGEN :) ##################################
 
@@ -594,4 +622,3 @@ def trigger_retraining_with_added_data(
 
             mlflow.end_run()
     return results
-
