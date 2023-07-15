@@ -21,8 +21,8 @@ def bar_chart(file="results-selected-features-aug.xlsx"):
     df = get_predictions(file)
     plot = px.bar(
         df,
-        x="tags.mlflow.runName",
-        y="metrics.mae",
+        x="model",
+        y="mae",
         title="Modellperformance",
         color="tags.mlflow.runName",
         color_continuous_scale=px.colors.sequential.Viridis,

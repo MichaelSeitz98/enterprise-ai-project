@@ -10,6 +10,8 @@ from ydata_profiling import ProfileReport
 import shap
 from ctgan import CTGAN
 
+import plotly.express as px
+
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder
@@ -450,12 +452,45 @@ def getFeatureSetApp():
     ]
 
 
+def gradio_retrain_with_added_data(xgb, ridge, rf, elasticnet, linear, lasso, baseline, limit):
+    model_list = []
+    if xgb:
+        model_list.append("xgb")
+    if ridge:
+        model_list.append("ridge")
+    if rf:
+        model_list.append("rf")
+    if elasticnet:
+        model_list.append("elasticnet")
+    if linear:
+        model_list.append("linear")
+    if lasso:
+        model_list.append("lasso")
+    if baseline:
+        model_list.append("baseline-rent")
+    
+    result_df = trigger_retraining_with_added_data(limit=limit, model_list=model_list)
+
+    
+    plot = px.bar(
+        result_df,
+        x="tags.mlflow.runName",
+        y="metrics.mae",
+        title="Modellperformance",
+        color="tags.mlflow.runName",
+        color_continuous_scale=px.colors.sequential.Viridis,
+    )
+    
+    return result_df, plot
+
+
+
 def trigger_retraining_with_added_data(
-    url,
-    feature_set,
     limit=3,
     model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"],
 ):
+    url="https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+    feature_set = getFeatureSetApp()
     print(url)
     print("started")
     retrain_data = get_dataset_items(url, limit)
