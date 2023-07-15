@@ -9,7 +9,7 @@ import seaborn as sns
 from ydata_profiling import ProfileReport
 import shap
 from ctgan import CTGAN
-
+import plotly.express as px
 import plotly.express as px
 
 from sklearn.compose import ColumnTransformer
@@ -28,7 +28,7 @@ import mlflow
 import mlflow.sklearn
 import mlflow.xgboost
 import matplotlib.pyplot as plt
-
+import gradio as gr
 from enum import Enum
 from preprocessing_methods import *
 from apify_scrap import *
@@ -452,7 +452,9 @@ def getFeatureSetApp():
     ]
 
 
-def gradio_retrain_with_added_data(xgb, ridge, rf, elasticnet, linear, lasso, baseline, limit):
+def gradio_retrain_with_added_data(
+    xgb, ridge, rf, elasticnet, linear, lasso, baseline, limit
+):
     model_list = []
     if xgb:
         model_list.append("xgb")
@@ -468,42 +470,55 @@ def gradio_retrain_with_added_data(xgb, ridge, rf, elasticnet, linear, lasso, ba
         model_list.append("lasso")
     if baseline:
         model_list.append("baseline-rent")
-    
-    result_df = trigger_retraining_with_added_data(limit=limit, model_list=model_list)
 
+    result_df = trigger_retraining_with_added_data(limit=limit, model_list=model_list)
+    print("Done with retraining: ", result_df)
     
+    print("Save results to excel")
+    result_df.to_excel("retraining_results.xlsx")
+    print("Done with saving results to excel")
+
     plot = px.bar(
         result_df,
-        x="tags.mlflow.runName",
-        y="metrics.mae",
-        title="Modellperformance",
-        color="tags.mlflow.runName",
-        color_continuous_scale=px.colors.sequential.Viridis,
+        x="model",
+        y="mae",
+        title="Modellperformance mit erweitereten Trainingsdaten"
     )
-    
-    return result_df, plot
 
+    color_scale = px.colors.sequential.Reds[::-1] + px.colors.sequential.Greens
+    plot = px.bar(
+        result_df,
+        x="model",
+        y="mae",
+        title="Modellperformance mit erweitereten Trainingsdaten",
+        color="mae",
+        color_continuous_scale=color_scale,
+    )
+    print("Done with plotting: ", plot)
+    return result_df, gr.update(value=plot, visible=True)
 
 
 def trigger_retraining_with_added_data(
     limit=3,
     model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"],
 ):
-    url="https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+    url = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
     feature_set = getFeatureSetApp()
     print(url)
     print("started")
     retrain_data = get_dataset_items(url, limit)
     print("Retraining data successfully scraped.")
     write_data_to_excel(retrain_data, "data/retrain_train_data.xlsx")
-    print("Retraining data successfully written to excel under data/retrain_train_data.xslx")
+    print(
+        "Retraining data successfully written to excel under data/retrain_train_data.xslx"
+    )
 
     new_df = pd.read_excel(r"data/retrain_train_data.xlsx")
     new_df = preprocess_data(new_df)
     print("Done with raw preprocessing.")
     new_df.to_excel("data/retrain_train_data_preprocessed.xlsx", index=False)
 
-    ############################# FELIX FRAGEN :) ##################################
+    ############################# Scraping done ##################################
 
     X_val = pd.read_excel("data/X_val.xlsx")
     X_val = X_val.drop("Unnamed: 0", axis=1)

@@ -39,17 +39,18 @@ def get_model():
 
 # lädt das model aus mlflow
 def load_model(model_name, stage="production"):
-    model_version = 1
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{stage}")
     return model
 
 
 # speichert das model als pickle file ab
-# def save_model(model_name):
-#     model_pickle = load_model(model_name)
-#      with open('model.pkl', 'wb') as file:
-#          model_pickle = pickle.dump(file)
-#      return model_pickle
+def save_model(model_name):
+    model_pickle = load_model(model_name)
+    with open('model.pkl', 'wb') as file:
+         model_pickle = pickle.dump(file)
+    return model_pickle
+
+
 # hier wird aus den gradio eingaben ein datframe erstellt und das Modell wird geladen und macht predictions anhand der eingaben
 def trigger_actions(
     feature_squrmeter,
