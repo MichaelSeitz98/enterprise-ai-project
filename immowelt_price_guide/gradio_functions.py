@@ -9,30 +9,32 @@ import pickle
 import matplotlib.pyplot as plt
 import plotly.express as px
 
+# nimmt die daten der abgespeicherten Prediction und wandelt es als datafrme um
 def get_predictions(file):
     df = pd.read_excel(file)
     return df
-
-def bar_chart(file = r"C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\results-selected-features-aug.xlsx"):
+# macht aus den Daten ein bar Plot welche models am besten sind
+def bar_chart(file = "results-selected-features-aug.xlsx"):
     df = get_predictions(file)
     plot = px.bar(df, x="tags.mlflow.runName", y="metrics.mae", title="Modellperformance", color="tags.mlflow.runName", color_continuous_scale=px.colors.sequential.Viridis)
     return gr.update(value=plot, visible=True)
-
-def get_model(model_name):
-    with open(r'C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\model.pkl', 'rb') as file:
+# lädt das beste model, das als pickle file abgespeichert ist
+def get_model():
+    with open('model.pkl', 'rb') as file:
         model_pickle = pickle.load(file)
     return model_pickle
-
+# lädt das model aus mlflow
 def load_model(model_name, stage = "production"):
     model_version = 1
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{stage}")
     return model
-
-def get_model(model_name):
-    with open(r'C:\Users\mbauer2\workspace\Uni\enterprise-ai-project\immowelt_price_guide\model.pkl', 'wb') as file:
-        model_pickle = pickle.dump(file)
-    return model_pickle
-
+# speichert das model als pickle file ab
+# def save_model(model_name):
+#     model_pickle = load_model(model_name)
+#      with open('model.pkl', 'wb') as file:
+#          model_pickle = pickle.dump(file)
+#      return model_pickle
+# hier wird aus den gradio eingaben ein datframe erstellt und das Modell wird geladen und macht predictions anhand der eingaben
 def trigger_actions(
     feature_squrmeter,
     feature_zip,
@@ -60,7 +62,7 @@ def trigger_actions(
     feature_kellerabteil,
     erklärung
 ):
-    model = get_model("model.pkl")
+    model = get_model()
     data_list = (
         [feature_squrmeter]
         + [feature_rooms]
