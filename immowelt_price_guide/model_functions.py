@@ -479,7 +479,7 @@ def gradio_retrain_with_added_data(
         limit=limit, model_list=model_list, progress=progress
     )
 
-    progress(0,95, desc="Preparing model comparison")
+    progress(0.95, desc="Preparing model comparison")
     time.sleep(1.5)
     print("Done with retraining: ", result_df)
 
@@ -499,7 +499,7 @@ def gradio_retrain_with_added_data(
         result_df,
         x="model",
         y="mae",
-        title="Modellperformance mit erweitereten Trainingsdaten",
+        title="Modellperformance mit aktuellen Trainingsdaten",
         color="mae",
         color_continuous_scale=color_scale,
     )
@@ -569,7 +569,7 @@ def trigger_retraining_with_added_data(
         0.35,
         desc=f"{amount_new_data} new entries added to training base.",
     )
-    time.sleep(2.5)
+    time.sleep(3)
     print("Retraining data successfully added to training data.")
     train_recent = train_recent.fillna(0)
     train_recent.to_excel("data/train_recent_add.xlsx", index=False)
@@ -586,14 +586,13 @@ def trigger_retraining_with_added_data(
         0.4,
         desc=f"Start retraining of models with new data...",
     )
-    time.sleep(0.5)
     model = None
     experiment_name = f"retraining_{now.strftime('%Y-%m-%d_%H-%M')}"
     mlflow.set_experiment(experiment_name)
 
     results = pd.DataFrame()
 
-    for model_name in progress.tqdm(model_list, desc=f"Retrain models and log to MLFlow ({experiment_name})"):
+    for model_name in progress.tqdm(model_list, desc=f"Retrain models and log to MLFlow: {experiment_name}"):
         if model_name == "xgb":
             mlflow.xgboost.autolog()
         else:
@@ -665,6 +664,7 @@ def trigger_retraining_with_added_data(
                     },
                     ignore_index=True,
                 )
+                results = results.round(2)
 
             else:
                 print("Model not found.")
