@@ -8,6 +8,8 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 from ydata_profiling import ProfileReport
 import shap
+from tqdm import tqdm
+import time
 from ctgan import CTGAN
 import plotly.express as px
 import plotly.express as px
@@ -154,7 +156,7 @@ def scrape_avg_buy_prices():
         else:
             print("Price not found")
     else:
-        print("The element ontaining the buy price was not found.")
+        print("The element containing the buy price was not found.")
     return buy_price
 
 
@@ -453,8 +455,10 @@ def getFeatureSetApp():
 
 
 def gradio_retrain_with_added_data(
-    xgb, ridge, rf, elasticnet, linear, lasso, baseline, limit
+    xgb, ridge, rf, elasticnet, linear, lasso, baseline, limit, progress=gr.Progress()
 ):
+    progress(0.01, desc="Start pipeline")
+    time.sleep(1)
     model_list = []
     if xgb:
         model_list.append("xgb")
@@ -471,9 +475,14 @@ def gradio_retrain_with_added_data(
     if baseline:
         model_list.append("baseline-rent")
 
-    result_df = trigger_retraining_with_added_data(limit=limit, model_list=model_list)
+    result_df = trigger_retraining_with_added_data(
+        limit=limit, model_list=model_list, progress=progress
+    )
+
+    progress(0,95, desc="Preparing model comparison")
+    time.sleep(1.5)
     print("Done with retraining: ", result_df)
-    
+
     print("Save results to excel")
     result_df.to_excel("retraining_results.xlsx")
     print("Done with saving results to excel")
@@ -482,10 +491,10 @@ def gradio_retrain_with_added_data(
         result_df,
         x="model",
         y="mae",
-        title="Modellperformance mit erweitereten Trainingsdaten"
+        title="Modellperformance mit erweitereten Trainingsdaten",
     )
 
-    color_scale = px.colors.sequential.Reds[::-1] + px.colors.sequential.Greens
+    color_scale = px.colors.sequential.Greens[::-1] + px.colors.sequential.Reds
     plot = px.bar(
         result_df,
         x="model",
@@ -495,26 +504,37 @@ def gradio_retrain_with_added_data(
         color_continuous_scale=color_scale,
     )
     print("Done with plotting: ", plot)
+    progress(0.99, desc="Done with pipeline")
+    time.sleep(0.5)
     return result_df, gr.update(value=plot, visible=True)
 
 
 def trigger_retraining_with_added_data(
     limit=3,
     model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"],
+    progress=gr.Progress(),
 ):
-    url = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+    url = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten"
+    # convert the limit to int
+
+    progress(0.05, desc=f"Scraping the first {int(limit)} pages from {url}")
     feature_set = getFeatureSetApp()
     print(url)
     print("started")
     retrain_data = get_dataset_items(url, limit)
     print("Retraining data successfully scraped.")
+
     write_data_to_excel(retrain_data, "data/retrain_train_data.xlsx")
     print(
         "Retraining data successfully written to excel under data/retrain_train_data.xslx"
     )
 
+    progress(0.30, desc=f"Scraping done. Raw data preprocessing of new data...")
+    time.sleep(1.5)
+
     new_df = pd.read_excel(r"data/retrain_train_data.xlsx")
     new_df = preprocess_data(new_df)
+
     print("Done with raw preprocessing.")
     new_df.to_excel("data/retrain_train_data_preprocessed.xlsx", index=False)
 
@@ -538,17 +558,22 @@ def trigger_retraining_with_added_data(
 
     train_recent = pd.read_excel("data/train_recent.xlsx")
     print("old shape of train_recent", train_recent.shape)
-
+    old_shape = train_recent.shape[0]
     new_df = preprocess_data_for_model(new_df, feature_set)
     train_recent = pd.concat([train_recent, new_df], axis=0)
     train_recent = train_recent.drop_duplicates()
     print("new shape of train_recent", train_recent.shape)
+    new_shape = train_recent.shape[0]
+    amount_new_data = new_shape - old_shape
+    progress(
+        0.35,
+        desc=f"{amount_new_data} new entries added to training base.",
+    )
+    time.sleep(2.5)
     print("Retraining data successfully added to training data.")
     train_recent = train_recent.fillna(0)
     train_recent.to_excel("data/train_recent_add.xlsx", index=False)
 
-    print("train_recent shape before dropping na", train_recent.shape)
-    print("train_recent shape after dropping na", train_recent.shape)
     y_train_recent = train_recent["Object_price"]
     X_train_recent = train_recent.drop(["Object_price"], axis=1)
 
@@ -557,11 +582,18 @@ def trigger_retraining_with_added_data(
         "!!!--------------------------------------START RETRAINING----------------------------------------------!!!"
     )
 
+    progress(
+        0.4,
+        desc=f"Start retraining of models with new data...",
+    )
+    time.sleep(0.5)
     model = None
-    mlflow.set_experiment(f"retraining_{now.strftime('%Y-%m-%d_%H-%M')}")
+    experiment_name = f"retraining_{now.strftime('%Y-%m-%d_%H-%M')}"
+    mlflow.set_experiment(experiment_name)
 
     results = pd.DataFrame()
-    for model_name in model_list:
+
+    for model_name in progress.tqdm(model_list, desc=f"Retrain models and log to MLFlow ({experiment_name})"):
         if model_name == "xgb":
             mlflow.xgboost.autolog()
         else:
@@ -670,5 +702,8 @@ def trigger_retraining_with_added_data(
                     ignore_index=True,
                 )
 
-            mlflow.end_run()
+                # round to 2 decimals for all numbers in results
+                results = results.round(2)
+
+        mlflow.end_run()
     return results
