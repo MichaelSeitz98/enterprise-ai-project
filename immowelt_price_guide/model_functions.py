@@ -27,6 +27,16 @@ import mlflow.sklearn
 import mlflow.xgboost
 import matplotlib.pyplot as plt
 
+from enum import Enum
+from preprocessing_methods import *
+from apify_scrap import *
+from datetime import datetime
+import mlflow
+import pickle
+from model_functions import *
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+
 mlflow.set_tracking_uri("http://localhost:5000")
 
 
@@ -319,4 +329,269 @@ def pipeline_from_extracted(df, feature_set, model_name="lasso"):
     return model, mae, mse, r2, mae_train, mse_train, r2_train
 
 
+
+
+
+class ImmoWeltUrls(Enum):
+    BUY_FLATS_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/wohnungen/kaufen?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+    # add price range to avoid "consulting"-offers without named price
+    BUY_HOUSES_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/haeuser/kaufen?d=true&pma=10000000&pmi=10&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+    RENT_FLATS_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+    RENT_HOUSES_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/haeuser/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
+
+
+def getFeatureSetApp():
+    return [
+        "Object_price",
+        "LivingSpace",
+        "ZipCode",
+        "Rooms",
+        "altbau_(bis_1945)",
+        "balkon",
+        "barriefrei",
+        "dachgeschoss",
+        "einbaukueche",
+        "neubau",
+        "parkett",
+        "stellplatz",
+        "bad/wc_getrennt",
+        "personenaufzug",
+        "garten",
+        "garage",
+        "renoviert",
+        "terrasse",
+        "wanne",
+        "zentralheizung",
+        "abstellraum",
+        "ferne",
+        "fussbodenheizung",
+        "gartennutzung",
+        "kelleranteil",
+    ]
+
+
+
+
+def evaluate_model(model, X_train_recent, y_train_recent, X_val, y_val, X_test, y_test):
+    pred_train = model.predict(X_train_recent)
+    preds = model.predict(X_val)
+    pred_test = model.predict(X_test)
+
+    mae_train = mean_absolute_error(y_train_recent, pred_train)
+    mse_train = mean_squared_error(y_train_recent, pred_train)
+    r2_train = r2_score(y_train_recent, pred_train)
+
+    mae_test = mean_absolute_error(y_test, pred_test)
+    mse_test = mean_squared_error(y_test, pred_test)
+    r2_test = r2_score(y_test, pred_test)
+
+    mae_val = mean_absolute_error(y_val, preds)
+    mse_val = mean_squared_error(y_val, preds)
+    r2_val = r2_score(y_val, preds)
+
+    mlflow.log_metric("mae_test", mae_test)
+    mlflow.log_metric("mse_test", mse_test)
+    mlflow.log_metric("r2_test", r2_test)
+    mlflow.log_metric("mae_train", mae_train)
+    mlflow.log_metric("r2_train", mae_train)
+    mlflow.log_metric("mse_train", mae_train)
+    mlflow.log_metric("mae", mae_val)
+    mlflow.log_metric("mse", mse_val)
+    mlflow.log_metric("r2", r2_val)
+    return (
+        mae_val,
+        mse_val,
+        r2_val,
+        mae_test,
+        mse_test,
+        r2_test,
+        mae_train,
+        mse_train,
+        r2_train,
+    )
+
+
+def decode_col_names(df):
+    df.columns = [
+        re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), col)
+        for col in df.columns
+    ]
+    df.columns = [
+        col.replace("ö", "oe").replace("ä", "ae").replace("ü", "ue").replace("ß", "ss")
+        for col in df.columns
+    ]
+    return df
+
+
+def trigger_retraining_with_added_data(
+    url,
+    feature_set,
+    limit=3,
+    model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"]
+):
+    # print(url)
+    # #retrain_data = get_dataset_items(url, limit)
+    # print("Retraining data successfully scraped.")
+    # # write_data_to_excel(retrain_data, "data/retrain_train_data.xlsx")
+    # print("Retraining data successfully written to excel.")
+
+    # new_df = pd.read_excel(r"data/retrain_train_data.xlsx")
+    # # new_df = preprocess_data(new_df)
+    # print("Done with raw preprocessing.")
+    # new_df.to_excel("data/retrain_train_data_preprocessed.xlsx", index=False)
+
+    ############################# FELIX FRAGEN :) ##################################
+
+    X_val = pd.read_excel("data/X_val.xlsx")
+    X_val = X_val.drop("Unnamed: 0", axis=1)
+    y_val = pd.read_excel("data/y_val.xlsx")
+    y_val = y_val.drop("Unnamed: 0", axis=1)
+    X_test = pd.read_excel("data/X_test.xlsx")
+    X_test = X_test.drop("Unnamed: 0", axis=1)
+    y_test = pd.read_excel("data/y_test.xlsx")
+    y_test = y_test.drop("Unnamed: 0", axis=1)
+
+    new_df = pd.read_excel("data/retrain_train_data_preprocessed.xlsx")
+    new_df = decode_col_names(new_df)
+
+    for feature in feature_set:
+        if feature not in new_df.columns:
+            new_df[feature] = 0
+
+    train_recent = pd.read_excel("data/train_recent.xlsx")
+    print("old shape of train_recent", train_recent.shape)
+
+    new_df = preprocess_data_for_model(new_df, feature_set)
+    train_recent = pd.concat([train_recent, new_df], axis=0)
+    train_recent = train_recent.drop_duplicates()
+    print("new shape of train_recent", train_recent.shape)
+    print("Retraining data successfully added to training data.")
+    train_recent = train_recent.fillna(0)
+    train_recent.to_excel("data/train_recent_add.xlsx", index=False)
+
+    print("train_recent shape before dropping na", train_recent.shape)
+    print("train_recent shape after dropping na", train_recent.shape)
+    y_train_recent = train_recent["Object_price"]
+    X_train_recent = train_recent.drop(["Object_price"], axis=1)
+
+    now = datetime.now()
+    print(
+        "!!!--------------------------------------START RETRAINING----------------------------------------------!!!"
+    )
+
+    model = None
+    mlflow.set_experiment(f"retraining_{now.strftime('%Y-%m-%d_%H-%M')}")
+
+    results = pd.DataFrame()
+    for model_name in model_list:
+        if model_name == "xgb":
+            mlflow.xgboost.autolog()
+        else:
+            mlflow.sklearn.autolog()
+
+        with mlflow.start_run(run_name=f"{model_name}"):
+            if model_name == "xgb":
+                print("XGB------")
+                print(f"train{X_train_recent.shape}")
+                print(f"val:{X_val.shape}")
+                print(f"y_train:{y_train_recent.shape}")
+                print(f"y_val:{y_val.shape}")
+                model = train_and_eval_xgb(X_train_recent, y_train_recent, X_val, y_val)
+            elif model_name == "lasso":
+                print("LASSO------")
+                model = train_and_eval_lasso(
+                    X_train_recent, y_train_recent, X_val, y_val
+                )
+            elif model_name == "ridge":
+                print("RIDGE------")
+                model = train_and_eval_ridge(
+                    X_train_recent, y_train_recent, X_val, y_val
+                )
+            elif model_name == "rf":
+                print("RF------")
+                model = train_and_eval_rf(X_train_recent, y_train_recent, X_val, y_val)
+            elif model_name == "elasticnet":
+                print("ELASTICNET------")
+                model = train_and_eval_elasticnet(
+                    X_train_recent, y_train_recent, X_val, y_val
+                )
+            elif model_name == "linear":
+                print("LINEAR------")
+                model = train_and_eval_linear(
+                    X_train_recent, y_train_recent, X_val, y_val
+                )
+            elif model_name == "baseline-rent":
+                print("BASELINE-RENT------")
+                avg_price = baseline_rent("", "")
+                baseline_preds_val = X_val["LivingSpace"] * avg_price
+                baseline_preds_test = X_test["LivingSpace"] * avg_price
+                baseline_mae = mean_absolute_error(y_val, baseline_preds_val)
+                baseline_r2 = r2_score(y_val, baseline_preds_val)
+                baseline_mse = mean_squared_error(y_val, baseline_preds_val)
+                baseline_mae_test = mean_absolute_error(y_test, baseline_preds_test)
+                baseline_r2_test = r2_score(y_test, baseline_preds_test)
+                baseline_mse_test = mean_squared_error(y_test, baseline_preds_test)
+                print(f"Baseline Mae: {baseline_mae}")
+                mlflow.log_metric("mse", baseline_mse)
+                mlflow.log_metric("mae", baseline_mae)
+                mlflow.log_metric("r2", baseline_r2)
+                mlflow.log_metric("mse_test", baseline_mse_test)
+                mlflow.log_metric("mae_test", baseline_mae_test)
+                mlflow.log_metric("r2_test", baseline_r2_test)
+
+                print(f"Baseline Mae: {baseline_mae}")
+                print(f"Baseline MSE: {baseline_mse}")
+                print(f"Baseline R2 Score: {baseline_r2}")
+
+                results = results.append(
+                    {
+                        "model": model_name,
+                        "mae": baseline_mae,
+                        "mse": baseline_mse,
+                        "r2": baseline_r2,
+                        "mae_test": baseline_mae_test,
+                        "mse_test": baseline_mse_test,
+                        "r2_test": baseline_r2_test,
+                    },
+                    ignore_index=True,
+                )
+
+            else:
+                print("Model not found.")
+
+            print(f"Training {model_name} model done...")
+            print(f"---EVALUATION AND LOGGING TO MLFLOW------ {model_name}")
+
+            if model_name != "baseline-rent":
+                (
+                    mae_val,
+                    mse_val,
+                    r2_val,
+                    mae_test,
+                    mse_test,
+                    r2_test,
+                    mae_train,
+                    mse_train,
+                    r2_train,
+                ) = evaluate_model(
+                    model, X_train_recent, y_train_recent, X_val, y_val, X_test, y_test
+                )
+                results = results.append(
+                    {
+                        "model": model_name,
+                        "mae": mae_val,
+                        "mse": mse_val,
+                        "r2": r2_val,
+                        "mae_test": mae_test,
+                        "mse_test": mse_test,
+                        "r2_test": r2_test,
+                        "mae_train": mae_train,
+                        "mse_train": mse_train,
+                        "r2_train": r2_train,
+                    },
+                    ignore_index=True,
+                )
+
+            mlflow.end_run()
+    return results
 
