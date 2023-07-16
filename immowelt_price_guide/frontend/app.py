@@ -62,7 +62,7 @@ def predict_housing_price(
     print(data)
 
     # Send a POST request to the /predict endpoint
-    response = requests.post("http://localhost:8080/predict", json=data)
+    response = requests.post("http://localhost:8000/predict", json=data)
 
     print(response)
 
@@ -73,7 +73,7 @@ def predict_housing_price(
 iface = gr.Interface(
     fn=predict_housing_price,
     inputs=[
-        gr.inputs.Slider(minimum=0, maximum=1000, step=1, label="Living Space (sqm)"),
+        gr.inputs.Slider(minimum=0, maximum=300, step=1, label="Living Space (sqm)"),
         gr.inputs.Slider(minimum=0, maximum=15, step=1, label="Number of Rooms"),
         gr.inputs.Checkbox(label="Historic Building (Pre-1945)"),
         gr.inputs.Checkbox(label="Balcony"),
@@ -96,7 +96,31 @@ iface = gr.Interface(
         gr.inputs.Checkbox(label="Underfloor Heating"),
         gr.inputs.Checkbox(label="Shared Garden"),
         gr.inputs.Checkbox(label="Cellar Compartment"),
-        gr.inputs.Dropdown(label="PLZ", choices=['97072: Sanderau', '97074: Frauenland'])
+        gr.inputs.Dropdown(label="ZipCode", choices=[
+                    "97070 Würzburg-Altstadt",
+                    "97072 Würzburg-Sanderau",
+                    "97074 Würzburg-Frauenland",
+                    "97076 Würzburg-Lengfeld",
+                    "97078 Würzburg-Lindleinsmühle",
+                    "97080 Würzburg-Dürrbachtal",
+                    "97082 Würzburg-Steinbachtal",
+                    "97084 Würzburg-Heuchelhof",
+                    "97204 Höchberg",
+                    "97209 Veitshöchheim",
+                    "97218 Gerbrunn",
+                    "97222 Rimpar",
+                    "97228 Rottendorf",
+                    "97234 Reichenberg",
+                    "97236 Randersacker",
+                    "97246 Eibelstadt",
+                    "97249 Eisingen",
+                    "97250 Erlabrunn",
+                    "97261 Güntersleben",
+                    "97270 Kist",
+                    "97288 Theilheim",
+                    "97297 Waldbüttelbrunn",
+                    "97299 Zell am Main",
+                ])
         #gr.inputs.Textbox(label="Zip Code"),
     ],
     outputs=gr.outputs.Textbox(label="Monthly rent in EUR"),
@@ -105,4 +129,4 @@ iface = gr.Interface(
 )
 
 # Run the Gradio interface
-iface.launch(server_port=8000)
+iface.launch(server_port=8070)

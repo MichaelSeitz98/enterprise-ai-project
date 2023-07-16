@@ -22,10 +22,13 @@ def preprocess_data(data):
         "ZipCode_97222", "ZipCode_97228", "ZipCode_97234", "ZipCode_97236", "ZipCode_97246", "ZipCode_97249", "ZipCode_97250", 
         "ZipCode_97261", "ZipCode_97270", "ZipCode_97288", "ZipCode_97297", "ZipCode_97299"
     ]
-
+    zipcode_columns = ["ZipCode_97070","ZipCode_97072", "ZipCode_97074", "ZipCode_97076", 
+        "ZipCode_97078", "ZipCode_97080", "ZipCode_97082", "ZipCode_97084", "ZipCode_97204", "ZipCode_97209", "ZipCode_97218", 
+        "ZipCode_97222", "ZipCode_97228", "ZipCode_97234", "ZipCode_97236", "ZipCode_97246", "ZipCode_97249", "ZipCode_97250", 
+        "ZipCode_97261", "ZipCode_97270", "ZipCode_97288", "ZipCode_97297", "ZipCode_97299"]
     encoded_data = {
-    'LivingSpace': float(data['LivingSpace']),
-    'Rooms': float(data['Rooms']),
+    'LivingSpace': data['LivingSpace'],
+    'Rooms': data['Rooms'],
     'altbau_(bis_1945)': int(data['altbau_(bis_1945)']),
     'balkon': int(data['balkon']),
     'barriefrei': int(data['barriefrei']),
@@ -48,14 +51,15 @@ def preprocess_data(data):
     'gartennutzung': int(data['gartennutzung']),
     'kelleranteil': int(data['kelleranteil'])
 }
-
-    zip_code_key = 'ZipCode_' + data['ZipCode']
-    for column in expected_columns:
+    print(encoded_data)
+    zip_code_key = 'ZipCode_' + data['ZipCode'][:5]
+    for column in zipcode_columns:
         if column == zip_code_key:
             encoded_data[column] = 1
         else:
             encoded_data[column] = 0
-
+    print(zip_code_key)
+    print(encoded_data)
     return encoded_data
 
 
