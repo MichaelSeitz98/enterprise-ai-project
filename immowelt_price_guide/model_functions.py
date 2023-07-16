@@ -33,7 +33,7 @@ import matplotlib.pyplot as plt
 import gradio as gr
 from enum import Enum
 from preprocessing_methods import *
-from apify_scrap import *
+from scrape_and_preprocess.apify_scrap import *
 from datetime import datetime
 import mlflow
 import pickle
@@ -514,9 +514,7 @@ def trigger_retraining_with_added_data(
     model_list=["baseline-rent", "xgb", "ridge", "rf", "elasticnet", "linear", "lasso"],
     progress=gr.Progress(),
 ):
-    url = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten"
-    # convert the limit to int
-
+    url = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
     progress(0.05, desc=f"Scraping the first {int(limit)} pages from {url}")
     feature_set = getFeatureSetApp()
     print(url)

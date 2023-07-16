@@ -1,4 +1,4 @@
-# University Module Guide Documentation
+# University Module Guide Assistant
 
 This technical documentation outlines our approach to building a "University Module Guide" using Python 3. Although the approach did not yield the desired results, it is important to document the process for future reference. The main steps involved extracting module catalogues in PDF format, preprocessing the data, and attempting to utilize the Google TAPAS algorithm for question-answering capabilities.
 
@@ -41,4 +41,3 @@ In conclusion, our attempt to build a "University Module Guide" using Python 3, 
 It is important to acknowledge that the approach we pursued was ambitious and required significant computational resources. Given our limitations, we recommend exploring alternative methods or utilizing cloud-based solutions with ample GPU power to overcome the challenges we faced.
 
 While this particular approach did not yield the desired results, documenting the process serves as a valuable learning experience and provides insights for future endeavors in similar domains.
-
