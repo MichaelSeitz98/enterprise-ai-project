@@ -1,4 +1,4 @@
-# Price Recommendation Tool
+# Price Recommendataion Tool 
 
 Accurate price predictions for flat rents and house buys in Würzburg are crucial. They enable informed decision making, aid budget planning, support market analysis, ensure fair transactions, and reduce information asymmetry. Price predictions play a crucial role in facilitating well-informed choices and efficient transactions in Würzburg's real estate market.
 
@@ -71,11 +71,5 @@ We use Gradio as our front-end framework. `Gradio` is particularly good at apply
 
 
 ## Outlook & Discussion
-
-
-
-
-
-
 
 
