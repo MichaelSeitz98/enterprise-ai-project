@@ -10,7 +10,7 @@ from ydata_profiling import ProfileReport
 import shap
 from tqdm import tqdm
 import time
-from ctgan import CTGAN
+# from ctgan import CTGAN
 import plotly.express as px
 import plotly.express as px
 
@@ -25,7 +25,6 @@ from sklearn.linear_model import Lasso, Ridge, LinearRegression, ElasticNet
 from sklearn.model_selection import KFold
 from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
-
 import mlflow
 import mlflow.sklearn
 import mlflow.xgboost
