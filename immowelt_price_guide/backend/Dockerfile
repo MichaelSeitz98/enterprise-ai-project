@@ -2,7 +2,7 @@
 
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
 
-COPY ./immowelt_price_guide/backend /app
+COPY ./backend /app
 
 WORKDIR /app
 
