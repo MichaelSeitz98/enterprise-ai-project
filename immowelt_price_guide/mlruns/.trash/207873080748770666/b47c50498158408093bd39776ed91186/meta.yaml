@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207873080748770666/b47c50498158408093bd39776ed91186/artifacts
+deleted_time: 1689521323957
+end_time: 1689511887736
+entry_point_name: ''
+experiment_id: '207873080748770666'
+lifecycle_stage: deleted
+run_id: b47c50498158408093bd39776ed91186
+run_name: elasticnet
+run_uuid: b47c50498158408093bd39776ed91186
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689511836482
+status: 3
+tags: []
+user_id: mbauer2
