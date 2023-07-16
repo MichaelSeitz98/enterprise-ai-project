@@ -1,0 +1,3 @@
+build:
+  docker:
+    web: ./immowelt_price_guide/backend/Dockerfile
