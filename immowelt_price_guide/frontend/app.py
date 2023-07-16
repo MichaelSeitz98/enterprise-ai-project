@@ -96,7 +96,8 @@ iface = gr.Interface(
         gr.inputs.Checkbox(label="Underfloor Heating"),
         gr.inputs.Checkbox(label="Shared Garden"),
         gr.inputs.Checkbox(label="Cellar Compartment"),
-        gr.inputs.Textbox(label="Zip Code"),
+        gr.inputs.Dropdown(label="PLZ", choices=['97072: Sanderau', '97074: Frauenland'])
+        #gr.inputs.Textbox(label="Zip Code"),
     ],
     outputs=gr.outputs.Textbox(label="Monthly rent in EUR"),
     title="Renting Price Prediction",
