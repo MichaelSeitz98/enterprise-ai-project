@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/e057c344f1be4b01bfd6df7606784c02/artifacts
+deleted_time: 1689522182793
 end_time: 1689071520843
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: e057c344f1be4b01bfd6df7606784c02
 run_name: invincible-snipe-706
 run_uuid: e057c344f1be4b01bfd6df7606784c02

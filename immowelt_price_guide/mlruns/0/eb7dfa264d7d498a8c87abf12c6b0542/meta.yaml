@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/eb7dfa264d7d498a8c87abf12c6b0542/artifacts
+deleted_time: 1689521726019
 end_time: 1689069483067
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: eb7dfa264d7d498a8c87abf12c6b0542
 run_name: auspicious-whale-148
 run_uuid: eb7dfa264d7d498a8c87abf12c6b0542

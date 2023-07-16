@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/8989837d7c68472d84f9e7c29c2728df/artifacts
+deleted_time: 1689522089912
 end_time: 1689015162987
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 8989837d7c68472d84f9e7c29c2728df
 run_name: unleashed-stag-674
 run_uuid: 8989837d7c68472d84f9e7c29c2728df

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/d33bdcffecbe4c0cbf714efafd773ff4/artifacts
+deleted_time: 1689521726016
 end_time: 1689248857750
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: d33bdcffecbe4c0cbf714efafd773ff4
 run_name: sneaky-skink-82
 run_uuid: d33bdcffecbe4c0cbf714efafd773ff4

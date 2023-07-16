@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/e88885c5f9804d72822736f20705fb3b/artifacts
+deleted_time: 1689521725930
 end_time: 1689082107727
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: e88885c5f9804d72822736f20705fb3b
 run_name: efficient-kite-625
 run_uuid: e88885c5f9804d72822736f20705fb3b

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/510534c4280048918a9427f113952190/artifacts
+deleted_time: 1689522089910
 end_time: 1689014535386
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 510534c4280048918a9427f113952190
 run_name: merciful-hen-300
 run_uuid: 510534c4280048918a9427f113952190

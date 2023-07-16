@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/6856f1e07dff4b4f8e8149c554ea5697/artifacts
+deleted_time: 1689521725966
 end_time: 1689249652734
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 6856f1e07dff4b4f8e8149c554ea5697
 run_name: amusing-mare-158
 run_uuid: 6856f1e07dff4b4f8e8149c554ea5697

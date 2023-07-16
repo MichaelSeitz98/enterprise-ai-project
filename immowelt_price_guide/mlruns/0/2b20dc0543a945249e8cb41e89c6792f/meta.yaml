@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/2b20dc0543a945249e8cb41e89c6792f/artifacts
+deleted_time: 1689521725935
 end_time: 1689012609754
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 2b20dc0543a945249e8cb41e89c6792f
 run_name: ridge-regression
 run_uuid: 2b20dc0543a945249e8cb41e89c6792f

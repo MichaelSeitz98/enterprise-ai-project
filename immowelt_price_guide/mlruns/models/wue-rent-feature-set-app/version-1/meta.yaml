@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1689521831298
+current_stage: Production
+description: ''
+last_updated_timestamp: 1689521904181
+name: wue-rent-feature-set-app
+run_id: 55f2b0b8200f494687c7b07d48d241df
+run_link: ''
+source: mlflow-artifacts:/207414985746472876/55f2b0b8200f494687c7b07d48d241df/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 1

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/3bfdd4b6ea1e4f44b8fe31cc3d525f9d/artifacts
+deleted_time: 1689521725995
 end_time: 1689249602629
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 3bfdd4b6ea1e4f44b8fe31cc3d525f9d
 run_name: rare-mole-511
 run_uuid: 3bfdd4b6ea1e4f44b8fe31cc3d525f9d

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/642d6ddb37a24b40a13b581f19df7124/artifacts
+deleted_time: 1689521725966
 end_time: 1689249677515
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 642d6ddb37a24b40a13b581f19df7124
 run_name: grandiose-grub-734
 run_uuid: 642d6ddb37a24b40a13b581f19df7124

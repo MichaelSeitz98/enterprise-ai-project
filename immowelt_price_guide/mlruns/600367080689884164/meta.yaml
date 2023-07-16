@@ -1,14 +1,15 @@
 artifact_location: mlflow-artifacts:/600367080689884164
 creation_time: 1689175062962
 experiment_id: '600367080689884164'
-last_update_time: 1689360749070
+last_update_time: 1689522219488
 lifecycle_stage: active
-name: wue-rent-high-corr-features
+name: wue-rent-high-correlation-features
 tags:
-  mlflow.note.content: "**Dataset**: wue-flat-rent-combined\n**Used Features:**\n\n-
-    Object_price\n- LivingSpace\n- Rooms\n- abstellraum\n- bad/wc_getrennt\n- barriefrei\n-
-    dusche\n- elektro\n- erdwaerme\n- fenster\n- ferne\n- fliesen\n- frei \n- fussbodenheizung\n-
-    gaestewc\n- garage\n- kable_sat_tv\n- kontrollierte_be-_und_entlueftungsanlage\n-
-    kunststofffenster'\n- luftwp\n- parkett\n- personenaufzug\n- reinigung\n- rollstuhlgerecht\n-
-    speisekammer\n- terrasse\n- wanne\n- zentralheizung\n- EstateType\n- DistributionType\n-
-    ConstructionYear\n- ZipCode\n- ConstructionYear\n- ZipCode\n\n"
+  mlflow.note.content: "**Dataset**: wue-flat-rent-combined\r\n**Used Features:**\r\n\r\n-
+    Object_price\r\n- LivingSpace\r\n- Rooms\r\n- abstellraum\r\n- bad/wc_getrennt\r\n-
+    barriefrei\r\n- dusche\r\n- elektro\r\n- erdwaerme\r\n- fenster\r\n- ferne\r\n-
+    fliesen\r\n- frei \r\n- fussbodenheizung\r\n- gaestewc\r\n- garage\r\n- kable_sat_tv\r\n-
+    kontrollierte_be-_und_entlueftungsanlage\r\n- kunststofffenster'\r\n- luftwp\r\n-
+    parkett\r\n- personenaufzug\r\n- reinigung\r\n- rollstuhlgerecht\r\n- speisekammer\r\n-
+    terrasse\r\n- wanne\r\n- zentralheizung\r\n- EstateType\r\n- DistributionType\r\n-
+    ConstructionYear\r\n- ZipCode\r\n- ConstructionYear\r\n- ZipCode\r\n\r\n"

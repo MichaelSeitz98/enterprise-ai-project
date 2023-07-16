@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/5b46f4a0c98144f5aaf3ee5e8e6d95b0/artifacts
+deleted_time: 1689521725892
 end_time: 1689017447598
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 5b46f4a0c98144f5aaf3ee5e8e6d95b0
 run_name: baseline_with_avg_price_per_sqm_rent
 run_uuid: 5b46f4a0c98144f5aaf3ee5e8e6d95b0

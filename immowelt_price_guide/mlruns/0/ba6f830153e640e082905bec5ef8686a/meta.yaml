@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/ba6f830153e640e082905bec5ef8686a/artifacts
+deleted_time: 1689521725992
 end_time: 1689248907286
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: ba6f830153e640e082905bec5ef8686a
 run_name: vaunted-shark-489
 run_uuid: ba6f830153e640e082905bec5ef8686a
