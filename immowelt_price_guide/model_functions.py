@@ -31,7 +31,7 @@ import mlflow.xgboost
 import matplotlib.pyplot as plt
 import gradio as gr
 from enum import Enum
-from preprocessing_methods import *
+from scrape_and_preprocess.preprocessing_methods import *
 from scrape_and_preprocess.apify_scrap import *
 from datetime import datetime
 import mlflow
@@ -159,10 +159,19 @@ def scrape_avg_buy_prices():
     return buy_price
 
 
-def baseline_rent(val_X, val_y, runname="baseline_rent"):
+def baseline_rent(val_X="", val_y="", runname="baseline_rent"):
     avg_price_per_sqm_rent = scrape_avg_rental_prices()
     print(f"Average rental price per sqm: {avg_price_per_sqm_rent}")
     return avg_price_per_sqm_rent
+
+def apply_benchmark_rent(X_val,y_val):
+    avg_price_per_sqm_rent = baseline_rent()
+    baseline_preds = X_val["LivingSpace"] * avg_price_per_sqm_rent
+    baseline_mae = mean_absolute_error(y_val, baseline_preds)
+    baseline_r2 = r2_score(y_val, baseline_preds)
+    baseline_mse = mean_squared_error(y_val, baseline_preds)
+    return baseline_mae, baseline_mse, baseline_r2
+
 
 
 def baseline_buy(X_val, y_val, runname="baseline_buy"):
@@ -505,6 +514,8 @@ def gradio_retrain_with_added_data(
     print("Done with plotting: ", plot)
     progress(0.99, desc="Done with pipeline")
     time.sleep(0.5)
+    result_df = result_df.to_html()
+    result_df = "<h2>Result of retraining</h2>" + result_df
     return result_df, gr.update(value=plot, visible=True)
 
 
@@ -514,7 +525,9 @@ def trigger_retraining_with_added_data(
     progress=gr.Progress(),
 ):
     url = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
-    progress(0.05, desc=f"Scraping the first {int(limit)} pages from {url}")
+
+    url_info_string = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten"
+    progress(0.05, desc=f"Scraping the first {int(limit)} pages from {url_info_string}")
     feature_set = getFeatureSetApp()
     print(url)
     print("started")
