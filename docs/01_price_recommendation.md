@@ -68,6 +68,7 @@ We use Gradio as our frontend framework. `Gradio` is particularly good at applyi
 ![gradio](ressources/gradio_new_gif.gif)
 
 ### Admin Frontend
+In this frontend application, the admins of our website can scrap new data and automatically retrain the machine learning models. First the admin has to choose which models to retrain. Then the user can click on the button. Now our backend scraps new data and combines it with our old dataset. Our models can now be retrained. When the retraining process is finished, we can decide which models have improved and which model is now the best model to predict the price. This application is separate from our user frontend, it's just for us to retrain and visualise the performance of our models.
 
 ## Deployment to Cloud
 
