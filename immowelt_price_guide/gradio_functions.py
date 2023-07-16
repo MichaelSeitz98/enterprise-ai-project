@@ -44,10 +44,10 @@ def load_model(model_name, stage="production"):
 
 
 # speichert das model als pickle file ab
-def save_model(model_name):
+def save_model(model_name, path):
     model_pickle = load_model(model_name)
-    with open('model.pkl', 'wb') as file:
-         model_pickle = pickle.dump(file)
+    with open(path, 'wb') as file:
+         model_pickle = pickle.dump(model_pickle, file)
     return model_pickle
 
 
