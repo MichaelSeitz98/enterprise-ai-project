@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import re
+import shutil
 import numpy as np
 import lightgbm as lgb
 from matplotlib import pyplot as plt
@@ -31,7 +32,7 @@ import mlflow.xgboost
 import matplotlib.pyplot as plt
 import gradio as gr
 from enum import Enum
-from preprocessing_methods import *
+from scrape_and_preprocess.preprocessing_methods import *
 from scrape_and_preprocess.apify_scrap import *
 from datetime import datetime
 import mlflow
@@ -62,6 +63,25 @@ def determineHighCorrCols(df):
     print(important_cols)
     return important_cols
 
+def get_model_path(model_name):
+    client = mlflow.tracking.MlflowClient()
+    model_details = client.get_registered_model(model_name)
+    source = model_details.latest_versions[0].source
+    result = "mlartifacts" + source[source.index("/"):]
+    result += "/MLmodel"
+    return result
+
+def set_model_details_to_prod(source_path, destination_path="backend/prod_model_details.txt"):
+    shutil.copy(source_path, destination_path)
+
+def load_model(model_name, stage="production"):
+    model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{stage}")
+    return model
+
+def set_model_to_prod(model_name, path="backend/prod_model.pkl"):
+    model_pickle = load_model(model_name)
+    with open(path, 'wb') as file:
+         model_pickle = pickle.dump(model_pickle, file)
 
 def preprocess_data_for_model(df, feature_set):
     print(df.columns)

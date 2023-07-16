@@ -50,7 +50,6 @@ def save_model(model_name, path):
          model_pickle = pickle.dump(model_pickle, file)
     return model_pickle
 
-
 # hier wird aus den gradio eingaben ein datframe erstellt und das Modell wird geladen und macht predictions anhand der eingaben
 def trigger_actions(
     feature_squrmeter,
