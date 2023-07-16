@@ -701,8 +701,6 @@ def trigger_retraining_with_added_data(
                     },
                     ignore_index=True,
                 )
-
-                # round to 2 decimals for all numbers in results
                 results = results.round(2)
 
         mlflow.end_run()
