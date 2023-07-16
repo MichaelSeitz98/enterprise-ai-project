@@ -60,9 +60,12 @@ We implemented a dynamic learning pipeline, where the training base can be exten
 
 
 ## Frontend Application
-We use Gradio as our front-end framework. `Gradio` is particularly good at applying models. To be able to predict a property price, we need a dataset that has the same requirements as our training, validation and test dataset. Therefore, the user has to enter his property characteristics in the front end. The next step is to generate the dataframe from this. After this step, we load our state of the art model to predict the property price for the user. 
+### User Frontend
+We use Gradio as our frontend framework. `Gradio` is particularly good at applying models. To be able to predict a property price, we need a dataset that has the same requirements as our training, validation and test dataset. Therefore, the user has to enter his property characteristics in the front end. The next step is to generate the dataframe from this. After this step, we load our state of the art model to predict the rental price for the user. In this gif you can see how the user has to use our frontend application to get the predicted rental price for the apartment.
 
 ![gradio](ressources/gradio_new_gif.gif)
+
+### Admin Frontend
 
 ## Deployment to Cloud
 
