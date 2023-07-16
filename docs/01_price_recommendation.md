@@ -51,9 +51,11 @@ Although there is potential for data augmentation using `CTGAN`, our experiments
 ![plot2](ressources/syntetic_data_for_train_impact.png)
 
 
-### Continous Learning Pipeline /  Retraining
+### Continous Learning / Retraining
 
 We implemented a dynamic learning pipeline, where the training base can be extended with the newest scraped data.
+
+![](ressources/dynamic_retrain.png)
 
 
 
