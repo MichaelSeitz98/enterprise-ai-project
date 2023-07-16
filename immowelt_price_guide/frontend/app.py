@@ -62,7 +62,7 @@ def predict_housing_price(
     print(data)
 
     # Send a POST request to the /predict endpoint
-    response = requests.post("http://localhost:8000/predict", json=data)
+    response = requests.post("http://localhost:8080/predict", json=data)
 
     print(response)
 
