@@ -11,9 +11,9 @@ To develop an ML system to enable this, we followed a structured process.  First
 An exploratory data analysis was conducted using `ydata-profiling` to generate insights about the distribution of the extracted dataset. The analysis focused on the flat rent data set, and the results can be accessed publically via the following links. 
 
 * [EDA: basic dataset of flats to rent in Würzburg](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-rent-all.html)
-* [EDA: basic dataset of houses to buy in Würzburg](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-houses.html)
 
-The purpose of the exploratory data analysis was to gain an overview of the variables, identify missing values, assess class imbalance, and explore correlations among different variables. Statistical measures and visualizations were employed to understand the dataset's structure, uncover patterns, and identify potential issues. The analysis serves as a crucial step in the data exploration process, providing a foundation for informed decisions related to feature engineering and modeling.
+
+The purpose of the exploratory data analysis was to gain an overview of the variables, identify missing values, assess class imbalance, and explore correlations among different variables. Statistical measures and visualizations were employed to understand the dataset's structure, uncover patterns, and identify potential issues. The analysis serves as a crucial step in the data exploration process, providing a foundation for informed decisions related to feature engineering and modeling. As the system can easily be adapted to the use case of predicting house purchase prices, we also extracted house data from Würzburg. A detailed insight into this can be seen [here](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-houses.html).
 
 
 ## Model Training and Evaluation
@@ -58,8 +58,6 @@ Although there is potential for data augmentation using CTGAN, our experiments c
 ### Continous Learning Pipeline 
 
 We implemented a dynamic learning pipeline, where the training base can be extended with the newest scraped data.
-
-
 
 
 
