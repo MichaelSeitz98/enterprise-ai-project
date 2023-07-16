@@ -1,6 +1,10 @@
 artifact_location: mlflow-artifacts:/506330484095137253
 creation_time: 1689271997643
 experiment_id: '506330484095137253'
-last_update_time: 1689271997643
+last_update_time: 1689522368925
 lifecycle_stage: active
-name: wue-rent-selected-features-aug-0
+name: wue-rent-fs-app-aug-0
+tags:
+  mlflow.note.content: 'WUE Rent Selected Features Aug-0 is experiment set-up, that
+    utilizes feature-set-0 without the use of any  addition syntactic data generation
+    for the train data (generated with CTGAN) '

@@ -1,9 +1,9 @@
 artifact_location: mlflow-artifacts:/280652509826804884
 creation_time: 1689253465559
 experiment_id: '280652509826804884'
-last_update_time: 1689360652268
+last_update_time: 1689522306312
 lifecycle_stage: active
-name: wue-rent-fs-app-construction-year
+name: wue-rent-fs-app-include-construction-year
 tags:
   mlflow.note.content: With construction year included. Not anly more included in
     feature-set-app

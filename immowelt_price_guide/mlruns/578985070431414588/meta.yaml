@@ -1,6 +1,12 @@
 artifact_location: mlflow-artifacts:/578985070431414588
 creation_time: 1689270943533
 experiment_id: '578985070431414588'
-last_update_time: 1689270943533
+last_update_time: 1689522359303
 lifecycle_stage: active
-name: wue-rent-selected-features-aug-50
+name: wue-rent-fs-app-aug-50
+tags:
+  mlflow.note.content: 'This experiment utilizes the following features: the selected_feature_set.
+    The experiment makes use rent data in and 10 km around Würzburg, which was scraped
+    over a two-week period and combined. Additionally, 50 rows were syntetically generated
+    by CTGAN based on the training data exclusively. The experiment evaluates six
+    models along with a dynamic benchmark.'

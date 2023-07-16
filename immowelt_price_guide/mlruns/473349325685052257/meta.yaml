@@ -1,6 +1,11 @@
 artifact_location: mlflow-artifacts:/473349325685052257
 creation_time: 1689269124952
 experiment_id: '473349325685052257'
-last_update_time: 1689269124952
+last_update_time: 1689522345364
 lifecycle_stage: active
-name: wue-rent-selected-features-aug-120
+name: wue-rent-fs-app-aug-120
+tags:
+  mlflow.note.content: '**wue-rent-selected-features aug-120** is an experiment set-up
+    that utilizes "feature-set-0" without the use of any additional syntactic data
+    generation for the train data (originally generated with CTGAN). This set-up also
+    includes the addition of 120 synthetic rows in the train data.'
