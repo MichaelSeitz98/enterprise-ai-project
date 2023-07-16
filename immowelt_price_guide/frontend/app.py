@@ -73,8 +73,8 @@ def predict_housing_price(
 iface = gr.Interface(
     fn=predict_housing_price,
     inputs=[
-        gr.inputs.Slider(minimum=0, maximum=300, step=1, label="Living Space (sqm)"),
-        gr.inputs.Slider(minimum=0, maximum=15, step=1, label="Number of Rooms"),
+        gr.inputs.Slider(minimum=20, maximum=300, step=1, label="Living Space (sqm)"),
+        gr.inputs.Slider(minimum=1, maximum=15, step=1, label="Number of Rooms"),
         gr.inputs.Checkbox(label="Historic Building (Pre-1945)"),
         gr.inputs.Checkbox(label="Balcony"),
         gr.inputs.Checkbox(label="Barrier-Free"),
