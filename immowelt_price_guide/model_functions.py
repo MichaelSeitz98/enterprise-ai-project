@@ -195,25 +195,25 @@ def baseline_buy(X_val, y_val, runname="baseline_buy"):
     return avg_price_per_sqm_buy, baseline_mae, baseline_mse, baseline_r2
 
 
-def train_and_eval_linear(X_train, y_train, X_val, y_val, runname="linear-regression"):
+def train_linear(X_train, y_train, X_val, y_val, runname="linear-regression"):
     model = LinearRegression()
     model.fit(X_train, y_train)
     return model
 
 
-def train_and_eval_lasso(X_train, y_train, X_val, y_val, runname="lasso-regression"):
+def train_lasso(X_train, y_train, X_val, y_val, runname="lasso-regression"):
     model = Lasso()
     model.fit(X_train, y_train)
     return model
 
 
-def train_and_eval_ridge(X_train, y_train, X_val, y_val, runname="ridge-regression"):
+def train_ridge(X_train, y_train, X_val, y_val, runname="ridge-regression"):
     model = Ridge()
     model.fit(X_train, y_train)
     return model
 
 
-def train_and_eval_rf(
+def train_rf(
     X_train,
     y_train,
     X_val,
@@ -227,7 +227,7 @@ def train_and_eval_rf(
     return model
 
 
-def train_and_eval_xgb(
+def train_xgb(
     X_train,
     y_train,
     X_val,
@@ -260,7 +260,7 @@ def train_and_eval_xgb(
     return model
 
 
-def train_and_eval_elasticnet(X_train, y_train, X_val, y_val, runname="elasticNet"):
+def train_elasticnet(X_train, y_train, X_val, y_val, runname="elasticNet"):
     model = ElasticNet()
     model.fit(X_train, y_train)
     return model
@@ -269,7 +269,7 @@ def train_and_eval_elasticnet(X_train, y_train, X_val, y_val, runname="elasticNe
 def pipeline_from_extracted(df, feature_set, model_name="lasso"):
     mlflow.end_run()
     model = None
-    X, y = preprocess_data(df, feature_set)
+    X, y = preprocess_data_for_model(df, feature_set)
     print("Done with preprocessing")
     X_train, y_train, X_val, y_val, X_test, y_test = data_split(X, y)
     print("Done with data split")
@@ -291,17 +291,17 @@ def pipeline_from_extracted(df, feature_set, model_name="lasso"):
         )
 
         if model_name == "lasso":
-            model = train_and_eval_lasso(X_train, y_train, X_val, y_val)
+            model = train_lasso(X_train, y_train, X_val, y_val)
         elif model_name == "ridge":
-            model = train_and_eval_ridge(X_train, y_train, X_val, y_val)
+            model = train_ridge(X_train, y_train, X_val, y_val)
         elif model_name == "rf":
-            model = train_and_eval_rf(X_train, y_train, X_val, y_val)
+            model = train_rf(X_train, y_train, X_val, y_val)
         elif model_name == "xgb":
-            model = train_and_eval_xgb(X_train, y_train, X_val, y_val)
+            model = train_xgb(X_train, y_train, X_val, y_val)
         elif model_name == "elasticnet":
-            model = train_and_eval_elasticnet(X_train, y_train, X_val, y_val)
+            model = train_elasticnet(X_train, y_train, X_val, y_val)
         elif model_name == "linear":
-            model = train_and_eval_linear(X_train, y_train, X_val, y_val)
+            model = train_linear(X_train, y_train, X_val, y_val)
         elif model_name == "baseline-rent":
             avg_price = baseline_rent(X_val, y_val)
             baseline_preds = X_val["LivingSpace"] * avg_price
@@ -615,28 +615,28 @@ def trigger_retraining_with_added_data(
                 print(f"val:{X_val.shape}")
                 print(f"y_train:{y_train_recent.shape}")
                 print(f"y_val:{y_val.shape}")
-                model = train_and_eval_xgb(X_train_recent, y_train_recent, X_val, y_val)
+                model = train_xgb(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "lasso":
                 print("LASSO------")
-                model = train_and_eval_lasso(
+                model = train_lasso(
                     X_train_recent, y_train_recent, X_val, y_val
                 )
             elif model_name == "ridge":
                 print("RIDGE------")
-                model = train_and_eval_ridge(
+                model = train_ridge(
                     X_train_recent, y_train_recent, X_val, y_val
                 )
             elif model_name == "rf":
                 print("RF------")
-                model = train_and_eval_rf(X_train_recent, y_train_recent, X_val, y_val)
+                model = train_rf(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "elasticnet":
                 print("ELASTICNET------")
-                model = train_and_eval_elasticnet(
+                model = train_elasticnet(
                     X_train_recent, y_train_recent, X_val, y_val
                 )
             elif model_name == "linear":
                 print("LINEAR------")
-                model = train_and_eval_linear(
+                model = train_linear(
                     X_train_recent, y_train_recent, X_val, y_val
                 )
             elif model_name == "baseline-rent":
