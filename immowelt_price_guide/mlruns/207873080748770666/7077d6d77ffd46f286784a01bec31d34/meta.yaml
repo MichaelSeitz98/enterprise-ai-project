@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/207873080748770666/7077d6d77ffd46f286784a01bec31d34/artifacts
+end_time: 1689511725457
+entry_point_name: ''
+experiment_id: '207873080748770666'
+lifecycle_stage: active
+run_id: 7077d6d77ffd46f286784a01bec31d34
+run_name: xgb
+run_uuid: 7077d6d77ffd46f286784a01bec31d34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689511660957
+status: 3
+tags: []
+user_id: mbauer2

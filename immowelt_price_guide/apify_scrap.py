@@ -4,7 +4,7 @@ import json
 
 def get_dataset_items(url, limit):
     # Initialize the ApifyClient with your API token
-    client = ApifyClient("apify_api_pR7YjoaVAXNjm3et6fnawF2hXPghpZ00ddAZ")
+    client = ApifyClient("apify_api_HfxVugW1PDllN0ioIy0wbDH4pFKQmt38KnOd")
 
     # Prepare the Actor input
     run_input = {

@@ -62,7 +62,7 @@ def predict_housing_price(
     print(data)
 
     # Send a POST request to the /predict endpoint
-    response = requests.post("http://localhost:8000/predict", json=data)
+    response = requests.post("https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/predict", json=data)
 
     print(response)
 
@@ -129,4 +129,4 @@ iface = gr.Interface(
 )
 
 # Run the Gradio interface
-iface.launch(server_port=8070)
+iface.launch(share=True, server_port=7080)
