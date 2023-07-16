@@ -64,7 +64,7 @@ The newly trained models are evaluated on the same validation as before, so it i
 ## Frontend Application
 We use Gradio as our front-end framework. `Gradio` is particularly good at applying models. To be able to predict a property price, we need a dataset that has the same requirements as our training, validation and test dataset. Therefore, the user has to enter his property characteristics in the front end. The next step is to generate the dataframe from this. After this step, we load our state of the art model to predict the property price for the user. 
 
-![gradio](ressources/gradio.gif)
+![gradio](ressources/gradio_new_gif.gif)
 
 ## Deployment to Cloud
 
