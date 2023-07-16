@@ -12,14 +12,12 @@ An exploratory data analysis was conducted using `ydata-profiling` to generate i
 
 * [EDA: basic dataset of flats to rent in Würzburg](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-rent-all.html)
 
-
 The purpose of the exploratory data analysis was to gain an overview of the variables, identify missing values, assess class imbalance, and explore correlations among different variables. Statistical measures and visualizations were employed to understand the dataset's structure, uncover patterns, and identify potential issues. The analysis serves as a crucial step in the data exploration process, providing a foundation for informed decisions related to feature engineering and modeling. As the system can easily be adapted to the use case of predicting house purchase prices, we also extracted house data from Würzburg. A detailed insight into this can be seen [here](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-houses.html).
 
 
 ## Model Training and Evaluation
 
-
-For this regression task, different models were trained, tuned and compared. All training and model related code can be found in the notebook `train_and_eval_models.ipynb`. To ensure reproducibility and comparability between models, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
+For this regression task, different models were trained, tuned and compared. The related code to the model  run can be be found in the notebook `train_and_eval_models.ipynb` and `model_functions.py`. To ensure reproducibility and comparability between models within differen setups, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
 
 - Linear regression 
 - Lasso regression 
@@ -29,10 +27,10 @@ For this regression task, different models were trained, tuned and compared. All
 - XGBoost Regressor
 - Our own (dynamically updated) Benchmark
 
-All of these models are benchmarked against our own simple **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month. So the benchmark is always up to date. In the same way, for our 2nd use case, buying a house, we also have a dynamic benchmark, but with the average purchase price per square metre. This is also automatically taken from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772). This benchmark gets updated at least once a month. 
+All of these models are benchmarked against a **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month, so the benchmark is always up to date. In the same way, for buying a house the dynamic benchmark is using the average purchase price per square meter of Würzburg, scraped from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
 
-### Logging and Storing via MLFlow {.no-toc}
+### Logging and Storing via MLFlow
 
 Every different set-up of used features, used models and differently used hyperparameter was logged and compared to each other via `MLFlow`. All different runs aka experiment where tracked and evaluated there, see like a example model comparison. So, the best suitable model could be chose.  
 
@@ -42,9 +40,7 @@ If a model is chosen to be deployed for our productive systems, it can be regist
 
 ![model_registry](ressources/mlflow_model_registry.png)
 
-
-
-### Data Augmentation {.no-toc}
+### Data Augmentation
 
 To expand our limited dataset, we employed data augmentation techniques. We utilized a Generative Adversarial Network (GAN) specifically designed for tabular data called `CTGAN`. This GAN can be trained on an existing dataset and generate new data instances that possess similar characteristics, effectively increasing the size of the dataset. 
 To facilitate this process, we developed a comprehensive pipeline that integrates the training and evaluation procedures with augmented data. The implementation is available in the following Jupyter Notebook: [train_and_eval_modules.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb).
@@ -55,7 +51,7 @@ Although there is potential for data augmentation using CTGAN, our experiments c
 ![plot2](ressources/syntetic_data_for_train_impact.png)
 
 
-### Continous Learning Pipeline 
+### Continous Learning Pipeline /  Retraining
 
 We implemented a dynamic learning pipeline, where the training base can be extended with the newest scraped data.
 
@@ -71,7 +67,6 @@ We use Gradio as our front-end framework. `Gradio` is particularly good at apply
 
 
 ## Outlook & Discussion
-
 
 
 * extend data set data, regualary scraped. every week new scarping 
