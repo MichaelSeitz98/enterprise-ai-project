@@ -532,7 +532,7 @@ def gradio_retrain_with_added_data(
         result_df,
         x="model",
         y="mae",
-        title="Modellperformance mit erweitereten Trainingsdaten",
+        title="Model performance with extended train data",
     )
 
     color_scale = px.colors.sequential.Greens[::-1] + px.colors.sequential.Reds
@@ -546,17 +546,16 @@ def gradio_retrain_with_added_data(
     )
     print("Done with plotting: ", plot)
 
-    
     #### hier muss iwo ein fehler sein #############
     
     progress(0.99, desc="Done with pipeline")
     time.sleep(0.5)
-    # renome result_df columns from mae to mae_val, mae_test, mae_train
+    
     result_df = result_df.rename(columns={"mae": "mae_val"})
     result_df = result_df.rename(columns={"mse": "mse_val"})
     result_df = result_df.rename(columns={"r2": "r2_test"})
 
-    
+    result_df = result_df.to_html()
     
     print("Done convertion to html: ", result_df)
     result_df = "<h2>Result of retraining</h2>" + result_df
