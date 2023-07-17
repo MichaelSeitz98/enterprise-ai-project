@@ -67,4 +67,6 @@ def predict(data):
     # Cast specified columns to int32
     df[columns_to_convert] = df[columns_to_convert].astype('int32')
     result = model.predict(df)[0]
+    result = float(result)
+    
     return round(result, 2)
