@@ -14,7 +14,7 @@ This technical documentation outlines our approach to building a "University Mod
 
 # Idea 
 
-![Bild](ressources/architecture_module_guide.png)
+![Bild](resources/architecture_module_guide.png)
 
 ## Challenges Encountered
 
