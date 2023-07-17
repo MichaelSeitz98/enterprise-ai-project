@@ -62,6 +62,7 @@ When a model is selected for deployment on our production systems, it can be reg
 ![model_registry](resources/mlflow_model_registry.png)
 
 
+
 ### Data Augmentation
 
 To expand our limited dataset, we employed data augmentation techniques. We utilized a Generative Adversarial Network (GAN) specifically designed for tabular data called `CTGAN`. This GAN can be trained on an existing dataset and generate new data instances that possess similar characteristics, effectively increasing the size of the dataset. 
@@ -75,7 +76,7 @@ Although there is potential for data augmentation using `CTGAN`, our experiments
 
 ### Hyperparameter tuning 
 
-We performed a hyperparameter study before starting training. The hyperparameter tuning code can be found in the `train_and_eval_models.ipynb` notebook. We used the optimisation framework `Optuna` to determine the best parameters by performing a study using the validation data to optimise the input parameters for each model. The best_params obtained from hyperparameter tuning were stored as JSON files in the [hyperparameter_tuned](hyperparameter_tuned) folder. They can be used in the complete training pipeline of `train_and_eval_models.ipynb` by setting the input parameter `hpt=True`.
+We performed a hyperparameter study for all models. The hyperparameter tuning code can be found in the `train_and_eval_models.ipynb` notebook. We used the optimisation framework `Optuna` to determine the best parameters by performing a study using the validation data to optimise the input parameters for each model. The best_params obtained from hyperparameter tuning were stored as JSON files in the [hyperparameter_tuned](hyperparameter_tuned) folder. They can be used in the complete training pipeline of `train_and_eval_models.ipynb` by setting the input parameter `hpt=True`.
 
 For each model, a study focused on finding the optimal hyperparameter. In particular, XGBoost, Random Forest (RF) and ElasticNet models, where there are more hyperparameters such as
 * n_estimators
@@ -85,7 +86,8 @@ For each model, a study focused on finding the optimal hyperparameter. In partic
 
  For linear, lasso and ridge regression, there are fewer parameters to optimise (e.g. only alpha and random state), so the continued hyperparameter tuning had little impact (can be seen on the MLFlow server).These files contain the best parameter values found during the tuning process.
  
-  In the Optuna studies, we optimised the hyperparameters with respect to the Root Mean Squared Error (RMSE) of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is solved as the amount of data increases.For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.
+In the Optuna studies, we optimised the hyperparameters with respect to the Root Mean Squared Error (RMSE) of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. See all results of hyperparameter tuned runs on MLFlow server.  
+Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is solved as the amount of data increases.For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.  
 
 
 |    RF     | Hyperparameter Tuning | Without Hyperparameter Tuning | Benchmark |
@@ -101,7 +103,7 @@ For each model, a study focused on finding the optimal hyperparameter. In partic
 
 ### Final model evaluation 
 
-Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE), we chose the random forest as the preliminary first production model.
+Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE), we chose the random forest as the preliminary first production model. This results out of a run without data-augmentation and the default hyperparameters.  
 
 | Name          | mae_test | rmse_test | r2_test |
 | ------------- | -------- | --------- | ------- |
@@ -130,7 +132,7 @@ We use Gradio as our frontend framework. `Gradio` is particularly good at applyi
 
 
 ### Admin Frontend
-In this frontend application, the admins of our website can scrap new data and automatically retrain the machine learning models. First the admin has to choose which models to retrain. Then the user can click on the button. Now our backend scraps new data and combines it with our old dataset. Our models can now be retrained. When the retraining process is finished, we can decide which models have improved and which model is now the best model to predict the price. This application is separate from our user frontend, it's just for us to retrain and visualise the performance of our models.
+In this front-end application, the administrators of our website can scrap new data and automatically retrain the machine learning models. First the admin has to select which models to retrain. Then the user can click the button. Now the latest flat data from Würzburg is scraped from Immowelt and combined with the existing training data set.The models are then retrained with the updated and expanded training data. When the retraining process is complete, we can decide which models have improved and which model is now the best model for predicting price. This application is separate from our user front-end, it's just for us to retrain and visualise the performance of our models.
 
 **Link to demo video:**
 
