@@ -13,6 +13,7 @@ version: 2
 
 mkdocs:
   configuration: mkdocs.yml
+  theme: dark
 
 # Optionally declare the Python requirements required to build your docs
 python:
