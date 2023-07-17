@@ -54,25 +54,25 @@ To expand our limited dataset, we employed data augmentation techniques. We util
 To facilitate this process, we developed a comprehensive pipeline that integrates the training and evaluation procedures with augmented data. The implementation is available in the following Jupyter Notebook: [train_and_eval_modules.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb).
 
 Please note that the tabular GAN was exclusively trained using the training data. No information from the validation or test dataset was utilized for generating the augmented samples.
-Although there is potential for data augmentation using `CTGAN`, our experiments clearly demonstrated that the mean absolute error (MAE) did not improve across any of the models. We generated additional rows ranging from 0 to 1000 for training purposes and evaluated their performance on "untouched" data. Obviously, the benchmark from 286 remained consistent in all experimental setups. For this reason, data augementation with CTGAN was not applied in the final system. 
+Although there is potential for data augmentation using `CTGAN`, our experiments clearly demonstrated that the mean absolute error (MAE) did not improve across any of the models. We generated additional rows ranging from 0 to 1000 for training purposes and evaluated their performance on "untouched" data. Obviously, the benchmark from MAE=286 (on the validation data) remained consistent in all experimental setups.
+ For this reason, data augementation with CTGAN was not applied in the final system. 
 
 ![plot2](resources/syntetic_data_for_train_impact.png)
 
 ### Hyperparameter tuning 
 
-We conducted a hyperparameter study before starting the training. The code for hyperparameter tuning can be found in the `train_and_eval_models.ipynb` notebook. We used the Optimization Framework `Optuna` to determine the best parameters by performing a study that utilized the validation data to optimize the input parameters. for every models.  The best_params obtained from the hyperparameter tuning were saved as JSON files in the [hyperparameter_tuned](hyperparameter_tuned) folder. I can be used in the complete training pipeline of `train_and_eval_models.ipynb` by setting the input parameter `hpt=True`.  
+We performed a hyperparameter study before starting training. The hyperparameter tuning code can be found in the `train_and_eval_models.ipynb` notebook. We used the optimisation framework `Optuna` to determine the best parameters by performing a study using the validation data to optimise the input parameters for each model. The best_params obtained from hyperparameter tuning were stored as JSON files in the [hyperparameter_tuned](hyperparameter_tuned) folder. They can be used in the complete training pipeline of `train_and_eval_models.ipynb` by setting the input parameter `hpt=True`.
 
-For every model, a study focused on finding the optimal hyperparameter. Especically XGBoost, Random Forest (RF), and ElasticNet models, where there are more hyperparameter such as
-* n_estimater
-* learining rate 
+For each model, a study focused on finding the optimal hyperparameter. In particular, XGBoost, Random Forest (RF) and ElasticNet models, where there are more hyperparameters such as
+* n_estimators
+* learning rate 
 * max_depth
-* random state...
+* random state
 
- For linear, lasso and ridge regression there are few parameters to optimize (e.g. only alpha and random state), why the conductued hyperparameter tuning did barely have impact.These files contain the best parameter values discovered during the tuning process. These saved best_params can now be used in the model training phase.  
+ For linear, lasso and ridge regression, there are fewer parameters to optimise (e.g. only alpha and random state), so the continued hyperparameter tuning had little impact (can be seen on the MLFlow server).These files contain the best parameter values found during the tuning process.
  
- Whithin the Optuna Studies we optimized the hyperparamateres regarding the Root Mean Squared Error of the validation data set. For this reason, the model performance pbviously improved for all models on the validation set compared to no hyperparameter tuning. Still, as there are very few data in validation and test data set, this does not necesarly lead into better perfomrance on the test data set. In the tables below it can be seen on  the Example of RF and XGBoost that even though Validatoin data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason as well as the little data amount in the test and validation set.  With our conecpt of [continous data scraping and retraining](#continuous-learning--retraining) this issue will be solved with rising data amount. 
+  In the Optuna studies, we optimised the hyperparameters with respect to the Root Mean Squared Error of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is solved as the amount of data increases.For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.
 
-For this reason we chose to use the models with no hyperparameter training, as the test results could not be improved.
 
 |    RF     | Hyperparameter Tuning | Without Hyperparameter Tuning | Benchmark |
 | :-------: | :-------------------: | :---------------------------: | :-------: |
@@ -85,9 +85,9 @@ For this reason we chose to use the models with no hyperparameter training, as t
 | RMSE_test |         196.6         |           **180.0**           |   304.1   |
 
 
-### Model selection 
+### Final model evaluation 
 
-Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE) we chose the random forest as prelimerary  
+Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE), we chose the random forest as the preliminary first production model.
 
 | Name          | mae_test | rmse_test | r2_test |
 | ------------- | -------- | --------- | ------- |
@@ -107,7 +107,7 @@ The complete retraining pipeline is also developed in the `train_and_eval.ipynb`
 
  ![retrain_process](resources/dynamic_retrain.png)
 
-The newly trained models are evaluated on the same validation as before, so it is clear whether the new data improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. For this purpose we build a admin page, where information the current productive model can get displayed and a complete retraining with newly scraped data. The whole proceess is demonstrated in detailed in a admin showcase in [admin](Admin Front)
+The newly trained models are evaluated on the same validation as before, so it is clear whether the new data has improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. To do this, we build an administration page where information about the current production model can be viewed, and a complete retraining with newly scraped data can be performed. The whole process is demonstrated in detail as video in [Admin Frontend](#admin-frontend).
 
 
 ## Frontend Application
@@ -119,14 +119,14 @@ We use Gradio as our frontend framework. `Gradio` is particularly good at applyi
 ### Admin Frontend
 In this frontend application, the admins of our website can scrap new data and automatically retrain the machine learning models. First the admin has to choose which models to retrain. Then the user can click on the button. Now our backend scraps new data and combines it with our old dataset. Our models can now be retrained. When the retraining process is finished, we can decide which models have improved and which model is now the best model to predict the price. This application is separate from our user frontend, it's just for us to retrain and visualise the performance of our models.
 
-**Link to video demo:**
+**Link to demo video:**
 
 [![Example Video](resources/admin_page_screenshot.png)](https://youtu.be/gJpT2Nffe3M)
 
 
 # Architecture and Model Deployment
 
-This technical documentation provides an overview of the architecture and model deployment process for our ML application. The application leverages MLFlow for model training, management, and versioning, while the frontend is built using Gradio. The backend application is developed with FastAPI and hosted on Heroku, allowing for easy deployment of new models to the cloud.
+This technical documentation provides an overview of the architecture and model deployment process for our ML application. The application leverages MLFlow for model training, management, and versioning, while the frontend is built using `Gradio`. The backend application is developed with FastAPI and hosted on Heroku, allowing for easy deployment of new models to the cloud.
 
 ## Architecture Overview
 
@@ -174,12 +174,15 @@ The architecture and model deployment process described in this documentation pr
 
 ## Outlook & Discussion
 
-* **Explainable AI** - We have not yet implemented explainable AI in our frontend. In this step, we want to be able to explain to the user why the model predicted this price. This is something we will implement in the future. In this picture you can see which features are decisive for your individual price prediction. We use the ``shap waterfall`` method to explain the prediction.
+* **Explainable AI** 
+ We have not yet implemented explainable AI in our frontend. In this step, we want to be able to explain to the user why the model predicted this price. This is something we will implement in the future. In this picture you can see which features are decisive for your individual price prediction. We use the ``shap waterfall`` method to explain the prediction.
   ![shap waterfall](resources/shap_waterfall_example.png)
 
-* **Continuous data enrichment** - In order to offer our clients a broader range of forecasts, we should also include data from other cities and for different property types. Analysing rental prices in different regions allows us to take into account regional differences and market characteristics. By including different types of property, such as houses, we can provide a more comprehensive view of the rental market. In addition, we can use the data from other cities and property types to train our models and improve their performance.
+* **Continuous data enrichment**
+ In order to offer our clients a broader range of forecasts, we should also include data from other cities and for different property types. Analysing rental prices in different regions allows us to take into account regional differences and market characteristics. By including different types of property, such as houses, we can provide a more comprehensive view of the rental market. In addition, we can use the data from other cities and property types to train our models and improve their performance.
 The rental market is dynamic and subject to constant change. It is therefore essential that we include a timestamp in our data to record when the data was collected. By documenting when the data was collected, we can analyse the development of rents over time and identify long-term trends. This allows our clients to understand the stability and evolution of rental levels in specific areas.
 
-* **Build our own scrapper** - We used a scrapper from [Apify](https://apify.com/bibim/immowelt-scraper) to get our data. In the future we want to build our own scrapper to get more data and to be more flexible. We want to be able to get data from different websites and not just from immowelt.de. This will allow us to get more data and to be more flexible in the future. Another advantage of a self-developed scraper is the possibility to reduce costs in the long run. If we wanted to expand our model to other cities or regions, the costs of using a paid scraper would increase with each additional location. By developing a customised scraper in-house, we could minimise these expenses and respond flexibly to new demands.
+* **Build our own scrapper** 
+  We used a scrapper from [Apify](https://apify.com/bibim/immowelt-scraper) to get our data. In the future we want to build our own scrapper to get more data and to be more flexible. We want to be able to get data from different websites and not just from immowelt.de. This will allow us to get more data and to be more flexible in the future. Another advantage of a self-developed scraper is the possibility to reduce costs in the long run. If we wanted to expand our model to other cities or regions, the costs of using a paid scraper would increase with each additional location. By developing a customised scraper in-house, we could minimise these expenses and respond flexibly to new demands.
 
 
