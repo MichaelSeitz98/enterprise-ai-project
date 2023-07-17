@@ -47,9 +47,8 @@ The pipelines takes `feature_set` as input, why we e.g. could compare the perfor
 This streamlined approach allows for efficient model training and straightforward experimentation with different datasets and feature subsets.
 
 
-### Logging and Storing via MLFlow
 
-## Model Comparison and Evaluation with MLFlow
+### Logging & Evaluation of MLFlow
 
 To facilitate model comparison and evaluation, each setup and training run with different combinations of features, models, and hyperparameters was logged and tracked using `MLFlow`. This allowed for a comprehensive view of all relevant model training runs, their evaluation metrics, and the used parameters.
 
@@ -59,16 +58,12 @@ To access the model comparison results, follow these steps:
 2. Install MLFlow by running `pip install mlflow` or `pip install -r requirements.txt`.
 3. Launch the MLFlow server using the command `mlflow server`.
 
-Once the MLFlow server is running, you can access the results through a web interface. It provides an overview of all the tracked experiments and allows you to compare different models and their corresponding evaluation metrics.
-
-By leveraging MLFlow, you can easily identify and select the best-performing model for your specific use case, based on the comprehensive analysis of various training runs.
+Once the MLFlow server is running, you can access the results through a web interface. It provides an overview of all the tracked experiments and allows you to compare different models and their  evaluation metrics.  By leveraging MLFlow, you can easily identify and select the best-performing model for your specific use case, based on the analysis of various training runs.
 
 
 ![experiments](resources/mlflow_experiment_view_table.png)
 
-Metrics and paramters can be tracked and compared there. As our model training pipeline is build in a genereric way, different selected feature sets can be compared as well. 
-
-If a model is chosen to be deployed for our productive systems, it can be registered to `model registry`. This s a centralized repository for managing and versioning machine learning models. We utilized it to track and store different versions of our models, enabling easy comparison and deployment. It streamlined our model management process and enables collaboration among team members . The Model Registry integrated seamlessly with our deployment pipeline, ensuring that the selected models can be deployed to our "Flat Price-Assistant-WÜE" application, by setting the stage to "production" and load it via API to the independently deployed backend (see [Architecture and Deployment]) (#architecture-and-model-deployment)). This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
+When a model is selected for deployment on our production systems, it can be registered in the 'Model Registry'. This is a central repository for managing and versioning machine learning models. We used it to track and store different versions of our models for easy comparison and deployment. It has streamlined our model management process and enabled collaboration between team members. The model registry integrated seamlessly with our deployment pipeline, ensuring that the selected models could be deployed to our Flat Price Assistant-WÜE application by setting the stage to "production" and loading them via API to the independently deployed backend (see detailed at [Architecture and Deployment](#architecture-and-model-deployment)). This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
 
 ![model_registry](resources/mlflow_model_registry.png)
 
