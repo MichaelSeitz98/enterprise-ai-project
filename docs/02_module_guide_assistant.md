@@ -41,3 +41,8 @@ In conclusion, our attempt to build a "University Module Guide" using Python 3, 
 It is important to acknowledge that the approach we pursued was ambitious and required significant computational resources. Given our limitations, we recommend exploring alternative methods or utilizing cloud-based solutions with ample GPU power to overcome the challenges we faced.
 
 While this particular approach did not yield the desired results, documenting the process serves as a valuable learning experience and provides insights for future endeavors in similar domains.
+
+
+# Hosting Video test 
+
+[![thumbnail_url](https://i.ytimg.com/vi/suMJt-Ax21I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEx4_0uJrZ7gOiBE6-uloKpvpqXA)](https://www.youtube.com/watch?v=K-VmllVIOXA)
