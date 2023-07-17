@@ -67,7 +67,7 @@ def determineHighCorrCols(df):
 def get_model_path(model_name):
     client = mlflow.tracking.MlflowClient()
     model_details = client.get_registered_model(model_name)
-    source = model_details.latest_versions[0].source
+    source = model_details.latest_versions[0].source # type: ignore
     result = "mlartifacts" + source[source.index("/") :]
     result += "/MLmodel"
     return result
@@ -150,10 +150,10 @@ def scrape_avg_rental_prices():
     script_tag = soup.find("script", string=lambda text: "pdfData" in text)
     rental_price = 0
     if script_tag:
-        script_content = script_tag.string
-        start_index = script_content.find("avg_rent_price: ") + len("avg_rent_price: '")
-        end_index = script_content.find("',", start_index)
-        rental_price = script_content[start_index:end_index]
+        script_content = script_tag.string # type: ignore
+        start_index = script_content.find("avg_rent_price: ") + len("avg_rent_price: '") # type: ignore
+        end_index = script_content.find("',", start_index) # type: ignore
+        rental_price = script_content[start_index:end_index] # type: ignore
         rental_price = (
             rental_price.replace("€/m2", "").replace(".", "").replace(",", ".")
         )
@@ -216,9 +216,9 @@ def baseline_buy(X_val, y_val, runname="baseline_buy"):
     baseline_mse = mean_squared_error(y_val, baseline_preds)
 
     with mlflow.start_run(run_name=runname):
-        mlflow.log_metric("mse", baseline_mse)
-        mlflow.log_metric("mae", baseline_mae)
-        mlflow.log_metric("r2", baseline_r2)
+        mlflow.log_metric("mse", baseline_mse) # type: ignore
+        mlflow.log_metric("mae", baseline_mae) # type: ignore
+        mlflow.log_metric("r2", baseline_r2) # type: ignore
 
     print(f"Baseline Mae: {baseline_mae}")
     print(f"Baseline MSE: {baseline_mse}")
@@ -303,7 +303,7 @@ def pipeline_from_extracted(df, feature_set, model_name="lasso"):
     model = None
     X, y = preprocess_data_for_model(df, feature_set)
     print("Done with preprocessing")
-    X_train, y_train, X_val, y_val, X_test, y_test = data_split(X, y)
+    X_train, y_train, X_val, y_val, X_test, y_test = data_split(X, y) # type: ignore
     print("Done with data split")
 
     if model_name == "xgb":
@@ -338,37 +338,37 @@ def pipeline_from_extracted(df, feature_set, model_name="lasso"):
             avg_price = baseline_rent(X_val, y_val)
             baseline_preds = X_val["LivingSpace"] * avg_price
             baseline_preds_test = X_test["LivingSpace"] * avg_price
-            mlflow.log_metric("mae", mean_absolute_error(y_val, baseline_preds))
-            mlflow.log_metric("mse", mean_squared_error(y_val, baseline_preds))
-            mlflow.log_metric("r2", r2_score(y_val, baseline_preds))
+            mlflow.log_metric("mae", mean_absolute_error(y_val, baseline_preds)) # type: ignore
+            mlflow.log_metric("mse", mean_squared_error(y_val, baseline_preds))# type: ignore
+            mlflow.log_metric("r2", r2_score(y_val, baseline_preds))# type: ignore
             mlflow.log_metric(
-                "mae_test", mean_absolute_error(y_test, baseline_preds_test)
+                "mae_test", mean_absolute_error(y_test, baseline_preds_test)# type: ignore
             )
             mlflow.log_metric(
-                "mse_test", mean_squared_error(y_test, baseline_preds_test)
+                "mse_test", mean_squared_error(y_test, baseline_preds_test)# type: ignore
             )
-            mlflow.log_metric("r2_test", r2_score(y_test, baseline_preds_test))
+            mlflow.log_metric("r2_test", r2_score(y_test, baseline_preds_test))# type: ignore
             return model, mae, mse, r2, mae_train, mse_train, r2_train
         else:
             print(
                 "Model not found. Model_name must be 'lasso', 'ridge', 'rf', 'xgb', 'elasticnet', 'linear', 'baseline_buy' or 'baseline_rent' or conigure the pipeline manually."
             )
 
-        pred_train = model.predict(X_train)
-        preds = model.predict(X_val)
-        pred_test = model.predict(X_test)
+        pred_train = model.predict(X_train) # type: ignore
+        preds = model.predict(X_val)# type: ignore
+        pred_test = model.predict(X_test)# type: ignore
 
-        mlflow.log_metric("mae_test", mean_absolute_error(y_test, pred_test))
-        mlflow.log_metric("mse_test", mean_squared_error(y_test, pred_test))
-        mlflow.log_metric("r2_test", r2_score(y_test, pred_test))
+        mlflow.log_metric("mae_test", mean_absolute_error(y_test, pred_test))# type: ignore
+        mlflow.log_metric("mse_test", mean_squared_error(y_test, pred_test))# type: ignore
+        mlflow.log_metric("r2_test", r2_score(y_test, pred_test))# type: ignore
 
-        mlflow.log_metric("mae_train", mean_absolute_error(y_train, pred_train))
-        mlflow.log_metric("mse_train", mean_squared_error(y_train, pred_train))
-        mlflow.log_metric("r2_train", r2_score(y_train, pred_train))
+        mlflow.log_metric("mae_train", mean_absolute_error(y_train, pred_train))# type: ignore
+        mlflow.log_metric("mse_train", mean_squared_error(y_train, pred_train))# type: ignore
+        mlflow.log_metric("r2_train", r2_score(y_train, pred_train))# type: ignore
 
-        mlflow.log_metric("mae", mean_absolute_error(y_val, preds))
-        mlflow.log_metric("mse", mean_squared_error(y_val, preds))
-        mlflow.log_metric("r2", r2_score(y_val, preds))
+        mlflow.log_metric("mae", mean_absolute_error(y_val, preds))# type: ignore
+        mlflow.log_metric("mse", mean_squared_error(y_val, preds))# type: ignore
+        mlflow.log_metric("r2", r2_score(y_val, preds))# type: ignore
 
     print("Done with train")
     mlflow.end_run()
@@ -381,36 +381,6 @@ class ImmoWeltUrls(Enum):
     BUY_HOUSES_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/haeuser/kaufen?d=true&pma=10000000&pmi=10&r=10&sd=DESC&sf=RELEVANCE&sp=1"
     RENT_FLATS_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/wohnungen/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
     RENT_HOUSES_WUE_10km = "https://www.immowelt.de/liste/wuerzburg/haeuser/mieten?d=true&r=10&sd=DESC&sf=RELEVANCE&sp=1"
-
-
-def getFeatureSetApp():
-    return [
-        "Object_price",
-        "LivingSpace",
-        "ZipCode",
-        "Rooms",
-        "altbau_(bis_1945)",
-        "balkon",
-        "barriefrei",
-        "dachgeschoss",
-        "einbaukueche",
-        "neubau",
-        "parkett",
-        "stellplatz",
-        "bad/wc_getrennt",
-        "personenaufzug",
-        "garten",
-        "garage",
-        "renoviert",
-        "terrasse",
-        "wanne",
-        "zentralheizung",
-        "abstellraum",
-        "ferne",
-        "fussbodenheizung",
-        "gartennutzung",
-        "kelleranteil",
-    ]
 
 
 def evaluate_model(model, X_train_recent, y_train_recent, X_val, y_val, X_test, y_test):
@@ -433,20 +403,20 @@ def evaluate_model(model, X_train_recent, y_train_recent, X_val, y_val, X_test, 
     rmse_val = np.sqrt(mse_val)
     r2_val = r2_score(y_val, preds)
 
-    mlflow.log_metric("mae_test", mae_test)
-    mlflow.log_metric("mse_test", mse_test)
-    mlflow.log_metric("rmse_test", rmse_test)
-    mlflow.log_metric("r2_test", r2_test)
+    mlflow.log_metric("mae_test", mae_test) # type: ignore
+    mlflow.log_metric("mse_test", mse_test) # type: ignore
+    mlflow.log_metric("rmse_test", rmse_test) # type: ignore
+    mlflow.log_metric("r2_test", r2_test) # type: ignore
 
-    mlflow.log_metric("mae_train", mae_train)
-    mlflow.log_metric("mse_train", mae_train)
-    mlflow.log_metric("rmse_train", rmse_train)
-    mlflow.log_metric("r2_train", mae_train)
+    mlflow.log_metric("mae_train", mae_train)# type: ignore
+    mlflow.log_metric("mse_train", mae_train)# type: ignore
+    mlflow.log_metric("rmse_train", rmse_train)# type: ignore
+    mlflow.log_metric("r2_train", mae_train)# type: ignore
 
-    mlflow.log_metric("mae", mae_val)
-    mlflow.log_metric("mse", mse_val)
-    mlflow.log_metric("r2", rmse_val)
-    mlflow.log_metric("r2", r2_val)
+    mlflow.log_metric("mae", mae_val)# type: ignore
+    mlflow.log_metric("mse", mse_val)# type: ignore
+    mlflow.log_metric("r2", rmse_val)# type: ignore
+    mlflow.log_metric("r2", r2_val)# type: ignore
     return (
         mae_val,
         mse_val,
@@ -791,22 +761,22 @@ def trigger_retraining_with_added_data(
                 baseline_mse_test = mean_squared_error(y_test, baseline_preds_test)
                 baseline_rmse_test = np.sqrt(baseline_mse_test)
                 print(f"Baseline Mae: {baseline_mae}")
-                mlflow.log_metric("mse", baseline_mse)
-                mlflow.log_metric("mae", baseline_mae)
-                mlflow.log_metric("r2", baseline_r2)
-                mlflow.log_metric("rmse", baseline_rmse)
-                mlflow.log_metric("mse_test", baseline_mse_test)
-                mlflow.log_metric("rmse_test", baseline_rmse_test)
-                mlflow.log_metric("mae_test", baseline_mae_test)
-                mlflow.log_metric("r2_test", baseline_r2_test)
+                mlflow.log_metric("mse", baseline_mse)# type: ignore
+                mlflow.log_metric("mae", baseline_mae)# type: ignore
+                mlflow.log_metric("r2", baseline_r2)# type: ignore
+                mlflow.log_metric("rmse", baseline_rmse)# type: ignore
+                mlflow.log_metric("mse_test", baseline_mse_test)# type: ignore
+                mlflow.log_metric("rmse_test", baseline_rmse_test)# type: ignore
+                mlflow.log_metric("mae_test", baseline_mae_test)# type: ignore
+                mlflow.log_metric("r2_test", baseline_r2_test)# type: ignore
 
                 print(f"Baseline Mae: {baseline_mae}")
                 print(f"Baseline MSE: {baseline_mse}")
                 print(f"Baseline R2 Score: {baseline_r2}")
                 print(f"Baseline RMSE: {baseline_rmse}")
 
-                results = results.append(
-                    {
+                results = results.append(# type: ignore
+                    {# type: ignore
                         "model": model_name,
                         "mae": baseline_mae,
                         "mse": baseline_mse,
@@ -841,7 +811,7 @@ def trigger_retraining_with_added_data(
                 ) = evaluate_model(
                     model, X_train_recent, y_train_recent, X_val, y_val, X_test, y_test
                 )
-                results = results.append(
+                results = results.append(# type: ignore
                     {
                         "model": model_name,
                         "mae": mae_val,

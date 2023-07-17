@@ -34,7 +34,7 @@ def predict_housing_price(
     data = {
         "LivingSpace": feature_squrmeter,
         "Rooms": feature_rooms,
-        "altbau_(bis_1945)": features_altbau,
+        "altbau_bis_1945": features_altbau,
         "balkon": feature_balkon,
         "barriefrei": feature_ba,
         "dachgeschoss": feature_dachgeschoss,

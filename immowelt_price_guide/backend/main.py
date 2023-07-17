@@ -9,7 +9,7 @@ app = FastAPI()
 class PredictionRequest(BaseModel):
     LivingSpace: int
     Rooms: int
-    altbau_(bis_1945): bool # type: ignore
+    altbau_bis_1945: bool 
     balkon: bool
     barriefrei: bool
     dachgeschoss: bool
@@ -32,10 +32,13 @@ class PredictionRequest(BaseModel):
     kelleranteil: bool
     ZipCode: str
 
-@app.post("/predict")
-async def predict_housing_price(data: dict):
+class PredictionResponse(BaseModel):
+    Predicted_price: float
+
+@app.post("/predict", response_model=PredictionResponse, summary="Predict housing price")
+async def predict_housing_price(data: PredictionRequest):
     result = predict(data)
-    return {"Predicted price": result}
+    return {"Predicted_price": result}
 
 @app.get("/model-info")
 async def model_info():

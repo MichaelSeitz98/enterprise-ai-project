@@ -15,7 +15,7 @@ def preprocess_data(data):
     encoded_data = {
     'LivingSpace': data['LivingSpace'],
     'Rooms': data['Rooms'],
-    'altbau_(bis_1945)': int(data['altbau_(bis_1945)']),
+    'altbau_(bis_1945)': int(data['altbau_bis_1945']),
     'balkon': int(data['balkon']),
     'barriefrei': int(data['barriefrei']),
     'dachgeschoss': int(data['dachgeschoss']),
