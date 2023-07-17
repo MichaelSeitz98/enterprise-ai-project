@@ -58,15 +58,56 @@ Although there is potential for data augmentation using `CTGAN`, our experiments
 
 ![plot2](resources/syntetic_data_for_train_impact.png)
 
+### Hyperparameter tuning 
 
-### Continous Learning / Retraining
+We conducted a hyperparameter study before starting the training. The code for hyperparameter tuning can be found in the `train_and_eval_models.ipynb` notebook. We used the Optimization Framework `Optuna` to determine the best parameters by performing a study that utilized the validation data to optimize the input parameters. for every models.  The best_params obtained from the hyperparameter tuning were saved as JSON files in the [hyperparameter_tuned](hyperparameter_tuned) folder. I can be used in the complete training pipeline of `train_and_eval_models.ipynb` by setting the input parameter `hpt=True`.  
+
+For every model, a study focused on finding the optimal hyperparameter. Especically XGBoost, Random Forest (RF), and ElasticNet models, where there are more hyperparameter such as
+* n_estimater
+* learining rate 
+* or max_depth
+* ...
+
+ For linear, lasso and ridge regression there are few parameters to optimize (e.g. only alpha and random state), why the conductued hyperparameter tuning did barely have impact.These files contain the best parameter values discovered during the tuning process. These saved best_params can now be used in the model training phase. 
+
+Whithin the Optuna Studies we optimized the hyperparamateres regarding the Root Mean Squared Error of the validation data set. For this reason, the model performance improved for all models on the validation set compared to no hyperparameter tuning. Still, as there are very few data in validation and test data set, this does not necesarly lead into better perfomrance on the test data set. In the tables below it can be seen on  the Example of RF and XGBoost that even though Validatoin data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason as well as the little data amount in the test and validation set.  With our conecpt of [continous data scraping and retraining](#continuous-learning--retraining) this issue will be solved with rising data amount. 
+
+For this reason we chose to use the models with no hyperparameter training, as the test results could not be improved.
+
+|    RF     | Hyperparameter Tuning | Without Hyperparameter Tuning | Benchmark |
+| :-------: | :-------------------: | :---------------------------: | :-------: |
+| RMSE_val  |       **275.6**       |             279.4             |   374.3   |
+| RMSE_test |         182.6         |           **168.8**           |   304.1   |
+
+|  XGBoost  | Hyperparameter Tuning | Without Hyperparameter Tuning | Benchmark |
+| :-------: | :-------------------: | :---------------------------: | :-------: |
+| RMSE_val  |       **256.9**       |             299.0             |   374.3   |
+| RMSE_test |         196.6         |           **180.0**           |   304.1   |
+
+
+### Model selection 
+
+Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE) we chose the random forest as prelimerary  
+
+| Name          | mae_test | rmse_test | r2_test |
+| ------------- | -------- | --------- | ------- |
+| rf            | 138.3    | 168.8     | 0.903   |
+| xgb           | 125.3    | 180.0     | 0.890   |
+| elasticnet    | 188.4    | 232.8     | 0.816   |
+| ridge         | 181.6    | 244.2     | 0.798   |
+| lasso         | 188.0    | 254.5     | 0.780   |
+| linear        | 184.8    | 270.2     | 0.752   |
+| baseline-rent | 237.8    | 304.1     | 0.686   |
+
+
+### Continuous Learning / Retraining
 
 We implemented a dynamic learning pipeline where the training base can be updated with the latest scraped data from Würzburg.
 The complete retraining pipeline is also developed in the `train_and_eval.ipynb` notebook and schematically follows the process shown.
 
  ![retrain_process](resources/dynamic_retrain.png)
 
-The newly trained models are evaluated on the same validation as before, so it is clear whether the new data improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. 
+The newly trained models are evaluated on the same validation as before, so it is clear whether the new data improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. For this purpose we build a admin page, where information the current productive model can get displayed and a complete retraining with newly scraped data. The whole proceess is demonstrated in detailed in a admin showcase in [admin](Admin Front)
 
 
 ## Frontend Application
