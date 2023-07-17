@@ -29,7 +29,6 @@ def predict_housing_price(
     feature_kellerabteil,
     feature_zip
 ):  
-
     # Prepare the data dictionary
     data = {
         "LivingSpace": feature_squrmeter,
@@ -42,7 +41,7 @@ def predict_housing_price(
         "neubau": feature_neubau,
         "parkett": feature_parkett,
         "stellplatz": feature_stellplatz,
-        "bad/wc_getrennt": feature_badwc_getrennt,
+        "bad_wc_getrennt": feature_badwc_getrennt,
         "personenaufzug": feature_personenaufzug,
         "garten": feature_garten,
         "garage": feature_garage,
@@ -56,18 +55,11 @@ def predict_housing_price(
         "gartennutzung": feature_gartenmitbenutzung,
         "kelleranteil" : feature_kellerabteil,
         "ZipCode": feature_zip
-        }
-
-
-    print(data)
+    }
 
     # Send a POST request to the /predict endpoint
     response = requests.post("https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/predict", json=data)
-
-    print(response)
-
     return json.loads(response.text)["Predicted_price"]
-
 
 # Define the Gradio interface
 iface = gr.Interface(
@@ -97,31 +89,30 @@ iface = gr.Interface(
         gr.inputs.Checkbox(label="Shared Garden"),
         gr.inputs.Checkbox(label="Cellar Compartment"),
         gr.inputs.Dropdown(label="ZipCode", choices=[
-                    "97070 Würzburg-Altstadt",
-                    "97072 Würzburg-Sanderau",
-                    "97074 Würzburg-Frauenland",
-                    "97076 Würzburg-Lengfeld",
-                    "97078 Würzburg-Lindleinsmühle",
-                    "97080 Würzburg-Dürrbachtal",
-                    "97082 Würzburg-Steinbachtal",
-                    "97084 Würzburg-Heuchelhof",
-                    "97204 Höchberg",
-                    "97209 Veitshöchheim",
-                    "97218 Gerbrunn",
-                    "97222 Rimpar",
-                    "97228 Rottendorf",
-                    "97234 Reichenberg",
-                    "97236 Randersacker",
-                    "97246 Eibelstadt",
-                    "97249 Eisingen",
-                    "97250 Erlabrunn",
-                    "97261 Güntersleben",
-                    "97270 Kist",
-                    "97288 Theilheim",
-                    "97297 Waldbüttelbrunn",
-                    "97299 Zell am Main",
-                ])
-        #gr.inputs.Textbox(label="Zip Code"),
+            "97070 Würzburg-Altstadt",
+            "97072 Würzburg-Sanderau",
+            "97074 Würzburg-Frauenland",
+            "97076 Würzburg-Lengfeld",
+            "97078 Würzburg-Lindleinsmühle",
+            "97080 Würzburg-Dürrbachtal",
+            "97082 Würzburg-Steinbachtal",
+            "97084 Würzburg-Heuchelhof",
+            "97204 Höchberg",
+            "97209 Veitshöchheim",
+            "97218 Gerbrunn",
+            "97222 Rimpar",
+            "97228 Rottendorf",
+            "97234 Reichenberg",
+            "97236 Randersacker",
+            "97246 Eibelstadt",
+            "97249 Eisingen",
+            "97250 Erlabrunn",
+            "97261 Güntersleben",
+            "97270 Kist",
+            "97288 Theilheim",
+            "97297 Waldbüttelbrunn",
+            "97299 Zell am Main",
+        ])
     ],
     outputs=gr.outputs.Textbox(label="Monthly rent in EUR"),
     title="Renting Price Prediction",
