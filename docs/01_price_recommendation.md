@@ -145,7 +145,7 @@ In this front-end application, the administrators of our website can scrap new d
 
 # Architecture and Model Deployment
 
-This technical documentation provides an overview of the architecture and model deployment process for our ML application. The application leverages MLFlow for model training, management, and versioning, while the frontend is built using `Gradio`. The backend application is developed with FastAPI and hosted on Heroku, allowing for easy deployment of new models to the cloud.
+This technical documentation provides an overview of the architecture and model deployment process for our ML application. The application leverages MLFlow for model training, management, and versioning, while the frontend is built using `Gradio`. The backend application is developed with `FastAPI` and hosted on `Heroku`, allowing for easy deployment of new models to the cloud.
 
 ## Architecture Overview
 
@@ -165,7 +165,7 @@ The `main.py` includes the FastAPI app and the following endpoints:
    - `/` root: This endpoint is used to check the health of the application. It receives a GET request from the frontend application and returns a status code of 200 if the application is running.
 
 
-4. **Cloud Deployment (Heroku)**: The backend application is hosted on Heroku, making the endpoint permanently publicly available for everyone. The frontend and backend are designed to run independently of each other.
+4. **Cloud Deployment (Heroku)**: The backend application is packaged in a `Docker` container and hosted on Heroku, making the endpoint permanently publicly available for everyone. The frontend and backend are designed to run independently of each other.
 
 Find hosted available api documentation here: [https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs](https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs).
 
@@ -178,12 +178,12 @@ Deploying a new model to the cloud follows the following steps:
 2. Prepare the deployment cell: We have a preconfigured cell that performs the necessary steps for deployment. By simply setting a new name, the following actions are automated:
 
    1. Load the model by its name from the MLFlow server.
-   2. Gather all the necessary information about the model, including input and output parameters, required Python version, and the required packages with their specific versions.
+   2. Gather all the necessary information about the model, including input and output parameters, required Python version, and the required packages with their specific versions. This is required to correctly build the Docker container for the specific model. 
    3. Set the model, its details, and requirements to the backend folder of our repository. This folder serves as the foundation for the deployed model in the cloud.
 
 3. Commit the changes to the main branch of our repository. Since Heroku is set up with our Git repository, pushing the changes triggers a new deployment on the cloud. The command `git push heroku main` is used for this purpose.
 
-4. Heroku deployment: The deployment process is possible because we have a `heroku.yml` file placed in our root directory, which directs to the Dockerfile located in our backend folder. The Dockerfile defines the image to be built for the model in production. Once the container is built, it runs on the Heroku cloud.
+4. Heroku deployment: The deployment process is possible because we have a `heroku.yml` file placed in our root directory, which directs to the Dockerfile located in our backend folder. The Dockerfile defines the image to be built for the model in production. Once the container is built, it deploys and runs on the Heroku cloud.
 
 By following these steps, a new model can be easily deployed to the cloud, ensuring that the latest version is available for use as well as all the required dependencies. This makes sure to not run into version or dependency issues when deploying a new model.
 ## Outlook & Discussion
