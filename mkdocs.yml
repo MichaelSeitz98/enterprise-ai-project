@@ -15,10 +15,3 @@ markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
-theme:
-  name: material
-  palette:
-    primary: 'blue-grey'
-    accent: 'cyan'
-  feature:
-    collapse: true
