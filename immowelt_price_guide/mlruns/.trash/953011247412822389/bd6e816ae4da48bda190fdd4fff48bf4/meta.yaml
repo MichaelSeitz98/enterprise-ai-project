@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/953011247412822389/bd6e816ae4da48bda190fdd4fff48bf4/artifacts
+deleted_time: 1689584296435
+end_time: 1689561110731
+entry_point_name: ''
+experiment_id: '953011247412822389'
+lifecycle_stage: deleted
+run_id: bd6e816ae4da48bda190fdd4fff48bf4
+run_name: xgb
+run_uuid: bd6e816ae4da48bda190fdd4fff48bf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689561046626
+status: 3
+tags: []
+user_id: michi
