@@ -67,5 +67,5 @@ def load_model(model_name, stage="production"):
 def get_model_source_path(model_name):
     client = mlflow.tracking.MlflowClient()
     model_details = client.get_registered_model(model_name)
-    source = model_details.latest_versions[0].source
+    source = model_details.latest_versions[0].source # type: ignore
     return "mlartifacts" + source[source.index("/"):] + "/"
