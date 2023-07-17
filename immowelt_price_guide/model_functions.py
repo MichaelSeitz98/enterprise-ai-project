@@ -551,9 +551,13 @@ def gradio_retrain_with_added_data(
     
     progress(0.99, desc="Done with pipeline")
     time.sleep(0.5)
-    # drop na values
-    result_df = result_df.dropna()
-    result_df = result_df.to_html()
+    # renome result_df columns from mae to mae_val, mae_test, mae_train
+    result_df = result_df.rename(columns={"mae": "mae_val"})
+    result_df = result_df.rename(columns={"mse": "mse_val"})
+    result_df = result_df.rename(columns={"r2": "r2_test"})
+
+    
+    
     print("Done convertion to html: ", result_df)
     result_df = "<h2>Result of retraining</h2>" + result_df
     print("Done adding headline: ", result_df)
