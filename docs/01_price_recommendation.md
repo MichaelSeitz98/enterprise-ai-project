@@ -3,6 +3,12 @@
 
 Accurate price predictions play a vital role when considering renting an apartment or purchasing a house in Würzburg. It is essential for tenants to determine if they are paying a reasonable amount, and for landlords to establish fair market prices based on the specific features of the property. To develop an ML system to enable this, we followed a structured process. First, a dataset was collected [data extraction & preprocessing](#data-extraction--preprocessing). Next, we performed [exploratory data analysis](#exploratory-data-analysis) and [feature engineering](#feature-engineering) to prepare the dataset for modelling. We then proceeded to train and compare different models and settings. The comparisons were documented and tracked using MLFlow (see [here](#modelling)). Once we selected the best model, we deployed it in the cloud for scalability and accessibility. The deployment process is described in [Architecture & Model Deployment](#architecture-and-model-deployment). Finally, we developed a [frontend](#frontend-application) application to provide an intuitive user interface for interacting with the ML system.
 
+### Start our application
+You just have to start our gradio frontend by executing the following command in the terminal, when the terminal is located in the `immowelt_price_guide/frontend` folder:
+```
+gradio app.py
+```
+Check the output of the console to retrieve the link. Since our backend is permanently deployed on [heroku]( https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs) you can directly start querying on the UI without starting anything else.
 ## Data Extraction & Preprocessing
 
 ### Data Extraction
@@ -130,7 +136,7 @@ We use `Gradio` as our frontend framework. `Gradio` is particularly good at appl
 
 
 ### Admin Frontend
-In this front-end application, the administrators of our website can scrap new data and automatically retrain the machine learning models. First the admin has to select which models to retrain. Then the user can click the button. Now the latest flat data from Würzburg is scraped from Immowelt and combined with the existing training data set.The models are then retrained with the updated and expanded training data. When the retraining process is complete, we can decide which models have improved and which model is now the best model for predicting price. This application is separate from our user front-end, it's just for us to retrain and visualize the performance of our models.
+In this front-end application, the administrators of our website can scrap new data and automatically retrain the machine learning models. First the admin has to select which models to retrain. Then the user can click the button. Now the latest flat data from Würzburg is scraped from Immowelt and combined with the existing training data set.The models are then retrained with the updated and expanded training data. When the retraining process is complete, we can decide which models have improved and which model is now the best model for predicting prices. This application is separate from our user front-end, it's just for us to retrain and visualize the performance of our models.
 
 **Link to demo video:**
 
@@ -147,9 +153,9 @@ This technical documentation provides an overview of the architecture and model 
 
 The architecture of our ML application can be described as follows:
 
-1. **MLFlow**: MLFlow is used for model training, tracking, and versioning. It runs on a local server, and all artifacts are stored in our repository. This enables every team member with access to the repository to create models, train them, and store different versions using MLFlow.
+1. **MLFlow**: MLFlow is used for model training, tracking, and versioning. It runs on a local server, and all artifacts are stored in our repository. This enables every team member with access to the repository to create models, train them, and store different versions as well as setting them in production stage.
 
-2. **Frontend (Gradio)**: The frontend of our application is built using Gradio. It collects the necessary data for the model to create predictions. Once the data is collected, the Gradio app sends a POST request to our FastAPI backend application.
+2. **Frontend (Gradio)**: The frontend of our application is built using Gradio. It collects the necessary data for the model to create predictions. Once the data is collected, the Gradio app sends a POST request to our FastAPI backend application. The gradio can be started locally and shared on a temporary public URL. In the future, it would be no problem and good practice to host the frontend on a cloud server on heroku as well. But therefore we should separate it a dedicated repository and container - what would have exeeded our students offer limit on heroku. 
 
 3. **Backend (FastAPI)**: The FastAPI backend application provides various endpoints.. When a request is received at the `/predict` endpoint, the desired model is loaded and ready to make predictions. The dedicted folder is located under `/immowelt_price_guide/backend`. [Also find here](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/backend). 
 
@@ -180,11 +186,6 @@ Deploying a new model to the cloud follows the following steps:
 4. Heroku deployment: The deployment process is possible because we have a `heroku.yml` file placed in our root directory, which directs to the Dockerfile located in our backend folder. The Dockerfile defines the image to be built for the model in production. Once the container is built, it runs on the Heroku cloud.
 
 By following these steps, a new model can be easily deployed to the cloud, ensuring that the latest version is available for use as well as all the required dependencies. This makes sure to not run into version or dependency issues when deploying a new model.
-
-## Conclusion
-
-The architecture and model deployment process described in this documentation provide a clear and readable overview of how our ML application is structured and how new models can be deployed to the cloud using MLFlow, Gradio, FastAPI and Heroku.
-
 ## Outlook & Discussion
 
 * **Explainable Predictions**
