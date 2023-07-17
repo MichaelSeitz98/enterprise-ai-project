@@ -13,7 +13,6 @@ import time
 # from ctgan import CTGAN
 import plotly.express as px
 import plotly.express as px
-
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder
@@ -98,12 +97,12 @@ def data_split(df, train_size=0.8, random_state=42):
         X_train, y_train, train_size=train_size, random_state=random_state
     )
 
-    X_train.to_excel("data/X_train.xlsx")
-    X_val.to_excel("data/X_val.xlsx")
-    X_test.to_excel("data/X_test.xlsx")
-    y_train.to_excel("data/y_train.xlsx")
-    y_val.to_excel("data/y_val.xlsx")
-    y_test.to_excel("data/y_test.xlsx")
+    # X_train.to_excel("data/X_train.xlsx")
+    # X_val.to_excel("data/X_val.xlsx")
+    # X_test.to_excel("data/X_test.xlsx")
+    # y_train.to_excel("data/y_train.xlsx")
+    # y_val.to_excel("data/y_val.xlsx")
+    # y_test.to_excel("data/y_test.xlsx")
 
     df_train = pd.concat([X_train, y_train], axis=1)
     df_val = pd.concat([X_val, y_val], axis=1)
@@ -170,7 +169,12 @@ def apply_benchmark_rent(X_val,y_val):
     baseline_mae = mean_absolute_error(y_val, baseline_preds)
     baseline_r2 = r2_score(y_val, baseline_preds)
     baseline_mse = mean_squared_error(y_val, baseline_preds)
-    return baseline_mae, baseline_mse, baseline_r2
+    print(f"Baseline Mae: {baseline_mae}")
+    print(f"Baseline R2: {baseline_r2}")
+    print(f"Baseline MSE: {baseline_mse}")
+    baseline_rmse = np.sqrt(baseline_mse)
+
+    return baseline_mae, baseline_mse, baseline_r2, baseline_rmse
 
 
 
@@ -388,24 +392,32 @@ def evaluate_model(model, X_train_recent, y_train_recent, X_val, y_val, X_test, 
 
     mae_train = mean_absolute_error(y_train_recent, pred_train)
     mse_train = mean_squared_error(y_train_recent, pred_train)
+    rmse_train = np.sqrt(mse_train)
     r2_train = r2_score(y_train_recent, pred_train)
 
     mae_test = mean_absolute_error(y_test, pred_test)
     mse_test = mean_squared_error(y_test, pred_test)
+    rmse_test = np.sqrt(mse_test)
     r2_test = r2_score(y_test, pred_test)
 
     mae_val = mean_absolute_error(y_val, preds)
     mse_val = mean_squared_error(y_val, preds)
+    rmse_val = np.sqrt(mse_val)
     r2_val = r2_score(y_val, preds)
 
     mlflow.log_metric("mae_test", mae_test)
     mlflow.log_metric("mse_test", mse_test)
+    mlflow.log_metric("rmse_test", rmse_test)
     mlflow.log_metric("r2_test", r2_test)
+
     mlflow.log_metric("mae_train", mae_train)
-    mlflow.log_metric("r2_train", mae_train)
     mlflow.log_metric("mse_train", mae_train)
+    mlflow.log_metric("rmse_train", rmse_train)
+    mlflow.log_metric("r2_train", mae_train)
+   
     mlflow.log_metric("mae", mae_val)
     mlflow.log_metric("mse", mse_val)
+    mlflow.log_metric("r2", rmse_val)
     mlflow.log_metric("r2", r2_val)
     return (
         mae_val,
@@ -495,6 +507,7 @@ def gradio_retrain_with_added_data(
     result_df.to_excel("retraining_results.xlsx")
     print("Done with saving results to excel")
 
+
     plot = px.bar(
         result_df,
         x="model",
@@ -512,10 +525,18 @@ def gradio_retrain_with_added_data(
         color_continuous_scale=color_scale,
     )
     print("Done with plotting: ", plot)
+
+    
+    #### hier muss iwo ein fehler sein #############
+    
     progress(0.99, desc="Done with pipeline")
     time.sleep(0.5)
+    # drop na values
+    result_df = result_df.dropna()
     result_df = result_df.to_html()
+    print("Done convertion to html: ", result_df)
     result_df = "<h2>Result of retraining</h2>" + result_df
+    print("Done adding headline: ", result_df)
     return result_df, gr.update(value=plot, visible=True)
 
 
@@ -647,29 +668,37 @@ def trigger_retraining_with_added_data(
                 baseline_mae = mean_absolute_error(y_val, baseline_preds_val)
                 baseline_r2 = r2_score(y_val, baseline_preds_val)
                 baseline_mse = mean_squared_error(y_val, baseline_preds_val)
+                baseline_rmse = np.sqrt(baseline_mse)
                 baseline_mae_test = mean_absolute_error(y_test, baseline_preds_test)
                 baseline_r2_test = r2_score(y_test, baseline_preds_test)
                 baseline_mse_test = mean_squared_error(y_test, baseline_preds_test)
+                baseline_rmse_test = np.sqrt(baseline_mse_test)
                 print(f"Baseline Mae: {baseline_mae}")
                 mlflow.log_metric("mse", baseline_mse)
                 mlflow.log_metric("mae", baseline_mae)
                 mlflow.log_metric("r2", baseline_r2)
+                mlflow.log_metric("rmse", baseline_rmse)
                 mlflow.log_metric("mse_test", baseline_mse_test)
+                mlflow.log_metric("rmse_test", baseline_rmse_test)
                 mlflow.log_metric("mae_test", baseline_mae_test)
                 mlflow.log_metric("r2_test", baseline_r2_test)
+                
 
                 print(f"Baseline Mae: {baseline_mae}")
                 print(f"Baseline MSE: {baseline_mse}")
                 print(f"Baseline R2 Score: {baseline_r2}")
+                print(f"Baseline RMSE: {baseline_rmse}")
 
                 results = results.append(
                     {
                         "model": model_name,
                         "mae": baseline_mae,
                         "mse": baseline_mse,
+                   #     "rmse": baseline_rmse,
                         "r2": baseline_r2,
                         "mae_test": baseline_mae_test,
                         "mse_test": baseline_mse_test,
+                      #  "rmse_test": baseline_rmse_test,
                         "r2_test": baseline_r2_test,
                     },
                     ignore_index=True,
