@@ -1,9 +1,9 @@
 artifact_location: mlflow-artifacts:/413503153497943467
 creation_time: 1689335765979
 experiment_id: '413503153497943467'
-last_update_time: 1689360700921
+last_update_time: 1689588404633
 lifecycle_stage: active
-name: wue-rent-fs-app-more-data
+name: wue-rent-fs-app-different_val_set
 tags:
   mlflow.note.content: "Same experiment setup, but with slightly different Train/Val/Test
     split to wue-rent-fs-app because na data are dropped after feature set column

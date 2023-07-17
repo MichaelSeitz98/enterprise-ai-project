@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/115877458379065110/728b433ad5d841088b4743443c107b25/artifacts
+deleted_time: 1689587968581
+end_time: 1689549864154
+entry_point_name: ''
+experiment_id: '115877458379065110'
+lifecycle_stage: deleted
+run_id: 728b433ad5d841088b4743443c107b25
+run_name: ridge
+run_uuid: 728b433ad5d841088b4743443c107b25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689549807034
+status: 3
+tags: []
+user_id: michi
