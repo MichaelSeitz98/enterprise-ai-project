@@ -6,6 +6,8 @@ To develop an ML system to enable this, we followed a structured process. First 
 
 ## Data Extraction & Preprocessing
 
+### Data Extraction
+To create our dataset, we first scrapped the current rental offers using [Apify](https://apify.com/). This involved extracting rental offers for flats from the website [immowelt](https://www.immowelt.de/). You can find our code, to scrap the data in this [folder](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/scrape_and_preprocess). We extracted the raw data and stored it in a [Excel file](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/data/flats_to_rent_wue_preprocessed_combined.xlsx).
 
 ### Exploratory Data Analysis
 An exploratory data analysis was conducted using `ydata-profiling` to generate insights about the distribution of the extracted dataset. The analysis focused on the flat rent data set, and the results can be accessed publically via the following links. 
