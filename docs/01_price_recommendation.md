@@ -84,10 +84,9 @@ For this reason we chose to use the models with no hyperparameter training, as t
 | RMSE_test |         196.6         |           **180.0**           |   304.1   |
 
 
-
 ### Model selection 
 
-Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (MSRE) we chose the random forest for
+Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (MSRE) we chose the random forest. 
 
 | Name          | mae_test | rmse_test | r2_test |
 | ------------- | -------- | --------- | ------- |
@@ -107,7 +106,7 @@ The complete retraining pipeline is also developed in the `train_and_eval.ipynb`
 
  ![retrain_process](ressources/dynamic_retrain.png)
 
-The newly trained models are evaluated on the same validation as before, so it is clear whether the new data improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. 
+The newly trained models are evaluated on the same validation as before, so it is clear whether the new data improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. For this purpose we build a admin page, where information the current productive model can get displayed and a complete retraining with newly scraped data. The whole proceess is demonstrated in detailed in a admin showcase in [admin](Admin Front)
 
 
 ## Frontend Application
@@ -118,6 +117,12 @@ We use Gradio as our frontend framework. `Gradio` is particularly good at applyi
 
 ### Admin Frontend
 In this frontend application, the admins of our website can scrap new data and automatically retrain the machine learning models. First the admin has to choose which models to retrain. Then the user can click on the button. Now our backend scraps new data and combines it with our old dataset. Our models can now be retrained. When the retraining process is finished, we can decide which models have improved and which model is now the best model to predict the price. This application is separate from our user frontend, it's just for us to retrain and visualise the performance of our models.
+
+
+**Link to video demo:**
+
+[![Example Video](ressources/admin_page_screenshot.png)](https://youtu.be/gJpT2Nffe3M)
+
 
 ## Deployment to Cloud
 
