@@ -1,16 +1,15 @@
 # Flat Price Assistant 
 
-Accurate price predictions for flat rents and house buys in Würzburg are crucial. They enable informed decision making, aid budget planning, support market analysis, ensure fair transactions, and reduce information asymmetry. Price predictions play a crucial role in facilitating well-informed choices and efficient transactions in Würzburg's real estate market.
 
-To develop an ML system to enable this, we followed a structured process. First a dataset was gathered  [data extraction & preprocessing](#data-extraction--preprocessing) section. Next, we conducted [exploratory data analysis](#exploratory-data-analysis) and performed [feature engineering](#feature-engineering) to prepare the dataset for modeling. We then proceeded to train and compare different models and settings. The  comparisons were documented and tracked using MLFlow (see [here](#modelling)). Once we selected the best model, we deployed it to the cloud for scalability and accessibility. The deployment process is described under [Architecture & Model Deployment](#architecture-and-model-deployment). Finally, we developed a [frontend](#frontend-application) application to provide an intuitive user interface for interacting with the ML system.
+Accurate price predictions play a vital role when considering renting an apartment or purchasing a house in Würzburg. It is essential for tenants to determine if they are paying a reasonable amount, and for landlords to establish fair market prices based on the specific features of the property. To develop an ML system to enable this, we followed a structured process. First, a dataset was collected [data extraction & preprocessing](#data-extraction--preprocessing). Next, we performed [exploratory data analysis](#exploratory-data-analysis) and [feature engineering](#feature-engineering) to prepare the dataset for modelling. We then proceeded to train and compare different models and settings. The comparisons were documented and tracked using MLFlow (see [here](#modelling)). Once we selected the best model, we deployed it in the cloud for scalability and accessibility. The deployment process is described in [Architecture & Model Deployment](#architecture-and-model-deployment). Finally, we developed a [frontend](#frontend-application) application to provide an intuitive user interface for interacting with the ML system.
 
 ## Data Extraction & Preprocessing
 
 ### Data Extraction
-To create our dataset, we first scrapped the current rental offers using [Apify](https://apify.com/). This involved extracting rental offers for flats from the website [immowelt](https://www.immowelt.de/). You can find our code, to scrap the data in this [folder](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/scrape_and_preprocess). We extracted the raw data and stored it in a [Excel file](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/data/flats_to_rent_wue_preprocessed_combined.xlsx).
+To create our dataset, we first scraped the current rental offers using [Apify](https://apify.com/). This involved extracting rental offers for flats from the website [immowelt](https://www.immowelt.de/). You can find our code, to scrap the data in this [folder](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/scrape_and_preprocess). We extracted the raw data and stored it in an [Excel file](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/data/flats_to_rent_wue_preprocessed_combined.xlsx).
 
 ### Exploratory Data Analysis
-An exploratory data analysis was conducted using `ydata-profiling` to generate insights about the distribution of the extracted dataset. The analysis focused on the flat rent data set, and the results can be accessed publically via the following links. 
+Exploratory data analysis was carried out using `ydata profiling` to gain insight into the distribution of the extracted dataset. The analysis focused on the dataset of dwelling rents and the results are publicly available via the following links. 
 
 [EDA: basic dataset of flats to rent in Würzburg](https://michaelseitz98.github.io/enterprise-ai-project/eda-wue-rent-all.html)
 
@@ -18,16 +17,14 @@ The purpose of the exploratory data analysis was to gain an overview of the vari
 
 ### Features Engineering
 
-After the exploratory data analysis, we chose our final features to avoid overfitting. First, we looked at which features had a **high correlation** with the object feature. Then we looked at which features were **inbalanced**. For example, there is only one house with a bidet with a high price. Now the bidet is an indicator that only expensive houses have a bidet. So we remove this feature because only one apartment has it. We also looked at which feature the user can enter in our web application. The finale feature can be seen in this [notebook](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/frontend/app.py).
+After the exploratory data analysis, we chose our final features to avoid overfitting. First, we looked at which features had a **high correlation** with the object feature. Then we looked at which features were **inbalanced**. For example, there is only one house with a bidet with a high price. Now the bidet is an indicator that only expensive houses have a bidet. So we remove this feature because only one apartment has it. We also looked at which feature the user can enter in our web application without any extra effort. The final features can retrieved from the [frontend_app](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/frontend/app.py). 
 
 ### Preprocessing 
 
-First we preprocessed all features that were **binary** with a binariser. For example, if an apartment has a specific feature such as a garden, the binariser sets the value of that feature to one. If the feature is not present in the apartment, it will get a zero as an indicator.
-In the next step we will precode all **categorical** features with a one-hot-encoder, because we do not have ordinary features. In this [notebook](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb) and this [dictionary](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/scrape_and_preprocess) you can find the necessary steps we took to prepare our features.
-
+First we preprocessed all features that were **binary** with a binariser. For example, if an apartment has a specific feature such as a garden, the binariser sets the value of that feature to one. If the feature is not present in the apartment, it will get a zero as an indicator. In the next step we will precode all **categorical** features with a one-hot-encoder, because we do not have ordinary features. You can find the necessary steps we took to prepare our features in [train_and_eval_models.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb) notebook  and [scrape_and_preprocess](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/scrape_and_preprocess) folder. 
 ## Modelling
 
-For this regression task, different models were trained, tuned and compared. The related code to the model  run can be be found in the notebook `train_and_eval_models.ipynb` and `model_functions.py`. To ensure reproducibility and comparability between models within different setups, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
+For this regression task, different models were trained, tuned and compared. The related code to the model  run can be be found in the notebook [train_and_eval_models.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb) and [model_functions.py](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/model_functions.py). To ensure reproducibility and comparability between models within different setups, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
 
 - Linear regression 
 - Lasso regression 
@@ -35,18 +32,18 @@ For this regression task, different models were trained, tuned and compared. The
 - Elasticnet regression 
 - Random Forest Regression 
 - XGBoost Regressor
-- Our own (dynamically updated) Benchmark
+- Our own, dynamically updated benchmark
 
-All of these models are benchmarked against a **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month, so the benchmark is always up to date. In the same way, for buying a house the dynamic benchmark is using the average purchase price per square meter of Würzburg, scraped from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
+All these models are compared with a **benchmark model**. This benchmark model predicts prices using only the living space information (sqm) and the current average rent per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month, so the benchmark is always up to date. Similarly, for a potential use case of buying a house, the dynamic benchmark uses the average purchase price per square metre in Würzburg, scraped from [wohnungsboerse.net/immobilienpreise-Würzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
 ### Training Pipeline
 
-The models were trained using a standardized pipeline approach, ensuring consistent processing steps and comparability between them. A single function was designed to handle all the necessary steps, making it easy to train different models on various datasets. The pipelines takes `feature_set` as input, why we e.g. could compare the performance of models trained using only high correlative available features without major  against those trained using only five selected features. This streamlined approach allows for efficient model training and straightforward experimentation with different datasets and feature subsets.
+The models were trained using a standardized pipeline approach, ensuring consistent processing steps and comparability between them. A single function was designed to handle all the necessary steps, making it easy to train different models on various datasets. The pipelines takes `feature_set` as input, why we e.g. could compare the performance of models using different feature sets with one function execution. This streamlined approach allows for efficient model training and straightforward experimentation with different datasets and feature subsets.
 
 
 ### Logging & Evaluation of MLFlow
 
-To facilitate model comparison and evaluation, each setup and training run with different combinations of features, models, and hyperparameters was logged and tracked using `MLFlow`. This allowed for a comprehensive view of all relevant model training runs, their evaluation metrics, and the used parameters.
+To facilitate model comparison and evaluation, each setup and training run with different combinations of features, models and hyperparameters was logged and tracked using `MLFlow`. This allowed for a comprehensive view of all relevant training runs, their evaluation metrics and the used parameters.
 
 To access the model comparison results, follow these steps:
 
@@ -54,31 +51,30 @@ To access the model comparison results, follow these steps:
 2. Install MLFlow by running `pip install mlflow` or `pip install -r requirements.txt`.
 3. Launch the MLFlow server using the command `mlflow server`.
 
-Once the MLFlow server is running, you can access the results through a web interface. It provides an overview of all the tracked experiments and allows you to compare different models and their  evaluation metrics.  By leveraging MLFlow, you can easily identify and select the best-performing model for your specific use case, based on the analysis of various training runs.
+Once the MLFlow server is running, you can access the results through a web interface. It provides an overview of all the tracked experiments and allows you to compare different models and their evaluation metrics. With MLFlow, you can easily identify and select the best-performing model for your specific use case, based on the analysis of various training runs.
 
 
 ![experiments](resources/mlflow_experiment_view_table.png)
 
-When a model is selected for deployment on our production systems, it can be registered in the 'Model Registry'. This is a central repository for managing and versioning machine learning models. We used it to track and store different versions of our models for easy comparison and deployment. It has streamlined our model management process and enabled collaboration between team members. The model registry integrated seamlessly with our deployment pipeline, ensuring that the selected models could be deployed to our Flat Price Assistant-WÜE application by setting the stage to "production" and loading them via API to the independently deployed backend (see detailed at [Architecture and Deployment](#architecture-and-model-deployment)). This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
+When a model is selected for deployment on our production systems, it can be registered in the Model Registry`. This is a central repository for managing and versioning machine learning models. We used it to track and store different versions of our models for easy comparison and deployment. It has streamlined our model management process and enabled collaboration between team members. The model registry integrated seamlessly with our deployment pipeline, ensuring that the selected, latest models could be deployed to our Flat Price Assistant-WÜE application by setting the stage to "production" and loading them via API to the independently deployed backend, which is described more detailed at [Architecture and Deployment](#architecture-and-model-deployment). 
 
 ![model_registry](resources/mlflow_model_registry.png)
 
 
 
-### Data Augmentation
+### Syntactic Data Generation
 
-To expand our limited dataset, we employed data augmentation techniques. We utilized a Generative Adversarial Network (GAN) specifically designed for tabular data called `CTGAN`. This GAN can be trained on an existing dataset and generate new data instances that possess similar characteristics, effectively increasing the size of the dataset. 
-To facilitate this process, we developed a comprehensive pipeline that integrates the training and evaluation procedures with augmented data. The implementation is available in the following Jupyter Notebook: [train_and_eval_modules.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb).
+To extend our limited data set, we applied data augmentation techniques. We used a Generative Adversarial Network (GAN) specifically designed for tabular data, called `CTGAN`. This GAN can be trained on an existing dataset and generate new data instances with similar characteristics, effectively increasing the size of the dataset. To facilitate this process, we have developed a pipeline that integrates syntetic data generation with training and evaluation procedures. The implementation is available in the following Jupyter notebook: [train_and_eval_modules.ipynb](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb).
 
-Please note that the tabular GAN was exclusively trained using the training data. No information from the validation or test dataset was utilized for generating the augmented samples.
+Note: the tabular GAN was exclusively trained using the training data. No information from the validation or test dataset was utilized for generating the augmented samples.
 Although there is potential for data augmentation using `CTGAN`, our experiments clearly demonstrated that the mean absolute error (MAE) did not improve across any of the models. We generated additional rows ranging from 0 to 1000 for training purposes and evaluated their performance on "untouched" data. Obviously, the benchmark from MAE=286 (on the validation data) remained consistent in all experimental setups.
- For this reason, data augmentation with CTGAN was not applied in the final system. 
+For this reason, data augmentation with CTGAN was not applied in the final system. 
 
 ![plot2](resources/syntetic_data_for_train_impact.png)
 
 ### Hyperparameter tuning 
 
-We performed a hyperparameter study for all models. The hyperparameter tuning code can be found in the `train_and_eval_models.ipynb` notebook. We used the optimisation framework `Optuna` to determine the best parameters by performing a study using the validation data to optimise the input parameters for each model. The best_params obtained from hyperparameter tuning were stored as JSON files in the [hyperparameter_tuned](hyperparameter_tuned) folder. They can be used in the complete training pipeline of `train_and_eval_models.ipynb` by setting the input parameter `hpt=True`.
+We performed a hyperparameter study for all models. The code for hyperparameter tuning  can be found in the `train_and_eval_models.ipynb` notebook. We used the optimization framework `Optuna` to determine the best parameters by performing a study using the validation data for each model. The `best_params` obtained from hyperparameter tuning were stored as JSON files in the [hyperparameter_tuned](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/hyperparameter_tuned) folder. They can be used in the complete training pipeline (see `train_and_eval_models.ipynb`) by setting the input parameter `hpt=True`.
 
 For each model, a study focused on finding the optimal hyperparameter. In particular, XGBoost, Random Forest (RF) and ElasticNet models, where there are more hyperparameters such as
 * n_estimators
@@ -86,10 +82,10 @@ For each model, a study focused on finding the optimal hyperparameter. In partic
 * max_depth
 * random state
 
- For linear, lasso and ridge regression, there are fewer parameters to optimise (e.g. only alpha and random state), so the continued hyperparameter tuning had little impact (can be seen on the MLFlow server).These files contain the best parameter values found during the tuning process.
+ For linear, lasso and ridge regression, there are fewer parameters to optimize (e.g. only alpha and random state), so the continued hyperparameter tuning had little impact.
  
-In the Optuna studies, we optimised the hyperparameters with respect to the Root Mean Squared Error (RMSE) of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. See all results of hyperparameter tuned runs on MLFlow server.  
-Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is solved as the amount of data increases.For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.  
+In the Optuna studies, we optimized the hyperparameters with respect to the Root Mean Squared Error (RMSE) of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. See all results of hyperparameter tuned runs on MLFlow server.  
+Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is tackled as the amount of data increases. For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.  
 
 
 |    RF     | Hyperparameter Tuning | Without Hyperparameter Tuning | Benchmark |
@@ -105,7 +101,7 @@ Overfitting on the validation data set could be a reason, as well as the small a
 
 ### Final model evaluation 
 
-Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE), we chose the random forest as the preliminary first production model. This results out of a run without data-augmentation and the default hyperparameters.  
+Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE), we chose the random forest as the preliminary first production model. This is the result of a run without data augmentation and with the default hyperparameters.
 
 | Name          | mae_test | rmse_test | r2_test |
 | ------------- | -------- | --------- | ------- |
@@ -129,12 +125,12 @@ The newly trained models are evaluated on the same validation as before, so it i
 
 ## Frontend Application
 ### User Frontend
-We use Gradio as our frontend framework. `Gradio` is particularly good at applying models. To be able to predict a property price, we need a dataset that has the same requirements as our training, validation and test dataset. Therefore, the user has to enter his property characteristics in the front end. The next step is to generate the dataframe from this. After this step, we load our state of the art model to predict the rental price for the user. Here you can watch how our [frontend](https://www.youtube.com/watch?v=4TPxXEXrMQA) is working.
+We use `Gradio` as our frontend framework. `Gradio` is particularly good at applying models. To be able to predict a property price, we need a dataset that has the same requirements as our training, validation and test dataset. Therefore, the user has to enter his property characteristics in the front end. The next step is to generate the dataframe from this. After this step, we load our state of the art model to predict the rental price for the user. Here you can watch a video how our [frontend](https://www.youtube.com/watch?v=4TPxXEXrMQA) is working.
 
 
 
 ### Admin Frontend
-In this front-end application, the administrators of our website can scrap new data and automatically retrain the machine learning models. First the admin has to select which models to retrain. Then the user can click the button. Now the latest flat data from Würzburg is scraped from Immowelt and combined with the existing training data set.The models are then retrained with the updated and expanded training data. When the retraining process is complete, we can decide which models have improved and which model is now the best model for predicting price. This application is separate from our user front-end, it's just for us to retrain and visualise the performance of our models.
+In this front-end application, the administrators of our website can scrap new data and automatically retrain the machine learning models. First the admin has to select which models to retrain. Then the user can click the button. Now the latest flat data from Würzburg is scraped from Immowelt and combined with the existing training data set.The models are then retrained with the updated and expanded training data. When the retraining process is complete, we can decide which models have improved and which model is now the best model for predicting price. This application is separate from our user front-end, it's just for us to retrain and visualize the performance of our models.
 
 **Link to demo video:**
 
@@ -191,16 +187,16 @@ The architecture and model deployment process described in this documentation pr
 
 ## Outlook & Discussion
 
-* **Explainable Predictions with XAI**
-  In order to provide transparent predictions and help users understand how predicted prices are calculated, we can integrate explainable AI techniques into the user interface. One such technique is using `SHAP` values to display the importance of different features and their impact on the predicted price. By creating `SHAP Waterfall` plots for XGBoost on individual examples, users can visualize how various input values contribute to the prediction. The next step is to seamlessly integrate these plots into the user front end, allowing users to have transparent insights into their individual price predictions.
+* **Explainable Predictions**
+  In order to provide transparent predictions and help users understand how predicted prices are calculated, we can integrate explainable AI techniques into the user interface. One such technique is using `SHAP` values to display the importance of different features and their impact on the predicted price. We  created example `SHAP Waterfall` plots for XGB, how users could visualize how various input values contribute to the prediction. The next step is to integrate these plots into the user frontend, allowing users to have transparent insights into their individual price predictions.
   ![SHAP waterfall plot](resources/shap_waterfall_example.png)
 
 
 * **Continuous data enrichment**
  In order to offer our clients a broader range of forecasts, we should also include data from other cities and for different property types. Analysing rental prices in different regions allows us to take into account regional differences and market characteristics. By including different types of property, such as houses, we can provide a more comprehensive view of the rental market. In addition, we can use the data from other cities and property types to train our models and improve their performance.
-  The rental market is dynamic and subject to constant change. It is therefore essential that we include a timestamp in our data to record when the data was collected. By documenting when the data was collected, we can analyse the development of rents over time and identify long-term trends. This allows our clients to understand the stability and evolution of rental levels in specific areas.
+  The rental market is dynamic and subject to constant change. It is therefore essential that we include a timestamp in our data to record when the data was collected.
 
-* **Build our own scrapper** 
-  We used a scrapper from [Apify](https://apify.com/bibim/immowelt-scraper) to get our data. In the future we want to build our own scrapper to get more data and to be more flexible. We want to be able to get data from different websites and not just from immowelt.de. This will allow us to get more data and to be more flexible in the future. Another advantage of a self-developed scraper is the possibility to reduce costs in the long run. If we wanted to expand our model to other cities or regions, the costs of using a paid scraper would increase with each additional location. By developing a customised scraper in-house, we could minimise these expenses and respond flexibly to new demands.
+* **Build our own scraper** 
+  We used a scraper from [Apify](https://apify.com/bibim/immowelt-scraper) to get our data. In the future we want to build our own scraper to get more data and to be more flexible. We want to be able to get data from different websites and not just from immowelt.de. This will allow us to get more data and to be more flexible in the future. Another advantage of a self-developed scraper is the possibility to reduce costs in the long run. If we wanted to expand our model to other cities or regions, the costs of using a paid scraper would increase with each additional location. By developing a customized scraper in-house, we could minimize these expenses and respond flexibly to new demands.
 
 
