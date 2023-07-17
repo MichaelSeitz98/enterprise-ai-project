@@ -1,39 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from predict_request_base_models import *
 from ml_model import *
 import json
 import yaml
 
 app = FastAPI()
-
-class PredictionRequest(BaseModel):
-    LivingSpace: int
-    Rooms: int
-    altbau_bis_1945: bool 
-    balkon: bool
-    barriefrei: bool
-    dachgeschoss: bool
-    einbaukueche: bool
-    neubau: bool
-    parkett: bool
-    stellplatz: bool
-    bad_wc_getrennt: bool
-    personenaufzug: bool
-    garten: bool
-    garage: bool
-    renoviert: bool
-    terrasse: bool
-    wanne: bool
-    zentralheizung: bool
-    abstellraum: bool
-    ferne: bool
-    fussbodenheizung: bool
-    gartennutzung: bool
-    kelleranteil: bool
-    ZipCode: str
-
-class PredictionResponse(BaseModel):
-    Predicted_price: float
 
 @app.post("/predict", response_model=PredictionResponse, summary="Predict housing price")
 async def predict_housing_price(data: PredictionRequest):

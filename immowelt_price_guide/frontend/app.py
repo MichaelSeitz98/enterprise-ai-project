@@ -66,7 +66,7 @@ def predict_housing_price(
 
     print(response)
 
-    return json.loads(response.text)["Predicted price"]
+    return json.loads(response.text)["Predicted_price"]
 
 
 # Define the Gradio interface
