@@ -4,38 +4,32 @@ from ml_model import *
 import json
 import yaml
 
-
-
 app = FastAPI()
 
 class PredictionRequest(BaseModel):
-    LivingSpace: float
-    Rooms: float
-    abstellraum: bool
-    bad_wc_getrennt: bool
+    LivingSpace: int
+    Rooms: int
+    altbau_(bis_1945): bool # type: ignore
+    balkon: bool
     barriefrei: bool
-    dusche: bool
-    elektro: bool
-    erdwaerme: bool
-    fenster: bool
-    ferne: bool
-    fliesen: bool
-    frei: bool
-    fussbodenheizung: bool
-    gaestewc: bool
-    garage: bool
-    kable_sat_tv: bool
-    kontrollierte_be_entlueftungsanlage: bool
-    kunststofffenster: bool
-    luftwp: bool
+    dachgeschoss: bool
+    einbaukueche: bool
+    neubau: bool
     parkett: bool
+    stellplatz: bool
+    bad_wc_getrennt: bool
     personenaufzug: bool
-    reinigung: bool
-    rollstuhlgerecht: bool
-    speisekammer: bool
+    garten: bool
+    garage: bool
+    renoviert: bool
     terrasse: bool
     wanne: bool
     zentralheizung: bool
+    abstellraum: bool
+    ferne: bool
+    fussbodenheizung: bool
+    gartennutzung: bool
+    kelleranteil: bool
     ZipCode: str
 
 @app.post("/predict")
