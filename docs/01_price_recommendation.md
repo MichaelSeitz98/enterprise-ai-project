@@ -70,7 +70,7 @@ To facilitate this process, we developed a comprehensive pipeline that integrate
 
 Please note that the tabular GAN was exclusively trained using the training data. No information from the validation or test dataset was utilized for generating the augmented samples.
 Although there is potential for data augmentation using `CTGAN`, our experiments clearly demonstrated that the mean absolute error (MAE) did not improve across any of the models. We generated additional rows ranging from 0 to 1000 for training purposes and evaluated their performance on "untouched" data. Obviously, the benchmark from MAE=286 (on the validation data) remained consistent in all experimental setups.
- For this reason, data augementation with CTGAN was not applied in the final system. 
+ For this reason, data augmentation with CTGAN was not applied in the final system. 
 
 ![plot2](resources/syntetic_data_for_train_impact.png)
 
