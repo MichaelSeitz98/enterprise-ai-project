@@ -42,11 +42,11 @@ All of these models are benchmarked against a **benchmark model**. This baseline
 
 Every different set-up of used features, used models and differently used hyperparameter was logged and compared to each other via `MLFlow`. All different runs aka experiment where tracked and evaluated there, see like a example model comparison. So, the best suitable model could be chose.  
 
-![experiments](ressources/mlflow_experiment_view_table.png)
+![experiments](resources/mlflow_experiment_view_table.png)
 
 If a model is chosen to be deployed for our productive systems, it can be registered to `model registry`. This s a centralized repository for managing and versioning machine learning models. We utilized it to track and store different versions of our models, enabling easy comparison and deployment. It streamlined our model management process and enables collaboration amongteam members . The Model Registry integrated seamlessly with our deployment pipeline, ensuring that the selected models can be deployed to our "Würzburger Mietpreis-Checker" application, by setting the stage to "production" and load it via API from the application. This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
 
-![model_registry](ressources/mlflow_model_registry.png)
+![model_registry](resources/mlflow_model_registry.png)
 
 ### Data Augmentation
 
@@ -56,7 +56,7 @@ To facilitate this process, we developed a comprehensive pipeline that integrate
 Please note that the tabular GAN was exclusively trained using the training data. No information from the validation or test dataset was utilized for generating the augmented samples.
 Although there is potential for data augmentation using `CTGAN`, our experiments clearly demonstrated that the mean absolute error (MAE) did not improve across any of the models. We generated additional rows ranging from 0 to 1000 for training purposes and evaluated their performance on "untouched" data. Obviously, the benchmark from 286 remained consistent in all experimental setups. For this reason, data augementation with CTGAN was not applied in the final system. 
 
-![plot2](ressources/syntetic_data_for_train_impact.png)
+![plot2](resources/syntetic_data_for_train_impact.png)
 
 
 ### Continous Learning / Retraining
@@ -64,7 +64,7 @@ Although there is potential for data augmentation using `CTGAN`, our experiments
 We implemented a dynamic learning pipeline where the training base can be updated with the latest scraped data from Würzburg.
 The complete retraining pipeline is also developed in the `train_and_eval.ipynb` notebook and schematically follows the process shown.
 
- ![retrain_process](ressources/dynamic_retrain.png)
+ ![retrain_process](resources/dynamic_retrain.png)
 
 The newly trained models are evaluated on the same validation as before, so it is clear whether the new data improved the model or not. This method is also useful for extending the dataset over time, as the dataset is continuously extended. 
 
@@ -78,13 +78,57 @@ We use Gradio as our frontend framework. `Gradio` is particularly good at applyi
 ### Admin Frontend
 In this frontend application, the admins of our website can scrap new data and automatically retrain the machine learning models. First the admin has to choose which models to retrain. Then the user can click on the button. Now our backend scraps new data and combines it with our old dataset. Our models can now be retrained. When the retraining process is finished, we can decide which models have improved and which model is now the best model to predict the price. This application is separate from our user frontend, it's just for us to retrain and visualise the performance of our models.
 
-## Deployment to Cloud
+# Architecture and Model Deployment
+
+This technical documentation provides an overview of the architecture and model deployment process for our ML application. The application leverages MLFlow for model training, management, and versioning, while the frontend is built using Gradio. The backend application is developed with FastAPI and hosted on Heroku, allowing for easy deployment of new models to the cloud.
+
+## Architecture Overview
+
+![Architecture](resources/architecture-flat-price-app.png)
+
+The architecture of our ML application can be described as follows:
+
+1. **MLFlow**: MLFlow is used for model training, tracking, and versioning. It runs on a local server, and all artifacts are stored in our repository. This enables every team member with access to the repository to create models, train them, and store different versions using MLFlow.
+
+2. **Frontend (Gradio)**: The frontend of our application is built using Gradio. It collects the necessary data for the model to create predictions. Once the data is collected, the Gradio app sends a POST request to our FastAPI backend application.
+
+3. **Backend (FastAPI)**: The FastAPI backend application provides various endpoints.. When a request is received at the `/predict` endpoint, the desired model is loaded and ready to make predictions. The dedicted folder is located under `/immowelt_price_guide/backend`. [Also find here](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/backend). 
+
+The `main.py` includes the FastAPI app and the following endpoints:
+   -  `/predict` endpoint: This endpoint is used to make predictions. It receives a POST request from the frontend application, loads the desired model, and returns the prediction.
+   - `/model-info` endpoint: This endpoint is used to retrieve information about the model. It receives a GET request from the frontend application and returns the model's input and output parameters as well as the name and some infos about the version. 
+   - `/` root: This endpoint is used to check the health of the application. It receives a GET request from the frontend application and returns a status code of 200 if the application is running.
 
 
+4. **Cloud Deployment (Heroku)**: The backend application is hosted on Heroku, making the endpoint permanently publicly available for everyone. The frontend and backend are designed to run independently of each other.
+
+Find hosted available api documentation here: [https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs](https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs).
+
+## Model Deployment Process
+
+Deploying a new model to the cloud follows the following steps:
+
+1. Set the new model in production using MLFlow. This ensures that the model is available and can be accessed by name.
+
+2. Prepare the deployment cell: We have a preconfigured cell that performs the necessary steps for deployment. By simply setting a new name, the following actions are automated:
+
+   1. Load the model by its name from the MLFlow server.
+   2. Gather all the necessary information about the model, including input and output parameters, required Python version, and the required packages with their specific versions.
+   3. Set the model, its details, and requirements to the backend folder of our repository. This folder serves as the foundation for the deployed model in the cloud.
+
+3. Commit the changes to the main branch of our repository. Since Heroku is set up with our Git repository, pushing the changes triggers a new deployment on the cloud. The command `git push heroku main` is used for this purpose.
+
+4. Heroku deployment: The deployment process is possible because we have a `heroku.yml` file placed in our root directory, which directs to the Dockerfile located in our backend folder. The Dockerfile defines the image to be built for the model in production. Once the container is built, it runs on the Heroku cloud.
+
+By following these steps, a new model can be easily deployed to the cloud, ensuring that the latest version is available for use as well as all the required dependencies. This makes sure to not run into version or dependency issues when deploying a new model.
+
+## Conclusion
+
+The architecture and model deployment process described in this documentation provide a clear and readable overview of how our ML application is structured and how new models can be deployed to the cloud using MLFlow, Gradio, FastAPI, and Heroku.
 
 ## Outlook & Discussion
 
 * **Explainable AI** - We have not yet implemented explainable AI in our frontend. In this step, we want to be able to explain to the user why the model predicted this price. This is something we will implement in the future. In this picture you can see which features are decisive for your individual price prediction. We use the ``shape waterfall`` method to explain the prediction.
-![shap waterfall](ressources/shap_waterfall_example.png)
+![shap waterfall](resources/shap_waterfall_example.png)
 
 
