@@ -2,7 +2,7 @@
 
 Accurate price predictions for flat rents and house buys in Würzburg are crucial. They enable informed decision making, aid budget planning, support market analysis, ensure fair transactions, and reduce information asymmetry. Price predictions play a crucial role in facilitating well-informed choices and efficient transactions in Würzburg's real estate market.
 
-To develop an ML system to enable this, we followed a structured process.  First, we scraped our own dataset by utilizing web scraping techniques. The details of the data extraction process can be found under the [data extraction](#data-extraction) section. Next, we conducted [exploratory data analysis](#exploratory-data-analysis) and performed [feature engineering](#feature-engineering) to prepare the dataset for modeling. We then proceeded to train and compare different models using the dataset. The [training](#model-training-and-evaluation) procemodel comparisons were documented and tracked using MLFlow. Once we selected the best model, we deployed it to the cloud for scalability and accessibility. The deployment process is described under [Architecture & Model Deployment](#architecture-and-model-deployment). Finally, we developed a [frontend](#frontend-application) application to provide an intuitive user interface for interacting with the ML system.
+To develop an ML system to enable this, we followed a structured process. First a dataset was gathered  [data extraction & preprocessing](#data-extraction--preprocessing) section. Next, we conducted [exploratory data analysis](#exploratory-data-analysis) and performed [feature engineering](#feature-engineering) to prepare the dataset for modeling. We then proceeded to train and compare different models and settings. The  comparisons were documented and tracked using MLFlow (see [here](#modelling)). Once we selected the best model, we deployed it to the cloud for scalability and accessibility. The deployment process is described under [Architecture & Model Deployment](#architecture-and-model-deployment). Finally, we developed a [frontend](#frontend-application) application to provide an intuitive user interface for interacting with the ML system.
 
 ## Data Extraction & Preprocessing
 
@@ -25,7 +25,7 @@ In the next step we will precode all **categorical** features with a one-hot-enc
 
 ## Modelling
 
-For this regression task, different models were trained, tuned and compared. The related code to the model  run can be be found in the notebook `train_and_eval_models.ipynb` and `model_functions.py`. To ensure reproducibility and comparability between models within differen setups, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
+For this regression task, different models were trained, tuned and compared. The related code to the model  run can be be found in the notebook `train_and_eval_models.ipynb` and `model_functions.py`. To ensure reproducibility and comparability between models within different setups, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
 
 - Linear regression 
 - Lasso regression 
@@ -37,15 +37,9 @@ For this regression task, different models were trained, tuned and compared. The
 
 All of these models are benchmarked against a **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month, so the benchmark is always up to date. In the same way, for buying a house the dynamic benchmark is using the average purchase price per square meter of Würzburg, scraped from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
-## Model Training Pipeline
+### Training Pipeline
 
-The models were trained using a standardized pipeline approach, ensuring consistent processing steps and comparability between them. A single function was designed to handle all the necessary steps, making it easy to train different models on various datasets.
-
-The pipelines takes `feature_set` as input, why we e.g. could compare the performance of models trained using only high correlative available features without major  against those trained using only five selected features.
-
-
-This streamlined approach allows for efficient model training and straightforward experimentation with different datasets and feature subsets.
-
+The models were trained using a standardized pipeline approach, ensuring consistent processing steps and comparability between them. A single function was designed to handle all the necessary steps, making it easy to train different models on various datasets. The pipelines takes `feature_set` as input, why we e.g. could compare the performance of models trained using only high correlative available features without major  against those trained using only five selected features. This streamlined approach allows for efficient model training and straightforward experimentation with different datasets and feature subsets.
 
 
 ### Logging & Evaluation of MLFlow
@@ -91,7 +85,7 @@ For each model, a study focused on finding the optimal hyperparameter. In partic
 
  For linear, lasso and ridge regression, there are fewer parameters to optimise (e.g. only alpha and random state), so the continued hyperparameter tuning had little impact (can be seen on the MLFlow server).These files contain the best parameter values found during the tuning process.
  
-  In the Optuna studies, we optimised the hyperparameters with respect to the Root Mean Squared Error of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is solved as the amount of data increases.For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.
+  In the Optuna studies, we optimised the hyperparameters with respect to the Root Mean Squared Error (RMSE) of the validation data set. For this reason, the model performance for all models on the validation set clearly improved compared to no hyperparameter tuning. However, as there are very few data in the validation and test data sets, this does not necessarily translate into better performance on the test data set. In the tables below, for the example of RF and XGBoost, it can be seen that although the validation data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason, as well as the small amount of data in the test and validation sets.  With our concept of [continuous data scraping and retraining](#continuous-learning-retraining) this problem is solved as the amount of data increases.For this reason, we decided to use the models without hyperparameter training, as the test results could not be improved.
 
 
 |    RF     | Hyperparameter Tuning | Without Hyperparameter Tuning | Benchmark |
@@ -120,10 +114,9 @@ Based on the metrics Mean Average Error (MAE), Root Mean Squared Error (RMSE), w
 | baseline-rent | 237.8    | 304.1     | 0.686   |
 
 
-### Continuous Learning / Retraining
+### Continuous Learning 
 
-We implemented a dynamic learning pipeline where the training base can be updated with the latest scraped data from Würzburg.
-The complete retraining pipeline is also developed in the `train_and_eval.ipynb` notebook and schematically follows the process shown.
+We implemented a dynamic learning pipeline where the training base can be updated with the latest scraped data from Würzburg. The complete retraining pipeline is also developed in the `train_and_eval.ipynb` notebook and schematically follows the process shown.
 
  ![retrain_process](resources/dynamic_retrain.png)
 
@@ -194,16 +187,14 @@ The architecture and model deployment process described in this documentation pr
 
 ## Outlook & Discussion
 
-### Explainable AI
-
-In order to provide transparent predictions and help users understand how predicted prices are calculated, we can integrate explainable AI techniques into the user interface. One such technique is using `SHAP` values to display the importance of different features and their impact on the predicted price. By creating `SHAP Waterfall` plots for XGBoost on individual examples, users can visualize how various input values contribute to the prediction. The next step is to seamlessly integrate these plots into the user front end, allowing users to have transparent insights into their individual price predictions.
-
-![SHAP waterfall plot](resources/shap_waterfall_example.png)
+* **Explainable Predictions with XAI**
+  In order to provide transparent predictions and help users understand how predicted prices are calculated, we can integrate explainable AI techniques into the user interface. One such technique is using `SHAP` values to display the importance of different features and their impact on the predicted price. By creating `SHAP Waterfall` plots for XGBoost on individual examples, users can visualize how various input values contribute to the prediction. The next step is to seamlessly integrate these plots into the user front end, allowing users to have transparent insights into their individual price predictions.
+  ![SHAP waterfall plot](resources/shap_waterfall_example.png)
 
 
 * **Continuous data enrichment**
  In order to offer our clients a broader range of forecasts, we should also include data from other cities and for different property types. Analysing rental prices in different regions allows us to take into account regional differences and market characteristics. By including different types of property, such as houses, we can provide a more comprehensive view of the rental market. In addition, we can use the data from other cities and property types to train our models and improve their performance.
-The rental market is dynamic and subject to constant change. It is therefore essential that we include a timestamp in our data to record when the data was collected. By documenting when the data was collected, we can analyse the development of rents over time and identify long-term trends. This allows our clients to understand the stability and evolution of rental levels in specific areas.
+  The rental market is dynamic and subject to constant change. It is therefore essential that we include a timestamp in our data to record when the data was collected. By documenting when the data was collected, we can analyse the development of rents over time and identify long-term trends. This allows our clients to understand the stability and evolution of rental levels in specific areas.
 
 * **Build our own scrapper** 
   We used a scrapper from [Apify](https://apify.com/bibim/immowelt-scraper) to get our data. In the future we want to build our own scrapper to get more data and to be more flexible. We want to be able to get data from different websites and not just from immowelt.de. This will allow us to get more data and to be more flexible in the future. Another advantage of a self-developed scraper is the possibility to reduce costs in the long run. If we wanted to expand our model to other cities or regions, the costs of using a paid scraper would increase with each additional location. By developing a customised scraper in-house, we could minimise these expenses and respond flexibly to new demands.
