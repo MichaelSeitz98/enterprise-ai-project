@@ -23,7 +23,7 @@ After the exploratory data analysis, we chose our final features to avoid overfi
 First we preprocessed all features that were **binary** with a binariser. For example, if an apartment has a specific feature such as a garden, the binariser sets the value of that feature to one. If the feature is not present in the apartment, it will get a zero as an indicator.
 In the next step we will precode all **categorical** features with a one-hot-encoder, because we do not have ordinary features. In this [notebook](https://github.com/MichaelSeitz98/enterprise-ai-project/blob/main/immowelt_price_guide/train_and_eval_models.ipynb) and this [dictionary](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/scrape_and_preprocess) you can find the necessary steps we took to prepare our features.
 
-## Model Training and Evaluation
+## Modelling
 
 For this regression task, different models were trained, tuned and compared. The related code to the model  run can be be found in the notebook `train_and_eval_models.ipynb` and `model_functions.py`. To ensure reproducibility and comparability between models within differen setups, model training was performed as a pipeline. For experimentation, such as finding suitable features, data set, data augmentation methods, model architecture, all runs are logged using MLFlow. 
 
@@ -37,16 +37,41 @@ For this regression task, different models were trained, tuned and compared. The
 
 All of these models are benchmarked against a **benchmark model**. This baseline model predicts prices using only the living room information and the current average rental/purchase price per square metre in Würzburg. The benchmark automatically scrapes the current price from [wohnungsboerse.net/mietspiegel-Wuerzburg](https://www.wohnungsboerse.net/mietspiegel-Wuerzburg/2772), where it is updated every month, so the benchmark is always up to date. In the same way, for buying a house the dynamic benchmark is using the average purchase price per square meter of Würzburg, scraped from [wohnungsboerse.net/immobilienpreise-Wuerzburg](https://www.wohnungsboerse.net/immobilienpreise-Wuerzburg/2772).
 
+## Model Training Pipeline
+
+The models were trained using a standardized pipeline approach, ensuring consistent processing steps and comparability between them. A single function was designed to handle all the necessary steps, making it easy to train different models on various datasets.
+
+The pipelines takes `feature_set` as input, why we e.g. could compare the performance of models trained using only high correlative available features without major  against those trained using only five selected features.
+
+
+This streamlined approach allows for efficient model training and straightforward experimentation with different datasets and feature subsets.
+
 
 ### Logging and Storing via MLFlow
 
-Every different set-up of used features, used models and differently used hyperparameter was logged and compared to each other via `MLFlow`. All different runs aka experiment where tracked and evaluated there, see like a example model comparison. So, the best suitable model could be chose.  
+## Model Comparison and Evaluation with MLFlow
+
+To facilitate model comparison and evaluation, each setup and training run with different combinations of features, models, and hyperparameters was logged and tracked using `MLFlow`. This allowed for a comprehensive view of all relevant model training runs, their evaluation metrics, and the used parameters.
+
+To access the model comparison results, follow these steps:
+
+1. Navigate to the `immowelt_price_guide` directory.
+2. Install MLFlow by running `pip install mlflow` or `pip install -r requirements.txt`.
+3. Launch the MLFlow server using the command `mlflow server`.
+
+Once the MLFlow server is running, you can access the results through a web interface. It provides an overview of all the tracked experiments and allows you to compare different models and their corresponding evaluation metrics.
+
+By leveraging MLFlow, you can easily identify and select the best-performing model for your specific use case, based on the comprehensive analysis of various training runs.
+
 
 ![experiments](resources/mlflow_experiment_view_table.png)
 
-If a model is chosen to be deployed for our productive systems, it can be registered to `model registry`. This s a centralized repository for managing and versioning machine learning models. We utilized it to track and store different versions of our models, enabling easy comparison and deployment. It streamlined our model management process and enables collaboration among team members . The Model Registry integrated seamlessly with our deployment pipeline, ensuring that the selected models can be deployed to our "Würzburger Mietpreis-Checker" application, by setting the stage to "production" and load it via API from the application. This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
+Metrics and paramters can be tracked and compared there. As our model training pipeline is build in a genereric way, different selected feature sets can be compared as well. 
+
+If a model is chosen to be deployed for our productive systems, it can be registered to `model registry`. This s a centralized repository for managing and versioning machine learning models. We utilized it to track and store different versions of our models, enabling easy comparison and deployment. It streamlined our model management process and enables collaboration among team members . The Model Registry integrated seamlessly with our deployment pipeline, ensuring that the selected models can be deployed to our "Flat Price-Assistant-WÜE" application, by setting the stage to "production" and load it via API to the independently deployed backend (see [Architecture and Deployment]) (#architecture-and-model-deployment)). This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
 
 ![model_registry](resources/mlflow_model_registry.png)
+
 
 ### Data Augmentation
 
@@ -170,13 +195,16 @@ By following these steps, a new model can be easily deployed to the cloud, ensur
 
 ## Conclusion
 
-The architecture and model deployment process described in this documentation provide a clear and readable overview of how our ML application is structured and how new models can be deployed to the cloud using MLFlow, Gradio, FastAPI, and Heroku.
+The architecture and model deployment process described in this documentation provide a clear and readable overview of how our ML application is structured and how new models can be deployed to the cloud using MLFlow, Gradio, FastAPI and Heroku.
 
 ## Outlook & Discussion
 
-* **Explainable AI** 
- We have not yet implemented explainable AI in our frontend. In this step, we want to be able to explain to the user why the model predicted this price. This is something we will implement in the future. In this picture you can see which features are decisive for your individual price prediction. We use the ``shap waterfall`` method to explain the prediction.
-  ![shap waterfall](resources/shap_waterfall_example.png)
+### Explainable AI
+
+In order to provide transparent predictions and help users understand how predicted prices are calculated, we can integrate explainable AI techniques into the user interface. One such technique is using `SHAP` values to display the importance of different features and their impact on the predicted price. By creating `SHAP Waterfall` plots for XGBoost on individual examples, users can visualize how various input values contribute to the prediction. The next step is to seamlessly integrate these plots into the user front end, allowing users to have transparent insights into their individual price predictions.
+
+![SHAP waterfall plot](resources/shap_waterfall_example.png)
+
 
 * **Continuous data enrichment**
  In order to offer our clients a broader range of forecasts, we should also include data from other cities and for different property types. Analysing rental prices in different regions allows us to take into account regional differences and market characteristics. By including different types of property, such as houses, we can provide a more comprehensive view of the rental market. In addition, we can use the data from other cities and property types to train our models and improve their performance.
