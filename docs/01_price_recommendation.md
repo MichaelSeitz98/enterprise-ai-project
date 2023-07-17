@@ -84,4 +84,7 @@ In this frontend application, the admins of our website can scrap new data and a
 
 ## Outlook & Discussion
 
+* **Explainable AI** - We have not yet implemented explainable AI in our frontend. In this step, we want to be able to explain to the user why the model predicted this price. This is something we will implement in the future. In this picture you can see which features are decisive for your individual price prediction. We use the ``shape waterfall`` method to explain the prediction.
+  ![shap waterfall](ressources/shap_waterfall_example.png)
+
 
