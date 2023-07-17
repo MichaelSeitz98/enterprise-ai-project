@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/2c35de0a486b4b0fb91a22196ddc8557/artifacts
+deleted_time: 1689551760274
+end_time: 1689551139237
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: 2c35de0a486b4b0fb91a22196ddc8557
+run_name: bemused-lark-683
+run_uuid: 2c35de0a486b4b0fb91a22196ddc8557
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551109844
+status: 3
+tags: []
+user_id: michi

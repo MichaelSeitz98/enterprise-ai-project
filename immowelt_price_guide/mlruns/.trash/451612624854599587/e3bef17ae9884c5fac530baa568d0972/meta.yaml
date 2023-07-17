@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/e3bef17ae9884c5fac530baa568d0972/artifacts
+deleted_time: 1689551760274
+end_time: 1689551496862
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: e3bef17ae9884c5fac530baa568d0972
+run_name: gifted-mink-613
+run_uuid: e3bef17ae9884c5fac530baa568d0972
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551468229
+status: 3
+tags: []
+user_id: michi

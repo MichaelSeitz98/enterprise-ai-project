@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/edd4c3375c3548b9acf8f27260505ae2/artifacts
+deleted_time: 1689551760274
+end_time: 1689551635043
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: edd4c3375c3548b9acf8f27260505ae2
+run_name: angry-goose-85
+run_uuid: edd4c3375c3548b9acf8f27260505ae2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551606857
+status: 3
+tags: []
+user_id: michi

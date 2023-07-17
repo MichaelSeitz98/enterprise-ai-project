@@ -1,7 +1,7 @@
 artifact_location: mlflow-artifacts:/0
 creation_time: 1688568114394
 experiment_id: '0'
-last_update_time: 1689522369847
+last_update_time: 1689532566745
 lifecycle_stage: active
-name: wue-rent-selected-features-aug-0
+name: playground
 tags: {}

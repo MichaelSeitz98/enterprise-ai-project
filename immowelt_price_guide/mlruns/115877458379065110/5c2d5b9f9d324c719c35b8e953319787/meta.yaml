@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/115877458379065110/5c2d5b9f9d324c719c35b8e953319787/artifacts
+end_time: 1689550052577
+entry_point_name: ''
+experiment_id: '115877458379065110'
+lifecycle_stage: active
+run_id: 5c2d5b9f9d324c719c35b8e953319787
+run_name: elasticnet
+run_uuid: 5c2d5b9f9d324c719c35b8e953319787
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689549995146
+status: 3
+tags: []
+user_id: michi

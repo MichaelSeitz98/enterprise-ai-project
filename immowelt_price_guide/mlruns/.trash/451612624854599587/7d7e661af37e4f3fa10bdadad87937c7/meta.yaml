@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/7d7e661af37e4f3fa10bdadad87937c7/artifacts
+deleted_time: 1689551760274
+end_time: 1689551598418
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: 7d7e661af37e4f3fa10bdadad87937c7
+run_name: colorful-turtle-559
+run_uuid: 7d7e661af37e4f3fa10bdadad87937c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551569858
+status: 3
+tags: []
+user_id: michi

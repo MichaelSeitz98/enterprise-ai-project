@@ -1,0 +1,14 @@
+{
+  "mean_absolute_error-2_X_train": "mean_absolute_error(y_true=y_train, y_pred=pred_train)",
+  "mean_absolute_error-3_X_val": "mean_absolute_error(y_true=y_val, y_pred=preds)",
+  "mean_absolute_error_X_test": "mean_absolute_error(y_true=y_test, y_pred=pred_test)",
+  "mean_squared_error-2_X_test": "mean_squared_error(y_true=y_test, y_pred=pred_test, squared=False)",
+  "mean_squared_error-3_X_train": "mean_squared_error(y_true=y_train, y_pred=pred_train)",
+  "mean_squared_error-4_X_train": "mean_squared_error(y_true=y_train, y_pred=pred_train, squared=False)",
+  "mean_squared_error-5_X_val": "mean_squared_error(y_true=y_val, y_pred=preds)",
+  "mean_squared_error-6_X_val": "mean_squared_error(y_true=y_val, y_pred=preds, squared=False)",
+  "mean_squared_error_X_test": "mean_squared_error(y_true=y_test, y_pred=pred_test)",
+  "r2_score-2_X_train": "r2_score(y_true=y_train, y_pred=pred_train)",
+  "r2_score-3_X_val": "r2_score(y_true=y_val, y_pred=preds)",
+  "r2_score_X_test": "r2_score(y_true=y_test, y_pred=pred_test)"
+}

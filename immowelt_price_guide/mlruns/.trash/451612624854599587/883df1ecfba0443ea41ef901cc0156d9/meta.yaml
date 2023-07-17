@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/883df1ecfba0443ea41ef901cc0156d9/artifacts
+deleted_time: 1689551760274
+end_time: 1689551671725
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: 883df1ecfba0443ea41ef901cc0156d9
+run_name: marvelous-loon-828
+run_uuid: 883df1ecfba0443ea41ef901cc0156d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551643457
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/455896575391237393/27808225beba4cc8a33c5a99c55d2fbf/artifacts
+deleted_time: 1689555996125
+end_time: 1689555455940
+entry_point_name: ''
+experiment_id: '455896575391237393'
+lifecycle_stage: deleted
+run_id: 27808225beba4cc8a33c5a99c55d2fbf
+run_name: resilient-hog-3
+run_uuid: 27808225beba4cc8a33c5a99c55d2fbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689555449523
+status: 4
+tags: []
+user_id: michi

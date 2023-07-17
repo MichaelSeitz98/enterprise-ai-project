@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/0000bec6dd224972a0e90c92e3452779/artifacts
+deleted_time: 1689551760274
+end_time: 1689551709616
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: 0000bec6dd224972a0e90c92e3452779
+run_name: victorious-smelt-549
+run_uuid: 0000bec6dd224972a0e90c92e3452779
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551680233
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/ea603e760da34816bc3013c34451b9e8/artifacts
+deleted_time: 1689551760274
+end_time: null
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: ea603e760da34816bc3013c34451b9e8
+run_name: big-crow-810
+run_uuid: ea603e760da34816bc3013c34451b9e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551755383
+status: 1
+tags: []
+user_id: michi

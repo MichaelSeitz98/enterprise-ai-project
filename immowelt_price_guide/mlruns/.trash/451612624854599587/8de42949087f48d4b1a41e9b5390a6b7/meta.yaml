@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/8de42949087f48d4b1a41e9b5390a6b7/artifacts
+deleted_time: 1689551760274
+end_time: 1689551746907
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: 8de42949087f48d4b1a41e9b5390a6b7
+run_name: incongruous-grouse-5
+run_uuid: 8de42949087f48d4b1a41e9b5390a6b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551718099
+status: 3
+tags: []
+user_id: michi

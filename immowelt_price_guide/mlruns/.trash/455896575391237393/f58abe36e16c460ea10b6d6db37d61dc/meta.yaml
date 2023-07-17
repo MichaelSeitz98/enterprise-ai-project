@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/455896575391237393/f58abe36e16c460ea10b6d6db37d61dc/artifacts
+deleted_time: 1689555996125
+end_time: 1689555515156
+entry_point_name: ''
+experiment_id: '455896575391237393'
+lifecycle_stage: deleted
+run_id: f58abe36e16c460ea10b6d6db37d61dc
+run_name: nimble-mare-207
+run_uuid: f58abe36e16c460ea10b6d6db37d61dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689555489009
+status: 3
+tags: []
+user_id: michi

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/451612624854599587/c8789f2c2a9d4a618d7ad038083e1d8a/artifacts
+deleted_time: 1689551760274
+end_time: 1689551561428
+entry_point_name: ''
+experiment_id: '451612624854599587'
+lifecycle_stage: deleted
+run_id: c8789f2c2a9d4a618d7ad038083e1d8a
+run_name: honorable-midge-548
+run_uuid: c8789f2c2a9d4a618d7ad038083e1d8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689551532768
+status: 3
+tags: []
+user_id: michi
