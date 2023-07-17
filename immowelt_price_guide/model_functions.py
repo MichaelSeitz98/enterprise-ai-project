@@ -11,6 +11,7 @@ from ydata_profiling import ProfileReport
 import shap
 from tqdm import tqdm
 import time
+
 # from ctgan import CTGAN
 import plotly.express as px
 import plotly.express as px
@@ -62,25 +63,32 @@ def determineHighCorrCols(df):
     print(important_cols)
     return important_cols
 
+
 def get_model_path(model_name):
     client = mlflow.tracking.MlflowClient()
     model_details = client.get_registered_model(model_name)
     source = model_details.latest_versions[0].source
-    result = "mlartifacts" + source[source.index("/"):]
+    result = "mlartifacts" + source[source.index("/") :]
     result += "/MLmodel"
     return result
 
-def set_model_details_to_prod(source_path, destination_path="backend/prod_model_details.txt"):
+
+def set_model_details_to_prod(
+    source_path, destination_path="backend/prod_model_details.txt"
+):
     shutil.copy(source_path, destination_path)
+
 
 def load_model(model_name, stage="production"):
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{stage}")
     return model
 
+
 def set_model_to_prod(model_name, path="backend/prod_model.pkl"):
     model_pickle = load_model(model_name)
-    with open(path, 'wb') as file:
-         model_pickle = pickle.dump(model_pickle, file)
+    with open(path, "wb") as file:
+        model_pickle = pickle.dump(model_pickle, file)
+
 
 def preprocess_data_for_model(df, feature_set):
     print(df.columns)
@@ -183,7 +191,8 @@ def baseline_rent(val_X="", val_y="", runname="baseline_rent"):
     print(f"Average rental price per sqm: {avg_price_per_sqm_rent}")
     return avg_price_per_sqm_rent
 
-def apply_benchmark_rent(X_val,y_val):
+
+def apply_benchmark_rent(X_val, y_val):
     avg_price_per_sqm_rent = baseline_rent()
     baseline_preds = X_val["LivingSpace"] * avg_price_per_sqm_rent
     baseline_mae = mean_absolute_error(y_val, baseline_preds)
@@ -195,7 +204,6 @@ def apply_benchmark_rent(X_val,y_val):
     baseline_rmse = np.sqrt(baseline_mse)
 
     return baseline_mae, baseline_mse, baseline_r2, baseline_rmse
-
 
 
 def baseline_buy(X_val, y_val, runname="baseline_buy"):
@@ -434,7 +442,7 @@ def evaluate_model(model, X_train_recent, y_train_recent, X_val, y_val, X_test, 
     mlflow.log_metric("mse_train", mae_train)
     mlflow.log_metric("rmse_train", rmse_train)
     mlflow.log_metric("r2_train", mae_train)
-   
+
     mlflow.log_metric("mae", mae_val)
     mlflow.log_metric("mse", mse_val)
     mlflow.log_metric("r2", rmse_val)
@@ -494,6 +502,99 @@ def getFeatureSetApp():
     ]
 
 
+def get_stats_of_model_from_mlflow(
+    model_name="wue-rent-feature-set-app", stage="production", progress=gr.Progress()
+):
+    progress(0.05, desc="Connect to MLFlow")
+    time.sleep(0.3)
+    client = mlflow.tracking.MlflowClient()
+    progress(0.10, desc="Connect to MLFlow")
+    model_name = model_name
+    stage = stage
+    progress(0.15, desc="Load latest productive model from MLFlow...")
+    model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{stage}")
+    progress(0.65, desc="Extract metrics for overview...")
+    time.sleep(0.2)
+    run_id = model.metadata.run_id
+    run = client.get_run(run_id)
+    mae = round(run.data.metrics["mae"], 2)
+    mse = round(run.data.metrics["mse"], 2)
+    rmse = round(np.sqrt(mse), 2)
+    r2 = round(run.data.metrics["r2"], 2)
+    mae_test = round(run.data.metrics["mae_test"], 2)
+    mse_test = round(run.data.metrics["mse_test"], 2)
+    rmse_test = round(np.sqrt(mse_test), 2)
+
+    r2_test = round(run.data.metrics["r2_test"], 2)
+    mae_train = round(run.data.metrics["mae_train"], 2)
+    mse_train = round(run.data.metrics["mse_train"], 2)
+    r2_train = round(run.data.metrics["r2_train"], 2)
+
+    progress(0.70, desc="Extract metrics for overview...")
+    time.sleep(0.2)
+
+    run_name = run.data.tags["mlflow.runName"]
+    model_version = run.data.tags["mlflow.source.name"]
+
+    # calculate a currrent benchmark
+    progress(0.75, desc="Calculate current benchmark for comparison")
+    X_val = pd.read_excel("data/X_val.xlsx")
+    X_val = X_val.drop("Unnamed: 0", axis=1)
+    y_val = pd.read_excel("data/y_val.xlsx")
+    y_val = y_val.drop("Unnamed: 0", axis=1)
+    X_test = pd.read_excel("data/X_test.xlsx")
+    X_test = X_test.drop("Unnamed: 0", axis=1)
+    y_test = pd.read_excel("data/y_test.xlsx")
+    y_test = y_test.drop("Unnamed: 0", axis=1)
+    progress(0.80, desc="Calculate current benchmark for comparison")
+    baseline_mae, baseline_mse, baseline_r2, baseline_rmse = apply_benchmark_rent(
+        X_val, y_val
+    )
+    (
+        baseline_mae_test,
+        baseline_mse_test,
+        baseline_r2_test,
+        baseline_rmse_test,
+    ) = apply_benchmark_rent(X_test, y_test)
+
+    metrics_dict = {
+        "model_name": ["Current used model", "Baseline"],
+        "mae_val": [mae, baseline_mae],
+        "rmse_val": [rmse, baseline_rmse],
+        "mae_test": [mae_test, baseline_mae_test],
+        "rmse_test": [rmse_test, baseline_rmse_test],
+    }
+
+    df_metrics = pd.DataFrame(metrics_dict)
+    print(df_metrics)
+    df_metrics_melted = df_metrics.melt(
+        id_vars="model_name", var_name="metric", value_name="value"
+    )
+
+    plot = px.bar(
+        df_metrics_melted,
+        x="metric",
+        y="value",
+        title="Current Model vs Benchmark (MAE, RMSE))",
+        color="model_name",
+        barmode="group",
+        color_discrete_map={
+            "Current used": "blue",
+            "Baseline": "grey",
+        },
+    )
+
+    progress(0.85, desc="Generate plot")
+    html_string = f"""
+    <h2>Basic Information:</h2>
+    <ul><li>Model: {model_name}</li><li>Stage: {stage}</li><li>Run Name: {run_name}</li><li>MLFlow Run id: {run_id}</li></ul>
+    <h2>Metrics:</h2>
+    <ul><li>MAE Val: {mae}</li><li>MSE Val: {mse}</li><li>R2 Val: {r2}</li></ul>
+    <ul><li>MAE Test: {mae_test}</li><li>MSE Test: {mse_test}</li><li>R2 Test: {r2_test}</li></ul>
+    """
+    return html_string, gr.update(value=plot, visible=True)
+
+
 def gradio_retrain_with_added_data(
     xgb, ridge, rf, elasticnet, linear, lasso, baseline, limit, progress=gr.Progress()
 ):
@@ -527,7 +628,6 @@ def gradio_retrain_with_added_data(
     result_df.to_excel("retraining_results.xlsx")
     print("Done with saving results to excel")
 
-
     plot = px.bar(
         result_df,
         x="model",
@@ -547,16 +647,16 @@ def gradio_retrain_with_added_data(
     print("Done with plotting: ", plot)
 
     #### hier muss iwo ein fehler sein #############
-    
+
     progress(0.99, desc="Done with pipeline")
     time.sleep(0.5)
-    
+
     result_df = result_df.rename(columns={"mae": "mae_val"})
     result_df = result_df.rename(columns={"mse": "mse_val"})
     result_df = result_df.rename(columns={"r2": "r2_test"})
 
     result_df = result_df.to_html()
-    
+
     print("Done convertion to html: ", result_df)
     result_df = "<h2>Result of retraining</h2>" + result_df
     print("Done adding headline: ", result_df)
@@ -646,7 +746,9 @@ def trigger_retraining_with_added_data(
 
     results = pd.DataFrame()
 
-    for model_name in progress.tqdm(model_list, desc=f"Retrain models and log to MLFlow: {experiment_name}"):
+    for model_name in progress.tqdm(
+        model_list, desc=f"Retrain models and log to MLFlow: {experiment_name}"
+    ):
         if model_name == "xgb":
             mlflow.xgboost.autolog()
         else:
@@ -662,27 +764,19 @@ def trigger_retraining_with_added_data(
                 model = train_xgb(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "lasso":
                 print("LASSO------")
-                model = train_lasso(
-                    X_train_recent, y_train_recent, X_val, y_val
-                )
+                model = train_lasso(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "ridge":
                 print("RIDGE------")
-                model = train_ridge(
-                    X_train_recent, y_train_recent, X_val, y_val
-                )
+                model = train_ridge(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "rf":
                 print("RF------")
                 model = train_rf(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "elasticnet":
                 print("ELASTICNET------")
-                model = train_elasticnet(
-                    X_train_recent, y_train_recent, X_val, y_val
-                )
+                model = train_elasticnet(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "linear":
                 print("LINEAR------")
-                model = train_linear(
-                    X_train_recent, y_train_recent, X_val, y_val
-                )
+                model = train_linear(X_train_recent, y_train_recent, X_val, y_val)
             elif model_name == "baseline-rent":
                 print("BASELINE-RENT------")
                 avg_price = baseline_rent("", "")
@@ -705,7 +799,6 @@ def trigger_retraining_with_added_data(
                 mlflow.log_metric("rmse_test", baseline_rmse_test)
                 mlflow.log_metric("mae_test", baseline_mae_test)
                 mlflow.log_metric("r2_test", baseline_r2_test)
-                
 
                 print(f"Baseline Mae: {baseline_mae}")
                 print(f"Baseline MSE: {baseline_mse}")
@@ -717,11 +810,11 @@ def trigger_retraining_with_added_data(
                         "model": model_name,
                         "mae": baseline_mae,
                         "mse": baseline_mse,
-                   #     "rmse": baseline_rmse,
+                        #     "rmse": baseline_rmse,
                         "r2": baseline_r2,
                         "mae_test": baseline_mae_test,
                         "mse_test": baseline_mse_test,
-                      #  "rmse_test": baseline_rmse_test,
+                        #  "rmse_test": baseline_rmse_test,
                         "r2_test": baseline_r2_test,
                     },
                     ignore_index=True,
