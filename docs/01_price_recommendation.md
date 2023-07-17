@@ -44,7 +44,7 @@ Every different set-up of used features, used models and differently used hyperp
 
 ![experiments](resources/mlflow_experiment_view_table.png)
 
-If a model is chosen to be deployed for our productive systems, it can be registered to `model registry`. This s a centralized repository for managing and versioning machine learning models. We utilized it to track and store different versions of our models, enabling easy comparison and deployment. It streamlined our model management process and enables collaboration amongteam members . The Model Registry integrated seamlessly with our deployment pipeline, ensuring that the selected models can be deployed to our "Würzburger Mietpreis-Checker" application, by setting the stage to "production" and load it via API from the application. This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
+If a model is chosen to be deployed for our productive systems, it can be registered to `model registry`. This s a centralized repository for managing and versioning machine learning models. We utilized it to track and store different versions of our models, enabling easy comparison and deployment. It streamlined our model management process and enables collaboration among team members . The Model Registry integrated seamlessly with our deployment pipeline, ensuring that the selected models can be deployed to our "Würzburger Mietpreis-Checker" application, by setting the stage to "production" and load it via API from the application. This allowed us to easily incorporate the latest models into our production application for rent price analysis in Würzburg.
 
 ![model_registry](resources/mlflow_model_registry.png)
 
@@ -65,12 +65,12 @@ We conducted a hyperparameter study before starting the training. The code for h
 For every model, a study focused on finding the optimal hyperparameter. Especically XGBoost, Random Forest (RF), and ElasticNet models, where there are more hyperparameter such as
 * n_estimater
 * learining rate 
-* or max_depth
-* ...
+* max_depth
+* random state...
 
- For linear, lasso and ridge regression there are few parameters to optimize (e.g. only alpha and random state), why the conductued hyperparameter tuning did barely have impact.These files contain the best parameter values discovered during the tuning process. These saved best_params can now be used in the model training phase. 
-
-Whithin the Optuna Studies we optimized the hyperparamateres regarding the Root Mean Squared Error of the validation data set. For this reason, the model performance improved for all models on the validation set compared to no hyperparameter tuning. Still, as there are very few data in validation and test data set, this does not necesarly lead into better perfomrance on the test data set. In the tables below it can be seen on  the Example of RF and XGBoost that even though Validatoin data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason as well as the little data amount in the test and validation set.  With our conecpt of [continous data scraping and retraining](#continuous-learning--retraining) this issue will be solved with rising data amount. 
+ For linear, lasso and ridge regression there are few parameters to optimize (e.g. only alpha and random state), why the conductued hyperparameter tuning did barely have impact.These files contain the best parameter values discovered during the tuning process. These saved best_params can now be used in the model training phase.  
+ 
+ Whithin the Optuna Studies we optimized the hyperparamateres regarding the Root Mean Squared Error of the validation data set. For this reason, the model performance pbviously improved for all models on the validation set compared to no hyperparameter tuning. Still, as there are very few data in validation and test data set, this does not necesarly lead into better perfomrance on the test data set. In the tables below it can be seen on  the Example of RF and XGBoost that even though Validatoin data set improved, the test performance did not improve. Overfitting on the validation data set could be a reason as well as the little data amount in the test and validation set.  With our conecpt of [continous data scraping and retraining](#continuous-learning--retraining) this issue will be solved with rising data amount. 
 
 For this reason we chose to use the models with no hyperparameter training, as the test results could not be improved.
 
@@ -118,6 +118,11 @@ We use Gradio as our frontend framework. `Gradio` is particularly good at applyi
 
 ### Admin Frontend
 In this frontend application, the admins of our website can scrap new data and automatically retrain the machine learning models. First the admin has to choose which models to retrain. Then the user can click on the button. Now our backend scraps new data and combines it with our old dataset. Our models can now be retrained. When the retraining process is finished, we can decide which models have improved and which model is now the best model to predict the price. This application is separate from our user frontend, it's just for us to retrain and visualise the performance of our models.
+
+**Link to video demo:**
+
+[![Example Video](resources/admin_page_screenshot.png)](https://youtu.be/gJpT2Nffe3M)
+
 
 # Architecture and Model Deployment
 
