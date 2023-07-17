@@ -1,6 +1,6 @@
 # backend/Dockerfile
 
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
 COPY . /app
 
