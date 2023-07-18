@@ -14,8 +14,8 @@ flavors:
     model_format: xgb
     xgb_version: 1.7.5
 mlflow_version: 2.4.1
-model_uuid: c516cb09debf4c938b707deab743dce8
-run_id: 3a39a6f6c7d1452dbf2f6247bff18d91
+model_uuid: 9e5eb9afcc534a02a265cb4cf834c383
+run_id: 553b2720c4844dceb78c8599e90fa6f5
 signature:
   inputs: '[{"type": "double", "name": "LivingSpace"}, {"type": "double", "name":
     "Rooms"}, {"type": "long", "name": "altbau_(bis_1945)"}, {"type": "long", "name":
@@ -28,17 +28,17 @@ signature:
     "name": "wanne"}, {"type": "long", "name": "zentralheizung"}, {"type": "long",
     "name": "abstellraum"}, {"type": "long", "name": "ferne"}, {"type": "long", "name":
     "fussbodenheizung"}, {"type": "long", "name": "gartennutzung"}, {"type": "long",
-    "name": "kelleranteil"}, {"type": "integer", "name": "ZipCode_97070"}, {"type":
-    "integer", "name": "ZipCode_97072"}, {"type": "integer", "name": "ZipCode_97074"},
-    {"type": "integer", "name": "ZipCode_97076"}, {"type": "integer", "name": "ZipCode_97078"},
-    {"type": "integer", "name": "ZipCode_97080"}, {"type": "integer", "name": "ZipCode_97082"},
-    {"type": "integer", "name": "ZipCode_97084"}, {"type": "integer", "name": "ZipCode_97204"},
-    {"type": "integer", "name": "ZipCode_97209"}, {"type": "integer", "name": "ZipCode_97218"},
-    {"type": "integer", "name": "ZipCode_97222"}, {"type": "integer", "name": "ZipCode_97228"},
-    {"type": "integer", "name": "ZipCode_97234"}, {"type": "integer", "name": "ZipCode_97236"},
-    {"type": "integer", "name": "ZipCode_97246"}, {"type": "integer", "name": "ZipCode_97249"},
-    {"type": "integer", "name": "ZipCode_97250"}, {"type": "integer", "name": "ZipCode_97261"},
-    {"type": "integer", "name": "ZipCode_97270"}, {"type": "integer", "name": "ZipCode_97288"},
-    {"type": "integer", "name": "ZipCode_97297"}, {"type": "integer", "name": "ZipCode_97299"}]'
+    "name": "kelleranteil"}, {"type": "double", "name": "ZipCode_97070"}, {"type":
+    "long", "name": "ZipCode_97072"}, {"type": "long", "name": "ZipCode_97074"}, {"type":
+    "double", "name": "ZipCode_97076"}, {"type": "long", "name": "ZipCode_97078"},
+    {"type": "long", "name": "ZipCode_97080"}, {"type": "long", "name": "ZipCode_97082"},
+    {"type": "long", "name": "ZipCode_97084"}, {"type": "double", "name": "ZipCode_97204"},
+    {"type": "double", "name": "ZipCode_97209"}, {"type": "long", "name": "ZipCode_97218"},
+    {"type": "double", "name": "ZipCode_97222"}, {"type": "double", "name": "ZipCode_97228"},
+    {"type": "double", "name": "ZipCode_97234"}, {"type": "double", "name": "ZipCode_97236"},
+    {"type": "long", "name": "ZipCode_97246"}, {"type": "double", "name": "ZipCode_97249"},
+    {"type": "long", "name": "ZipCode_97250"}, {"type": "double", "name": "ZipCode_97261"},
+    {"type": "double", "name": "ZipCode_97270"}, {"type": "double", "name": "ZipCode_97288"},
+    {"type": "double", "name": "ZipCode_97297"}, {"type": "double", "name": "ZipCode_97299"}]'
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
-utc_time_created: '2023-07-17 01:42:24.728678'
+utc_time_created: '2023-07-18 12:54:10.402139'

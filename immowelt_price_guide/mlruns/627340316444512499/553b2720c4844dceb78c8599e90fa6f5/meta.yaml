@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/627340316444512499/553b2720c4844dceb78c8599e90fa6f5/artifacts
+end_time: 1689684907111
+entry_point_name: ''
+experiment_id: '627340316444512499'
+lifecycle_stage: active
+run_id: 553b2720c4844dceb78c8599e90fa6f5
+run_name: xgb
+run_uuid: 553b2720c4844dceb78c8599e90fa6f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1689684832960
+status: 3
+tags: []
+user_id: FelixNeubauer
