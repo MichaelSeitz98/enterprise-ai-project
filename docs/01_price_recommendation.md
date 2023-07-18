@@ -143,11 +143,11 @@ In this front-end application, the administrators of our website can scrap new d
 [![Example Video](resources/admin_page_screenshot.png)](https://youtu.be/gJpT2Nffe3M)
 
 
-# Architecture and Model Deployment
+## Architecture and Model Deployment
 
 This technical documentation provides an overview of the architecture and model deployment process for our ML application. The application leverages MLFlow for model training, management, and versioning, while the frontend is built using `Gradio`. The backend application is developed with `FastAPI` and hosted on `Heroku`, allowing for easy deployment of new models to the cloud.
 
-## Architecture Overview
+### Architecture Overview
 
 ![Architecture](resources/architecture-flat-price-app.png)
 
@@ -160,16 +160,16 @@ The architecture of our ML application can be described as follows:
 3. **Backend (FastAPI)**: The FastAPI backend application provides various endpoints.. When a request is received at the `/predict` endpoint, the desired model is loaded and ready to make predictions. The dedicted folder is located under `/immowelt_price_guide/backend`. [Also find here](https://github.com/MichaelSeitz98/enterprise-ai-project/tree/main/immowelt_price_guide/backend). 
 
 The `main.py` includes the FastAPI app and the following endpoints:
-   -  `/predict` endpoint: This endpoint is used to make predictions. It receives a POST request from the frontend application, loads the desired model, and returns the prediction.
-   - `/model-info` endpoint: This endpoint is used to retrieve information about the model. It receives a GET request from the frontend application and returns the model's input and output parameters as well as the name and some infos about the version. 
-   - `/` root: This endpoint is used to check the health of the application. It receives a GET request from the frontend application and returns a status code of 200 if the application is running.
+-  `/predict` endpoint: This endpoint is used to make predictions. It receives a POST request from the frontend application, loads the desired model, and returns the prediction.
+- `/model-info` endpoint: This endpoint is used to retrieve information about the model. It receives a GET request from the frontend application and returns the model's input and output parameters as well as the name and some infos about the version. 
+- `/` root: This endpoint is used to check the health of the application. It receives a GET request from the frontend application and returns a status code of 200 if the application is running.
 
 
 4. **Cloud Deployment (Heroku)**: The backend application is packaged in a `Docker` container and hosted on Heroku, making the endpoint permanently publicly available for everyone. The frontend and backend are designed to run independently of each other.
 
 Find hosted available api documentation here: [https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs](https://flat-price-assistant-wue-9d5350c50d5c.herokuapp.com/docs).
 
-## Model Deployment Process
+### Model Deployment Process
 
 Deploying a new model to the cloud follows the following steps:
 
